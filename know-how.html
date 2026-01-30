@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artigos técnicos sobre automação industrial, Indústria 4.0, IoT, manutenção preditiva e muito mais. Conhecimento especializado da Blumenau Automação.">
+    <meta name="keywords" content="artigos automação, indústria 4.0, IoT, manutenção preditiva, ESP32, OEE, digitalização industrial">
+    <title>Know-How | Blumenau Automação - Artigos Técnicos</title>
+
+    <!-- Open Graph / LinkedIn / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.blumenauautomacao.com.br/know-how.html">
+    <meta property="og:title" content="Know-How em Automação | Blumenau Automação">
+    <meta property="og:description" content="Artigos técnicos sobre automação industrial, Indústria 4.0, IoT, manutenção preditiva e muito mais.">
+    <meta property="og:image" content="https://www.blumenauautomacao.com.br/logo1.png">
+
+    <link rel="icon" type="image/png" href="logo1.png">
+    <link rel="apple-touch-icon" href="logo1.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            900: '#1a1a2e',
+                            800: '#16213e',
+                            700: '#1f2b47',
+                            600: '#2a3a5a'
+                        },
+                        accent: {
+                            500: '#195F79',
+                            400: '#4a9bb5',
+                            300: '#7ab8c9'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #7ab8c9 0%, #195F79 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #195F79 0%, #7ab8c9 100%);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .category-tag {
+            @apply inline-block px-3 py-1 text-xs font-medium rounded-full;
+        }
+    </style>
+</head>
+<body class="bg-primary-900 text-gray-200 font-sans">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-primary-900/95 backdrop-blur-sm border-b border-primary-700">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="logo1.png" alt="Blumenau Automação" class="h-10 md:h-12 w-auto">
+                    <span class="text-xl md:text-2xl font-bold gradient-text">Blumenau Automação</span>
+                </a>
+
+                <nav class="hidden lg:flex items-center space-x-5">
+                    <a href="index.html#servicos" class="text-gray-300 hover:text-white transition-colors whitespace-nowrap">Serviços</a>
+                    <a href="tecnologias.html" class="text-gray-300 hover:text-white transition-colors whitespace-nowrap">Soluções</a>
+                    <a href="know-how.html" class="text-accent-400 whitespace-nowrap">Know-How</a>
+                    <a href="produtos.html" class="text-gray-300 hover:text-white transition-colors whitespace-nowrap">Produtos</a>
+                    <a href="index.html#cases" class="text-gray-300 hover:text-white transition-colors whitespace-nowrap">Cases</a>
+                    <a href="index.html#sobre" class="text-gray-300 hover:text-white transition-colors whitespace-nowrap">Sobre</a>
+                    <a href="index.html#contato" class="text-gray-300 hover:text-white transition-colors whitespace-nowrap">Contato</a>
+                    <a href="area-cliente.html" class="px-3 py-1.5 bg-primary-900 text-white rounded-lg hover:bg-primary-700 transition-colors whitespace-nowrap text-sm flex items-center gap-1.5">
+                        🔐 Área do Cliente
+                    </a>
+                    <!-- Cart Icon -->
+                    <a href="produtos.html#carrinho" id="cart-icon" class="relative p-2 text-gray-300 hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                        <span id="cart-count" class="absolute -top-1 -right-1 bg-accent-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center hidden">0</span>
+                    </a>
+                </nav>
+
+                <div class="hidden lg:flex items-center">
+                    <a href="index.html#contato" class="gradient-bg text-white px-4 py-2 rounded-lg font-medium hover:opacity-90 transition-opacity whitespace-nowrap text-sm">
+                        Orçamento
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-300 hover:text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-primary-800 border-t border-primary-700">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html#servicos" class="block text-gray-300 hover:text-white py-2">Serviços</a>
+                <a href="tecnologias.html" class="block text-gray-300 hover:text-white py-2">Soluções</a>
+                <a href="know-how.html" class="block text-accent-400 py-2">Know-How</a>
+                <a href="produtos.html" class="block text-gray-300 hover:text-white py-2">Produtos</a>
+                <a href="index.html#cases" class="block text-gray-300 hover:text-white py-2">Cases</a>
+                <a href="index.html#sobre" class="block text-gray-300 hover:text-white py-2">Sobre</a>
+                <a href="index.html#contato" class="block text-gray-300 hover:text-white py-2">Contato</a>
+                <a href="area-cliente.html" class="inline-flex items-center gap-2 bg-primary-900 text-white px-4 py-2 rounded-lg mt-2">
+                    🔐 Área do Cliente
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="pt-28 pb-16 bg-primary-800">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6">
+            <div class="text-center">
+                <nav class="text-sm text-gray-400 mb-4">
+                    <a href="index.html" class="hover:text-white">Home</a> / <span class="text-gray-300">Know-How</span>
+                </nav>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                    <span class="gradient-text">Know-How</span> em Automação
+                </h1>
+                <p class="text-gray-400 text-lg max-w-3xl mx-auto">
+                    Artigos técnicos sobre automação industrial, Indústria 4.0, IoT, manutenção preditiva e muito mais. Compartilhamos conhecimento para ajudar sua empresa a evoluir.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Grid -->
+    <main class="max-w-[1400px] mx-auto px-4 sm:px-6 py-16">
+
+        <!-- Category Filter -->
+        <div class="flex flex-wrap gap-3 mb-12 justify-center">
+            <button class="category-tag bg-accent-500 text-white" data-filter="all">Todos</button>
+            <button class="category-tag bg-primary-700 text-gray-300 hover:bg-primary-600" data-filter="industria">Indústria 4.0</button>
+            <button class="category-tag bg-primary-700 text-gray-300 hover:bg-primary-600" data-filter="iot">IoT</button>
+            <button class="category-tag bg-primary-700 text-gray-300 hover:bg-primary-600" data-filter="automacao">Automação</button>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Article 1: Manutenção Preditiva -->
+            <article class="bg-primary-800 rounded-2xl overflow-hidden card-hover" data-category="industria">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop" alt="Manutenção Preditiva" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="category-tag bg-green-500/20 text-green-400">Indústria 4.0</span>
+                        <span class="text-gray-500 text-xs">14 min</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Manutenção Preditiva: Como prever falhas e reduzir custos</h3>
+                    <p class="text-gray-400 text-sm mb-4">
+                        IoT, sensores e machine learning para prever falhas em equipamentos industriais antes que aconteçam.
+                    </p>
+                    <a href="artigos/manutencao-preditiva.html" class="text-accent-400 hover:text-accent-300 text-sm font-medium inline-flex items-center">
+                        Ler artigo
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Article 2: Digitalização Industrial -->
+            <article class="bg-primary-800 rounded-2xl overflow-hidden card-hover" data-category="industria">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=600&h=400&fit=crop" alt="Digitalização Industrial" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="category-tag bg-blue-500/20 text-blue-400">Indústria 4.0</span>
+                        <span class="text-gray-500 text-xs">8 min</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Digitalização Industrial: Por onde começar na sua fábrica</h3>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Implementação de sensores, coleta de dados e dashboards de produção para indústrias.
+                    </p>
+                    <a href="artigos/digitalizacao-industrial.html" class="text-accent-400 hover:text-accent-300 text-sm font-medium inline-flex items-center">
+                        Ler artigo
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Article 3: ESP32 -->
+            <article class="bg-primary-800 rounded-2xl overflow-hidden card-hover" data-category="iot">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=600&h=400&fit=crop" alt="ESP32 IoT" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="category-tag bg-purple-500/20 text-purple-400">IoT</span>
+                        <span class="text-gray-500 text-xs">10 min</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">ESP32 para Monitoramento Industrial: Guia Completo</h3>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Como usar microcontroladores de baixo custo para coletar dados de máquinas e processos.
+                    </p>
+                    <a href="artigos/esp32-monitoramento.html" class="text-accent-400 hover:text-accent-300 text-sm font-medium inline-flex items-center">
+                        Ler artigo
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Article 4: OEE -->
+            <article class="bg-primary-800 rounded-2xl overflow-hidden card-hover" data-category="industria">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=600&h=400&fit=crop" alt="OEE Industrial" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="category-tag bg-yellow-500/20 text-yellow-400">Indústria 4.0</span>
+                        <span class="text-gray-500 text-xs">6 min</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">OEE: Como medir a eficiência real da sua produção</h3>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Implementação do indicador OEE (Overall Equipment Effectiveness) para manufatura.
+                    </p>
+                    <a href="artigos/oee-eficiencia-producao.html" class="text-accent-400 hover:text-accent-300 text-sm font-medium inline-flex items-center">
+                        Ler artigo
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Article 5: N8N Automação -->
+            <article class="bg-primary-800 rounded-2xl overflow-hidden card-hover" data-category="automacao">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop" alt="N8N Automação" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="category-tag bg-orange-500/20 text-orange-400">Automação</span>
+                        <span class="text-gray-500 text-xs">6 min</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">N8N: Automatize tarefas sem escrever código</h3>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Tutorial prático para criar fluxos de automação conectando ERPs, sensores e sistemas.
+                    </p>
+                    <a href="artigos/n8n-automatizar-tarefas.html" class="text-accent-400 hover:text-accent-300 text-sm font-medium inline-flex items-center">
+                        Ler artigo
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Article 6: Agentes IA -->
+            <article class="bg-primary-800 rounded-2xl overflow-hidden card-hover" data-category="automacao">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop" alt="Agentes de IA" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="category-tag bg-pink-500/20 text-pink-400">IA & Automação</span>
+                        <span class="text-gray-500 text-xs">12 min</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Agentes de IA: Como usar assistentes inteligentes</h3>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Guia completo sobre Agentes de IA: como funcionam, casos de uso e implementação na indústria.
+                    </p>
+                    <a href="artigos/agentes-ia-automacao.html" class="text-accent-400 hover:text-accent-300 text-sm font-medium inline-flex items-center">
+                        Ler artigo
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Article 7: Modernização Legados -->
+            <article class="bg-primary-800 rounded-2xl overflow-hidden card-hover" data-category="industria">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop" alt="Modernização de Sistemas" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="category-tag bg-cyan-500/20 text-cyan-400">Retrofit</span>
+                        <span class="text-gray-500 text-xs">10 min</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Modernização de Sistemas Legados</h3>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Como atualizar sistemas antigos sem parar a produção. Estratégias de retrofit e migração.
+                    </p>
+                    <a href="artigos/modernizacao-sistemas-legados.html" class="text-accent-400 hover:text-accent-300 text-sm font-medium inline-flex items-center">
+                        Ler artigo
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary-800">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Precisa de ajuda com seu projeto?</h2>
+            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">
+                Nossa equipe de engenheiros está pronta para ajudar sua empresa a implementar soluções de automação.
+            </p>
+            <a href="index.html#contato" class="inline-flex items-center gradient-bg text-white px-8 py-4 rounded-xl font-semibold hover:opacity-90 transition-opacity">
+                Fale com um especialista
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 border-t border-primary-700 py-12">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="index.html" class="flex items-center space-x-2 mb-4">
+                        <img src="logo1.png" alt="Blumenau Automação" class="h-8 w-auto">
+                        <span class="text-lg font-bold gradient-text">Blumenau Automação</span>
+                    </a>
+                    <p class="text-gray-400 text-sm">
+                        Automação Industrial e Residencial em Blumenau e região. Engenheiros UFSC com registro CREA.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Soluções</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="tecnologias.html#retrofit" class="hover:text-accent-400">Retrofit</a></li>
+                        <li><a href="tecnologias.html#clps" class="hover:text-accent-400">CLPs e IHMs</a></li>
+                        <li><a href="tecnologias.html#industria40" class="hover:text-accent-400">Indústria 4.0</a></li>
+                        <li><a href="tecnologias.html#residencial" class="hover:text-accent-400">Automação Residencial</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Links</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="tecnologias.html" class="hover:text-accent-400">Soluções</a></li>
+                        <li><a href="index.html#sobre" class="hover:text-accent-400">Sobre Nós</a></li>
+                        <li><a href="index.html#produtos" class="hover:text-accent-400">Produtos</a></li>
+                        <li><a href="index.html#contato" class="hover:text-accent-400">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contato</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>(47) 98867-7798</li>
+                        <li>contato@blumenauautomacao.com.br</li>
+                        <li>Blumenau, SC</li>
+                    </ul>
+                    <div class="flex space-x-3 mt-4">
+                        <a href="https://linkedin.com/company/blumenauautomacao" target="_blank" class="w-10 h-10 bg-primary-700 hover:bg-accent-500 rounded-lg flex items-center justify-center transition-colors">
+                            <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/blumenauautomacao" target="_blank" class="w-10 h-10 bg-primary-700 hover:bg-accent-500 rounded-lg flex items-center justify-center transition-colors">
+                            <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-primary-700 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 Blumenau Automação. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/5547988677798" target="_blank" class="flex items-center justify-center w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full shadow-lg transition-all hover:scale-110">
+            <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Category filter
+        const filterBtns = document.querySelectorAll('[data-filter]');
+        const articles = document.querySelectorAll('[data-category]');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.dataset.filter;
+
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-accent-500', 'text-white');
+                    b.classList.add('bg-primary-700', 'text-gray-300');
+                });
+                btn.classList.remove('bg-primary-700', 'text-gray-300');
+                btn.classList.add('bg-accent-500', 'text-white');
+
+                articles.forEach(article => {
+                    if (filter === 'all' || article.dataset.category === filter) {
+                        article.style.display = 'block';
+                    } else {
+                        article.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Update cart counter from localStorage
+        function updateCartCount() {
+            const cart = JSON.parse(localStorage.getItem('blumenau_cart') || '[]');
+            const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+            const cartCountEl = document.getElementById('cart-count');
+            if (cartCountEl) {
+                if (count > 0) {
+                    cartCountEl.textContent = count > 99 ? '99+' : count;
+                    cartCountEl.classList.remove('hidden');
+                } else {
+                    cartCountEl.classList.add('hidden');
+                }
+            }
+        }
+        updateCartCount();
+        window.addEventListener('storage', updateCartCount);
+    </script>
+</body>
+</html>

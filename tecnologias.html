@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluções em Automação Industrial e Residencial | Blumenau Automação</title>
+    <meta name="description" content="Soluções completas em automação: Retrofit, CLPs, SCADA, Indústria 4.0, Redes Industriais, Visão Computacional, Robótica, IoT, Automação Residencial. Blumenau e região.">
+    <meta name="keywords" content="automação industrial blumenau, retrofit de máquinas, programação CLP, SCADA, indústria 4.0, NR12, NR10, visão computacional, robótica industrial, IoT, automação residencial, casa inteligente">
+
+    <!-- Open Graph / LinkedIn / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.blumenauautomacao.com.br/tecnologias.html">
+    <meta property="og:title" content="Soluções em Automação | Blumenau Automação">
+    <meta property="og:description" content="Soluções completas em automação: Retrofit, CLPs, SCADA, Indústria 4.0, Redes Industriais, Visão Computacional, Robótica, IoT, Automação Residencial.">
+    <meta property="og:image" content="https://www.blumenauautomacao.com.br/logo1.png">
+
+    <link rel="icon" type="image/png" href="logo1.png">
+    <link rel="apple-touch-icon" href="logo1.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            900: '#1a1a2e',
+                            800: '#16213e',
+                            700: '#1f2b47',
+                            600: '#2a3a5a'
+                        },
+                        accent: {
+                            500: '#195F79',
+                            400: '#4a9bb5',
+                            300: '#7ab8c9'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #7ab8c9 0%, #195F79 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #195F79 0%, #7ab8c9 100%);
+        }
+
+        .section-card {
+            transition: all 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .tech-tag {
+            @apply inline-block px-3 py-1 bg-primary-700 text-gray-300 text-sm rounded-full mr-2 mb-2;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Sticky nav highlight */
+        .nav-link.active {
+            color: #7ab8c9;
+            border-bottom: 2px solid #7ab8c9;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 1000;
+        }
+        .whatsapp-float a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float a:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-primary-900 text-gray-200 font-sans">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-primary-900/95 backdrop-blur-sm border-b border-primary-700">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="logo1.png" alt="Blumenau Automação" class="h-10 md:h-12 w-auto">
+                    <span class="text-xl md:text-2xl font-bold gradient-text">Blumenau Automação</span>
+                </a>
+
+                <nav class="hidden lg:flex items-center space-x-5">
+                    <a href="index.html#servicos" class="text-gray-300 hover:text-white transition-colors whitespace-nowrap">Serviços</a>
+                    <a href="tecnologias.html" class="text-accent-400 whitespace-nowrap">Soluções</a>
+                    <a href="know-how.html" class="text-gray-300 hover:text-white transition-colors whitespace-nowrap">Know-How</a>
+                    <a href="produtos.html" class="text-gray-300 hover:text-white transition-colors whitespace-nowrap">Produtos</a>
+                    <a href="index.html#cases" class="text-gray-300 hover:text-white transition-colors whitespace-nowrap">Cases</a>
+                    <a href="index.html#sobre" class="text-gray-300 hover:text-white transition-colors whitespace-nowrap">Sobre</a>
+                    <a href="index.html#contato" class="text-gray-300 hover:text-white transition-colors whitespace-nowrap">Contato</a>
+                    <a href="index.html#mvp" class="text-accent-400 hover:text-accent-300 transition-colors whitespace-nowrap font-medium">MVP Gratuito</a>
+                    <a href="area-cliente.html" class="px-3 py-1.5 bg-primary-900 text-white rounded-lg hover:bg-primary-700 transition-colors whitespace-nowrap text-sm flex items-center gap-1.5">
+                        🔐 Área do Cliente
+                    </a>
+                    <!-- Cart Icon -->
+                    <a href="produtos.html#carrinho" id="cart-icon" class="relative p-2 text-gray-300 hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                        <span id="cart-count" class="absolute -top-1 -right-1 bg-accent-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center hidden">0</span>
+                    </a>
+                </nav>
+
+                <div class="hidden lg:flex items-center">
+                    <a href="index.html#contato" class="gradient-bg text-white px-4 py-2 rounded-lg font-medium hover:opacity-90 transition-opacity whitespace-nowrap text-sm">
+                        Orçamento
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-300 hover:text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-primary-800 border-t border-primary-700">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html#servicos" class="block text-gray-300 hover:text-white py-2">Serviços</a>
+                <a href="tecnologias.html" class="block text-accent-400 py-2">Soluções</a>
+                <a href="know-how.html" class="block text-gray-300 hover:text-white py-2">Know-How</a>
+                <a href="produtos.html" class="block text-gray-300 hover:text-white py-2">Produtos</a>
+                <a href="index.html#cases" class="block text-gray-300 hover:text-white py-2">Cases</a>
+                <a href="index.html#sobre" class="block text-gray-300 hover:text-white py-2">Sobre</a>
+                <a href="index.html#contato" class="block text-gray-300 hover:text-white py-2">Contato</a>
+                <a href="index.html#mvp" class="block text-accent-400 py-2 font-medium">MVP Gratuito</a>
+                <a href="area-cliente.html" class="inline-flex items-center gap-2 bg-primary-900 text-white px-4 py-2 rounded-lg mt-2">
+                    🔐 Área do Cliente
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="pt-28 pb-16 bg-primary-800">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6">
+            <div class="text-center">
+                <nav class="text-sm text-gray-400 mb-4">
+                    <a href="index.html" class="hover:text-white">Home</a> / <span class="text-gray-300">Soluções</span>
+                </nav>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                    Nossas <span class="gradient-text">Soluções</span> em Automação
+                </h1>
+                <p class="text-gray-400 text-lg max-w-3xl mx-auto mb-8">
+                    Do chão de fábrica à sua casa. Soluções completas em automação industrial e residencial para Blumenau e região do Vale do Itajaí.
+                </p>
+                <div class="flex flex-wrap justify-center gap-2">
+                    <span class="tech-tag">CLPs Siemens</span>
+                    <span class="tech-tag">Allen Bradley</span>
+                    <span class="tech-tag">WEG</span>
+                    <span class="tech-tag">Schneider</span>
+                    <span class="tech-tag">SCADA</span>
+                    <span class="tech-tag">NR12</span>
+                    <span class="tech-tag">IoT</span>
+                    <span class="tech-tag">ESP32</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Nav -->
+    <nav class="sticky top-16 md:top-20 z-40 bg-primary-900/95 backdrop-blur-sm border-b border-primary-700 overflow-x-auto">
+        <div class="max-w-[1400px] mx-auto px-4">
+            <div class="flex space-x-6 py-3 text-sm whitespace-nowrap">
+                <a href="#retrofit" class="nav-link text-gray-400 hover:text-white pb-1">Retrofit</a>
+                <a href="#clps" class="nav-link text-gray-400 hover:text-white pb-1">CLPs</a>
+                <a href="#industria40" class="nav-link text-gray-400 hover:text-white pb-1">Indústria 4.0</a>
+                <a href="#redes" class="nav-link text-gray-400 hover:text-white pb-1">Redes</a>
+                <a href="#eletrico" class="nav-link text-gray-400 hover:text-white pb-1">Elétrica</a>
+                <a href="#seguranca" class="nav-link text-gray-400 hover:text-white pb-1">Segurança</a>
+                <a href="#visao" class="nav-link text-gray-400 hover:text-white pb-1">Visão</a>
+                <a href="#robotica" class="nav-link text-gray-400 hover:text-white pb-1">Robótica</a>
+                <a href="#residencial" class="nav-link text-gray-400 hover:text-white pb-1">Residencial</a>
+                <a href="#iot" class="nav-link text-gray-400 hover:text-white pb-1">IoT</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-[1400px] mx-auto px-4 sm:px-6 py-12">
+
+        <!-- Section: Retrofit -->
+        <section id="retrofit" class="mb-20 scroll-mt-32 fade-in">
+            <div class="flex items-center mb-6">
+                <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mr-4">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold">Retrofit e Modernização de Máquinas</h2>
+                    <p class="text-gray-400">Revitalize seus equipamentos com tecnologia moderna</p>
+                </div>
+            </div>
+
+            <div class="bg-primary-800 rounded-2xl p-8 mb-6">
+                <p class="text-gray-300 text-lg mb-6">
+                    O <strong>retrofit industrial</strong> é o processo de modernização de máquinas e equipamentos antigos, substituindo componentes obsoletos por tecnologia atual. Isso permite <strong>aumentar a vida útil</strong> do equipamento, <strong>reduzir custos de manutenção</strong> e <strong>melhorar a produtividade</strong> sem investir em máquinas novas.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Adequação NR12</h4>
+                        <p class="text-sm text-gray-400">Proteções, intertravamentos e documentação conforme norma regulamentadora.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Adequação NR10</h4>
+                        <p class="text-sm text-gray-400">Segurança em instalações elétricas, aterramento e proteções.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Troca de Painéis</h4>
+                        <p class="text-sm text-gray-400">Substituição de painéis antigos por modernos com CLPs e IHMs.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Migração de Legados</h4>
+                        <p class="text-sm text-gray-400">Atualização de sistemas de controle obsoletos para plataformas atuais.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-tag">Relés para CLP</span>
+                    <span class="tech-tag">Analógico para Digital</span>
+                    <span class="tech-tag">Siemens S5 → S7</span>
+                    <span class="tech-tag">Allen Bradley SLC → ControlLogix</span>
+                    <span class="tech-tag">Documentação técnica</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: CLPs -->
+        <section id="clps" class="mb-20 scroll-mt-32 fade-in">
+            <div class="flex items-center mb-6">
+                <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mr-4">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold">CLPs, IHMs e Drives</h2>
+                    <p class="text-gray-400">Programação e configuração de controladores industriais</p>
+                </div>
+            </div>
+
+            <div class="bg-primary-800 rounded-2xl p-8 mb-6">
+                <p class="text-gray-300 text-lg mb-6">
+                    Programação profissional de <strong>Controladores Lógicos Programáveis (CLPs)</strong>, <strong>Interfaces Homem-Máquina (IHMs)</strong>, <strong>inversores de frequência</strong> e <strong>soft-starters</strong>. Trabalhamos com as principais marcas do mercado.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-6 mb-6">
+                    <div class="bg-primary-700 p-5 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-3">CLPs</h4>
+                        <ul class="text-sm text-gray-400 space-y-1">
+                            <li>• Siemens S7-1200, S7-1500, S7-300</li>
+                            <li>• Allen Bradley CompactLogix, MicroLogix</li>
+                            <li>• Schneider M340, M580</li>
+                            <li>• WEG TPW-04</li>
+                            <li>• Omron, Mitsubishi, ABB</li>
+                        </ul>
+                    </div>
+                    <div class="bg-primary-700 p-5 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-3">IHMs</h4>
+                        <ul class="text-sm text-gray-400 space-y-1">
+                            <li>• Siemens Comfort, Basic Panels</li>
+                            <li>• Allen Bradley PanelView</li>
+                            <li>• Schneider Magelis</li>
+                            <li>• Weintek, Beijer</li>
+                            <li>• Desenvolvimento de telas SCADA</li>
+                        </ul>
+                    </div>
+                    <div class="bg-primary-700 p-5 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-3">Drives</h4>
+                        <ul class="text-sm text-gray-400 space-y-1">
+                            <li>• Inversores WEG CFW-11, CFW-500</li>
+                            <li>• Siemens Sinamics G120</li>
+                            <li>• ABB ACS580, ACS880</li>
+                            <li>• Soft-starters SSW</li>
+                            <li>• Parametrização e comissionamento</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-tag">Ladder</span>
+                    <span class="tech-tag">Grafcet</span>
+                    <span class="tech-tag">Texto Estruturado</span>
+                    <span class="tech-tag">FBD</span>
+                    <span class="tech-tag">TIA Portal</span>
+                    <span class="tech-tag">Studio 5000</span>
+                    <span class="tech-tag">Codesys</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Indústria 4.0 -->
+        <section id="industria40" class="mb-20 scroll-mt-32 fade-in">
+            <div class="flex items-center mb-6">
+                <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mr-4">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold">Indústria 4.0 e SCADA</h2>
+                    <p class="text-gray-400">Digitalização, supervisão e análise de dados industriais</p>
+                </div>
+            </div>
+
+            <div class="bg-primary-800 rounded-2xl p-8 mb-6">
+                <p class="text-gray-300 text-lg mb-6">
+                    A <strong>Indústria 4.0</strong> representa a quarta revolução industrial, integrando tecnologias digitais ao chão de fábrica. Implementamos sistemas <strong>SCADA</strong>, <strong>MES</strong>, <strong>telemetria</strong> e <strong>dashboards</strong> para monitoramento e tomada de decisão em tempo real.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Sistemas SCADA</h4>
+                        <p class="text-sm text-gray-400">Supervisão e controle de processos industriais em tempo real.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Telemetria</h4>
+                        <p class="text-sm text-gray-400">Monitoramento remoto de máquinas e processos via internet.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Dashboards</h4>
+                        <p class="text-sm text-gray-400">Visualização de KPIs, OEE e indicadores de produção.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Integração ERP</h4>
+                        <p class="text-sm text-gray-400">Conexão com SAP, TOTVS e sistemas de gestão.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-tag">Ignition</span>
+                    <span class="tech-tag">Elipse E3</span>
+                    <span class="tech-tag">WinCC</span>
+                    <span class="tech-tag">FactoryTalk</span>
+                    <span class="tech-tag">Grafana</span>
+                    <span class="tech-tag">Node-RED</span>
+                    <span class="tech-tag">InfluxDB</span>
+                    <span class="tech-tag">OPC-UA</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Redes Industriais -->
+        <section id="redes" class="mb-20 scroll-mt-32 fade-in">
+            <div class="flex items-center mb-6">
+                <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mr-4">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold">Redes Industriais e Cibersegurança</h2>
+                    <p class="text-gray-400">Conectividade segura entre equipamentos</p>
+                </div>
+            </div>
+
+            <div class="bg-primary-800 rounded-2xl p-8 mb-6">
+                <p class="text-gray-300 text-lg mb-6">
+                    Projeto e implantação de <strong>redes industriais</strong> para comunicação entre CLPs, IHMs, sensores e sistemas de supervisão. Garantimos <strong>cibersegurança industrial</strong> para proteger seus sistemas contra ameaças.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-primary-700 p-5 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-3">Protocolos de Comunicação</h4>
+                        <ul class="text-sm text-gray-400 space-y-1">
+                            <li>• Profinet e Profibus</li>
+                            <li>• Modbus RTU/TCP</li>
+                            <li>• EtherNet/IP</li>
+                            <li>• EtherCAT</li>
+                            <li>• OPC-UA</li>
+                            <li>• MQTT para IoT</li>
+                        </ul>
+                    </div>
+                    <div class="bg-primary-700 p-5 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-3">Cibersegurança Industrial</h4>
+                        <ul class="text-sm text-gray-400 space-y-1">
+                            <li>• Segmentação de redes OT/IT</li>
+                            <li>• Firewalls industriais</li>
+                            <li>• VPN para acesso remoto</li>
+                            <li>• Monitoramento de tráfego</li>
+                            <li>• Backup e recuperação</li>
+                            <li>• Políticas de acesso</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-tag">Switches gerenciáveis</span>
+                    <span class="tech-tag">Fibra óptica</span>
+                    <span class="tech-tag">Redundância</span>
+                    <span class="tech-tag">IEC 62443</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Projetos Elétricos -->
+        <section id="eletrico" class="mb-20 scroll-mt-32 fade-in">
+            <div class="flex items-center mb-6">
+                <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mr-4">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold">Projetos Elétricos Industriais</h2>
+                    <p class="text-gray-400">Painéis, infraestrutura e dimensionamento</p>
+                </div>
+            </div>
+
+            <div class="bg-primary-800 rounded-2xl p-8 mb-6">
+                <p class="text-gray-300 text-lg mb-6">
+                    Desenvolvimento de <strong>projetos elétricos industriais</strong> completos, desde o dimensionamento até a montagem e comissionamento. Painéis de comando, CCMs, infraestrutura elétrica e documentação técnica com <strong>ART (Anotação de Responsabilidade Técnica)</strong>.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Painéis de Comando</h4>
+                        <p class="text-sm text-gray-400">Projeto, montagem e instalação de quadros elétricos.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">CCMs</h4>
+                        <p class="text-sm text-gray-400">Centros de Controle de Motores com proteções adequadas.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Inversores</h4>
+                        <p class="text-sm text-gray-400">Dimensionamento e instalação de inversores de frequência.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Soft-starters</h4>
+                        <p class="text-sm text-gray-400">Partida suave para motores de grande porte.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-tag">AutoCAD Electrical</span>
+                    <span class="tech-tag">EPLAN</span>
+                    <span class="tech-tag">SEE Electrical</span>
+                    <span class="tech-tag">Diagramas unifilares</span>
+                    <span class="tech-tag">Lista de materiais</span>
+                    <span class="tech-tag">ART CREA</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Segurança em Máquinas -->
+        <section id="seguranca" class="mb-20 scroll-mt-32 fade-in">
+            <div class="flex items-center mb-6">
+                <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mr-4">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold">Segurança em Máquinas - NR12</h2>
+                    <p class="text-gray-400">Proteções e sistemas de segurança conforme normas</p>
+                </div>
+            </div>
+
+            <div class="bg-primary-800 rounded-2xl p-8 mb-6">
+                <p class="text-gray-300 text-lg mb-6">
+                    A <strong>NR12</strong> estabelece requisitos mínimos para garantir a segurança de trabalhadores que operam máquinas e equipamentos. Implementamos <strong>sistemas de segurança</strong> completos com análise de risco, projeto e documentação.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">CLPs de Segurança</h4>
+                        <p class="text-sm text-gray-400">Siemens F-CPU, Allen Bradley GuardLogix, Pilz.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Relés de Segurança</h4>
+                        <p class="text-sm text-gray-400">Pilz PNOZ, Siemens 3SK, Schneider Preventa.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Cortinas de Luz</h4>
+                        <p class="text-sm text-gray-400">Proteção de áreas de risco sem barreiras físicas.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Comando Bimanual</h4>
+                        <p class="text-sm text-gray-400">Operação segura de prensas e máquinas de risco.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-tag">Análise de risco</span>
+                    <span class="tech-tag">Categoria de segurança</span>
+                    <span class="tech-tag">SIL / PL</span>
+                    <span class="tech-tag">Sensores de segurança</span>
+                    <span class="tech-tag">Chaves de intertravamento</span>
+                    <span class="tech-tag">Pedais de segurança</span>
+                    <span class="tech-tag">Botões de emergência</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Visão Computacional -->
+        <section id="visao" class="mb-20 scroll-mt-32 fade-in">
+            <div class="flex items-center mb-6">
+                <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mr-4">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold">Visão Computacional Industrial</h2>
+                    <p class="text-gray-400">Inspeção automática e controle de qualidade</p>
+                </div>
+            </div>
+
+            <div class="bg-primary-800 rounded-2xl p-8 mb-6">
+                <p class="text-gray-300 text-lg mb-6">
+                    Sistemas de <strong>visão computacional</strong> para inspeção automática, controle de qualidade, contagem de peças e reconhecimento de padrões. Utilizamos câmeras industriais e algoritmos de <strong>inteligência artificial</strong> para detectar defeitos e garantir a qualidade.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-4 mb-6">
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Inspeção de Qualidade</h4>
+                        <p class="text-sm text-gray-400">Detecção de defeitos, verificação dimensional, OCR.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Contagem Automática</h4>
+                        <p class="text-sm text-gray-400">Contagem de peças em esteiras e linhas de produção.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Guiamento de Robôs</h4>
+                        <p class="text-sm text-gray-400">Posicionamento e orientação por visão para robôs.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-tag">OpenCV</span>
+                    <span class="tech-tag">YOLO</span>
+                    <span class="tech-tag">Cognex</span>
+                    <span class="tech-tag">Keyence</span>
+                    <span class="tech-tag">Basler</span>
+                    <span class="tech-tag">Deep Learning</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Robótica -->
+        <section id="robotica" class="mb-20 scroll-mt-32 fade-in">
+            <div class="flex items-center mb-6">
+                <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mr-4">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold">Robótica Industrial</h2>
+                    <p class="text-gray-400">Programação e integração de robôs</p>
+                </div>
+            </div>
+
+            <div class="bg-primary-800 rounded-2xl p-8 mb-6">
+                <p class="text-gray-300 text-lg mb-6">
+                    Programação e integração de <strong>robôs industriais</strong> para soldagem, pintura, montagem, paletização e manipulação. Desenvolvemos <strong>células robotizadas</strong> completas com segurança e integração com sistemas de produção.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-primary-700 p-5 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-3">Aplicações</h4>
+                        <ul class="text-sm text-gray-400 space-y-1">
+                            <li>• Soldagem MIG/MAG e TIG</li>
+                            <li>• Paletização e despaletização</li>
+                            <li>• Pick and place</li>
+                            <li>• Montagem e manipulação</li>
+                            <li>• Pintura e acabamento</li>
+                        </ul>
+                    </div>
+                    <div class="bg-primary-700 p-5 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-3">Marcas</h4>
+                        <ul class="text-sm text-gray-400 space-y-1">
+                            <li>• ABB</li>
+                            <li>• FANUC</li>
+                            <li>• KUKA</li>
+                            <li>• Universal Robots (Cobots)</li>
+                            <li>• Yaskawa Motoman</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-tag">Programação offline</span>
+                    <span class="tech-tag">Simulação</span>
+                    <span class="tech-tag">Integração com CLP</span>
+                    <span class="tech-tag">Células automatizadas</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Instrumentação -->
+        <section id="instrumentacao" class="mb-20 scroll-mt-32 fade-in">
+            <div class="flex items-center mb-6">
+                <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mr-4">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold">Instrumentação Industrial</h2>
+                    <p class="text-gray-400">Sensores, transmissores e sistemas de medição</p>
+                </div>
+            </div>
+
+            <div class="bg-primary-800 rounded-2xl p-8 mb-6">
+                <p class="text-gray-300 text-lg mb-6">
+                    Especificação, instalação e configuração de <strong>instrumentos de medição industrial</strong>. Sensores de temperatura, pressão, vazão, nível, vibração e muito mais para controle preciso de processos.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Temperatura</h4>
+                        <p class="text-sm text-gray-400">Termopares, PT100, pirômetros, controladores PID.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Pressão</h4>
+                        <p class="text-sm text-gray-400">Transmissores, manômetros, pressostatos.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Vazão</h4>
+                        <p class="text-sm text-gray-400">Medidores eletromagnéticos, ultrassônicos, Coriolis.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Nível</h4>
+                        <p class="text-sm text-gray-400">Ultrassônico, radar, capacitivo, boia.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-tag">Endress+Hauser</span>
+                    <span class="tech-tag">Siemens</span>
+                    <span class="tech-tag">Yokogawa</span>
+                    <span class="tech-tag">HART</span>
+                    <span class="tech-tag">4-20mA</span>
+                    <span class="tech-tag">Calibração</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Setores Específicos -->
+        <section id="setores" class="mb-20 scroll-mt-32 fade-in">
+            <div class="flex items-center mb-6">
+                <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mr-4">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold">Automação para Setores Específicos</h2>
+                    <p class="text-gray-400">Expertise em segmentos industriais de Blumenau e região</p>
+                </div>
+            </div>
+
+            <div class="bg-primary-800 rounded-2xl p-8 mb-6">
+                <p class="text-gray-300 text-lg mb-6">
+                    Conhecimento especializado em setores industriais fortes na região de Blumenau e Vale do Itajaí.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+                    <div class="bg-primary-700 p-5 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-3">Indústria Têxtil</h4>
+                        <p class="text-sm text-gray-400 mb-2">Automação de teares, tinturarias, estamparias e acabamento.</p>
+                        <ul class="text-xs text-gray-500 space-y-1">
+                            <li>• Controle de receitas</li>
+                            <li>• Dosagem de corantes</li>
+                            <li>• Controle de temperatura</li>
+                        </ul>
+                    </div>
+                    <div class="bg-primary-700 p-5 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-3">Cervejarias</h4>
+                        <p class="text-sm text-gray-400 mb-2">Automação de brassagem, fermentação e envase.</p>
+                        <ul class="text-xs text-gray-500 space-y-1">
+                            <li>• Controle de temperatura</li>
+                            <li>• Receitas automatizadas</li>
+                            <li>• CIP (Clean in Place)</li>
+                        </ul>
+                    </div>
+                    <div class="bg-primary-700 p-5 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-3">Refrigeração</h4>
+                        <p class="text-sm text-gray-400 mb-2">Câmaras frias, chillers e sistemas de climatização.</p>
+                        <ul class="text-xs text-gray-500 space-y-1">
+                            <li>• Controle de temperatura</li>
+                            <li>• Monitoramento remoto</li>
+                            <li>• Alarmes e alertas</li>
+                        </ul>
+                    </div>
+                    <div class="bg-primary-700 p-5 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-3">Plásticos</h4>
+                        <p class="text-sm text-gray-400 mb-2">Injetoras, extrusoras, sopradoras.</p>
+                        <ul class="text-xs text-gray-500 space-y-1">
+                            <li>• Controle de ciclo</li>
+                            <li>• Monitoramento de produção</li>
+                            <li>• Integração com robôs</li>
+                        </ul>
+                    </div>
+                    <div class="bg-primary-700 p-5 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-3">Metalurgia</h4>
+                        <p class="text-sm text-gray-400 mb-2">Fornos, tratamento térmico, usinagem.</p>
+                        <ul class="text-xs text-gray-500 space-y-1">
+                            <li>• Controle de atmosfera</li>
+                            <li>• Rampas de temperatura</li>
+                            <li>• Rastreabilidade</li>
+                        </ul>
+                    </div>
+                    <div class="bg-primary-700 p-5 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-3">Alimentos</h4>
+                        <p class="text-sm text-gray-400 mb-2">Processos, embalagem e rastreabilidade.</p>
+                        <ul class="text-xs text-gray-500 space-y-1">
+                            <li>• HACCP e APPCC</li>
+                            <li>• Dosagem e pesagem</li>
+                            <li>• Controle de lotes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: IoT -->
+        <section id="iot" class="mb-20 scroll-mt-32 fade-in">
+            <div class="flex items-center mb-6">
+                <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mr-4">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold">IoT e Sensores Inteligentes</h2>
+                    <p class="text-gray-400">Monitoramento remoto e conectividade</p>
+                </div>
+            </div>
+
+            <div class="bg-primary-800 rounded-2xl p-8 mb-6">
+                <p class="text-gray-300 text-lg mb-6">
+                    Desenvolvimento de soluções <strong>IoT (Internet das Coisas)</strong> para monitoramento remoto de equipamentos, telemetria e coleta de dados. Utilizamos <strong>ESP32</strong>, <strong>MQTT</strong> e plataformas cloud para conectar seus equipamentos à internet.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Hardware</h4>
+                        <p class="text-sm text-gray-400">ESP32, Raspberry Pi, Arduino, sensores diversos.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Conectividade</h4>
+                        <p class="text-sm text-gray-400">WiFi, LoRa, 4G/LTE, Bluetooth, Zigbee.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Protocolos</h4>
+                        <p class="text-sm text-gray-400">MQTT, HTTP/REST, WebSocket, Modbus.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Plataformas</h4>
+                        <p class="text-sm text-gray-400">ThingsBoard, AWS IoT, Azure IoT, Node-RED.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-tag">ESP32</span>
+                    <span class="tech-tag">MQTT</span>
+                    <span class="tech-tag">InfluxDB</span>
+                    <span class="tech-tag">Grafana</span>
+                    <span class="tech-tag">Alertas via Telegram</span>
+                    <span class="tech-tag">Dashboards web</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Automação Residencial -->
+        <section id="residencial" class="mb-20 scroll-mt-32 fade-in">
+            <div class="flex items-center mb-6">
+                <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mr-4">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold">Automação Residencial (Domótica)</h2>
+                    <p class="text-gray-400">Casas inteligentes para Blumenau e região</p>
+                </div>
+            </div>
+
+            <div class="bg-primary-800 rounded-2xl p-8 mb-6">
+                <p class="text-gray-300 text-lg mb-6">
+                    Transforme sua casa em uma <strong>casa inteligente</strong>. Controle iluminação, climatização, cortinas e eletrodomésticos por voz ou smartphone. Soluções com <strong>Alexa</strong>, <strong>Google Home</strong> e sistemas profissionais.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Iluminação</h4>
+                        <p class="text-sm text-gray-400">Cenas, dimmers, sensores de presença, automação.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Climatização</h4>
+                        <p class="text-sm text-gray-400">Ar-condicionado, aquecimento, controle por zona.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Áudio e Vídeo</h4>
+                        <p class="text-sm text-gray-400">Sonorização ambiente, home theater, multiroom.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Controle por Voz</h4>
+                        <p class="text-sm text-gray-400">Alexa, Google Assistant, Apple HomeKit.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-tag">Amazon Alexa</span>
+                    <span class="tech-tag">Google Home</span>
+                    <span class="tech-tag">Apple HomeKit</span>
+                    <span class="tech-tag">Tuya</span>
+                    <span class="tech-tag">Sonoff</span>
+                    <span class="tech-tag">Home Assistant</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Controle de Acesso -->
+        <section id="acesso" class="mb-20 scroll-mt-32 fade-in">
+            <div class="flex items-center mb-6">
+                <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mr-4">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold">Controle de Acesso e Segurança</h2>
+                    <p class="text-gray-400">Portaria automatizada, alarmes e CFTV</p>
+                </div>
+            </div>
+
+            <div class="bg-primary-800 rounded-2xl p-8 mb-6">
+                <p class="text-gray-300 text-lg mb-6">
+                    Sistemas de <strong>controle de acesso</strong> para empresas, condomínios e residências. Portaria automatizada, alarmes antifurto, portões eletrônicos e <strong>CFTV</strong> com monitoramento remoto.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Controle de Acesso</h4>
+                        <p class="text-sm text-gray-400">Biometria, cartão, senha, facial, QR Code.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Alarmes</h4>
+                        <p class="text-sm text-gray-400">Sensores de presença, abertura, quebra de vidro.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">CFTV</h4>
+                        <p class="text-sm text-gray-400">Câmeras IP, NVR, acesso remoto pelo celular.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Portões</h4>
+                        <p class="text-sm text-gray-400">Automatização, controle remoto, integração.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-tag">Intelbras</span>
+                    <span class="tech-tag">Hikvision</span>
+                    <span class="tech-tag">Control ID</span>
+                    <span class="tech-tag">Linear</span>
+                    <span class="tech-tag">Portaria virtual</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Consultoria -->
+        <section id="consultoria" class="mb-20 scroll-mt-32 fade-in">
+            <div class="flex items-center mb-6">
+                <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mr-4">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold">Consultoria e Diagnóstico</h2>
+                    <p class="text-gray-400">Análise, otimização e documentação técnica</p>
+                </div>
+            </div>
+
+            <div class="bg-primary-800 rounded-2xl p-8 mb-6">
+                <p class="text-gray-300 text-lg mb-6">
+                    Serviços de <strong>consultoria técnica</strong> em automação industrial. Diagnóstico de problemas, análise de falhas, otimização de processos e elaboração de documentação técnica.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Diagnóstico</h4>
+                        <p class="text-sm text-gray-400">Análise de sistemas existentes e identificação de melhorias.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Análise de Falhas</h4>
+                        <p class="text-sm text-gray-400">Investigação de problemas e soluções definitivas.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Otimização</h4>
+                        <p class="text-sm text-gray-400">Melhoria de performance e redução de custos.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Documentação</h4>
+                        <p class="text-sm text-gray-400">Diagramas, manuais, procedimentos e treinamento.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-tag">Especificação técnica</span>
+                    <span class="tech-tag">Memorial descritivo</span>
+                    <span class="tech-tag">Treinamento</span>
+                    <span class="tech-tag">Suporte técnico</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: IA Industrial -->
+        <section id="ia" class="mb-20 scroll-mt-32 fade-in">
+            <div class="flex items-center mb-6">
+                <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mr-4">
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold">Inteligência Artificial para Indústria</h2>
+                    <p class="text-gray-400">Análise preditiva e otimização inteligente</p>
+                </div>
+            </div>
+
+            <div class="bg-primary-800 rounded-2xl p-8 mb-6">
+                <p class="text-gray-300 text-lg mb-6">
+                    Aplicação de <strong>Inteligência Artificial</strong> e <strong>Machine Learning</strong> para otimização de processos industriais. Manutenção preditiva, análise de dados, detecção de anomalias e tomada de decisão automatizada.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-4 mb-6">
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Manutenção Preditiva</h4>
+                        <p class="text-sm text-gray-400">Previsão de falhas antes que ocorram com base em dados históricos.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Otimização de Processos</h4>
+                        <p class="text-sm text-gray-400">Ajuste automático de parâmetros para máxima eficiência.</p>
+                    </div>
+                    <div class="bg-primary-700 p-4 rounded-xl">
+                        <h4 class="font-semibold text-accent-400 mb-2">Detecção de Anomalias</h4>
+                        <p class="text-sm text-gray-400">Identificação de comportamentos anormais em tempo real.</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">TensorFlow</span>
+                    <span class="tech-tag">Scikit-learn</span>
+                    <span class="tech-tag">Análise de vibração</span>
+                    <span class="tech-tag">Análise de corrente</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-gradient-to-r from-accent-500/20 to-primary-700 rounded-3xl p-8 md:p-12 text-center fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Pronto para <span class="gradient-text">modernizar</span> sua empresa?
+            </h2>
+            <p class="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
+                Entre em contato para uma análise gratuita. Vamos entender suas necessidades e propor a melhor solução.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/5547988677798?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20automação."
+                   target="_blank"
+                   class="inline-flex items-center justify-center gradient-bg text-white px-8 py-4 rounded-xl font-semibold hover:opacity-90 transition-opacity">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    Falar no WhatsApp
+                </a>
+                <a href="index.html#contato"
+                   class="inline-flex items-center justify-center border-2 border-accent-500 text-accent-400 px-8 py-4 rounded-xl font-semibold hover:bg-accent-500/10 transition-colors">
+                    Formulário de Contato
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 border-t border-primary-700 py-12 mt-12">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="index.html" class="flex items-center space-x-2 mb-4">
+                        <img src="logo1.png" alt="Blumenau Automação" class="h-8 w-auto">
+                        <span class="text-lg font-bold gradient-text">Blumenau Automação</span>
+                    </a>
+                    <p class="text-gray-400 text-sm">
+                        Automação Industrial e Residencial em Blumenau e região. Engenheiros UFSC com registro CREA.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Soluções</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#retrofit" class="hover:text-accent-400">Retrofit</a></li>
+                        <li><a href="#clps" class="hover:text-accent-400">CLPs e IHMs</a></li>
+                        <li><a href="#industria40" class="hover:text-accent-400">Indústria 4.0</a></li>
+                        <li><a href="#residencial" class="hover:text-accent-400">Automação Residencial</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Links</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="index.html#sobre" class="hover:text-accent-400">Sobre Nós</a></li>
+                        <li><a href="index.html#produtos" class="hover:text-accent-400">Produtos</a></li>
+                        <li><a href="index.html#mvp" class="hover:text-accent-400">MVP Gratuito</a></li>
+                        <li><a href="index.html#contato" class="hover:text-accent-400">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contato</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>(47) 98867-7798</li>
+                        <li>contato@blumenauautomacao.com.br</li>
+                        <li>Blumenau, SC</li>
+                    </ul>
+                    <div class="flex space-x-3 mt-4">
+                        <a href="https://linkedin.com/company/blumenauautomacao" target="_blank" class="w-10 h-10 bg-primary-700 hover:bg-accent-500 rounded-lg flex items-center justify-center transition-colors" aria-label="LinkedIn">
+                            <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/blumenauautomacao" target="_blank" class="w-10 h-10 bg-primary-700 hover:bg-accent-500 rounded-lg flex items-center justify-center transition-colors" aria-label="Instagram">
+                            <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-primary-700 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 Blumenau Automação. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/5547988677798?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
+           target="_blank"
+           aria-label="Contato via WhatsApp">
+            <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        // Mobile Menu
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Fade-in animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Update cart counter from localStorage
+        function updateCartCount() {
+            const cart = JSON.parse(localStorage.getItem('blumenau_cart') || '[]');
+            const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+            const cartCountEl = document.getElementById('cart-count');
+            if (cartCountEl) {
+                if (count > 0) {
+                    cartCountEl.textContent = count > 99 ? '99+' : count;
+                    cartCountEl.classList.remove('hidden');
+                } else {
+                    cartCountEl.classList.add('hidden');
+                }
+            }
+        }
+        updateCartCount();
+        window.addEventListener('storage', updateCartCount);
+    </script>
+</body>
+</html>

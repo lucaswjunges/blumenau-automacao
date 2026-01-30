@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guia completo sobre OEE (Overall Equipment Effectiveness) para medir e melhorar a eficiência de produção industrial. Fórmulas, benchmarks e ferramentas.">
+    <meta name="keywords" content="OEE, eficiência, produção, indústria 4.0, manufatura, disponibilidade, performance, qualidade, lean">
+    <meta name="author" content="Blumenau Automação">
+    <title>OEE: Como Medir e Melhorar a Eficiência de Produção | Blumenau Automação</title>
+    <meta name="theme-color" content="#1a1a2e">
+
+    <!-- Open Graph / LinkedIn / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.blumenauautomacao.com.br/artigos/oee-eficiencia-producao.html">
+    <meta property="og:title" content="OEE: Como Medir e Melhorar a Eficiência de Produção">
+    <meta property="og:description" content="Guia completo sobre OEE (Overall Equipment Effectiveness) para medir e melhorar a eficiência de produção industrial.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=1200&h=630&fit=crop">
+
+    <link rel="icon" type="image/png" sizes="512x512" href="/logo1.png">
+    <link rel="apple-touch-icon" href="/logo1.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-dark: #1a1a2e;
+            --primary-blue: #16213e;
+            --accent-pink: #195F79;
+            --accent-pink-hover: #0f495f;
+            --accent-neon: #00d4ff;
+            --text-dark: #1a1a2e;
+            --text-gray: #6b7280;
+            --text-light: #9ca3af;
+            --bg-white: #ffffff;
+            --bg-light: #f8f9fa;
+            --bg-gray: #f3f4f6;
+            --border-light: #e5e7eb;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.7;
+            background: var(--bg-white);
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(26, 26, 46, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(31, 43, 71, 0.8);
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+        }
+
+        .logo-img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+        }
+
+        .logo-text span {
+            color: #06b6d4;
+        }
+
+        .footer-brand .logo-text {
+            color: white;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #d1d5db;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            color: var(--accent-pink);
+        }
+
+        .nav-cta {
+            background: var(--accent-pink);
+            color: white !important;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .nav-cta:hover {
+            background: var(--accent-pink-hover);
+        }
+
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .mobile-toggle span {
+            width: 25px;
+            height: 2px;
+            background: var(--primary-dark);
+        }
+
+        /* ===== ARTICLE HERO ===== */
+        .article-hero {
+            padding: 140px 2rem 60px;
+            background: linear-gradient(135deg, #0a0a14 0%, #1a1a2e 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .article-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1200&h=800&fit=crop') center/cover;
+            opacity: 0.3;
+            mask-image: linear-gradient(to left, rgba(0,0,0,0.5), transparent);
+            -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.5), transparent);
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .breadcrumb a:hover {
+            color: var(--accent-neon);
+        }
+
+        .breadcrumb span {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .breadcrumb-current {
+            color: var(--accent-pink) !important;
+        }
+
+        .article-category {
+            display: inline-block;
+            background: var(--accent-pink);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+        }
+
+        .article-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .author-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-pink), var(--primary-blue));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            overflow: hidden;
+        }
+        .author-avatar img { width: 100%; height: 100%; object-fit: cover; }
+        .author-link { color: inherit; text-decoration: none; transition: var(--transition); }
+        .author-link:hover { color: var(--accent-neon); }
+
+        /* ===== ARTICLE CONTENT ===== */
+        .article-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 4rem;
+        }
+
+        .article-content {
+            max-width: 800px;
+        }
+
+        .article-content h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin: 2.5rem 0 1rem;
+            padding-top: 1rem;
+        }
+
+        .article-content h3 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            margin: 2rem 0 1rem;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-gray);
+            font-size: 1.1rem;
+        }
+
+        .article-content p:first-of-type {
+            font-size: 1.25rem;
+            color: var(--text-dark);
+            font-weight: 400;
+        }
+
+        .article-content ul, .article-content ol {
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .article-content li {
+            margin-bottom: 0.75rem;
+            color: var(--text-gray);
+            font-size: 1.05rem;
+        }
+
+        .article-content blockquote {
+            border-left: 4px solid var(--accent-pink);
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            background: var(--bg-light);
+            border-radius: 0 12px 12px 0;
+            font-style: italic;
+            font-size: 1.15rem;
+            color: var(--primary-dark);
+        }
+
+        .article-content code {
+            background: var(--bg-gray);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.9em;
+            color: var(--accent-pink);
+        }
+
+        .article-content pre {
+            background: var(--primary-dark);
+            color: #e5e7eb;
+            padding: 1.5rem;
+            border-radius: 12px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        .article-content pre code {
+            background: transparent;
+            color: inherit;
+            padding: 0;
+        }
+
+        .article-content img {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .article-content a {
+            color: var(--accent-pink);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.1), rgba(22, 33, 62, 0.1));
+            border: 1px solid rgba(233, 69, 96, 0.2);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .info-box-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 0.75rem;
+        }
+
+        .info-box p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Formula Box */
+        .formula-box {
+            background: var(--primary-dark);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .formula-box h4 {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .formula {
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: 'Fira Code', monospace;
+            color: var(--accent-neon);
+        }
+
+        /* Metric Card */
+        .metric-card {
+            border: 2px solid var(--border-light);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            background: var(--bg-white);
+        }
+
+        .metric-card.green {
+            border-color: #10b981;
+            background: rgba(16, 185, 129, 0.05);
+        }
+
+        .metric-card.yellow {
+            border-color: #f59e0b;
+            background: rgba(245, 158, 11, 0.05);
+        }
+
+        .metric-card.red {
+            border-color: #ef4444;
+            background: rgba(239, 68, 68, 0.05);
+        }
+
+        .metric-card h4 {
+            color: var(--primary-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-card .value {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-card.green .value { color: #10b981; }
+        .metric-card.yellow .value { color: #f59e0b; }
+        .metric-card.red .value { color: #ef4444; }
+
+        .metric-card p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* ===== SIDEBAR ===== */
+        .article-sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .sidebar-card {
+            background: var(--bg-white);
+            border: 1px solid var(--border-light);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .sidebar-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        .toc-list a {
+            color: var(--text-gray);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: block;
+            padding: 0.5rem;
+            border-radius: 6px;
+            transition: var(--transition);
+        }
+
+        .toc-list a:hover, .toc-list a.active {
+            background: var(--bg-gray);
+            color: var(--accent-pink);
+        }
+
+        .sidebar-cta {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary-blue));
+            color: white;
+            text-align: center;
+        }
+
+        .sidebar-cta h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .sidebar-cta p {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 1rem;
+        }
+
+        .sidebar-cta .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--accent-pink);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .sidebar-cta .btn:hover {
+            background: var(--accent-pink-hover);
+            transform: translateY(-2px);
+        }
+
+        /* Share buttons */
+        .share-buttons {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .share-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-gray);
+            color: var(--text-gray);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .share-btn:hover {
+            background: var(--accent-pink);
+            color: white;
+        }
+
+        /* ===== AUTHOR BOX ===== */
+        .author-box {
+            display: flex;
+            gap: 1.5rem;
+            padding: 2rem;
+            background: var(--bg-light);
+            border-radius: 16px;
+            margin: 3rem 0;
+        }
+
+        .author-box-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-pink), var(--primary-blue));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+        .author-box-avatar img { width: 100%; height: 100%; object-fit: cover; }
+        .author-box-info h4 a { color: var(--primary-dark); text-decoration: none; transition: var(--transition); }
+        .author-box-info h4 a:hover { color: var(--accent-pink); }
+
+        .author-box-info h4 {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            margin-bottom: 0.25rem;
+        }
+
+        .author-box-info .role {
+            font-size: 0.9rem;
+            color: var(--accent-pink);
+            margin-bottom: 0.75rem;
+        }
+
+        .author-box-info p {
+            font-size: 0.95rem;
+            color: var(--text-gray);
+            margin: 0;
+        }
+
+        /* ===== RELATED ARTICLES ===== */
+        .related-section {
+            padding: 4rem 2rem;
+            background: var(--bg-light);
+        }
+
+        .related-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .related-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .related-card {
+            background: var(--bg-white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .related-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .related-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .related-card-content {
+            padding: 1.5rem;
+        }
+
+        .related-card-category {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--accent-pink);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .related-card h3 {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            line-height: 1.4;
+        }
+
+        /* ===== CTA SECTION ===== */
+        .article-cta {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary-blue));
+            text-align: center;
+            color: white;
+        }
+
+        .article-cta h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-cta p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .article-cta .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--accent-pink);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .article-cta .btn-primary:hover {
+            background: var(--accent-pink-hover);
+            transform: translateY(-3px);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--primary-dark);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        footer p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--accent-pink);
+            text-decoration: none;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .article-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .article-sidebar {
+                position: static;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-toggle {
+                display: flex;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .article-sidebar {
+                grid-template-columns: 1fr;
+            }
+
+            .related-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .author-box {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .formula {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8XG8XCE255"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-8XG8XCE255');
+</script>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../logo1.png" alt="Blumenau Automação" class="logo-img">
+                <div class="logo-text">Blumenau <span>Automação</span></div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="../know-how.html" class="nav-link">Know-How</a></li>
+                <li><a href="../index.html#cases" class="nav-link">Cases</a></li>
+                <li><a href="../index.html#sobre" class="nav-link">Empresa</a></li>
+                <li><a href="../index.html#contato" class="nav-link nav-cta">Fale Conosco</a></li>
+            </ul>
+            <div class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Article Hero -->
+    <section class="article-hero">
+        <div class="hero-container">
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a>
+                <span>›</span>
+                <a href="../know-how.html">Know-How</a>
+                <span>›</span>
+                <span class="breadcrumb-current">OEE</span>
+            </nav>
+            <span class="article-category">Indústria 4.0</span>
+            <h1>OEE: Como Medir e Melhorar a Eficiência de Produção</h1>
+            <div class="article-meta">
+                <div class="article-meta-item">
+                    <a href="https://www.linkedin.com/in/lucas-william-junges-a95b00143/" target="_blank" rel="noopener"><div class="author-avatar"><img src="../1674241559977.jpeg" alt="Lucas Junges"></div></a>
+                    <a href="https://www.linkedin.com/in/lucas-william-junges-a95b00143/" target="_blank" rel="noopener" class="author-link">Lucas Junges</a>
+                </div>
+                <div class="article-meta-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="16" y1="2" x2="16" y2="6"/>
+                        <line x1="8" y1="2" x2="8" y2="6"/>
+                        <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    <span>21 de Dezembro, 2024</span>
+                </div>
+                <div class="article-meta-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                    <span>13 min de leitura</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <div class="article-wrapper">
+        <article class="article-content">
+            <p>
+                OEE (Overall Equipment Effectiveness) é o indicador mais importante para medir a eficiência real de equipamentos de produção. Desenvolvido como parte do TPM (Total Productive Maintenance), o OEE revela perdas ocultas que planilhas tradicionais de produção simplesmente não capturam. A indústria têxtil de Blumenau, com suas tecelagens e confecções, pode se beneficiar enormemente deste indicador.
+            </p>
+
+            <p>
+                Neste guia, você vai aprender a calcular o OEE corretamente, interpretar os resultados, identificar as principais perdas e implementar melhorias que impactam diretamente o faturamento.
+            </p>
+
+            <h2 id="conceito">O que é OEE e por que ele importa</h2>
+
+            <p>
+                OEE é um indicador que combina três fatores críticos da produção em um único número percentual:
+            </p>
+
+            <div class="formula-box">
+                <h4>Fórmula do OEE</h4>
+                <div class="formula">OEE = Disponibilidade × Performance × Qualidade</div>
+            </div>
+
+            <p>
+                Cada fator captura um tipo diferente de perda:
+            </p>
+
+            <ul>
+                <li><strong>Disponibilidade:</strong> Tempo real de produção vs. tempo planejado (paradas)</li>
+                <li><strong>Performance:</strong> Velocidade real vs. velocidade ideal (lentidão)</li>
+                <li><strong>Qualidade:</strong> Peças boas vs. total produzido (refugos e retrabalho)</li>
+            </ul>
+
+            <blockquote>
+                "Uma máquina que parece estar produzindo pode estar desperdiçando 40% da sua capacidade em perdas invisíveis. O OEE torna essas perdas visíveis."
+            </blockquote>
+
+            <h3>Por que OEE é superior a outros indicadores</h3>
+
+            <p>
+                Indicadores tradicionais como "produção do dia" ou "tempo de máquina ligada" são enganosos:
+            </p>
+
+            <ul>
+                <li>Não revelam <strong>por que</strong> a produção está abaixo do potencial</li>
+                <li>Mascaram perdas quando há horas extras para "compensar"</li>
+                <li>Não distinguem entre problemas de máquina, processo ou qualidade</li>
+            </ul>
+
+            <p>
+                O OEE desmembra a eficiência em componentes acionáveis. Você sabe exatamente onde atacar.
+            </p>
+
+            <h2 id="calculo">Como calcular cada componente</h2>
+
+            <h3>1. Disponibilidade</h3>
+
+            <p>
+                Mede quanto tempo a máquina realmente produziu em relação ao tempo programado.
+            </p>
+
+            <div class="formula-box">
+                <h4>Fórmula da Disponibilidade</h4>
+                <div class="formula">Disponibilidade = Tempo Operacional / Tempo Planejado × 100%</div>
+            </div>
+
+            <p><strong>Tempo Planejado</strong> = Tempo total do turno - Paradas programadas (almoço, reuniões, manutenção preventiva)</p>
+
+            <p><strong>Tempo Operacional</strong> = Tempo Planejado - Paradas não programadas (quebras, setup, falta de material, etc.)</p>
+
+            <pre><code>Exemplo:
+Turno de 8 horas (480 min)
+- Almoço: 60 min
+- Reunião matinal: 15 min
+= Tempo Planejado: 405 min
+
+Paradas não programadas:
+- Setup de máquina: 30 min
+- Quebra de agulha: 15 min
+- Falta de linha: 20 min
+= Total paradas: 65 min
+
+Tempo Operacional = 405 - 65 = 340 min
+
+Disponibilidade = 340 / 405 = 83,9%</code></pre>
+
+            <h3>2. Performance</h3>
+
+            <p>
+                Mede se a máquina está operando na velocidade ideal quando está rodando.
+            </p>
+
+            <div class="formula-box">
+                <h4>Fórmula da Performance</h4>
+                <div class="formula">Performance = (Produção Real × Tempo Ciclo Ideal) / Tempo Operacional × 100%</div>
+            </div>
+
+            <p>Ou de forma simplificada:</p>
+
+            <pre><code>Performance = Produção Real / Produção Teórica no Tempo Operacional
+
+Exemplo:
+Tempo Operacional: 340 min
+Tempo ciclo ideal: 0,5 min/peça (120 peças/hora)
+Produção teórica: 340 / 0,5 = 680 peças
+Produção real: 550 peças
+
+Performance = 550 / 680 = 80,9%</code></pre>
+
+            <p>
+                Perdas de performance incluem: micro-paradas (< 5 min), velocidade reduzida, ineficiências do operador.
+            </p>
+
+            <h3>3. Qualidade</h3>
+
+            <p>
+                Mede a proporção de peças boas na produção total.
+            </p>
+
+            <div class="formula-box">
+                <h4>Fórmula da Qualidade</h4>
+                <div class="formula">Qualidade = Peças Boas / Peças Produzidas × 100%</div>
+            </div>
+
+            <pre><code>Exemplo:
+Produção total: 550 peças
+- Refugos: 15 peças
+- Retrabalho: 10 peças
+Peças boas de primeira: 525 peças
+
+Qualidade = 525 / 550 = 95,4%</code></pre>
+
+            <h3>Calculando o OEE final</h3>
+
+            <pre><code>OEE = Disponibilidade × Performance × Qualidade
+OEE = 83,9% × 80,9% × 95,4%
+OEE = 64,8%
+
+Interpretação: A máquina está entregando apenas 64,8%
+da sua capacidade real. 35,2% é perda!</code></pre>
+
+            <h2 id="benchmarks">Benchmarks: o que é um bom OEE?</h2>
+
+            <div class="metric-card green">
+                <h4>Classe Mundial</h4>
+                <div class="value">85%+</div>
+                <p>Referência para manufatura de alto desempenho. Disponibilidade > 90%, Performance > 95%, Qualidade > 99%</p>
+            </div>
+
+            <div class="metric-card yellow">
+                <h4>Bom</h4>
+                <div class="value">65-84%</div>
+                <p>Típico de empresas com programas de melhoria contínua em andamento. Há espaço significativo para ganhos.</p>
+            </div>
+
+            <div class="metric-card red">
+                <h4>Abaixo do esperado</h4>
+                <div class="value">&lt; 65%</div>
+                <p>Indica problemas sérios no processo. Perdas representam mais de 1/3 da capacidade produtiva.</p>
+            </div>
+
+            <div class="info-box">
+                <div class="info-box-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="12" y1="16" x2="12" y2="12"/>
+                        <line x1="12" y1="8" x2="12.01" y2="8"/>
+                    </svg>
+                    Importante
+                </div>
+                <p>
+                    A média da indústria brasileira gira em torno de 50-60%. Se você está acima disso, está melhor que a maioria. Mas há muito espaço para melhorar.
+                </p>
+            </div>
+
+            <h2 id="seis-perdas">As 6 grandes perdas do OEE</h2>
+
+            <p>
+                O OEE foi desenhado para capturar as "6 Grandes Perdas" identificadas pelo TPM:
+            </p>
+
+            <h3>Perdas de Disponibilidade</h3>
+
+            <ol>
+                <li><strong>Quebras e falhas:</strong> Paradas por problemas mecânicos, elétricos, pneumáticos</li>
+                <li><strong>Setup e ajustes:</strong> Tempo de troca de produto, calibração, aquecimento</li>
+            </ol>
+
+            <h3>Perdas de Performance</h3>
+
+            <ol start="3">
+                <li><strong>Micro-paradas:</strong> Interrupções breves (< 5 min), geralmente não registradas</li>
+                <li><strong>Velocidade reduzida:</strong> Máquina operando abaixo da capacidade nominal</li>
+            </ol>
+
+            <h3>Perdas de Qualidade</h3>
+
+            <ol start="5">
+                <li><strong>Defeitos no processo:</strong> Produtos fora de especificação durante produção normal</li>
+                <li><strong>Perdas de startup:</strong> Refugos gerados até estabilizar o processo após parada</li>
+            </ol>
+
+            <h2 id="implementacao">Implementando OEE na sua fábrica</h2>
+
+            <h3>Passo 1: Definir o escopo</h3>
+
+            <p>
+                Comece por um equipamento piloto — preferencialmente um gargalo ou equipamento crítico. Não tente implementar em toda a fábrica de uma vez.
+            </p>
+
+            <h3>Passo 2: Coletar dados</h3>
+
+            <p>
+                Você precisa registrar:
+            </p>
+
+            <ul>
+                <li>Horário de início e fim de cada parada (com motivo)</li>
+                <li>Quantidade produzida por período</li>
+                <li>Quantidade de refugos e retrabalho</li>
+                <li>Tempo ciclo ideal do equipamento</li>
+            </ul>
+
+            <h3>Passo 3: Escolher método de coleta</h3>
+
+            <p>
+                De menor para maior maturidade:
+            </p>
+
+            <ul>
+                <li><strong>Manual (planilhas):</strong> Operador preenche ficha de produção. Baixo custo, alta dependência humana</li>
+                <li><strong>Semi-automático:</strong> Sensores contam peças, operador registra paradas em tablet</li>
+                <li><strong>Automático (IoT):</strong> Sensores + software detectam paradas automaticamente</li>
+            </ul>
+
+            <h3>Passo 4: Calcular e visualizar</h3>
+
+            <pre><code># Python - Cálculo básico de OEE
+def calcular_oee(tempo_planejado, tempo_parado,
+                  producao_real, tempo_ciclo_ideal,
+                  pecas_boas):
+
+    tempo_operacional = tempo_planejado - tempo_parado
+
+    disponibilidade = tempo_operacional / tempo_planejado
+
+    producao_teorica = tempo_operacional / tempo_ciclo_ideal
+    performance = producao_real / producao_teorica
+
+    qualidade = pecas_boas / producao_real
+
+    oee = disponibilidade * performance * qualidade
+
+    return {
+        'disponibilidade': disponibilidade * 100,
+        'performance': performance * 100,
+        'qualidade': qualidade * 100,
+        'oee': oee * 100
+    }
+
+# Exemplo de uso
+resultado = calcular_oee(
+    tempo_planejado=480,    # minutos
+    tempo_parado=80,
+    producao_real=600,
+    tempo_ciclo_ideal=0.5,  # min/peça
+    pecas_boas=570
+)
+print(f"OEE: {resultado['oee']:.1f}%")</code></pre>
+
+            <h3>Passo 5: Analisar e agir</h3>
+
+            <p>
+                O valor do OEE está no que você faz com ele:
+            </p>
+
+            <ul>
+                <li><strong>Se Disponibilidade é baixa:</strong> Foque em reduzir paradas (manutenção preventiva, SMED)</li>
+                <li><strong>Se Performance é baixa:</strong> Investigue micro-paradas e velocidade (ajustes, treinamento)</li>
+                <li><strong>Se Qualidade é baixa:</strong> Análise de causa raiz, controle estatístico de processo</li>
+            </ul>
+
+            <h2 id="ferramentas">Ferramentas para medir OEE</h2>
+
+            <h3>Soluções simples (R$ 0 - 500/mês)</h3>
+
+            <ul>
+                <li><strong>Planilha Excel/Google Sheets:</strong> Templates prontos disponíveis, requer disciplina manual</li>
+                <li><strong>Google Forms + Sheets:</strong> Operador registra paradas no celular, dados consolidam automaticamente</li>
+                <li><strong>Notion/Airtable:</strong> Formulários + dashboards simples</li>
+            </ul>
+
+            <h3>Soluções intermediárias (R$ 500 - 2.000/mês)</h3>
+
+            <ul>
+                <li><strong>Metabase + PostgreSQL:</strong> Dashboard open-source conectado a banco de dados</li>
+                <li><strong>Power BI + Excel Online:</strong> Visualização robusta, integração Microsoft</li>
+                <li><strong>Grafana + InfluxDB:</strong> Para dados de sensores IoT em tempo real</li>
+            </ul>
+
+            <h3>Soluções industriais (R$ 2.000+/mês)</h3>
+
+            <ul>
+                <li><strong>Cogtive:</strong> Solução brasileira especializada em OEE</li>
+                <li><strong>Plex:</strong> MES completo com OEE integrado</li>
+                <li><strong>SAP Digital Manufacturing:</strong> Para quem já usa ecossistema SAP</li>
+                <li><strong>GE Proficy:</strong> Solução industrial robusta</li>
+            </ul>
+
+            <div class="info-box">
+                <div class="info-box-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="12" y1="16" x2="12" y2="12"/>
+                        <line x1="12" y1="8" x2="12.01" y2="8"/>
+                    </svg>
+                    Nossa recomendação
+                </div>
+                <p>
+                    Para PMEs, começar com planilha + Power BI é suficiente para provar valor. Depois, evoluir para sensores IoT (ESP32) + dashboard em tempo real. Investimento gradual com retorno mensurável.
+                </p>
+            </div>
+
+            <h2 id="caso-textil">Caso prático: OEE na indústria têxtil</h2>
+
+            <p>
+                Uma tecelagem de Blumenau implementou OEE em seus teares circulares. Situação inicial:
+            </p>
+
+            <ul>
+                <li>OEE médio: 52%</li>
+                <li>Disponibilidade: 78% (paradas por quebra de agulha e falta de fio)</li>
+                <li>Performance: 72% (micro-paradas não registradas, velocidade reduzida por medo de defeitos)</li>
+                <li>Qualidade: 93% (furos e manchas)</li>
+            </ul>
+
+            <h3>Ações implementadas</h3>
+
+            <ol>
+                <li><strong>Sensores de parada:</strong> Detectam quando tear para e registram automaticamente</li>
+                <li><strong>Manutenção preventiva:</strong> Troca programada de agulhas antes de quebrar</li>
+                <li><strong>Buffer de matéria-prima:</strong> Estoque mínimo de fio ao lado de cada tear</li>
+                <li><strong>Treinamento de operadores:</strong> Ajustes de velocidade com base em dados, não medo</li>
+                <li><strong>Controle de qualidade na fonte:</strong> Sensor de detecção de furos em tempo real</li>
+            </ol>
+
+            <h3>Resultados após 6 meses</h3>
+
+            <ul>
+                <li>OEE: 52% → 71% (+19 pontos percentuais)</li>
+                <li>Disponibilidade: 78% → 88%</li>
+                <li>Performance: 72% → 82%</li>
+                <li>Qualidade: 93% → 98%</li>
+            </ul>
+
+            <p>
+                <strong>Impacto financeiro:</strong> Aumento de 37% na produção efetiva sem investir em novos equipamentos.
+            </p>
+
+            <h2 id="erros">Erros comuns na implementação</h2>
+
+            <ul>
+                <li><strong>Não registrar micro-paradas:</strong> Perda de performance fica mascarada</li>
+                <li><strong>Tempo ciclo ideal irreal:</strong> Performance sempre baixa, desmoraliza equipe</li>
+                <li><strong>Punir operadores pelo OEE:</strong> Leva a manipulação de dados</li>
+                <li><strong>Medir sem agir:</strong> Coletar dados sem plano de ação é desperdício</li>
+                <li><strong>Comparar máquinas incomparáveis:</strong> Cada equipamento tem seu contexto</li>
+            </ul>
+
+            <h2 id="proximos-passos">Próximos passos</h2>
+
+            <p>
+                O OEE é uma jornada, não um destino. Recomendamos:
+            </p>
+
+            <ol>
+                <li>Escolha um equipamento piloto (gargalo ou crítico)</li>
+                <li>Comece com coleta manual por 2 semanas</li>
+                <li>Calcule OEE e identifique a maior perda</li>
+                <li>Implemente uma ação de melhoria</li>
+                <li>Meça novamente e compare</li>
+                <li>Escale para outros equipamentos</li>
+            </ol>
+
+            <p>
+                A Blumenau Automação oferece implementação completa de sistemas de OEE, desde sensores IoT até dashboards em tempo real. Entre em contato para um diagnóstico gratuito da sua operação.
+            </p>
+
+            <!-- Author Box -->
+            <div class="author-box">
+                <a href="https://www.linkedin.com/in/lucas-william-junges-a95b00143/" target="_blank" rel="noopener"><div class="author-box-avatar"><img src="../1674241559977.jpeg" alt="Lucas Junges"></div></a>
+                <div class="author-box-info">
+                    <h4><a href="https://www.linkedin.com/in/lucas-william-junges-a95b00143/" target="_blank" rel="noopener">Lucas Junges</a></h4>
+                    <p class="role">Fundador & CTO, Blumenau Automação</p>
+                    <p>Especialista em automação industrial e IoT. Ajuda indústrias da região a medir e melhorar sua eficiência produtiva.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="article-sidebar">
+            <div class="sidebar-card">
+                <h4 class="sidebar-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="8" y1="6" x2="21" y2="6"/>
+                        <line x1="8" y1="12" x2="21" y2="12"/>
+                        <line x1="8" y1="18" x2="21" y2="18"/>
+                        <line x1="3" y1="6" x2="3.01" y2="6"/>
+                        <line x1="3" y1="12" x2="3.01" y2="12"/>
+                        <line x1="3" y1="18" x2="3.01" y2="18"/>
+                    </svg>
+                    Neste artigo
+                </h4>
+                <ul class="toc-list">
+                    <li><a href="#conceito">O que é OEE</a></li>
+                    <li><a href="#calculo">Como calcular</a></li>
+                    <li><a href="#benchmarks">Benchmarks</a></li>
+                    <li><a href="#seis-perdas">As 6 grandes perdas</a></li>
+                    <li><a href="#implementacao">Implementação</a></li>
+                    <li><a href="#ferramentas">Ferramentas</a></li>
+                    <li><a href="#caso-textil">Caso prático têxtil</a></li>
+                    <li><a href="#erros">Erros comuns</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <h4 class="sidebar-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="18" cy="5" r="3"/>
+                        <circle cx="6" cy="12" r="3"/>
+                        <circle cx="18" cy="19" r="3"/>
+                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                    </svg>
+                    Compartilhar
+                </h4>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn" title="Compartilhar no LinkedIn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn" title="Compartilhar no Twitter">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn" title="Compartilhar no WhatsApp">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn" title="Copiar link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar-card sidebar-cta">
+                <h4>Quer medir o OEE da sua fábrica?</h4>
+                <p>Diagnóstico gratuito da sua operação.</p>
+                <a href="../index.html#contato" class="btn">
+                    Agendar diagnóstico
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Related Articles -->
+    <section class="related-section">
+        <div class="related-container">
+            <h2 class="related-title">Artigos relacionados</h2>
+            <div class="related-grid">
+                <a href="digitalizacao-industrial.html" class="related-card">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop" alt="Digitalização Industrial">
+                    <div class="related-card-content">
+                        <span class="related-card-category">Indústria 4.0</span>
+                        <h3>Digitalização industrial para PMEs</h3>
+                    </div>
+                </a>
+                <a href="esp32-monitoramento.html" class="related-card">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop" alt="ESP32">
+                    <div class="related-card-content">
+                        <span class="related-card-category">IoT</span>
+                        <h3>ESP32 para monitoramento industrial</h3>
+                    </div>
+                </a>
+                <a href="power-bi-dashboards.html" class="related-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Power BI">
+                    <div class="related-card-content">
+                        <span class="related-card-category">Data</span>
+                        <h3>Power BI: dashboards que geram resultados</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="article-cta">
+        <h2>Pronto para medir sua eficiência real?</h2>
+        <p>Agende um diagnóstico gratuito e descubra quanto sua fábrica pode produzir a mais com os mesmos recursos.</p>
+        <a href="../index.html#contato" class="btn-primary">
+            Agendar diagnóstico gratuito
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 <a href="../index.html">Blumenau Automação</a>. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Header scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // TOC active state
+        const tocLinks = document.querySelectorAll('.toc-list a');
+        const sections = document.querySelectorAll('h2[id]');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

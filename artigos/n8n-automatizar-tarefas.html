@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda a automatizar tarefas repetitivas com N8N, a plataforma open-source de automação. Guia completo com exemplos práticos para empresas.">
+    <meta name="keywords" content="N8N, automação, workflow, integração, no-code, produtividade, empresas">
+    <meta name="author" content="Blumenau Automação">
+    <title>N8N: automatize tarefas sem escrever código | Blumenau Automação</title>
+    <meta name="theme-color" content="#1a1a2e">
+
+    <!-- Open Graph / LinkedIn / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.blumenauautomacao.com.br/artigos/n8n-automatizar-tarefas.html">
+    <meta property="og:title" content="N8N: automatize tarefas sem escrever código">
+    <meta property="og:description" content="Aprenda a automatizar tarefas repetitivas com N8N, a plataforma open-source de automação. Guia completo com exemplos práticos.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&h=630&fit=crop">
+
+    <link rel="icon" type="image/png" sizes="512x512" href="/logo1.png">
+    <link rel="apple-touch-icon" href="/logo1.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-dark: #1a1a2e;
+            --primary-blue: #16213e;
+            --accent-pink: #195F79;
+            --accent-pink-hover: #0f495f;
+            --accent-neon: #00d4ff;
+            --text-dark: #1a1a2e;
+            --text-gray: #6b7280;
+            --text-light: #9ca3af;
+            --bg-white: #ffffff;
+            --bg-light: #f8f9fa;
+            --bg-gray: #f3f4f6;
+            --border-light: #e5e7eb;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.7;
+            background: var(--bg-white);
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(26, 26, 46, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid rgba(31, 43, 71, 0.8);
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+        }
+
+        .logo-img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+        }
+
+        .logo-text span {
+            color: #06b6d4;
+        }
+
+        .footer-brand .logo-text {
+            color: white;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #d1d5db;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            color: var(--accent-pink);
+        }
+
+        .nav-cta {
+            background: var(--accent-pink);
+            color: white !important;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .nav-cta:hover {
+            background: var(--accent-pink-hover);
+        }
+
+        .mobile-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .mobile-toggle span {
+            width: 25px;
+            height: 2px;
+            background: var(--primary-dark);
+        }
+
+        /* ===== ARTICLE HERO ===== */
+        .article-hero {
+            padding: 140px 2rem 60px;
+            background: linear-gradient(135deg, #0a0a14 0%, #1a1a2e 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .article-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&h=800&fit=crop') center/cover;
+            opacity: 0.3;
+            mask-image: linear-gradient(to left, rgba(0,0,0,0.5), transparent);
+            -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.5), transparent);
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .breadcrumb a:hover {
+            color: var(--accent-neon);
+        }
+
+        .breadcrumb span {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .breadcrumb-current {
+            color: var(--accent-pink) !important;
+        }
+
+        .article-category {
+            display: inline-block;
+            background: var(--accent-pink);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+        }
+
+        .article-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .author-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-pink), var(--primary-blue));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            overflow: hidden;
+        }
+
+        .author-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* ===== ARTICLE CONTENT ===== */
+        .article-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 4rem;
+        }
+
+        .article-content {
+            max-width: 800px;
+        }
+
+        .article-content h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin: 2.5rem 0 1rem;
+            padding-top: 1rem;
+        }
+
+        .article-content h3 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            margin: 2rem 0 1rem;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-gray);
+            font-size: 1.1rem;
+        }
+
+        .article-content p:first-of-type {
+            font-size: 1.25rem;
+            color: var(--text-dark);
+            font-weight: 400;
+        }
+
+        .article-content ul, .article-content ol {
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .article-content li {
+            margin-bottom: 0.75rem;
+            color: var(--text-gray);
+            font-size: 1.05rem;
+        }
+
+        .article-content blockquote {
+            border-left: 4px solid var(--accent-pink);
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            background: var(--bg-light);
+            border-radius: 0 12px 12px 0;
+            font-style: italic;
+            font-size: 1.15rem;
+            color: var(--primary-dark);
+        }
+
+        .article-content code {
+            background: var(--bg-gray);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.9em;
+            color: var(--accent-pink);
+        }
+
+        .article-content pre {
+            background: var(--primary-dark);
+            color: #e5e7eb;
+            padding: 1.5rem;
+            border-radius: 12px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+
+        .article-content pre code {
+            background: transparent;
+            color: inherit;
+            padding: 0;
+        }
+
+        .article-content img {
+            width: 100%;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .article-content a {
+            color: var(--accent-pink);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: linear-gradient(135deg, rgba(233, 69, 96, 0.1), rgba(22, 33, 62, 0.1));
+            border: 1px solid rgba(233, 69, 96, 0.2);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .info-box-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 0.75rem;
+        }
+
+        .info-box p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* ===== SIDEBAR ===== */
+        .article-sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .sidebar-card {
+            background: var(--bg-white);
+            border: 1px solid var(--border-light);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .sidebar-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        .toc-list a {
+            color: var(--text-gray);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: block;
+            padding: 0.5rem;
+            border-radius: 6px;
+            transition: var(--transition);
+        }
+
+        .toc-list a:hover, .toc-list a.active {
+            background: var(--bg-gray);
+            color: var(--accent-pink);
+        }
+
+        .sidebar-cta {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary-blue));
+            color: white;
+            text-align: center;
+        }
+
+        .sidebar-cta h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .sidebar-cta p {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 1rem;
+        }
+
+        .sidebar-cta .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--accent-pink);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .sidebar-cta .btn:hover {
+            background: var(--accent-pink-hover);
+            transform: translateY(-2px);
+        }
+
+        /* Share buttons */
+        .share-buttons {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .share-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-gray);
+            color: var(--text-gray);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .share-btn:hover {
+            background: var(--accent-pink);
+            color: white;
+        }
+
+        /* ===== AUTHOR BOX ===== */
+        .author-box {
+            display: flex;
+            gap: 1.5rem;
+            padding: 2rem;
+            background: var(--bg-light);
+            border-radius: 16px;
+            margin: 3rem 0;
+        }
+
+        .author-box-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-pink), var(--primary-blue));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .author-box-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .author-box-info h4 a {
+            color: var(--primary-dark);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .author-box-info h4 a:hover {
+            color: var(--accent-pink);
+        }
+
+        .author-link {
+            color: inherit;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .author-link:hover {
+            color: var(--accent-neon);
+        }
+
+        .author-box-info h4 {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            margin-bottom: 0.25rem;
+        }
+
+        .author-box-info .role {
+            font-size: 0.9rem;
+            color: var(--accent-pink);
+            margin-bottom: 0.75rem;
+        }
+
+        .author-box-info p {
+            font-size: 0.95rem;
+            color: var(--text-gray);
+            margin: 0;
+        }
+
+        /* ===== RELATED ARTICLES ===== */
+        .related-section {
+            padding: 4rem 2rem;
+            background: var(--bg-light);
+        }
+
+        .related-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .related-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .related-card {
+            background: var(--bg-white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .related-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .related-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .related-card-content {
+            padding: 1.5rem;
+        }
+
+        .related-card-category {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--accent-pink);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .related-card h3 {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            line-height: 1.4;
+        }
+
+        /* ===== CTA SECTION ===== */
+        .article-cta {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary-blue));
+            text-align: center;
+            color: white;
+        }
+
+        .article-cta h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-cta p {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .article-cta .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--accent-pink);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .article-cta .btn-primary:hover {
+            background: var(--accent-pink-hover);
+            transform: translateY(-3px);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--primary-dark);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        footer p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--accent-pink);
+            text-decoration: none;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .article-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .article-sidebar {
+                position: static;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-toggle {
+                display: flex;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .article-sidebar {
+                grid-template-columns: 1fr;
+            }
+
+            .related-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .author-box {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8XG8XCE255"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-8XG8XCE255');
+</script>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../logo1.png" alt="Blumenau Automação" class="logo-img">
+                <div class="logo-text">Blumenau <span>Automação</span></div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html#servicos" class="nav-link">Serviços</a></li>
+                <li><a href="../know-how.html" class="nav-link">Know-How</a></li>
+                <li><a href="../index.html#cases" class="nav-link">Cases</a></li>
+                <li><a href="../index.html#sobre" class="nav-link">Empresa</a></li>
+                <li><a href="../index.html#contato" class="nav-link nav-cta">Fale Conosco</a></li>
+            </ul>
+            <div class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Article Hero -->
+    <section class="article-hero">
+        <div class="hero-container">
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a>
+                <span>›</span>
+                <a href="../know-how.html">Know-How</a>
+                <span>›</span>
+                <span class="breadcrumb-current">N8N Automação</span>
+            </nav>
+            <span class="article-category">Automação</span>
+            <h1>N8N: automatize tarefas sem escrever código</h1>
+            <div class="article-meta">
+                <div class="article-meta-item">
+                    <a href="https://www.linkedin.com/in/lucas-william-junges-a95b00143/" target="_blank" rel="noopener"><div class="author-avatar"><img src="../1674241559977.jpeg" alt="Lucas Junges"></div></a>
+                    <a href="https://www.linkedin.com/in/lucas-william-junges-a95b00143/" target="_blank" rel="noopener" class="author-link">Lucas Junges</a>
+                </div>
+                <div class="article-meta-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="16" y1="2" x2="16" y2="6"/>
+                        <line x1="8" y1="2" x2="8" y2="6"/>
+                        <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    <span>12 de Dezembro, 2024</span>
+                </div>
+                <div class="article-meta-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                    <span>10 min de leitura</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <div class="article-wrapper">
+        <article class="article-content">
+            <p>
+                Imagine poder conectar todos os sistemas da sua empresa — ERP, CRM, e-mail, WhatsApp, planilhas — e fazer com que se comuniquem automaticamente, sem precisar programar uma única linha de código. Isso é exatamente o que o N8N oferece: uma plataforma open-source de automação de workflows que está revolucionando a forma como pequenas e médias empresas operam.
+            </p>
+
+            <p>
+                Neste guia, vamos explorar como o N8N pode eliminar tarefas repetitivas, reduzir erros humanos e liberar sua equipe para atividades que realmente agregam valor ao negócio.
+            </p>
+
+            <h2 id="o-que-e">O que é N8N e por que você deveria conhecer</h2>
+
+            <p>
+                O N8N (pronuncia-se "n-eight-n") é uma ferramenta de automação de workflows que permite criar fluxos de trabalho visuais conectando diferentes aplicações e serviços. Diferente de plataformas como Zapier ou Make (antigo Integromat), o N8N pode ser instalado em servidores próprios, garantindo total controle sobre seus dados.
+            </p>
+
+            <p>
+                Principais características que tornam o N8N especial:
+            </p>
+
+            <ul>
+                <li><strong>Open-source e gratuito:</strong> O código é aberto e você pode usar sem limites de execuções</li>
+                <li><strong>Self-hosted:</strong> Rode em seu próprio servidor, mantendo dados sensíveis sob seu controle</li>
+                <li><strong>+400 integrações:</strong> Conecte praticamente qualquer serviço que você usa</li>
+                <li><strong>Interface visual:</strong> Arraste e conecte nós para criar automações complexas</li>
+                <li><strong>Lógica condicional:</strong> If/else, loops, merge de dados e transformações</li>
+                <li><strong>Webhooks:</strong> Receba dados de qualquer sistema em tempo real</li>
+            </ul>
+
+            <blockquote>
+                "O N8N é como ter um funcionário que trabalha 24/7, nunca erra, nunca reclama e custa menos que um cafezinho por dia."
+            </blockquote>
+
+            <h2 id="casos-praticos">Casos práticos para empresas de Blumenau</h2>
+
+            <p>
+                Vamos ver exemplos reais de automações que implementamos em empresas da região.
+            </p>
+
+            <h3>1. Indústria Têxtil: Pedidos e Estoque</h3>
+
+            <p>
+                Uma confecção de Blumenau tinha o seguinte problema: pedidos chegavam por e-mail, WhatsApp e telefone. A equipe comercial gastava horas digitando manualmente no ERP.
+            </p>
+
+            <p>
+                <strong>Automação criada:</strong>
+            </p>
+
+            <ul>
+                <li>Pedidos recebidos por e-mail são automaticamente parseados</li>
+                <li>Dados extraídos são validados contra estoque no ERP</li>
+                <li>Se disponível, pedido é criado automaticamente</li>
+                <li>Cliente recebe confirmação por WhatsApp com prazo de entrega</li>
+                <li>Se estoque insuficiente, comercial é notificado para negociar</li>
+            </ul>
+
+            <div class="info-box">
+                <div class="info-box-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="12" y1="16" x2="12" y2="12"/>
+                        <line x1="12" y1="8" x2="12.01" y2="8"/>
+                    </svg>
+                    Resultado
+                </div>
+                <p>
+                    Tempo de processamento de pedidos caiu de 45 minutos para 2 minutos. Erros de digitação foram eliminados.
+                </p>
+            </div>
+
+            <h3>2. Comércio: Lead Nurturing Automático</h3>
+
+            <p>
+                Uma loja de móveis planejados recebia dezenas de leads pelo site, mas perdia vendas por demora no primeiro contato.
+            </p>
+
+            <p>
+                <strong>Automação criada:</strong>
+            </p>
+
+            <ul>
+                <li>Formulário do site dispara webhook para N8N</li>
+                <li>Lead é automaticamente cadastrado no CRM</li>
+                <li>WhatsApp de boas-vindas é enviado em até 30 segundos</li>
+                <li>Sequência de e-mails educativos começa automaticamente</li>
+                <li>Vendedor recebe notificação com histórico completo do lead</li>
+            </ul>
+
+            <h3>3. Prestadores de Serviço: Relatórios Automáticos</h3>
+
+            <p>
+                Uma empresa de manutenção industrial perdia horas criando relatórios semanais para clientes.
+            </p>
+
+            <p>
+                <strong>Automação criada:</strong>
+            </p>
+
+            <ul>
+                <li>Dados de ordens de serviço são coletados do sistema</li>
+                <li>Relatório é gerado automaticamente em PDF</li>
+                <li>E-mail personalizado é enviado para cada cliente</li>
+                <li>Cópia fica salva no Google Drive organizado por cliente</li>
+            </ul>
+
+            <h2 id="primeiros-passos">Primeiros passos com N8N</h2>
+
+            <p>
+                Vamos configurar seu primeiro workflow. Existem duas formas de usar o N8N:
+            </p>
+
+            <h3>Opção 1: N8N Cloud (mais simples)</h3>
+
+            <p>
+                Para quem quer começar rápido sem se preocupar com infraestrutura:
+            </p>
+
+            <ol>
+                <li>Acesse <a href="https://n8n.io">n8n.io</a> e crie uma conta gratuita</li>
+                <li>Você terá acesso ao editor visual imediatamente</li>
+                <li>Plano gratuito permite 5 workflows ativos</li>
+            </ol>
+
+            <h3>Opção 2: Self-hosted (recomendado para empresas)</h3>
+
+            <p>
+                Para total controle sobre dados e sem limites de execuções:
+            </p>
+
+            <pre><code># Instalação via Docker (mais simples)
+docker run -it --rm \
+  --name n8n \
+  -p 5678:5678 \
+  -v ~/.n8n:/home/node/.n8n \
+  n8nio/n8n
+
+# Acesse: http://localhost:5678</code></pre>
+
+            <p>
+                Para produção, recomendamos usar Docker Compose com PostgreSQL:
+            </p>
+
+            <pre><code># docker-compose.yml
+version: '3.8'
+services:
+  n8n:
+    image: n8nio/n8n
+    ports:
+      - "5678:5678"
+    environment:
+      - DB_TYPE=postgresdb
+      - DB_POSTGRESDB_HOST=postgres
+      - DB_POSTGRESDB_DATABASE=n8n
+      - DB_POSTGRESDB_USER=n8n
+      - DB_POSTGRESDB_PASSWORD=senha_segura
+    volumes:
+      - n8n_data:/home/node/.n8n
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=n8n
+      - POSTGRES_USER=n8n
+      - POSTGRES_PASSWORD=senha_segura
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  n8n_data:
+  postgres_data:</code></pre>
+
+            <h2 id="primeiro-workflow">Criando seu primeiro workflow</h2>
+
+            <p>
+                Vamos criar uma automação simples mas útil: receber um formulário de contato e enviar notificação no Slack/Discord/Telegram.
+            </p>
+
+            <h3>Passo 1: Criar o trigger</h3>
+
+            <p>
+                No editor do N8N:
+            </p>
+
+            <ol>
+                <li>Clique no botão "+" para adicionar um nó</li>
+                <li>Busque por "Webhook" e adicione</li>
+                <li>Configure o método como POST</li>
+                <li>Copie a URL do webhook</li>
+            </ol>
+
+            <h3>Passo 2: Configurar o formulário</h3>
+
+            <p>
+                No seu site, aponte o formulário de contato para a URL do webhook:
+            </p>
+
+            <pre><code>&lt;form action="URL_DO_WEBHOOK" method="POST"&gt;
+  &lt;input name="nome" placeholder="Seu nome" required&gt;
+  &lt;input name="email" type="email" placeholder="Seu e-mail" required&gt;
+  &lt;textarea name="mensagem" placeholder="Sua mensagem"&gt;&lt;/textarea&gt;
+  &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+            <h3>Passo 3: Adicionar notificação</h3>
+
+            <ol>
+                <li>Adicione um nó de Telegram/Slack/Discord</li>
+                <li>Configure as credenciais do serviço</li>
+                <li>Monte a mensagem usando os dados do webhook:
+                    <code>Novo contato: {{$json.nome}} - {{$json.email}}</code>
+                </li>
+            </ol>
+
+            <h3>Passo 4: Salvar no Google Sheets (bônus)</h3>
+
+            <p>
+                Adicione um nó de Google Sheets para manter histórico:
+            </p>
+
+            <ol>
+                <li>Conecte sua conta Google</li>
+                <li>Selecione a planilha de destino</li>
+                <li>Mapeie os campos: nome, email, mensagem, data</li>
+            </ol>
+
+            <h2 id="integrações">Integrações mais úteis para PMEs</h2>
+
+            <p>
+                O N8N se conecta a centenas de serviços. Os mais utilizados por nossos clientes:
+            </p>
+
+            <h3>Comunicação</h3>
+            <ul>
+                <li><strong>WhatsApp Business API:</strong> Envio de notificações e chatbots</li>
+                <li><strong>Telegram:</strong> Alertas e comandos</li>
+                <li><strong>E-mail (Gmail, Outlook):</strong> Envio e leitura de e-mails</li>
+            </ul>
+
+            <h3>Produtividade</h3>
+            <ul>
+                <li><strong>Google Sheets/Excel:</strong> Leitura e escrita de dados</li>
+                <li><strong>Google Drive/OneDrive:</strong> Gerenciamento de arquivos</li>
+                <li><strong>Notion/Trello:</strong> Gestão de tarefas</li>
+            </ul>
+
+            <h3>Vendas e CRM</h3>
+            <ul>
+                <li><strong>Pipedrive/HubSpot:</strong> Sincronização de leads</li>
+                <li><strong>RD Station:</strong> Marketing automation brasileiro</li>
+                <li><strong>PagSeguro/Stripe:</strong> Notificações de pagamento</li>
+            </ul>
+
+            <h3>ERPs e Sistemas Locais</h3>
+            <ul>
+                <li><strong>APIs REST:</strong> Conexão com qualquer sistema moderno</li>
+                <li><strong>Banco de dados:</strong> MySQL, PostgreSQL, SQL Server</li>
+                <li><strong>Webhooks:</strong> Integração com sistemas legados</li>
+            </ul>
+
+            <h2 id="boas-praticas">Boas práticas de automação</h2>
+
+            <p>
+                Após implementar dezenas de automações, compilamos as práticas que garantem sucesso:
+            </p>
+
+            <h3>1. Comece pequeno</h3>
+            <p>
+                Automatize uma tarefa simples primeiro. Valide o funcionamento, depois expanda gradualmente.
+            </p>
+
+            <h3>2. Sempre trate erros</h3>
+            <p>
+                Use o nó "Error Trigger" para capturar falhas e notificar a equipe. Nunca deixe uma automação falhar silenciosamente.
+            </p>
+
+            <h3>3. Documente seus workflows</h3>
+            <p>
+                Adicione notas explicativas nos nós. Daqui a 6 meses você vai agradecer.
+            </p>
+
+            <h3>4. Faça backup regularmente</h3>
+            <p>
+                Exporte seus workflows periodicamente. Uma reinstalação ou migração pode ser necessária.
+            </p>
+
+            <h3>5. Monitore execuções</h3>
+            <p>
+                Revise o histórico de execuções semanalmente. Identifique padrões de erro antes que virem problemas maiores.
+            </p>
+
+            <div class="info-box">
+                <div class="info-box-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                        <line x1="12" y1="9" x2="12" y2="13"/>
+                        <line x1="12" y1="17" x2="12.01" y2="17"/>
+                    </svg>
+                    Cuidado
+                </div>
+                <p>
+                    Evite criar automações que dependam de interfaces visuais (scraping). Prefira sempre APIs oficiais — são mais estáveis e confiáveis.
+                </p>
+            </div>
+
+            <h2 id="custos">Custos: N8N vs alternativas</h2>
+
+            <p>
+                Uma comparação honesta de custos para empresas pequenas e médias:
+            </p>
+
+            <ul>
+                <li><strong>N8N self-hosted:</strong> R$ 50-150/mês (custo do servidor)</li>
+                <li><strong>N8N Cloud:</strong> A partir de US$ 20/mês</li>
+                <li><strong>Zapier:</strong> A partir de US$ 29/mês (2.000 tarefas)</li>
+                <li><strong>Make:</strong> A partir de US$ 10/mês (10.000 operações)</li>
+            </ul>
+
+            <p>
+                A diferença: no N8N self-hosted você não paga por execução. Pode rodar milhões de automações pelo mesmo custo fixo do servidor.
+            </p>
+
+            <h2 id="proximos-passos">Próximos passos</h2>
+
+            <p>
+                Agora que você conhece o potencial do N8N, recomendamos:
+            </p>
+
+            <ol>
+                <li><strong>Identifique tarefas repetitivas:</strong> O que sua equipe faz todo dia que poderia ser automático?</li>
+                <li><strong>Comece com um piloto:</strong> Escolha uma automação simples para validar o conceito</li>
+                <li><strong>Documente os ganhos:</strong> Meça tempo economizado para justificar expansão</li>
+                <li><strong>Expanda gradualmente:</strong> Conecte mais sistemas conforme ganha confiança</li>
+            </ol>
+
+            <p>
+                A Blumenau Automação oferece consultoria especializada em automação com N8N. Desde a instalação e configuração até o desenvolvimento de workflows complexos, podemos ajudar sua empresa a operar de forma mais eficiente.
+            </p>
+
+            <!-- Author Box -->
+            <div class="author-box">
+                <a href="https://www.linkedin.com/in/lucas-william-junges-a95b00143/" target="_blank" rel="noopener"><div class="author-box-avatar"><img src="../1674241559977.jpeg" alt="Lucas Junges"></div></a>
+                <div class="author-box-info">
+                    <h4><a href="https://www.linkedin.com/in/lucas-william-junges-a95b00143/" target="_blank" rel="noopener">Lucas Junges</a></h4>
+                    <p class="role">Fundador & CTO, Blumenau Automação</p>
+                    <p>Especialista em automação e integração de sistemas. Já implementou mais de 100 workflows de automação para empresas da região de Blumenau.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="article-sidebar">
+            <div class="sidebar-card">
+                <h4 class="sidebar-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="8" y1="6" x2="21" y2="6"/>
+                        <line x1="8" y1="12" x2="21" y2="12"/>
+                        <line x1="8" y1="18" x2="21" y2="18"/>
+                        <line x1="3" y1="6" x2="3.01" y2="6"/>
+                        <line x1="3" y1="12" x2="3.01" y2="12"/>
+                        <line x1="3" y1="18" x2="3.01" y2="18"/>
+                    </svg>
+                    Neste artigo
+                </h4>
+                <ul class="toc-list">
+                    <li><a href="#o-que-e">O que é N8N</a></li>
+                    <li><a href="#casos-praticos">Casos práticos</a></li>
+                    <li><a href="#primeiros-passos">Primeiros passos</a></li>
+                    <li><a href="#primeiro-workflow">Primeiro workflow</a></li>
+                    <li><a href="#integrações">Integrações úteis</a></li>
+                    <li><a href="#boas-praticas">Boas práticas</a></li>
+                    <li><a href="#custos">Custos</a></li>
+                    <li><a href="#proximos-passos">Próximos passos</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <h4 class="sidebar-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="18" cy="5" r="3"/>
+                        <circle cx="6" cy="12" r="3"/>
+                        <circle cx="18" cy="19" r="3"/>
+                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                    </svg>
+                    Compartilhar
+                </h4>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn" title="Compartilhar no LinkedIn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn" title="Compartilhar no Twitter">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn" title="Compartilhar no WhatsApp">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="share-btn" title="Copiar link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar-card sidebar-cta">
+                <h4>Quer automatizar sua empresa?</h4>
+                <p>Oferecemos MVP gratuito para validar sua ideia de automação.</p>
+                <a href="../index.html#contato" class="btn">
+                    Falar com especialista
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Related Articles -->
+    <section class="related-section">
+        <div class="related-container">
+            <h2 class="related-title">Artigos relacionados</h2>
+            <div class="related-grid">
+                <a href="chatgpt-automatizar-processos.html" class="related-card">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop" alt="ChatGPT">
+                    <div class="related-card-content">
+                        <span class="related-card-category">IA & Automação</span>
+                        <h3>Como usar ChatGPT para automatizar processos empresariais</h3>
+                    </div>
+                </a>
+                <a href="whatsapp-chatbot.html" class="related-card">
+                    <img src="https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=600&h=400&fit=crop" alt="WhatsApp Chatbot">
+                    <div class="related-card-content">
+                        <span class="related-card-category">Automação</span>
+                        <h3>Chatbot no WhatsApp: ferramentas e estratégias</h3>
+                    </div>
+                </a>
+                <a href="digitalizacao-industrial.html" class="related-card">
+                    <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=600&h=400&fit=crop" alt="Digitalização Industrial">
+                    <div class="related-card-content">
+                        <span class="related-card-category">Indústria 4.0</span>
+                        <h3>Digitalização industrial: primeiros passos para PMEs</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="article-cta">
+        <h2>Pronto para eliminar tarefas repetitivas?</h2>
+        <p>Agende uma conversa gratuita e descubra quais processos da sua empresa podem ser automatizados.</p>
+        <a href="../index.html#contato" class="btn-primary">
+            Agendar conversa gratuita
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 <a href="../index.html">Blumenau Automação</a>. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Header scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // TOC active state
+        const tocLinks = document.querySelectorAll('.toc-list a');
+        const sections = document.querySelectorAll('h2[id]');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,644 @@
+{
+  "lastUpdated": "2026-01-30T17:05:08.205348+00:00",
+  "source": "proesi",
+  "totalProducts": 20,
+  "products": [
+    {
+      "id": "423963",
+      "sku": "423963",
+      "name": "MI-2705 - Megômetro Digital",
+      "slug": "mi-2705-megometro-digital-minipa",
+      "brand": null,
+      "price": 5089.83,
+      "priceFormatted": "R$ 5.089,83",
+      "stock": null,
+      "inStock": true,
+      "description": "MI-2705 - Megômetro Digital | Minipa O MI-2705 - Megômetro Digital Minipa é um instrumento de medição utilizado para medir a resistência de isolamento em diversos tipos de materiais, como cabos, transformadores, motores elétricos e equipamentos eletrônicos. Ele é um megômetro digital, o que significa que realiza medições de resistência de isolamento de forma precisa e com uma interface digital. Dados Técnicos: Display LCD 4 Dígitos/10000 ContagensIluminação/Barra Gráfica Iluminação/Barra Gráf...",
+      "specs": null,
+      "category": "megômetro",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas de Medição",
+        "Megômetro"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/4528/fonte-1-4.jpeg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/4528/fonte-1-4.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/12432/sem-t-tulo-1-recuperado.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15319/fonte-2-1.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15529/pasta-1.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15623/fonte-1-2.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15639/fonte-1-3.jpeg"
+      ],
+      "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26852/mi-2705-1103-br-manual.pdf",
+      "sourceUrl": "https://www.proesi.com.br/mi-2705-megometro-digital-minipa"
+    },
+    {
+      "id": "11427",
+      "sku": "11427",
+      "name": "Estação de Retrabalho Digital",
+      "slug": "estac-o-de-retrabalho-digital-hikari-hk-852x-220v",
+      "brand": null,
+      "price": 1353.7,
+      "priceFormatted": "R$ 1.353,70",
+      "stock": null,
+      "inStock": true,
+      "description": "Estação de Retrabalho Digital | Hikari HK-852X A Estação de Retrabalho é perfeita para fazer o retrabalho em placas eletrônicas que possuem componentes SMD. Esse modeloHK-852Xé certificada de acordo com as normas técnicas IEC 60335-1 e IEC 60335-2-45. Se destaca por ser totalmente digital, possuir aquecimento rápido, estabilidade térmica, e facilidade nas troca de bocais. Com seu display duplo é possível ajustar a vazão do ar e temperatura, resfriamento automático da resistência e função auto...",
+      "specs": null,
+      "category": "estação-de-retrabalho",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas para Soldagem",
+        "Estação de Retrabalho"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/10698/011427-a.jpeg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/10698/011427-a.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/14980/011427-c.jpeg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/estac-o-de-retrabalho-digital-hikari-hk-852x-220v"
+    },
+    {
+      "id": "112926",
+      "sku": "112926",
+      "name": "Encoder Fenac Incremental FNC40BM6630V100-R2 - 100 Pulsos",
+      "slug": "encoder-fenac-incremental-fnc40bm6630v100-r2-100-pulsos",
+      "brand": null,
+      "price": 1033.58,
+      "priceFormatted": "R$ 1.033,58",
+      "stock": null,
+      "inStock": true,
+      "description": "Encoder Fenac Incremental FNC40BM6630V100-R2 - 100 Pulsos O encoder FENAC incremental FNC40BM6630V100-R2 é um dispositivo de feedback de posição que gera 100 pulsos por rotação. Aplicação: Ele é projetado para ser utilizado em aplicações que exigem alta precisão na medição da posição angular, como em máquinas CNC, robôs industriais, equipamentos médicos, entre outros. Vantagens: Esse encoder é incremental, o que significa que ele fornece informações sobre o movimento angular em relação a uma ...",
+      "specs": null,
+      "category": "encoder",
+      "categoryPath": [
+        "Automação e Desenvolvimento",
+        "Encoder"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/08/produto/18580/12107.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/08/produto/18580/12107.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/08/produto/18579/12107-b.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/encoder-fenac-incremental-fnc40bm6630v100-r2-100-pulsos"
+    },
+    {
+      "id": "419114",
+      "sku": "419114",
+      "name": "MEDIDOR LCR MINIPA MX-1050",
+      "slug": "medidor-lcr-minipa-mx-1050",
+      "brand": null,
+      "price": 2285.67,
+      "priceFormatted": "R$ 2.285,67",
+      "stock": null,
+      "inStock": true,
+      "description": "O que é o Medidor LCR MX-1050 - Minipa? O Medidor LCR MX-1050 da Minipa é um equipamento digital de alta precisão para medições de indutância (L), capacitância (C) e resistência (R), com detecção automática e modos série ou paralelo. Possui display duplo LCD 4½ dígitos, barra gráfica de 50 segmentos e cinco frequências de teste (100Hz a 100kHz), garantindo medições rápidas e seguras. Conta com interface USB e software para registrar até 10.000 leituras, além de autocalibração, data hold, modo...",
+      "specs": null,
+      "category": "esr",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas de Medição",
+        "Medidor LCR",
+        "ESR"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/4454/medidor-lcr-minipa-digital-mx1050-1.jpeg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/4454/medidor-lcr-minipa-digital-mx1050-1.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15277/medidor-lcr-minipa-digital-mx1050-1.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15545/medidor-lcr-minipa-digital-mx1050-4-1.jpeg"
+      ],
+      "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/11/produto/27050/manual-mx-1050.pdf",
+      "sourceUrl": "https://www.proesi.com.br/medidor-lcr-minipa-mx-1050"
+    },
+    {
+      "id": "112372",
+      "sku": "112372",
+      "name": "MTR-1522 Terrômetro Digital Cat III 600V - Minipa",
+      "slug": "mtr-1522-terrometro-digital-cat-iii-600v-minipa",
+      "brand": null,
+      "price": 1920.88,
+      "priceFormatted": "R$ 1.920,88",
+      "stock": null,
+      "inStock": true,
+      "description": "MTR-1522 Terrômetro Digital Cat III 600V - Minipa Este instrumento pode ser usado na medida de terra de casas, edifícios, máquinas e qualquer outro tipo de sistema que exijam um aterramento com um certo grau de proteção, assim o técnico tem a possibilidade de saber se o sistema está dentro dos padrões exigidos. Especificações Técnicas: Display LCD/Contagem 3 3/4 Dígitos/4000Tensão de Terra AC 400VResistência 40/400/4000ΩData Hold: SimMemória 20 RegistrosPrecisão Básica 2%Alimentação 6x1,5V AA",
+      "specs": null,
+      "category": "terrômetro",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas de Medição",
+        "Terrômetro"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/04/produto/16334/112372-d.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/04/produto/16334/112372-d.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/04/produto/16333/112372-e.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/04/produto/16337/112372-a.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/04/produto/16336/112372-b.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/04/produto/16335/112372-c.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/04/produto/16338/112372-g.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/04/produto/16339/112372-f.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/04/produto/16340/112372-3.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/04/produto/16341/112372.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/mtr-1522-terrometro-digital-cat-iii-600v-minipa"
+    },
+    {
+      "id": "11426",
+      "sku": "11426",
+      "name": "Estação Digital Conjugada HK-701X para Solda e Retrabalho - 750W",
+      "slug": "estacao-digital-conjugada-solda-e-retrabalho-hikari-hk-701x-220v",
+      "brand": null,
+      "price": 1654.0,
+      "priceFormatted": "R$ 1.654,00",
+      "stock": null,
+      "inStock": true,
+      "description": "Estação Digital Conjugada Solda e Retrabalho HK-701X A Estação Digital Conjugada HK-701X combina em um único equipamento uma estação de solda e uma estação de retrabalho, otimizando o espaço na bancada de manutenção. Certificada pelas normas IEC 60335-1 e IEC 60335-2-45, é ideal para reparos de componentes SMD e PTH, garantindo praticidade e versatilidade. Perfeita para manutenção eletrônica em oficinas, laboratórios ou linhas de produção, a HK-701X é indicada para reparos em circuitos SMD e ...",
+      "specs": null,
+      "category": "estação-conjugada",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas para Soldagem",
+        "Estação Conjugada"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/10/produto/21388/01-estacao-digital-conjugada-solda-e-retrabalho-hikari-hk-701x-220v.jpeg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/10/produto/21388/01-estacao-digital-conjugada-solda-e-retrabalho-hikari-hk-701x-220v.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/10/produto/21374/11426.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/10/produto/21369/11426-2.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/10/produto/21370/11426-3.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/10/produto/21372/11426-5.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/10/produto/21371/11426-4.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/estacao-digital-conjugada-solda-e-retrabalho-hikari-hk-701x-220v"
+    },
+    {
+      "id": "12107",
+      "sku": "12107",
+      "name": "Encoder FNC58S10630V1024-R2 - 1024 Pulsos",
+      "slug": "encoder-fenac-incremental-fnc58s10630v1024-r2-1024-pulsos",
+      "brand": null,
+      "price": 1213.11,
+      "priceFormatted": "R$ 1.213,11",
+      "stock": null,
+      "inStock": true,
+      "description": "Encoder Fenac Incremental FNC58S10630V1024-R2 - 1024 Pulsos O encoder FENAC incremental FNC-58SM-6630V360-R2 é um dispositivo de feedback de posição que gera 1024 pulsos por rotação. Aplicação: Ele é projetado para ser utilizado em aplicações que exigem alta precisão na medição da posição angular, como em máquinas CNC, robôs industriais, equipamentos médicos, entre outros. Vantagens: Esse encoder é incremental, o que significa que ele fornece informações sobre o movimento angular em relação a...",
+      "specs": null,
+      "category": "encoder",
+      "categoryPath": [
+        "Automação e Desenvolvimento",
+        "Encoder"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/08/produto/18578/112926.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/08/produto/18578/112926.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/08/produto/18577/112926-b.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/encoder-fenac-incremental-fnc58s10630v1024-r2-1024-pulsos"
+    },
+    {
+      "id": "113323",
+      "sku": "113323",
+      "name": "Cabo de Rede Furukawa Soho Plus CAT5E - Rolo 305 Metros",
+      "slug": "cabo-de-rede-cat5e-rolo-305-metros",
+      "brand": null,
+      "price": 1482.0,
+      "priceFormatted": "R$ 1.482,00",
+      "stock": null,
+      "inStock": true,
+      "description": "O que é o Cabo de Rede Furukawa Soho Plus CAT5E - Rolo 305 Metros? O Cabo de Rede Furukawa Soho Plus CAT5E - Rolo 305 Metros é um cabo de par trançado não blindado (UTP) projetado para redes estruturadas de dados, voz e imagem, garantindo transmissões de até 1 Gigabit por segundo (1Gbps). Fabricado pela Furukawa, referência global em cabeamento, esse modelo da linha Soho Plus oferece qualidade, confiabilidade e durabilidade, sendo ideal para instalações que exigem desempenho contínuo e sinal ...",
+      "specs": null,
+      "category": "cabo-de-rede",
+      "categoryPath": [
+        "Fios e Cabos",
+        "Cabo de Rede"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2025/03/produto/23380/113323-rolo-305-metros-cabo-rede-furukawa-sohoplus-cat5e-azul.jpg",
+      "images": null,
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/cabo-de-rede-cat5e-rolo-305-metros"
+    },
+    {
+      "id": "180330",
+      "sku": "180330",
+      "name": "Display LCD Gráfico 240X128 - WG-240128A-TMI- com BACK, Azul",
+      "slug": "display-lcd-grafico-240x128-wg-240128a-tmi-com-back-azul",
+      "brand": null,
+      "price": 1246.28,
+      "priceFormatted": "R$ 1.246,28",
+      "stock": null,
+      "inStock": true,
+      "description": "Display Gráfico 240 X 128 WG240128A\nTamanho do Módulo (mm): 170,0 X 103,5\nÁrea de Visão (mm): 129,0 X 75,0\nTamanho do Dot (mm): 0,47 X 0,47\nDot Pitch (mm): 0,50 X 0,50\nControlador: T6963C",
+      "specs": null,
+      "category": "lcd",
+      "categoryPath": [
+        "Componentes",
+        "Displays",
+        "LCD"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/2978/display-lcd-grafico-240x128-wg-240128a-tmi-com-back-azul-2.jpeg",
+      "images": null,
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/display-lcd-grafico-240x128-wg-240128a-tmi-com-back-azul"
+    },
+    {
+      "id": "113353",
+      "sku": "113353",
+      "name": "Fonte Chaveada Colmeia (+24V 25A 600W) LRS-600-24 Mean Well",
+      "slug": "fonte-chaveada-colmeia-24v-25a-600w-lrs-600-24-mean-well",
+      "brand": null,
+      "price": 1072.74,
+      "priceFormatted": "R$ 1.072,74",
+      "stock": null,
+      "inStock": true,
+      "description": "Fonte Chaveada Colmeia (+24V 25A 600W) LRS-600-24 Mean Well Fonte Chaveada Colmeia LRS-600-24 Mean Well (+24V 25A 600W) – Potente e compacta, a LRS-600-24 oferece 24V e 25A, totalizando 600W de potência, com alta eficiência e confiabilidade. Conta com entrada AC/DC ajustável, resfriamento por convecção de ar e proteções contra curto-circuito, sobretensão e sobrecarga, garantindo segurança e desempenho. Ideal para automação industrial, sistemas de LED, telecomunicações e eletrônica em geral. E...",
+      "specs": null,
+      "category": "fontes-24-volts",
+      "categoryPath": [
+        "Fontes",
+        "Fontes 24 Volts"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2025/03/produto/23961/113353-a-fonte-chaveada-colmeia-24v-25a-600w-lrs-600-24-mean-well.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2025/03/produto/23961/113353-a-fonte-chaveada-colmeia-24v-25a-600w-lrs-600-24-mean-well.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/03/produto/23960/113353-b-fonte-chaveada-colmeia-24v-25a-600w-lrs-600-24-mean-well.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/03/produto/23959/113353-c-fonte-chaveada-colmeia-24v-25a-600w-lrs-600-24-mean-well.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/fonte-chaveada-colmeia-24v-25a-600w-lrs-600-24-mean-well"
+    },
+    {
+      "id": "402030",
+      "sku": "402030",
+      "name": "ET-3367C Alicate Amperímetro Digital TRUE RMS CAT IV 600V - Minipa",
+      "slug": "et-3367c-alicate-amperimetro-digital-minipa-true-rms-cat-iv-600v",
+      "brand": null,
+      "price": 1072.93,
+      "priceFormatted": "R$ 1.072,93",
+      "stock": null,
+      "inStock": true,
+      "description": "Alicate Amperímetro Digital ET-3367C | Minipa O Alicate Amperímetro ET-3367C, oferece a você,Alta performance e Versatilidadepara a suas medições, Tornando o seu trabalhoMais fácil, seguro e eficiente. Isso só é possível, graças asFunções especiaisque esse modelo oferece pra você e por ser um aparelho se enquadra naCategoria IV e Categoria IIIde segurança, em conformidade com aNR-10e a IEC/EN 61010-1. - LoZ :A função LoZ elimina devido à baixa impedância, medição de “Tensão fantasma” nas suas...",
+      "specs": {
+        "Categoria de proteção": "Cat 4",
+        "Corrente": "AC e DC",
+        "Display Iluminado": "Sim",
+        "Frequência": "Sim",
+        "Fabricante": "Minipa",
+        "NCV": "Sim"
+      },
+      "category": "alicate-amperimetro",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas de Medição",
+        "Alicate amperimetro"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/4366/captura-de-tela-2022-04-27-165854.jpeg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/4366/captura-de-tela-2022-04-27-165854.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/13842/alicate-amperimetro-1.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15385/alicate-amperimetro-3.jpeg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/et-3367c-alicate-amperimetro-digital-minipa-true-rms-cat-iv-600v"
+    },
+    {
+      "id": "113762",
+      "sku": "113762",
+      "name": "Estação Dessoldadora Digital HK-917 Hikari Bivolt",
+      "slug": "estacao-dessoldadora-digital-hikari-hk-917-bivolt",
+      "brand": null,
+      "price": 1206.28,
+      "priceFormatted": "R$ 1.206,28",
+      "stock": null,
+      "inStock": true,
+      "description": "O que é a Estação Dessoldadora Digital Hikari HK-917 - Bivolt? A HK-917 é uma pistola dessoldadora profissional, ideal para oficinas, laboratórios e linhas de manutenção eletrônica. Compatível com ligas com e sem chumbo, combina aquecimento rápido, alta potência (até 140 W) e controle digital de temperatura de 160 °C a 480 °C. Seu painel touch e display LED tornam a operação simples e intuitiva, enquanto o sistema de sucção de alta performance permite uso contínuo, atendendo tanto trabalhos p...",
+      "specs": null,
+      "category": "estação-dessoldadora",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas para Soldagem",
+        "Estação Dessoldadora"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26385/hk-917.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26385/hk-917.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26134/113762-a-estacao-dessoldadora-digital-hikari-hk-917-bivolt.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26133/113762-b-estacao-dessoldadora-digital-hikari-hk-917-bivolt.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26132/113762-c-estacao-dessoldadora-digital-hikari-hk-917-bivolt.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26131/113762-d-estacao-dessoldadora-digital-hikari-hk-917-bivolt.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26130/113762-e-estacao-dessoldadora-digital-hikari-hk-917-bivolt.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/estacao-dessoldadora-digital-hikari-hk-917-bivolt"
+    },
+    {
+      "id": "113187",
+      "sku": "113187",
+      "name": "MO-1102C",
+      "slug": "mo-1102c-osciloscopio-digital-100mhz-minipa",
+      "brand": null,
+      "price": 3851.53,
+      "priceFormatted": "R$ 3.851,53",
+      "stock": null,
+      "inStock": true,
+      "description": "MO-1102C | Osciloscópio Digital 100MHz - Minipa O osciloscópio digital MO-1102C da Minipa é um equipamento de medição preciso, ideal para análises detalhadas de sinais eletrônicos. Com banda de frequência de 100MHz, taxa de amostragem de até 1 GS/s e um display LCD colorido de 7\" com resolução de 800x480, oferece excelente visualização e precisão nos testes. Projetado para técnicos e engenheiros, este osciloscópio é indicado para diagnósticos em eletrônica, telecomunicações e automação. Ele p...",
+      "specs": null,
+      "category": "osciloscópio",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas de Medição",
+        "Osciloscópio"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/11/produto/21758/113187d.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/11/produto/21758/113187d.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/12/produto/21996/113187-2-mo-1102c-osciloscopio-digital-100mhz-minipa.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/12/produto/21997/113187-3-mo-1102c-osciloscopio-digital-100mhz-minipa.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/11/produto/21757/113187e.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/11/produto/21760/113187b.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/11/produto/21761/113187-a.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/mo-1102c-osciloscopio-digital-100mhz-minipa"
+    },
+    {
+      "id": "434070",
+      "sku": "434070",
+      "name": "Encoder TNS Incremental NTP58BX08-1024Z28L2C2 8,0MM",
+      "slug": "encoder-tns-incremental-ntp-58bx08-1024z28l2c2-8-0mm-1024-pulsos",
+      "brand": null,
+      "price": 1213.11,
+      "priceFormatted": "R$ 1.213,11",
+      "stock": null,
+      "inStock": true,
+      "description": "Encoder incremental rotativo, corpo diâmetro 58,0 mm em alumínio, eixo diâmetro de 8,0 mm, flange B, IP54, 1024 pulsos, por rotação, 6 canais ( A,A/B,B/Z,Z ), alimentação 5-28 VCC, saída line driv, radial e cabo 2 metros",
+      "specs": null,
+      "category": "encoder",
+      "categoryPath": [
+        "Automação e Desenvolvimento",
+        "Encoder"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/4694/encoder-tns-incremental-ntp-58bx08-1024z28l2c2-8-0mm.jpeg",
+      "images": null,
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/encoder-tns-incremental-ntp-58bx08-1024z28l2c2-8-0mm-1024-pulsos"
+    },
+    {
+      "id": "414166",
+      "sku": "414166",
+      "name": "ET-2507B Multímetro Digital Profissional CAT IV True Rms - Minipa",
+      "slug": "et-2507b-multimetro-digital-minipa-ac-dc-cat-iv-600v",
+      "brand": null,
+      "price": 1643.92,
+      "priceFormatted": "R$ 1.643,92",
+      "stock": null,
+      "inStock": true,
+      "description": "ET-2507B - Multímetro Digital Minipa AC/DC CAT IV 600V O multímetro ET-2507B é recomendado parauso Profissional, por ser um equipamentopequeno, portátil. Capaz de realizar medições AC com True RMS, possui auto range e conta com display grande, com iluminação automática de luz de fundo e lanterna, funções que facilitam seu trabalho em ambientes com pouca iluminação. Este multímetro é capaz de fazer leituras de tensão AC True Rms e DC, corrente AC True Rms e DC, Resistência, Diodo, continuidade...",
+      "specs": {
+        "Categoria de proteção": "Cat 4",
+        "Display Iluminado": "Sim",
+        "Frequência": "Sim",
+        "NCV": "Sim"
+      },
+      "category": "multímetros",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas de Medição",
+        "Multímetros"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/4420/et-2507b.jpeg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/4420/et-2507b.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15259/multimetro-et-2507.jpeg"
+      ],
+      "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26854/et-2507b-1102-br-manual.pdf\n ",
+      "sourceUrl": "https://www.proesi.com.br/et-2507b-multimetro-digital-minipa-ac-dc-cat-iv-600v"
+    },
+    {
+      "id": "422670",
+      "sku": "422670",
+      "name": "HTR-770 Terrômetro Digital HIKARI",
+      "slug": "terrometro-digital-hikari-htr-770",
+      "brand": null,
+      "price": 1675.67,
+      "priceFormatted": "R$ 1.675,67",
+      "stock": null,
+      "inStock": true,
+      "description": "HTR-770 Terrômetro Digital Hikari CAT III 1000V O Terrômetro é utilizado para medir aterramentos de casas, edifícios, máquinas e qualquer outro projeto que exijam um aterramento com um certo grau de proteção. Esse modelo é categoria III de proteção e possui um display iluminado. É também uma ferramenta de ótimo peso, facilitando o manuseio na hora do uso. Numero Hikari: 21N073 Confira mais detalhes: Precisão Básica: 2.0%.Display: LCD Duplo.Taxa de Amostragem: 2,5 Vezes/s.Indicação de Sobrefai...",
+      "specs": null,
+      "category": "terrômetro",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas de Medição",
+        "Terrômetro"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/4498/terr-metro-hikari.jpeg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/4498/terr-metro-hikari.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/12236/terrometro-hikari-1.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15247/ponta-de-prova-hikari.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15573/acess-rio-hikari.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15621/garras-hikari.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15641/bolsa-hikari.jpeg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/terrometro-digital-hikari-htr-770"
+    },
+    {
+      "id": "112424",
+      "sku": "112424",
+      "name": "Fonte MPC-3005 Minipa 30V/5A DC Dupla Regulada",
+      "slug": "fonte-alimentacao-30v-5a-mpc-3005-dc-dupla-minipa",
+      "brand": null,
+      "price": 2343.91,
+      "priceFormatted": "R$ 2.343,91",
+      "stock": null,
+      "inStock": true,
+      "description": "O que é a Fonte Alimentação 30V/5A MPC-3005 DC Dupla - Minipa? A Fonte de Alimentação MPC-3005 da Minipa é um equipamento de bancada preciso e prático, possui alta precisão e saída ajustável e fixa, com duas saídas variáveis de até 30V/5A e uma saída fixa de 5V/3A. As saídas ajustáveis podem ser configuradas para operar em modo de tensão constante (CV) ou corrente constante (CC), garantindo flexibilidade no uso. No modo de tensão constante, é possível ajustar a saída de 0V até o limite nomina...",
+      "specs": null,
+      "category": "fontes-de-bancada",
+      "categoryPath": [
+        "Fontes",
+        "Fontes de Bancada"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2025/11/produto/27104/112424-a-fonte-de-bancada-mpc-3005-dc-0-30v-0-5a-saida-dupla-minipa.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2025/11/produto/27104/112424-a-fonte-de-bancada-mpc-3005-dc-0-30v-0-5a-saida-dupla-minipa.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/11/produto/27103/112424-b-fonte-de-bancada-mpc-3005-dc-0-30v-0-5a-saida-dupla-minipa.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/11/produto/27102/112424-c-fonte-de-bancada-mpc-3005-dc-0-30v-0-5a-saida-dupla-minipa.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/11/produto/27101/112424-d-fonte-de-bancada-mpc-3005-dc-0-30v-0-5a-saida-dupla-minipa.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/11/produto/27100/112424-e-fonte-de-bancada-mpc-3005-dc-0-30v-0-5a-saida-dupla-minipa.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/fonte-alimentacao-30v-5a-mpc-3005-dc-dupla-minipa"
+    },
+    {
+      "id": "11969",
+      "sku": "11969",
+      "name": "DMI P3000R V2 - Analisador de Energia Bidirecional",
+      "slug": "dmi-p3000r-v2-analisador-de-energia-bidirecional",
+      "brand": null,
+      "price": 6748.87,
+      "priceFormatted": "R$ 6.748,87",
+      "stock": null,
+      "inStock": true,
+      "description": "DMI P3000R V2 - Analisador de Energia Bidirecional Um analisador de energia é usado para medir o fluxo de potência (w) em um sistema elétrico.Issoserefereà taxadetransferênciaelétrica entrea fontedealimentaçãoeocoletor.Portanto,a expressãoalternativaparaenergiaéenergia por segundo. O ModeloDMI P3000R V2é ideal para medições de até 3000 amperes, com ele você consegue fazer a análise de telemetria, multimedição e análise elétrica remota, e também consegue monitorar e aferir o consumo elétrico e...",
+      "specs": null,
+      "category": "analisador-de-energia",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas de Medição",
+        "Analisador de Energia"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/11278/0011966-1.jpeg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/11278/0011966-1.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/14824/011969-1.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15509/0011965-1.jpeg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/dmi-p3000r-v2-analisador-de-energia-bidirecional"
+    },
+    {
+      "id": "113939",
+      "sku": "113939",
+      "name": "Inversor de Frequência SN160MN 1CV 220V Monofásico Sibratec",
+      "slug": "inversor-de-frequencia-sn160mn-0r7gb-s2-monofasico-220v-50-60hz-0-75kw-sibratec",
+      "brand": null,
+      "price": 1034.32,
+      "priceFormatted": "R$ 1.034,32",
+      "stock": null,
+      "inStock": true,
+      "description": "O que é o Inversor de Frequência SN160MN-0R7GB-S2 1CV 0,75kW Monofásico 220V - Sibratec? O Inversor de Frequência SN160MN-0R7GB-S2 da Sibratec é ideal para controlar motores trifásicos em redes monofásicas 220V, com potência de 0,75kW (1 CV). Oferece controle vetorial e escalar, recursos como PID, frenagem DC e comunicação Modbus RS485, além de proteção contra falhas elétricas. Indicado para máquinas, bombas, ventiladores, compressores e esteiras, permite instalação em painéis ou sistemas des...",
+      "specs": null,
+      "category": "inversor-de-frequência",
+      "categoryPath": [
+        "Automação e Desenvolvimento",
+        "Inversor de frequência"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26622/113939-a-inversor-freq-sn160mn-0r7gb-s2-entr-220v-mono-1cv-0-75kw-sibratec.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26622/113939-a-inversor-freq-sn160mn-0r7gb-s2-entr-220v-mono-1cv-0-75kw-sibratec.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26621/113939-b-inversor-freq-sn160mn-0r7gb-s2-entr-220v-mono-1cv-0-75kw-sibratec.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26620/113939-c-inversor-freq-sn160mn-0r7gb-s2-entr-220v-mono-1cv-0-75kw-sibratec.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26619/113939-d-inversor-freq-sn160mn-0r7gb-s2-entr-220v-mono-1cv-0-75kw-sibratec.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26618/113939-e-inversor-freq-sn160mn-0r7gb-s2-entr-220v-mono-1cv-0-75kw-sibratec.jpg"
+      ],
+      "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26528/manual-inversor-de-frequencia-sn160mn-0r7gb-s2.pdf\n ",
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-sn160mn-0r7gb-s2-monofasico-220v-50-60hz-0-75kw-sibratec"
+    },
+    {
+      "id": "113699",
+      "sku": "113699",
+      "name": "Inversor de Frequência Provolt PI100 3,0CV Monofásica 220V Saída Trifásica",
+      "slug": "inversor-de-frequencia-provolt-pi100-3-0cv-220v-monofasico",
+      "brand": null,
+      "price": 1076.57,
+      "priceFormatted": "R$ 1.076,57",
+      "stock": null,
+      "inStock": true,
+      "description": "O que é o Inversor de Frequência Provolt PI100 3,0CV Monofásica 220V Saída Trifásica? O Inversor de Frequência Provolt PI100 3,0CV Monofásica 220V Saída Trifásica foi desenvolvido para dar mais controle e segurança no acionamento de motores elétricos. Ele ajusta a velocidade, torque e rotação de forma precisa, garante partidas suaves e reduz o desgaste mecânico. Com alimentação monofásica 220V e saída trifásica, atende motores de até 3,0CV em diferentes aplicações, desde bombas e compressores...",
+      "specs": null,
+      "category": "inversor-de-frequência",
+      "categoryPath": [
+        "Automação e Desenvolvimento",
+        "Inversor de frequência"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2025/08/produto/25523/113699-a-inversor-frequencia-provolt-pi100-2r2g1z-monof-3-0cv-220vac.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2025/08/produto/25523/113699-a-inversor-frequencia-provolt-pi100-2r2g1z-monof-3-0cv-220vac.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/08/produto/25522/113699-b-inversor-frequencia-provolt-pi100-2r2g1z-monof-3-0cv-220vac.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/08/produto/25521/113699-c-inversor-frequencia-provolt-pi100-2r2g1z-monof-3-0cv-220vac.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/08/produto/25520/113699-inversor-frequencia-provolt-pi100-2r2g1z-monof-3-0cv-220vac.jpg"
+      ],
+      "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/09/produto/26053/manual-pi100.pdf",
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-provolt-pi100-3-0cv-220v-monofasico"
+    }
+  ],
+  "categories": [
+    {
+      "id": "encoder",
+      "name": "Encoder",
+      "count": 3
+    },
+    {
+      "id": "terrômetro",
+      "name": "Terrômetro",
+      "count": 2
+    },
+    {
+      "id": "inversor-de-frequência",
+      "name": "Inversor De Frequência",
+      "count": 2
+    },
+    {
+      "id": "megômetro",
+      "name": "Megômetro",
+      "count": 1
+    },
+    {
+      "id": "estação-de-retrabalho",
+      "name": "Estação De Retrabalho",
+      "count": 1
+    },
+    {
+      "id": "esr",
+      "name": "Esr",
+      "count": 1
+    },
+    {
+      "id": "estação-conjugada",
+      "name": "Estação Conjugada",
+      "count": 1
+    },
+    {
+      "id": "cabo-de-rede",
+      "name": "Cabo De Rede",
+      "count": 1
+    },
+    {
+      "id": "lcd",
+      "name": "Lcd",
+      "count": 1
+    },
+    {
+      "id": "fontes-24-volts",
+      "name": "Fontes 24 Volts",
+      "count": 1
+    },
+    {
+      "id": "alicate-amperimetro",
+      "name": "Alicate Amperimetro",
+      "count": 1
+    },
+    {
+      "id": "estação-dessoldadora",
+      "name": "Estação Dessoldadora",
+      "count": 1
+    },
+    {
+      "id": "osciloscópio",
+      "name": "Osciloscópio",
+      "count": 1
+    },
+    {
+      "id": "multímetros",
+      "name": "Multímetros",
+      "count": 1
+    },
+    {
+      "id": "fontes-de-bancada",
+      "name": "Fontes De Bancada",
+      "count": 1
+    },
+    {
+      "id": "analisador-de-energia",
+      "name": "Analisador De Energia",
+      "count": 1
+    }
+  ]
+}

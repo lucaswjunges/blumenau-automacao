@@ -1,0 +1,88 @@
+name: Update Products
+
+on:
+  # Executar diariamente às 09:00 UTC (06:00 BRT)
+  schedule:
+    - cron: '0 9 * * *'
+
+  # Permitir execução manual
+  workflow_dispatch:
+    inputs:
+      test_mode:
+        description: 'Modo teste (apenas 10 produtos)'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: 'scripts/requirements.txt'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Run scraper
+        run: |
+          if [ "${{ github.event.inputs.test_mode }}" == "true" ]; then
+            python scripts/scraper.py --test
+          else
+            python scripts/scraper.py
+          fi
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet products.json 2>/dev/null; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add products.json
+
+          # Gerar mensagem de commit com estatísticas
+          TOTAL=$(jq '.totalProducts' products.json)
+          DATE=$(date '+%Y-%m-%d %H:%M')
+
+          git commit -m "chore: atualizar produtos ($TOTAL produtos) - $DATE"
+          git push
+
+      - name: Summary
+        run: |
+          echo "## Resumo da Atualização" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [ -f products.json ]; then
+            TOTAL=$(jq '.totalProducts' products.json)
+            UPDATED=$(jq '.lastUpdated' products.json)
+            CATEGORIES=$(jq '.categories | length' products.json)
+
+            echo "- **Total de produtos:** $TOTAL" >> $GITHUB_STEP_SUMMARY
+            echo "- **Categorias:** $CATEGORIES" >> $GITHUB_STEP_SUMMARY
+            echo "- **Última atualização:** $UPDATED" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "Nenhum produto encontrado" >> $GITHUB_STEP_SUMMARY
+          fi

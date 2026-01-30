@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto | Blumenau Automação</title>
+    <meta name="description" content="Detalhes do produto - Blumenau Automação">
+
+    <link rel="icon" type="image/png" href="logo1.png">
+    <link rel="apple-touch-icon" href="logo1.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            900: '#1a1a2e',
+                            800: '#16213e',
+                            700: '#1f2b47',
+                            600: '#2a3a5a'
+                        },
+                        accent: {
+                            500: '#195F79',
+                            400: '#4a9bb5',
+                            300: '#7ab8c9'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #7ab8c9 0%, #195F79 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #195F79 0%, #7ab8c9 100%);
+        }
+        .thumbnail-active {
+            border-color: #4a9bb5 !important;
+        }
+    </style>
+</head>
+<body class="bg-primary-900 text-gray-200 font-sans">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-primary-900/95 backdrop-blur-sm border-b border-primary-700">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <img src="logo1.png" alt="Blumenau Automação" class="h-10 md:h-12 w-auto">
+                    <span class="text-xl md:text-2xl font-bold gradient-text">Blumenau Automação</span>
+                </a>
+
+                <nav class="hidden lg:flex items-center space-x-5">
+                    <a href="index.html#servicos" class="text-gray-300 hover:text-white transition-colors whitespace-nowrap">Serviços</a>
+                    <a href="tecnologias.html" class="text-gray-300 hover:text-white transition-colors whitespace-nowrap">Soluções</a>
+                    <a href="know-how.html" class="text-gray-300 hover:text-white transition-colors whitespace-nowrap">Know-How</a>
+                    <a href="produtos.html" class="text-accent-400 whitespace-nowrap">Produtos</a>
+                    <a href="index.html#cases" class="text-gray-300 hover:text-white transition-colors whitespace-nowrap">Cases</a>
+                    <a href="index.html#sobre" class="text-gray-300 hover:text-white transition-colors whitespace-nowrap">Sobre</a>
+                    <a href="index.html#contato" class="text-gray-300 hover:text-white transition-colors whitespace-nowrap">Contato</a>
+                    <a href="area-cliente.html" class="px-3 py-1.5 bg-primary-900 text-white rounded-lg hover:bg-primary-700 transition-colors whitespace-nowrap text-sm flex items-center gap-1.5">
+                        🔐 Área do Cliente
+                    </a>
+                    <a href="produtos.html#carrinho" id="cart-icon" class="relative p-2 text-gray-300 hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                        <span id="cart-count" class="absolute -top-1 -right-1 bg-accent-500 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center hidden">0</span>
+                    </a>
+                </nav>
+
+                <div class="hidden lg:flex items-center">
+                    <a href="index.html#contato" class="gradient-bg text-white px-4 py-2 rounded-lg font-medium hover:opacity-90 transition-opacity whitespace-nowrap text-sm">
+                        Orçamento
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-300 hover:text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-primary-800 border-t border-primary-700">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html#servicos" class="block text-gray-300 hover:text-white py-2">Serviços</a>
+                <a href="tecnologias.html" class="block text-gray-300 hover:text-white py-2">Soluções</a>
+                <a href="know-how.html" class="block text-gray-300 hover:text-white py-2">Know-How</a>
+                <a href="produtos.html" class="block text-accent-400 py-2">Produtos</a>
+                <a href="index.html#cases" class="block text-gray-300 hover:text-white py-2">Cases</a>
+                <a href="index.html#sobre" class="block text-gray-300 hover:text-white py-2">Sobre</a>
+                <a href="index.html#contato" class="block text-gray-300 hover:text-white py-2">Contato</a>
+                <a href="area-cliente.html" class="inline-flex items-center gap-2 bg-primary-900 text-white px-4 py-2 rounded-lg mt-2">
+                    🔐 Área do Cliente
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Loading State -->
+    <div id="loading" class="pt-28 pb-16 min-h-screen flex items-center justify-center">
+        <div class="text-center">
+            <svg class="w-12 h-12 mx-auto animate-spin text-accent-400" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <p class="mt-4 text-gray-400">Carregando produto...</p>
+        </div>
+    </div>
+
+    <!-- Error State -->
+    <div id="error" class="hidden pt-28 pb-16 min-h-screen flex items-center justify-center">
+        <div class="text-center">
+            <svg class="w-16 h-16 mx-auto text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+            <h2 class="text-2xl font-bold mb-2">Produto não encontrado</h2>
+            <p class="text-gray-400 mb-6">O produto que você procura não existe ou foi removido.</p>
+            <a href="produtos.html" class="gradient-bg text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition-opacity inline-block">
+                Ver Todos os Produtos
+            </a>
+        </div>
+    </div>
+
+    <!-- Product Content -->
+    <main id="product-content" class="hidden pt-24 pb-16">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6">
+
+            <!-- Breadcrumb -->
+            <nav id="breadcrumb" class="text-sm text-gray-400 mb-6 pt-4">
+                <a href="index.html" class="hover:text-white">Home</a>
+                <span class="mx-2">/</span>
+                <a href="produtos.html" class="hover:text-white">Produtos</a>
+                <span class="mx-2">/</span>
+                <span id="breadcrumb-category" class="hover:text-white"></span>
+                <span class="mx-2">/</span>
+                <span id="breadcrumb-product" class="text-gray-300"></span>
+            </nav>
+
+            <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
+
+                <!-- Image Gallery -->
+                <div class="space-y-4">
+                    <!-- Main Image -->
+                    <div class="bg-primary-800 rounded-2xl p-4 aspect-square flex items-center justify-center overflow-hidden">
+                        <img id="main-image" src="" alt="" class="max-w-full max-h-full object-contain rounded-lg">
+                    </div>
+
+                    <!-- Thumbnails -->
+                    <div id="thumbnails" class="flex gap-3 overflow-x-auto pb-2">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="space-y-6">
+                    <!-- Brand -->
+                    <div id="brand-badge" class="hidden">
+                        <span class="inline-block px-3 py-1 bg-accent-500/20 text-accent-400 text-sm rounded-full font-medium"></span>
+                    </div>
+
+                    <!-- Title -->
+                    <h1 id="product-name" class="text-3xl md:text-4xl font-bold"></h1>
+
+                    <!-- SKU -->
+                    <p id="product-sku" class="text-gray-400 text-sm"></p>
+
+                    <!-- Price -->
+                    <div class="space-y-2">
+                        <p id="product-price" class="text-4xl font-bold text-accent-400"></p>
+                        <p class="text-sm text-gray-400">
+                            ou consulte condições especiais via WhatsApp
+                        </p>
+                    </div>
+
+                    <!-- Stock Status -->
+                    <div id="stock-status" class="flex items-center gap-2">
+                        <!-- Populated by JS -->
+                    </div>
+
+                    <!-- Description -->
+                    <div id="description-section" class="hidden">
+                        <h3 class="text-lg font-semibold mb-2">Descrição</h3>
+                        <p id="product-description" class="text-gray-300 leading-relaxed"></p>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <button id="add-to-cart-btn" class="flex-1 gradient-bg text-white py-4 px-6 rounded-xl font-semibold text-lg hover:opacity-90 transition-opacity flex items-center justify-center gap-2">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                            Adicionar ao Carrinho
+                        </button>
+
+                        <a id="whatsapp-btn" href="#" target="_blank" class="flex-1 bg-green-600 text-white py-4 px-6 rounded-xl font-semibold text-lg hover:bg-green-700 transition-colors flex items-center justify-center gap-2">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                            Comprar pelo WhatsApp
+                        </a>
+                    </div>
+
+                    <!-- Source info (link removido - Proesi bloqueia acesso externo) -->
+                </div>
+            </div>
+
+            <!-- Specifications -->
+            <section id="specs-section" class="hidden mt-12">
+                <div class="bg-primary-800 rounded-2xl p-6 md:p-8">
+                    <h2 class="text-2xl font-bold mb-6">Especificações Técnicas</h2>
+                    <div id="specs-table" class="grid md:grid-cols-2 gap-4">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Datasheet -->
+            <section id="datasheet-section" class="hidden mt-8">
+                <a id="datasheet-link" href="#" target="_blank" class="inline-flex items-center gap-3 bg-primary-800 hover:bg-primary-700 transition-colors rounded-xl px-6 py-4">
+                    <svg class="w-8 h-8 text-red-500" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/>
+                        <path d="M8 12h8v2H8zm0 4h8v2H8z"/>
+                    </svg>
+                    <div>
+                        <p class="font-semibold">Datasheet / Manual</p>
+                        <p class="text-sm text-gray-400">Baixar PDF com especificações completas</p>
+                    </div>
+                </a>
+            </section>
+
+            <!-- Related Products -->
+            <section id="related-section" class="hidden mt-16">
+                <h2 class="text-2xl font-bold mb-6">Produtos Relacionados</h2>
+                <div id="related-products" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <!-- Populated by JS -->
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-800 border-t border-primary-700 py-8 mt-auto">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 text-center text-gray-400 text-sm">
+            <p>&copy; 2025 Blumenau Automação. Todos os direitos reservados.</p>
+            <p class="mt-2">CNPJ: XX.XXX.XXX/0001-XX | Blumenau - SC</p>
+        </div>
+    </footer>
+
+    <script>
+        let product = null;
+        let allProducts = [];
+
+        // Get product ID from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('id');
+        const productSlug = urlParams.get('slug');
+
+        // Format price
+        function formatPrice(price) {
+            if (!price) return 'Sob consulta';
+            return `R$ ${price.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+        }
+
+        // Load products data
+        async function loadProduct() {
+            try {
+                const response = await fetch('products.json');
+                if (!response.ok) throw new Error('Failed to load products');
+
+                const data = await response.json();
+                allProducts = data.products || [];
+
+                // Find product by ID or slug
+                product = allProducts.find(p =>
+                    p.id === productId ||
+                    p.slug === productSlug ||
+                    p.slug === productId
+                );
+
+                if (!product) {
+                    showError();
+                    return;
+                }
+
+                renderProduct();
+            } catch (error) {
+                console.error('Error loading product:', error);
+                showError();
+            }
+        }
+
+        function showError() {
+            document.getElementById('loading').classList.add('hidden');
+            document.getElementById('error').classList.remove('hidden');
+        }
+
+        function renderProduct() {
+            // Update page title and meta
+            document.title = `${product.name} | Blumenau Automação`;
+
+            // Hide loading, show content
+            document.getElementById('loading').classList.add('hidden');
+            document.getElementById('product-content').classList.remove('hidden');
+
+            // Breadcrumb
+            if (product.categoryPath && product.categoryPath.length > 0) {
+                document.getElementById('breadcrumb-category').innerHTML =
+                    `<a href="produtos.html?category=${product.category}" class="hover:text-white">${product.categoryPath[product.categoryPath.length - 1]}</a>`;
+            } else if (product.category) {
+                document.getElementById('breadcrumb-category').textContent = product.category;
+            }
+            document.getElementById('breadcrumb-product').textContent = product.name;
+
+            // Main image
+            const mainImg = document.getElementById('main-image');
+            mainImg.src = product.image || 'https://via.placeholder.com/600x600?text=Sem+Imagem';
+            mainImg.alt = product.name;
+
+            // Thumbnails
+            const thumbnailsContainer = document.getElementById('thumbnails');
+            const images = product.images || (product.image ? [product.image] : []);
+
+            if (images.length > 1) {
+                thumbnailsContainer.innerHTML = images.map((img, index) => `
+                    <button onclick="setMainImage('${img}')" class="flex-shrink-0 w-20 h-20 bg-primary-700 rounded-lg overflow-hidden border-2 ${index === 0 ? 'thumbnail-active border-accent-400' : 'border-transparent hover:border-primary-600'} transition-colors">
+                        <img src="${img}" alt="Imagem ${index + 1}" class="w-full h-full object-contain">
+                    </button>
+                `).join('');
+            }
+
+            // Brand
+            if (product.brand) {
+                const brandBadge = document.getElementById('brand-badge');
+                brandBadge.classList.remove('hidden');
+                brandBadge.querySelector('span').textContent = product.brand;
+            }
+
+            // Name
+            document.getElementById('product-name').textContent = product.name;
+
+            // SKU
+            if (product.sku) {
+                document.getElementById('product-sku').textContent = `SKU: ${product.sku}`;
+            }
+
+            // Price
+            document.getElementById('product-price').textContent = product.priceFormatted || formatPrice(product.price);
+
+            // Stock status
+            const stockStatus = document.getElementById('stock-status');
+            if (product.inStock) {
+                const stockText = product.stock ? `${product.stock} unidades` : 'Disponível';
+                stockStatus.innerHTML = `
+                    <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+                    <span class="text-green-400 font-medium">Em estoque</span>
+                    <span class="text-gray-400">(${stockText})</span>
+                `;
+            } else {
+                stockStatus.innerHTML = `
+                    <span class="w-3 h-3 bg-red-500 rounded-full"></span>
+                    <span class="text-red-400 font-medium">Indisponível</span>
+                `;
+                document.getElementById('add-to-cart-btn').disabled = true;
+                document.getElementById('add-to-cart-btn').classList.add('opacity-50', 'cursor-not-allowed');
+            }
+
+            // Description
+            if (product.description) {
+                document.getElementById('description-section').classList.remove('hidden');
+                document.getElementById('product-description').textContent = product.description;
+            }
+
+            // Specs
+            if (product.specs && Object.keys(product.specs).length > 0) {
+                document.getElementById('specs-section').classList.remove('hidden');
+                const specsTable = document.getElementById('specs-table');
+                specsTable.innerHTML = Object.entries(product.specs).map(([key, value]) => `
+                    <div class="flex justify-between py-3 border-b border-primary-700">
+                        <span class="text-gray-400">${key}</span>
+                        <span class="font-medium text-right">${value}</span>
+                    </div>
+                `).join('');
+            }
+
+            // Datasheet
+            if (product.datasheet) {
+                document.getElementById('datasheet-section').classList.remove('hidden');
+                document.getElementById('datasheet-link').href = product.datasheet;
+            }
+
+            // Source link removido - Proesi bloqueia acesso externo (403)
+
+            // WhatsApp link
+            const whatsappMsg = `Olá! Tenho interesse no produto:\n\n*${product.name}*\nPreço: ${product.priceFormatted || formatPrice(product.price)}\n\nPoderia me dar mais informações?`;
+            document.getElementById('whatsapp-btn').href = `https://wa.me/5547988677798?text=${encodeURIComponent(whatsappMsg)}`;
+
+            // Add to cart button
+            document.getElementById('add-to-cart-btn').onclick = () => addToCart(product);
+
+            // Related products
+            renderRelatedProducts();
+        }
+
+        function setMainImage(src) {
+            document.getElementById('main-image').src = src;
+
+            // Update thumbnail active state
+            const thumbnails = document.querySelectorAll('#thumbnails button');
+            thumbnails.forEach(thumb => {
+                const img = thumb.querySelector('img');
+                if (img.src === src) {
+                    thumb.classList.add('thumbnail-active', 'border-accent-400');
+                    thumb.classList.remove('border-transparent');
+                } else {
+                    thumb.classList.remove('thumbnail-active', 'border-accent-400');
+                    thumb.classList.add('border-transparent');
+                }
+            });
+        }
+
+        function renderRelatedProducts() {
+            if (!product.category || allProducts.length < 2) return;
+
+            const related = allProducts
+                .filter(p => p.id !== product.id && p.category === product.category)
+                .slice(0, 4);
+
+            if (related.length === 0) return;
+
+            document.getElementById('related-section').classList.remove('hidden');
+            const container = document.getElementById('related-products');
+
+            container.innerHTML = related.map(p => `
+                <a href="produto.html?id=${encodeURIComponent(p.id)}" class="bg-primary-800 rounded-xl p-4 hover:bg-primary-700 transition-colors group">
+                    <div class="aspect-square bg-primary-700 rounded-lg mb-3 overflow-hidden">
+                        <img src="${p.image || 'https://via.placeholder.com/200x200?text=Sem+Imagem'}"
+                             alt="${p.name}"
+                             class="w-full h-full object-contain group-hover:scale-105 transition-transform"
+                             loading="lazy">
+                    </div>
+                    <h3 class="font-medium text-sm line-clamp-2 mb-2">${p.name}</h3>
+                    <p class="text-accent-400 font-bold">${p.priceFormatted || formatPrice(p.price)}</p>
+                </a>
+            `).join('');
+        }
+
+        // Cart functions
+        function getCart() {
+            return JSON.parse(localStorage.getItem('blumenau_cart') || '[]');
+        }
+
+        function saveCart(cart) {
+            localStorage.setItem('blumenau_cart', JSON.stringify(cart));
+            updateCartCount();
+        }
+
+        function addToCart(product) {
+            const cart = getCart();
+            const existing = cart.find(item => item.id === product.id);
+
+            if (existing) {
+                existing.quantity++;
+            } else {
+                cart.push({
+                    id: product.id,
+                    name: product.name,
+                    price: product.price,
+                    priceFormatted: product.priceFormatted,
+                    image: product.image,
+                    sourceUrl: product.sourceUrl,
+                    quantity: 1
+                });
+            }
+
+            saveCart(cart);
+
+            // Visual feedback
+            const btn = document.getElementById('add-to-cart-btn');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = `
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                Adicionado!
+            `;
+            btn.classList.add('bg-green-600');
+
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.classList.remove('bg-green-600');
+            }, 2000);
+        }
+
+        function updateCartCount() {
+            const cart = getCart();
+            const count = cart.reduce((sum, item) => sum + item.quantity, 0);
+            const cartCountEl = document.getElementById('cart-count');
+            if (cartCountEl) {
+                if (count > 0) {
+                    cartCountEl.textContent = count > 99 ? '99+' : count;
+                    cartCountEl.classList.remove('hidden');
+                } else {
+                    cartCountEl.classList.add('hidden');
+                }
+            }
+        }
+
+        // Mobile menu
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Init
+        if (productId || productSlug) {
+            loadProduct();
+        } else {
+            showError();
+        }
+        updateCartCount();
+    </script>
+
+</body>
+</html>

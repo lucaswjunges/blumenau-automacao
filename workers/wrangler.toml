@@ -1,0 +1,14 @@
+name = "blumenau-price-checker"
+main = "price-checker.js"
+compatibility_date = "2024-01-01"
+
+# Rota do Worker (ajustar conforme domínio)
+# routes = [
+#   { pattern = "api.blumenauautomacao.com.br/*", zone_name = "blumenauautomacao.com.br" }
+# ]
+
+# Ou usar workers.dev (gratuito)
+# O Worker ficará disponível em: blumenau-price-checker.<seu-subdominio>.workers.dev
+
+[observability]
+enabled = true
