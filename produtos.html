@@ -326,10 +326,28 @@
                 </p>
 
                 <!-- Logos de pagamento -->
-                <div class="flex items-center justify-center gap-3 mt-3 opacity-60">
-                    <img src="https://http2.mlstatic.com/frontend-assets/mp-web-navigation/badge/pix-icon.svg" alt="Pix" class="h-6">
-                    <img src="https://http2.mlstatic.com/frontend-assets/mp-web-navigation/badge/credit-card-icon.svg" alt="Cartão" class="h-6">
-                    <img src="https://http2.mlstatic.com/frontend-assets/mp-web-navigation/badge/boleto-icon.svg" alt="Boleto" class="h-6">
+                <div class="flex items-center justify-center gap-4 mt-3">
+                    <!-- Pix -->
+                    <div class="flex items-center gap-1 text-gray-400" title="Pix">
+                        <svg class="h-5 w-5" viewBox="0 0 512 512" fill="currentColor">
+                            <path d="M242.4 292.5C247.8 287.1 257.1 287.1 262.5 292.5L339.5 369.5C353.7 383.7 372.6 391.5 392.6 391.5H407.7L310.6 488.6C280.3 518.9 231.1 518.9 200.8 488.6L103.3 391.2H112.6C132.6 391.2 151.5 383.4 165.7 369.2L242.4 292.5zM262.5 218.9C257.1 224.4 247.8 224.4 242.4 218.9L165.7 142.2C151.5 128 132.6 120.2 112.6 120.2H103.3L200.2 23.31C230.5-7.08 279.7-7.08 310 23.31L407.7 120.2H392.6C372.6 120.2 353.7 128 339.5 142.2L262.5 218.9zM112.6 142.7C126.4 142.7 139.1 148.3 149.7 158.1L226.4 234.8C233.6 241.1 243 245.6 253.2 245.6H258.8C269 245.6 278.4 241.1 285.6 234.8L362.3 158.1C ## 148.3 139.1 142.7 126.4 142.7H98.63L91.28 150H112.6zM98.63 369.5L91.28 362H112.6C126.4 369.5 139.1 363.9 149.7 354.1L226.4 277.4C233.6 271.1 243 266.6 253.2 266.6H258.8C269 266.6 278.4 271.1 285.6 277.4L362.3 354.1C372.9 363.9 385.6 369.5 399.4 369.5H420.7L413.4 362H392.6C378.8 369.5 366.1 363.9 355.5 354.1L278.8 277.4C271.6 271.1 262.2 266.6 252 266.6H260C249.8 266.6 240.4 271.1 233.2 277.4L156.5 354.1C145.9 363.9 133.2 369.5 119.4 369.5H98.63z"/>
+                        </svg>
+                        <span class="text-xs">Pix</span>
+                    </div>
+                    <!-- Cartao -->
+                    <div class="flex items-center gap-1 text-gray-400" title="Cartao">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
+                        </svg>
+                        <span class="text-xs">Cartao</span>
+                    </div>
+                    <!-- Boleto -->
+                    <div class="flex items-center gap-1 text-gray-400" title="Boleto">
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M2 4h2v16H2V4zm4 0h1v16H6V4zm2 0h2v16H8V4zm3 0h2v16h-2V4zm3 0h2v16h-2V4zm3 0h1v16h-1V4zm2 0h2v16h-2V4z"/>
+                        </svg>
+                        <span class="text-xs">Boleto</span>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-01-30T17:05:08.205348+00:00",
+  "lastUpdated": "2026-01-30T19:55:39.036690+00:00",
   "source": "proesi",
-  "totalProducts": 20,
+  "totalProducts": 56,
   "products": [
     {
       "id": "423963",
@@ -13,7 +13,7 @@
       "priceFormatted": "R$ 5.089,83",
       "stock": null,
       "inStock": true,
-      "description": "MI-2705 - Megômetro Digital | Minipa O MI-2705 - Megômetro Digital Minipa é um instrumento de medição utilizado para medir a resistência de isolamento em diversos tipos de materiais, como cabos, transformadores, motores elétricos e equipamentos eletrônicos. Ele é um megômetro digital, o que significa que realiza medições de resistência de isolamento de forma precisa e com uma interface digital. Dados Técnicos: Display LCD 4 Dígitos/10000 ContagensIluminação/Barra Gráfica Iluminação/Barra Gráf...",
+      "description": "MI-2705 - Megômetro Digital | Minipa O MI-2705 - Megômetro Digital Minipa é um instrumento de medição utilizado para medir a resistência de isolamento em diversos tipos de materiais, como cabos, transformadores, motores elétricos e equipamentos eletrônicos. Ele é um megômetro digital, o que significa que realiza medições de resistência de isolamento de forma precisa e com uma interface digital. Dados Técnicos: Display LCD 4 Dígitos/10000 ContagensIluminação/Barra Gráfica Iluminação/Barra GráficaFaixas de Medida M? 0~1T?Tensão de Teste DC 500/1k/2,5k/5kVVoltímetro AC 30~600VVoltímetro DC 30~600VTempo de Teste ConfigurávelAutodesligamento ?Índice de Polarização ?Teste de Absorção Dielétrica ?Modo Comparação ?Interface Interface USBPrecisão Básica 3%Memória 18 DadosAuto Range ?Categoria de Segurança CAT III 600VAlimentação 8x1,5V LR14 (Fonte 15V-1A/220V) Faça o Download do Datasheet",
       "specs": null,
       "category": "megômetro",
       "categoryPath": [
@@ -43,7 +43,7 @@
       "priceFormatted": "R$ 1.353,70",
       "stock": null,
       "inStock": true,
-      "description": "Estação de Retrabalho Digital | Hikari HK-852X A Estação de Retrabalho é perfeita para fazer o retrabalho em placas eletrônicas que possuem componentes SMD. Esse modeloHK-852Xé certificada de acordo com as normas técnicas IEC 60335-1 e IEC 60335-2-45. Se destaca por ser totalmente digital, possuir aquecimento rápido, estabilidade térmica, e facilidade nas troca de bocais. Com seu display duplo é possível ajustar a vazão do ar e temperatura, resfriamento automático da resistência e função auto...",
+      "description": "Estação de Retrabalho Digital | Hikari HK-852X A Estação de Retrabalho é perfeita para fazer o retrabalho em placas eletrônicas que possuem componentes SMD. Esse modeloHK-852Xé certificada de acordo com as normas técnicas IEC 60335-1 e IEC 60335-2-45. Se destaca por ser totalmente digital, possuir aquecimento rápido, estabilidade térmica, e facilidade nas troca de bocais. Com seu display duplo é possível ajustar a vazão do ar e temperatura, resfriamento automático da resistência e função auto sleep. Seu sistema de aquecimento e resfriamento inteligente funciona da seguinte forma: ao repousar a alça no suporte, automaticamente a estação entra no modo de descanso, baixando a temperatura e a vazão de ar, e ao retirar a alça do suporte, a estação volta automaticamente ao estado programado. Os principais diferenciais deste modelo: - Aquecimento rápido- Resfriamento inteligente - permanecendo com a bomba de ar acionada até o resfriamento da resistência, aumentando assim a vida útil da mesma.- Auto Hibernação - Sleep- Resistência de Cerâmica: Melhor Eficiência Térmica- Proteção ESD (contra descargas eletrostáticas) Características: - Numero Hikari: 21J424- Display Digital LCD - display duplo- Potência de Pico: 650W- Potência Nominal: 230W- Proteção ESD (contra descargas eletrostáticas)- Faixa de Temperatura: 0°C á 480°C- Fluxo Máximo de Ar: 24 Litros por minuto- Tipo de Bomba: Diafragma- Ruído: <50dB;- Resistência de Cerâmica- Alimentação: 220V- Comprimento do Cabo: 900mm;- Dimensões Aproximadas: 152 x 135 x 245mm- Peso Aproximado: 3,0Kg.- Garantia de 6 meses",
       "specs": null,
       "category": "estação-de-retrabalho",
       "categoryPath": [
@@ -69,7 +69,7 @@
       "priceFormatted": "R$ 1.033,58",
       "stock": null,
       "inStock": true,
-      "description": "Encoder Fenac Incremental FNC40BM6630V100-R2 - 100 Pulsos O encoder FENAC incremental FNC40BM6630V100-R2 é um dispositivo de feedback de posição que gera 100 pulsos por rotação. Aplicação: Ele é projetado para ser utilizado em aplicações que exigem alta precisão na medição da posição angular, como em máquinas CNC, robôs industriais, equipamentos médicos, entre outros. Vantagens: Esse encoder é incremental, o que significa que ele fornece informações sobre o movimento angular em relação a uma ...",
+      "description": "Encoder Fenac Incremental FNC40BM6630V100-R2 - 100 Pulsos O encoder FENAC incremental FNC40BM6630V100-R2 é um dispositivo de feedback de posição que gera 100 pulsos por rotação. Aplicação: Ele é projetado para ser utilizado em aplicações que exigem alta precisão na medição da posição angular, como em máquinas CNC, robôs industriais, equipamentos médicos, entre outros. Vantagens: Esse encoder é incremental, o que significa que ele fornece informações sobre o movimento angular em relação a uma posição de referência, mas não informa a posição absoluta. Ele é compatível com diversos tipos de interfaces de comunicação e pode ser facilmente integrado em sistemas eletrônicos complexos. Especificações: -Modelo: FNC40BM6630V100-R2-Pulsos por Volta: 100-Diâmetro do Eixo: 6mm-Tensão de Alimentação: 5-30V-Quantidade de Fios de Sáida: 6-Frequência: 50 kHz-Temperatura de Operação: -10°C  até +60°C",
       "specs": null,
       "category": "encoder",
       "categoryPath": [
@@ -94,7 +94,7 @@
       "priceFormatted": "R$ 2.285,67",
       "stock": null,
       "inStock": true,
-      "description": "O que é o Medidor LCR MX-1050 - Minipa? O Medidor LCR MX-1050 da Minipa é um equipamento digital de alta precisão para medições de indutância (L), capacitância (C) e resistência (R), com detecção automática e modos série ou paralelo. Possui display duplo LCD 4½ dígitos, barra gráfica de 50 segmentos e cinco frequências de teste (100Hz a 100kHz), garantindo medições rápidas e seguras. Conta com interface USB e software para registrar até 10.000 leituras, além de autocalibração, data hold, modo...",
+      "description": "O que é o Medidor LCR MX-1050 - Minipa? O Medidor LCR MX-1050 da Minipa é um equipamento digital de alta precisão para medições de indutância (L), capacitância (C) e resistência (R), com detecção automática e modos série ou paralelo. Possui display duplo LCD 4½ dígitos, barra gráfica de 50 segmentos e cinco frequências de teste (100Hz a 100kHz), garantindo medições rápidas e seguras. Conta com interface USB e software para registrar até 10.000 leituras, além de autocalibração, data hold, modo relativo e auto power off. É ideal para laboratórios, manutenção, controle de qualidade e ensino técnico, oferecendo alta precisão (±0,3%), baixo consumo, alimentação por bateria 9V e modo de tolerância ajustável, que permite comparar valores medidos com padrões de referência. Um instrumento completo para análises precisas de componentes eletrônicos. Especificações do Medidor Display: Duplo LCD 4½ dígitos (1999/19999 contagens)Barra gráfica: 50 segmentosFaixas de frequência de teste: 100Hz / 120Hz / 1kHz / 10kHz / 100kHzMedições: Indutância (L), Capacitância (C), Resistência (R), Resistência DC (DCR)Precisão básica: Até ±0,3% + 5 dígitosIdentificação automática: L/C/R e modo série/paraleloFunções adicionais: Data Hold, Modo Relativo, Tolerância, AutocalibraçãoInterface: Mini-USB com software de registro (até 10.000 dados)Impedância de saída: 120ΩAuto Power Off: Aproximadamente 5 minutosTemperatura de operação: 0°C a 40°C (UR < 75%)Alimentação: Bateria de 9V (6F22)Dimensões: 193 × 96 × 47 mmPeso: 374 g (com bateria)Garantia: 12 meses Faça o Download do Datasheet Perguntas frequentes (FAQ) O que significa LCR no nome do medidor? LCR refere-se aos três tipos de medições possíveis: Indutância (L), Capacitância (C) e Resistência (R). O MX-1050 mede componentes SMD? Sim. O equipamento inclui ponta de prova tipo pinça SMD, ideal para medir componentes de montagem superficial. É possível conectar o MX-1050 ao computador? Sim. Ele possui interface Mini-USB e software para registro e ...",
       "specs": null,
       "category": "esr",
       "categoryPath": [
@@ -155,7 +155,7 @@
       "priceFormatted": "R$ 1.654,00",
       "stock": null,
       "inStock": true,
-      "description": "Estação Digital Conjugada Solda e Retrabalho HK-701X A Estação Digital Conjugada HK-701X combina em um único equipamento uma estação de solda e uma estação de retrabalho, otimizando o espaço na bancada de manutenção. Certificada pelas normas IEC 60335-1 e IEC 60335-2-45, é ideal para reparos de componentes SMD e PTH, garantindo praticidade e versatilidade. Perfeita para manutenção eletrônica em oficinas, laboratórios ou linhas de produção, a HK-701X é indicada para reparos em circuitos SMD e ...",
+      "description": "Estação Digital Conjugada Solda e Retrabalho HK-701X A Estação Digital Conjugada HK-701X combina em um único equipamento uma estação de solda e uma estação de retrabalho, otimizando o espaço na bancada de manutenção. Certificada pelas normas IEC 60335-1 e IEC 60335-2-45, é ideal para reparos de componentes SMD e PTH, garantindo praticidade e versatilidade. Perfeita para manutenção eletrônica em oficinas, laboratórios ou linhas de produção, a HK-701X é indicada para reparos em circuitos SMD e PTH. Suas funções de solda e retrabalho permitem executar tarefas complexas com precisão e controle térmico eficiente. A estação HK-701X oferece aquecimento rápido e resfriamento inteligente, protegendo a resistência e prolongando sua vida útil. Além disso, conta com proteção ESD contra descargas eletrostáticas e acompanha bocais intercambiáveis, tornando-a uma solução completa e eficiente. Especificações Técnicas: Conjunto Geral: Potência de Pico: 750WPotência Nominal: 250WAlimentação: 220V (50/60 Hz)Dimensões: 260 x 245 x 190 mmPeso Aproximado: 4,7 kgGarantia: 6 meses Estação de Retrabalho: Faixa de Temperatura: 0°C ~ 480°CVazão Máxima de Ar: 24 L/minNível de Ruído: <50 dBResistência: Cerâmica Estação de Solda: Potência de Pico: 60WTensão de Entrada: 24VACComprimento do Cabo: 1 mPeso: 100 g",
       "specs": null,
       "category": "estação-conjugada",
       "categoryPath": [
@@ -185,7 +185,7 @@
       "priceFormatted": "R$ 1.213,11",
       "stock": null,
       "inStock": true,
-      "description": "Encoder Fenac Incremental FNC58S10630V1024-R2 - 1024 Pulsos O encoder FENAC incremental FNC-58SM-6630V360-R2 é um dispositivo de feedback de posição que gera 1024 pulsos por rotação. Aplicação: Ele é projetado para ser utilizado em aplicações que exigem alta precisão na medição da posição angular, como em máquinas CNC, robôs industriais, equipamentos médicos, entre outros. Vantagens: Esse encoder é incremental, o que significa que ele fornece informações sobre o movimento angular em relação a...",
+      "description": "Encoder Fenac Incremental FNC58S10630V1024-R2 - 1024 Pulsos O encoder FENAC incremental FNC-58SM-6630V360-R2 é um dispositivo de feedback de posição que gera 1024 pulsos por rotação. Aplicação: Ele é projetado para ser utilizado em aplicações que exigem alta precisão na medição da posição angular, como em máquinas CNC, robôs industriais, equipamentos médicos, entre outros. Vantagens: Esse encoder é incremental, o que significa que ele fornece informações sobre o movimento angular em relação a uma posição de referência, mas não informa a posição absoluta. Ele é compatível com diversos tipos de interfaces de comunicação e pode ser facilmente integrado em sistemas eletrônicos complexos. Especificações: -Modelo: FNC58S10630V1024-R2-Pulsos por Volta: 1024-Diâmetro do Eixo: 10mm-Tensão de Alimentação: 5-30V--Quantidade de Fios de Sáida: 6-Frequência: 200 kHz-Temperatura de Operação: -20°C  até +85°C",
       "specs": null,
       "category": "encoder",
       "categoryPath": [
@@ -210,7 +210,7 @@
       "priceFormatted": "R$ 1.482,00",
       "stock": null,
       "inStock": true,
-      "description": "O que é o Cabo de Rede Furukawa Soho Plus CAT5E - Rolo 305 Metros? O Cabo de Rede Furukawa Soho Plus CAT5E - Rolo 305 Metros é um cabo de par trançado não blindado (UTP) projetado para redes estruturadas de dados, voz e imagem, garantindo transmissões de até 1 Gigabit por segundo (1Gbps). Fabricado pela Furukawa, referência global em cabeamento, esse modelo da linha Soho Plus oferece qualidade, confiabilidade e durabilidade, sendo ideal para instalações que exigem desempenho contínuo e sinal ...",
+      "description": "O que é o Cabo de Rede Furukawa Soho Plus CAT5E - Rolo 305 Metros? O Cabo de Rede Furukawa Soho Plus CAT5E - Rolo 305 Metros é um cabo de par trançado não blindado (UTP) projetado para redes estruturadas de dados, voz e imagem, garantindo transmissões de até 1 Gigabit por segundo (1Gbps). Fabricado pela Furukawa, referência global em cabeamento, esse modelo da linha Soho Plus oferece qualidade, confiabilidade e durabilidade, sendo ideal para instalações que exigem desempenho contínuo e sinal estável. Com 305 metros de comprimento, o rolo permite projetos de médio e grande porte sem a necessidade de emendas, preservando a integridade da rede. O cabo atende aos padrões internacionais ANSI/TIA/EIA-568, oferecendo excelente performance para conexões Ethernet 10/100/1000 Mbps. O Cabo de Rede Furukawa Soho Plus CAT5E é indicado para profissionais de infraestrutura de redes, instaladores técnicos, provedores de internet, empresas de TI e integradores que buscam uma solução confiável para ambientes residenciais, comerciais e corporativos. Ele pode ser utilizado para conectar computadores, switches, roteadores, câmeras IP, impressoras de rede e outros dispositivos de LAN. Além disso, é adequado para data centers, escritórios, comércios e até ambientes industriais leves que exigem cabeamento de alta qualidade com baixa perda de sinal, garantindo transmissões rápidas e estáveis mesmo em distâncias maiores dentro do padrão especificado. O grande diferencial do Cabo Furukawa Soho Plus CAT5E está na combinação de desempenho e confiabilidade. Ele proporciona transmissão de dados em alta velocidade, minimizando interferências e perda de sinal, o que garante maior estabilidade da rede. A metragem de 305 metros em um único rolo reduz a necessidade de emendas, tornando a instalação mais prática e segura. Fabricado por uma marca reconhecida mundialmente, o cabo assegura durabilidade e conformidade com padrões internacionais, oferecendo ao cliente uma solução de cabeamento confiável ...",
       "specs": null,
       "category": "cabo-de-rede",
       "categoryPath": [
@@ -255,7 +255,7 @@
       "priceFormatted": "R$ 1.072,74",
       "stock": null,
       "inStock": true,
-      "description": "Fonte Chaveada Colmeia (+24V 25A 600W) LRS-600-24 Mean Well Fonte Chaveada Colmeia LRS-600-24 Mean Well (+24V 25A 600W) – Potente e compacta, a LRS-600-24 oferece 24V e 25A, totalizando 600W de potência, com alta eficiência e confiabilidade. Conta com entrada AC/DC ajustável, resfriamento por convecção de ar e proteções contra curto-circuito, sobretensão e sobrecarga, garantindo segurança e desempenho. Ideal para automação industrial, sistemas de LED, telecomunicações e eletrônica em geral. E...",
+      "description": "Fonte Chaveada Colmeia (+24V 25A 600W) LRS-600-24 Mean Well Fonte Chaveada Colmeia LRS-600-24 Mean Well (+24V 25A 600W) – Potente e compacta, a LRS-600-24 oferece 24V e 25A, totalizando 600W de potência, com alta eficiência e confiabilidade. Conta com entrada AC/DC ajustável, resfriamento por convecção de ar e proteções contra curto-circuito, sobretensão e sobrecarga, garantindo segurança e desempenho. Ideal para automação industrial, sistemas de LED, telecomunicações e eletrônica em geral. Especificações: Modelo: LRS-600Marca: Mean WellTensão de entrada AC: 90 ~ 132V AC / 180 ~ 264V ACTensão de entrada DC: 254 ~ 370V DCFrequência: 47 ~ 63HzTensão de saída: 24VCorrente: 25APotência: 600W",
       "specs": null,
       "category": "fontes-24-volts",
       "categoryPath": [
@@ -281,7 +281,7 @@
       "priceFormatted": "R$ 1.072,93",
       "stock": null,
       "inStock": true,
-      "description": "Alicate Amperímetro Digital ET-3367C | Minipa O Alicate Amperímetro ET-3367C, oferece a você,Alta performance e Versatilidadepara a suas medições, Tornando o seu trabalhoMais fácil, seguro e eficiente. Isso só é possível, graças asFunções especiaisque esse modelo oferece pra você e por ser um aparelho se enquadra naCategoria IV e Categoria IIIde segurança, em conformidade com aNR-10e a IEC/EN 61010-1. - LoZ :A função LoZ elimina devido à baixa impedância, medição de “Tensão fantasma” nas suas...",
+      "description": "Alicate Amperímetro Digital ET-3367C | Minipa O Alicate Amperímetro ET-3367C, oferece a você,Alta performance e Versatilidadepara a suas medições, Tornando o seu trabalhoMais fácil, seguro e eficiente. Isso só é possível, graças asFunções especiaisque esse modelo oferece pra você e por ser um aparelho se enquadra naCategoria IV e Categoria IIIde segurança, em conformidade com aNR-10e a IEC/EN 61010-1. - LoZ :A função LoZ elimina devido à baixa impedância, medição de “Tensão fantasma” nas suas leituras, Oferecendo maior precisão na medida de tensão AC em circuitos de potência e circuitos onde a baixa impedância não altere a performance do circuito. As Tensões Fantasmas ocorrem quando temos uma fiação energizada próxima a outra fiação não energizada, sendo que ambas estão dentro e próximas de um mesmo conduíte ou canaleta. Conformeindicado pelo manual, o tempo de medição usando a funçãoLoZ não deve ultrapassar 1 minuto. - Função VFD:Está função é um filtro para drive de frequência variável (Inversores e conversores). Quando for habilitada, esta função permite que seja habilitado um filtro passa baixa, eliminando a influência de ruídos durante uma medição, : Função válida somente para medidas de tensão AC. - Data Hold:Essa função faz o congelamento da leitura, caso você esteja fazendo uma leitura em um local com pouca visibilidade do display, ou precise anotar o valor medido. - Função NCV:Aproximando as Garras, a umadistância menor que 10mmde um condutor energizado , este equipamento mostrar no seu display algumas barras correspondentes à intensidade do campo elétrico e emitirá um sinal sonoro. sem a necessidade das ponteiras de prova. Com esteAlicate Amperímetro, você podetambém medir Tensão AC e DC até 1.000 Volts,Corrente Ac e DC até 1.000 Amper em condutores até 42 mm, Resistencia até 60 Mega Ohms, capacitância até 60 Mili Faraday, Teste decontinuidade com Beep. Este Alicate, consegue medir Temperatura entre - 20 °C até 1.000 °C, podemedir Frequência, através da...",
       "specs": {
         "Categoria de proteção": "Cat 4",
         "Corrente": "AC e DC",
@@ -315,7 +315,7 @@
       "priceFormatted": "R$ 1.206,28",
       "stock": null,
       "inStock": true,
-      "description": "O que é a Estação Dessoldadora Digital Hikari HK-917 - Bivolt? A HK-917 é uma pistola dessoldadora profissional, ideal para oficinas, laboratórios e linhas de manutenção eletrônica. Compatível com ligas com e sem chumbo, combina aquecimento rápido, alta potência (até 140 W) e controle digital de temperatura de 160 °C a 480 °C. Seu painel touch e display LED tornam a operação simples e intuitiva, enquanto o sistema de sucção de alta performance permite uso contínuo, atendendo tanto trabalhos p...",
+      "description": "O que é a Estação Dessoldadora Digital Hikari HK-917 - Bivolt? A HK-917 é uma pistola dessoldadora profissional, ideal para oficinas, laboratórios e linhas de manutenção eletrônica. Compatível com ligas com e sem chumbo, combina aquecimento rápido, alta potência (até 140 W) e controle digital de temperatura de 160 °C a 480 °C. Seu painel touch e display LED tornam a operação simples e intuitiva, enquanto o sistema de sucção de alta performance permite uso contínuo, atendendo tanto trabalhos pontuais quanto produção em escala. Recursos como modo Sleep automático e memória de ajustes garantem economia de tempo, prolongam a vida útil do equipamento e facilitam a manutenção. HK-917 oferece precisão, rapidez e durabilidade, sendo perfeita para profissionais que buscam eficiência em dessoldagem. Especificações da HK-917 Display LED digitalPainel TouchPotência nominal: 120 WPico de potência: 140 WFaixa de temperatura: 160 °C a 480 °CResistência: PTC cerâmicaPressão de vácuo: 0,6 MPAFunção memória de ajustesFunção Sleep automáticoAmbiente de operação: 0 °C a 50 °C, RH < 90%Alimentação: 100V a 240V – bivolt automáticoProteção por fusível: 3.15A/250VPeso da pistola dessoldadora: aproximadamente 297 g (com bico e filtros)Dimensões: peso-1,700kg, altura-14,0cm,largura-11,5cm,comprimento-19,0cm Itens inclusos:Estação HK-917, pistola dessoldadora, manual de instruções, 3 bocais (N5-1, N5-2, N5-3), pinos de limpeza (0,7 mm, 0,9 mm, 1,2 mm), filtros (2 de 16,8 mm e 2 de 20,8 mm), suporte para pistola, esponja vegetal, esponja metálica e cabo de alimentação. Perguntas frequentes (FAQ) Qual a faixa de temperatura que a HK-917 pode alcançar? De 160 °C a 480 °C, ajustável digitalmente. O painel é digital ou analógico? É digital, com display LED e operação via painel touch. A estação funciona em 127V e 220V? Sim, é bivolt automático (100V a 240V). A pistola dessoldadora acompanha a estação? Sim, a pistola faz parte do kit e já vem pronta para uso. Vem com todos os acessórios necessár...",
       "specs": null,
       "category": "estação-dessoldadora",
       "categoryPath": [
@@ -345,7 +345,7 @@
       "priceFormatted": "R$ 3.851,53",
       "stock": null,
       "inStock": true,
-      "description": "MO-1102C | Osciloscópio Digital 100MHz - Minipa O osciloscópio digital MO-1102C da Minipa é um equipamento de medição preciso, ideal para análises detalhadas de sinais eletrônicos. Com banda de frequência de 100MHz, taxa de amostragem de até 1 GS/s e um display LCD colorido de 7\" com resolução de 800x480, oferece excelente visualização e precisão nos testes. Projetado para técnicos e engenheiros, este osciloscópio é indicado para diagnósticos em eletrônica, telecomunicações e automação. Ele p...",
+      "description": "MO-1102C | Osciloscópio Digital 100MHz - Minipa O osciloscópio digital MO-1102C da Minipa é um equipamento de medição preciso, ideal para análises detalhadas de sinais eletrônicos. Com banda de frequência de 100MHz, taxa de amostragem de até 1 GS/s e um display LCD colorido de 7\" com resolução de 800x480, oferece excelente visualização e precisão nos testes. Projetado para técnicos e engenheiros, este osciloscópio é indicado para diagnósticos em eletrônica, telecomunicações e automação. Ele permite a visualização em tempo real de formas de onda, sendo ideal para laboratórios e serviços de manutenção. Alta Resolução e Precisão:com 1 GS/s e 100MHz de banda, garante análises detalhadas.Recursos Avançados de Medição:funções matemáticas e análise FFT aprimoram o diagnóstico.Versatilidade:diversos modos de trigger e análise de janelas FFT, com suporte a múltiplas funções matemáticas.Armazenamento de Dados:salva até 16 formas de onda e 8 configurações, facilitando revisões e comparações. Especificações: Display: LCD de 7\" (800x480) ColoridoBanda de Frequência: 100MHzAmostragem em Tempo Real: Máximo 1 GS/sMemória de canal: 10kptsCanais de Entrada: 2Base de Tempo: 2ns~1000s | divModo Horizontal: Tempo RealPrecisão Básica Horizontal: ±100ppmZoom IN-OUT: ✓Hold Off: ✓Fator de Deflexão Vertical: 5mV~5V | DIVPrecisão Básica Vertical: -0,03Resp. do Tempo de Subida: ≤3nsMáx. Tensão de Entrada: 400V(DC + AC, PK- PK)Tipo de Trigger/Fontes do Trigger: Edge | Video | AlternativoModo de Trigger: Auto,Normal,Single | NTCS, PAL, SECAMModo Aquisição: Amostra | Detector de Pico | Média (4~128)Modo Apresentação: Pontos | Vetores | XY-YT | Contraste AjustávelAnálise FFT (Janelas): Hamming | Rectangle | Blackman | Hanning | Kaiser | BartlettFormato do FFT: VRMS | dBFunções Matemáticas: Soma | Subtração | Multiplicação | DivisãoParâmetros de Medida: Auto. Máx. | Mín. | Pico a Pico | TOP | Base | Amplitude | Média | RMS | Cycle RMS | Cursor RMS | Overshoot | Preshoot | Período | Frequência | ...",
       "specs": null,
       "category": "osciloscópio",
       "categoryPath": [
@@ -397,7 +397,7 @@
       "priceFormatted": "R$ 1.643,92",
       "stock": null,
       "inStock": true,
-      "description": "ET-2507B - Multímetro Digital Minipa AC/DC CAT IV 600V O multímetro ET-2507B é recomendado parauso Profissional, por ser um equipamentopequeno, portátil. Capaz de realizar medições AC com True RMS, possui auto range e conta com display grande, com iluminação automática de luz de fundo e lanterna, funções que facilitam seu trabalho em ambientes com pouca iluminação. Este multímetro é capaz de fazer leituras de tensão AC True Rms e DC, corrente AC True Rms e DC, Resistência, Diodo, continuidade...",
+      "description": "ET-2507B - Multímetro Digital Minipa AC/DC CAT IV 600V O multímetro ET-2507B é recomendado parauso Profissional, por ser um equipamentopequeno, portátil. Capaz de realizar medições AC com True RMS, possui auto range e conta com display grande, com iluminação automática de luz de fundo e lanterna, funções que facilitam seu trabalho em ambientes com pouca iluminação. Este multímetro é capaz de fazer leituras de tensão AC True Rms e DC, corrente AC True Rms e DC, Resistência, Diodo, continuidade com beep, capacitância e frequência. Este multímetro lhe ofereceSegurança e Confiabilidade, possui GrauIP65de proteção contra poeira e jatos de água, e por se enquadrar naCAT IV da NR10. O ET-2507B conta com algumas funções especiais que vão facilitar o seu uso e seus diagnósticos. Confira algumas: - LoZ :A função LoZ elimina devido à baixa impedância, medição de“Tensão fantasma”nas suas leituras, Oferecendo maiorprecisãona medida de tensão AC em circuitos de potência e circuitos onde a baixa impedância não altere a performance do circuito. As Tensões Fantasmas ocorrem quando temos uma fiação energizada próxima a outra fiação não energizada, sendo que ambas estão dentro e próximas de um mesmo conduíte ou canaleta. - Data Hold:Essa função faz o congelamento da leitura, caso você esteja fazendo uma leitura em um local com pouca visibilidade do display, ou precise anotar o valor medido. - Função MAX/MIN:Esta função quando ativada, faz com que o desligamento automático seja desabilitado e o valor máximo é exibido. Após pressionar a tecla novamente, o valor mínimo será exibido. Ao pressionar pela terceira vez, será exibido o valor de máximo-mínimo. Esta função permitirá que você acompanhe os pontos máximos de oscilação nas leituras que você estiver realizando. Confira a ficha de dados completa do ET-2507B abaixo: Multímetro Minipa ET-2507B - Dados Técnicos: Faça o Download do Datasheet",
       "specs": {
         "Categoria de proteção": "Cat 4",
         "Display Iluminado": "Sim",
@@ -415,7 +415,7 @@
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/4420/et-2507b.jpeg",
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15259/multimetro-et-2507.jpeg"
       ],
-      "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26854/et-2507b-1102-br-manual.pdf\n ",
+      "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26854/et-2507b-1102-br-manual.pdf",
       "sourceUrl": "https://www.proesi.com.br/et-2507b-multimetro-digital-minipa-ac-dc-cat-iv-600v"
     },
     {
@@ -428,7 +428,7 @@
       "priceFormatted": "R$ 1.675,67",
       "stock": null,
       "inStock": true,
-      "description": "HTR-770 Terrômetro Digital Hikari CAT III 1000V O Terrômetro é utilizado para medir aterramentos de casas, edifícios, máquinas e qualquer outro projeto que exijam um aterramento com um certo grau de proteção. Esse modelo é categoria III de proteção e possui um display iluminado. É também uma ferramenta de ótimo peso, facilitando o manuseio na hora do uso. Numero Hikari: 21N073 Confira mais detalhes: Precisão Básica: 2.0%.Display: LCD Duplo.Taxa de Amostragem: 2,5 Vezes/s.Indicação de Sobrefai...",
+      "description": "HTR-770 Terrômetro Digital Hikari CAT III 1000V O Terrômetro é utilizado para medir aterramentos de casas, edifícios, máquinas e qualquer outro projeto que exijam um aterramento com um certo grau de proteção. Esse modelo é categoria III de proteção e possui um display iluminado. É também uma ferramenta de ótimo peso, facilitando o manuseio na hora do uso. Numero Hikari: 21N073 Confira mais detalhes: Precisão Básica: 2.0%.Display: LCD Duplo.Taxa de Amostragem: 2,5 Vezes/s.Indicação de Sobrefaixa: É Exibido o Digito Mais Significativo “1” no Display. Indicação de Bateria Fraca: O símbolo de Bateria Será Mostrado Quando a Tensão da Bateria Cair Abaixo da Tensão de Operação.Função Auto Power Off: O Instrumento Auto Desliga Após Aprox. 20 Minutos Sem Operação, para Preservar as Baterias.Iluminação do Display.Data Hold.Ajuste de Zero.Função Test (Para Teste Instantâneo.)Ambiente de Operação: 0°C a 40°C (32°F a 104°F) RH < 80%.Armazenamento: -10°C a 60°C (14°F a 140°F) RH < 70%.Alimentação: 6 baterias de 1,5V do tipo AA.Segurança: Certificado de Acordo com IEC-1010.Categoria de Instalação III 1000V.Dimensões: 200(A) x 92(L) x 50(P)mm.Peso: Aprox. 700g (Incluindo Bateria) RESISTÊNCIA DE TERRA20?, 200?, 2000?.Precisão: 20? ± (2.0% + 10D); 200? ~ 2000? ± (2.0% + 3D).Resolução: 0.01?, 0.1?, 1?. TENSÃO DE TERRA200VPrecisão: ± (3.0% + 3D)Resolução: 0.1V. TENSÃO AC750VPrecisão: ± (1.2% + 10D)Resolução: 1VImpedância de Entrada: 10M?Frequência: 40 a 400HzProteção de Sobrecarga: 750V AC RMS TENSÃO DC1000VPrecisão: ± (0.8% + 3D)Resolução: 1VImpedância de Entrada: 10M?Proteção de Sobrecarga: 1000V DC RESISTÊNCIA200k?Precisão: ± (1.0% + 2D)Resolução: 0.1k? Proteção de sobrecarga: 250V DC",
       "specs": null,
       "category": "terrômetro",
       "categoryPath": [
@@ -458,7 +458,7 @@
       "priceFormatted": "R$ 2.343,91",
       "stock": null,
       "inStock": true,
-      "description": "O que é a Fonte Alimentação 30V/5A MPC-3005 DC Dupla - Minipa? A Fonte de Alimentação MPC-3005 da Minipa é um equipamento de bancada preciso e prático, possui alta precisão e saída ajustável e fixa, com duas saídas variáveis de até 30V/5A e uma saída fixa de 5V/3A. As saídas ajustáveis podem ser configuradas para operar em modo de tensão constante (CV) ou corrente constante (CC), garantindo flexibilidade no uso. No modo de tensão constante, é possível ajustar a saída de 0V até o limite nomina...",
+      "description": "O que é a Fonte Alimentação 30V/5A MPC-3005 DC Dupla - Minipa? A Fonte de Alimentação MPC-3005 da Minipa é um equipamento de bancada preciso e prático, possui alta precisão e saída ajustável e fixa, com duas saídas variáveis de até 30V/5A e uma saída fixa de 5V/3A. As saídas ajustáveis podem ser configuradas para operar em modo de tensão constante (CV) ou corrente constante (CC), garantindo flexibilidade no uso. No modo de tensão constante, é possível ajustar a saída de 0V até o limite nominal, e no modo de corrente constante, a regulagem pode ser feita de 0A até a faixa especificada. Desenvolvida com circuito de alta estabilidade e baixo ripple, a MPC-3005 assegura desempenho consistente em diferentes condições de trabalho. Especificações da Fonte Duas saídas variáveis: 0 ~ 30V / 0 ~ 5ASaída fixa: 5V - 3ADisplay digital de 3 dígitos (tensão e corrente)Operação em tensão constante (CV) ou corrente constante (CC)Potenciômetros de precisão para ajuste finoIndicadores LED de operaçãoAlta estabilidade e baixo rippleProteção contra sobrecarga integradaOperação contínua em carga máximaAlimentação: 110V/220V ±10% (selecionável), 50/60HzTemperatura de operação: 0 ~ 40°C, RH ≤ 80%Temperatura de armazenamento: -10 ~ 70°C, RH ≤ 80%Altitude máxima de operação: 2000mAcompanha cabo de alimentação Perguntas frequentes (FAQ) Qual a diferença entre saída variável e saída fixa? As variáveis permitem ajuste de 0 a 30V/5A, enquanto a fixa fornece sempre 5V/3A. Essa fonte trabalha em modo corrente constante? Sim, pode operar em modo CV (tensão constante) ou CC (corrente constante). Ela possui proteção contra sobrecarga? Sim, a fonte conta com circuito de proteção integrado para maior segurança. A fonte pode ficar ligada continuamente? Sim, foi projetada para operação contínua mesmo em carga máxima.",
       "specs": null,
       "category": "fontes-de-bancada",
       "categoryPath": [
@@ -486,7 +486,7 @@
       "priceFormatted": "R$ 6.748,87",
       "stock": null,
       "inStock": true,
-      "description": "DMI P3000R V2 - Analisador de Energia Bidirecional Um analisador de energia é usado para medir o fluxo de potência (w) em um sistema elétrico.Issoserefereà taxadetransferênciaelétrica entrea fontedealimentaçãoeocoletor.Portanto,a expressãoalternativaparaenergiaéenergia por segundo. O ModeloDMI P3000R V2é ideal para medições de até 3000 amperes, com ele você consegue fazer a análise de telemetria, multimedição e análise elétrica remota, e também consegue monitorar e aferir o consumo elétrico e...",
+      "description": "DMI P3000R V2 - Analisador de Energia Bidirecional Um analisador de energia é usado para medir o fluxo de potência (w) em um sistema elétrico.Issoserefereà taxadetransferênciaelétrica entrea fontedealimentaçãoeocoletor.Portanto,a expressãoalternativaparaenergiaéenergia por segundo. O ModeloDMI P3000R V2é ideal para medições de até 3000 amperes, com ele você consegue fazer a análise de telemetria, multimedição e análise elétrica remota, e também consegue monitorar e aferir o consumo elétrico e grandezas elétricas de residências, indústrias, máquinas e aparelhos com até 3000 amperes. Dados Técnicos: Classe S;Análises e medições em conformidade com os requisitos da IEC 62052-11, IEC 62053-22, IEC 62053-23, ANSI C12.1 e ANSI C12.20;Medições TRMS 110v/220v fase/neutro 220v/380v/440v fase/faseGabinete fabricado em plástico FRP Retardante de chama, fabricado com tecnologia de impressão 3D;Temperatura máxima de trabalho: 60 °CSegurança - IEC 61010, 1000V CAT III / 600V CAT IVModelo de gabinete com furos oblongos para fixação de sobrepor;Exclusivo sistema de fixação magnética;Medições corrente até 3000AMedidas compactas (190x112x37mm);Grau de proteção IP40; Medições Feitas Pelo DMI: Consumo bidirecional;Corrente Fase A, B, C (individual de cada fase + média);Corrente de Neutro medida e calculada;Análise de frequência;Análise de demanda (em kW);Analise de kvar para correção de fator de potência em tempo real e retroativo;Análise fasorial;Análise de Harmônicas 1º a 32º, Direção, Sequência; THD: 0 a 400%;Apresentação das harmônicas em percentual (%) ou RMSTensão (individual de cada fase);Consumo acumulado em kWh de cada fase;Análise de deslocamento de ondaEnergia ativa (watts) individual de cada fase;Energia ativa (watts) total das 3 fases;Consumo acumulado em kWh total do circuito (3 fases);Fator de potência soma real individual de cada fase;Média do fator de potência das 3 fases;Temperatura interna do analisador DMI;Energia reativa (var) individual de cada fase;Energia rea...",
       "specs": null,
       "category": "analisador-de-energia",
       "categoryPath": [
@@ -513,7 +513,7 @@
       "priceFormatted": "R$ 1.034,32",
       "stock": null,
       "inStock": true,
-      "description": "O que é o Inversor de Frequência SN160MN-0R7GB-S2 1CV 0,75kW Monofásico 220V - Sibratec? O Inversor de Frequência SN160MN-0R7GB-S2 da Sibratec é ideal para controlar motores trifásicos em redes monofásicas 220V, com potência de 0,75kW (1 CV). Oferece controle vetorial e escalar, recursos como PID, frenagem DC e comunicação Modbus RS485, além de proteção contra falhas elétricas. Indicado para máquinas, bombas, ventiladores, compressores e esteiras, permite instalação em painéis ou sistemas des...",
+      "description": "O que é o Inversor de Frequência SN160MN-0R7GB-S2 1CV 0,75kW Monofásico 220V - Sibratec? O Inversor de Frequência SN160MN-0R7GB-S2 da Sibratec é ideal para controlar motores trifásicos em redes monofásicas 220V, com potência de 0,75kW (1 CV). Oferece controle vetorial e escalar, recursos como PID, frenagem DC e comunicação Modbus RS485, além de proteção contra falhas elétricas. Indicado para máquinas, bombas, ventiladores, compressores e esteiras, permite instalação em painéis ou sistemas descentralizados. Com ampla faixa de ajustes, operação estável e suporte técnico nacional, é uma solução econômica para automação e controle preciso de velocidade. Especificações do SN160MN-0R7GB-S2 Potência nominal: 0,75 kW / 1 CVTensão de entrada: 220V monofásicoTensão de saída: 3×220V trifásicoCorrente de saída: 5 AFrequência de saída: 0–650 HzFaixa de frequência de operação: 50/60 HzTipos de controle: V/f e vetorialProtocolo de comunicação: RS485 Modbus RTUProteções: Sobrecorrente, sobretensão, subtensão, sobretemperatura, falha à terra, etc.Grau de proteção: IP20Temperatura de operação: -10 °C a +40 °CPeso: 0,75 kgDimensões (AxLxP): 7,8 × 10,5 × 16,5 cm Faça o Download do Datasheet Perguntas frequentes (FAQ) Posso usar este inversor com motor trifásico de 1 CV em rede 220V monofásica? Sim. Ele é projetado exatamente para isso. Qual a principal vantagem do controle vetorial? Maior torque em baixas rotações, ideal para aplicações com partida pesada. Esse modelo armazena os parâmetros mesmo sem energia? Sim. A configuração é mantida em memória não volátil. Posso controlar a frequência via potenciômetro externo? Sim, aceita entrada analógica 0–10 V ou 4–20 mA. Há proteção contra curto no motor? Sim, inclui proteção contra sobrecorrente e falhas à terra.",
       "specs": null,
       "category": "inversor-de-frequência",
       "categoryPath": [
@@ -528,7 +528,7 @@
         "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26619/113939-d-inversor-freq-sn160mn-0r7gb-s2-entr-220v-mono-1cv-0-75kw-sibratec.jpg",
         "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26618/113939-e-inversor-freq-sn160mn-0r7gb-s2-entr-220v-mono-1cv-0-75kw-sibratec.jpg"
       ],
-      "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26528/manual-inversor-de-frequencia-sn160mn-0r7gb-s2.pdf\n ",
+      "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26528/manual-inversor-de-frequencia-sn160mn-0r7gb-s2.pdf",
       "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-sn160mn-0r7gb-s2-monofasico-220v-50-60hz-0-75kw-sibratec"
     },
     {
@@ -541,7 +541,7 @@
       "priceFormatted": "R$ 1.076,57",
       "stock": null,
       "inStock": true,
-      "description": "O que é o Inversor de Frequência Provolt PI100 3,0CV Monofásica 220V Saída Trifásica? O Inversor de Frequência Provolt PI100 3,0CV Monofásica 220V Saída Trifásica foi desenvolvido para dar mais controle e segurança no acionamento de motores elétricos. Ele ajusta a velocidade, torque e rotação de forma precisa, garante partidas suaves e reduz o desgaste mecânico. Com alimentação monofásica 220V e saída trifásica, atende motores de até 3,0CV em diferentes aplicações, desde bombas e compressores...",
+      "description": "O que é o Inversor de Frequência Provolt PI100 3,0CV Monofásica 220V Saída Trifásica? O Inversor de Frequência Provolt PI100 3,0CV Monofásica 220V Saída Trifásica foi desenvolvido para dar mais controle e segurança no acionamento de motores elétricos. Ele ajusta a velocidade, torque e rotação de forma precisa, garante partidas suaves e reduz o desgaste mecânico. Com alimentação monofásica 220V e saída trifásica, atende motores de até 3,0CV em diferentes aplicações, desde bombas e compressores até ventiladores, transportadores e sistemas de automação. Ideal para técnicos, engenheiros e empresas que buscam segurança, o PI100 se destaca por reunir recursos avançados em um equipamento de fácil instalação. Conta com proteção contra sobrecarga, curto-circuito, sobretensão e sobretemperatura, além de oferecer display digital intuitivo, controle PID integrado e comunicação RS485 (Modbus). Esses diferenciais garantem mais durabilidade ao motor, economia de energia e praticidade no dia a dia, tornando o PI100 uma solução completa. Especificações do Inversor Modelo: PI100Potência: 3,0CVAlimentação: 220V monofásico (170V ~ 240V)Saída: Trifásica 220VFrequência de saída: 0 ~ 400HzModo de controle: Vetorial sem sensor / V/FControle PID integradoComunicação: RS485 (Modbus)Display digital de 5 dígitos com funções de monitoramentoProteções: Sobrecarga, curto-circuito, sobretemperatura, sobretensão e subtensãoGrau de proteção: IP20Montagem: Trilho DIN ou paredeFaixa de torque: 150% por 1 min (constante), 120% por 1 min (variável)Temperatura de operação: -10°C a +40°CUmidade: 20% ~ 90% sem condensação Faça o Download do Datasheet Perguntas frequentes (FAQ) O que faz o Inversor de Frequência Provolt PI100? Controla a velocidade, torque e rotação de motores, garantindo precisão e proteção. O modelo de 3,0CV pode ser usado em bombas hidráulicas? Sim, é ideal para bombas, ventiladores e compressores de pequeno e médio porte. O PI100 possui comunicação com CLPs? Sim, possui interface RS4...",
       "specs": null,
       "category": "inversor-de-frequência",
       "categoryPath": [
@@ -557,33 +557,1050 @@
       ],
       "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/09/produto/26053/manual-pi100.pdf",
       "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-provolt-pi100-3-0cv-220v-monofasico"
+    },
+    {
+      "id": "11237",
+      "sku": "11237",
+      "name": "Inversor de Frequência Monofasico 0,5 CV",
+      "slug": "inversor-de-frequencia-cfw300a02p6s2nb20-monofasico-0-50cv-200-a-240-vca-2-6a-weg",
+      "brand": null,
+      "price": 1043.73,
+      "priceFormatted": "R$ 1.043,73",
+      "stock": null,
+      "inStock": true,
+      "description": "Características: Aplicações Conectividade (WPS) ACESSE TODAS AS INFORMAÇÕES E LINKS PARA DOWNLOAD AQUI",
+      "specs": null,
+      "category": "monofásico",
+      "categoryPath": [
+        "Automação e Desenvolvimento",
+        "Inversor de frequência",
+        "Monofásico"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/12694/frete-gratis-cfw300.jpeg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/12694/frete-gratis-cfw300.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/10482/inversor-de-frenquencia-weg-cfw300-2.jpeg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-cfw300a02p6s2nb20-monofasico-0-50cv-200-a-240-vca-2-6a-weg"
+    },
+    {
+      "id": "287930",
+      "sku": "287930",
+      "name": "RSP-500-48 Fonte Alimentação Mean Well 48V 10,4A",
+      "slug": "fonte-de-alimentac-o-rsp-500-48-500w-48v-10a",
+      "brand": null,
+      "price": 1655.22,
+      "priceFormatted": "R$ 1.655,22",
+      "stock": null,
+      "inStock": true,
+      "description": "A fonte de alimentação chaveada Mean Well é a melhor opção para aplicações que priorizam confiabilidade, ela é projetada em estrutura de metal com ventilação por convecção de ar livre.\n\nO modeloRSP-500-48 possui uma unica saída, sendo ela +48Vcc que suporta cargas de até 10,5 Amp.\n\nTensão de entrada AC: 85 á 264 VAC\nTensão de entrada DC:120 á 370 VDC\nPotencia máxima: 504 Watts\n\nTensão de saída:\nCH1: +48 Vcc / 10,5 Amp",
+      "specs": null,
+      "category": "fontes-48-volts",
+      "categoryPath": [
+        "Fontes",
+        "Fontes 48 Volts"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/3238/244.jpeg",
+      "images": null,
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/fonte-de-alimentac-o-rsp-500-48-500w-48v-10a"
+    },
+    {
+      "id": "11767",
+      "sku": "11767",
+      "name": "Alicate Amperímetro Digital Minipa HDC3000A - Profissional",
+      "slug": "hdc3000a-alicate-amperimetro-digital-profissional",
+      "brand": null,
+      "price": 1123.73,
+      "priceFormatted": "R$ 1.123,73",
+      "stock": null,
+      "inStock": true,
+      "description": "Alicate Amperímetro Digital Profissional HDC3000A O Alicate Amperímetro HDC3000A é um equipamento daLinha Industrial, com display iluminado, resistente aquedas até 2 metrosde altura, possui grau de proteçãoIP 54(podem ser usados em ambientes que ocorremrespingos de água ou exista muita poeira), classificado na Categoria IV daNR10, totalmenteSeguro, Confiável, durável e Resistente. Com este alicate, você poderámedir corrente alternada até 600Ade circuitos alimentados por frequência de 40 a 400 Hz, emcondutores até 33mmde Diâmetro,Resistencia até 60 MegaOhms, Tensão DC e Ac até 600 Volts, Teste de Continuidade com Beep, Teste de Diodo, Capacitância até 60 Micro Faraday, Frequência de 60 Hz até 10 Mhz e inclusive consegue medir Duty Cycle aplicável apenas para medidas de onda quadrada ? 10kHz. Este alicate conta com aFunção LoZque devido à baixa impedância durante a medição, elimina o surgimento de“Tensão fantasma”nas suas leituras, Oferecendomaior precisão na medida de tensão ACem circuitos de potência e circuitos onde a baixa impedância não altere a performance do circuito. As Tensões Fantasmas ocorrem quando temos uma fiação energizada próxima a outra fiação não energizada, sendo que ambas estão dentro e próximas de um mesmo conduíte ou canaleta. Conheça mais sobre aFunção Drop Test, disponível neste equipamento, em vídeo disponível em nosso canal do You tube. Dados Técnicos:",
+      "specs": {
+        "Categoria de proteção": "Cat 4",
+        "Corrente": "Somente AC",
+        "Display Iluminado": "Sim",
+        "Frequência": "Sim",
+        "Fabricante": "Minipa",
+        "NCV": "Sim"
+      },
+      "category": "alicate-amperimetro",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas de Medição",
+        "Alicate amperimetro"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/11054/alicate-hdc3000a.jpeg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/11054/alicate-hdc3000a.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/13822/alicate-minipa-hdc3000a.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15395/alicate-1-1.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15569/alicate-amperimetro-minipa.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15629/alicate-amperimetro.jpeg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/hdc3000a-alicate-amperimetro-digital-profissional"
+    },
+    {
+      "id": "112870",
+      "sku": "112870",
+      "name": "ET-3712 Alicate Amperímetro Digital CAT IV 600V Minipa",
+      "slug": "et-3712-alicate-amperimetro-digital-cat-iv-600v-minipa",
+      "brand": null,
+      "price": 1674.64,
+      "priceFormatted": "R$ 1.674,64",
+      "stock": null,
+      "inStock": true,
+      "description": "ET-3712 | Alicate Amperímetro Digital CAT IV 600V | Minipa O Alicate Amperímetro Digital Minipa ET-3712 é um instrumento de medição multifuncional, que realiza medições precisas de corrente AC/DC, tensão, resistência, frequência e temperatura, oferecendo alto nível de proteção com classificação CAT IV 600V. Com display digital de 3 5/6 dígitos, ele apresenta 6000 contagens para facilitar a visualização de dados. O ET-3712 da Minipa é ideal para profissionais que trabalham com sistemas elétricos de alta complexidade, especialmente em ambientes industriais e instalações elétricas de maior risco. Com uma faixa de medição abrangente e características avançadas, ele é excelente para análise de tensão e corrente AC/DC, além de resistências e frequências em redes elétricas. O modelo ET-3712 destaca-se por sua segurança elevada, sendo classificado em CAT IV 600V e CAT III 1000V, ideal para medições em circuitos de alta potência. Possui a função True-RMS, garantindo precisão em leituras de formas de onda não lineares, e inclui funções de Peak RMS e medição de corrente de partida, essencial para analisar picos em equipamentos. Especificações: Display: 3 5/6 Dígitos 6000 contagensCategoria de Segurança: CAT III 1000V/CAT IV 600VTrue-RMS: ACTensão AC: 600/1000VTensão DC: 600/1000VCorrente AC: 60/600/1000ACorrente DC: 200µ/2000µAResistência: 600/6k/60kΩFrequência: 5~1kHzFrequência de Rede: ✔Capacitância: 200µ/2500µFTemperatura: -40°C a 400°CContinuidade e Diodo: ✔Luz de Fundo: ✔Congelamento de Leitura: Data /Peak HoldMáx-Mín-Méd-Rel-Zero: Máx/Mín/MédFiltro de Frequência: VFDCorrente de Partida: Peak RMSDetecção de Tensão Sem Contato: EFFasímetro: ✔Auto Desligamento: ✔Indicador de Bateria Fraca: ✔Precisão Básica: 1,8%Alimentação: 2 x 1,5V AAAbertura de Garra: 51mmDiâmetro do Condutor: 51mmMudança de Faixa: Automática",
+      "specs": {
+        "Categoria de proteção": "Cat 4",
+        "Corrente": "Somente AC",
+        "Display Iluminado": "Sim",
+        "Frequência": "5Mhz/5,00Mhz",
+        "Fabricante": "Minipa"
+      },
+      "category": "alicate-amperimetro",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas de Medição",
+        "Alicate amperimetro"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/11/produto/21767/112870b.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/11/produto/21767/112870b.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/11/produto/21766/112870c.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/11/produto/21768/112870a.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/11/produto/21765/112870d.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/et-3712-alicate-amperimetro-digital-cat-iv-600v-minipa"
+    },
+    {
+      "id": "413070",
+      "sku": "413070",
+      "name": "MI-2552 Megômetro Digital Minipa",
+      "slug": "mi-2552-megometro-digital-minipa",
+      "brand": null,
+      "price": 1214.39,
+      "priceFormatted": "R$ 1.214,39",
+      "stock": null,
+      "inStock": true,
+      "description": "MI-2552 - Megômetro Digital Minipa Se você precisa medir a isolação de um transformador ou motor, o megômetro digital MI-2552 da Minipa é ideal para você. Essa ferramenta possui tecnologia de alta performance e é capaz de medir a resistência de uma isolação elétrica DC de até 1000V e testes de tensão AC de 750V, no qual facilita testes, manutenções e reparos. Possui um display LCD iluminado no qual facilita a leitura em locais com baixa luminosidade. Além de contar com função Data Hold, congelando a leitura apresentada no display. Dados Técnicos: Display LCD 3 1/2 Dígitos/2000 ContagensCom IluminaçãoFaixas de Medida M? 5,5M/55M/100M/1000M/5,5G?Tensão de Teste DC 100/250/500/1000VVoltímetro AC 30~750VPrecisão Básica 3%Com Data HoldCategoria de segurança CAT III 600VAlimentação 6x1,5V \"AA\"Garantia 12 meses Importante: Para garantir a sua segurança, sempre verifique se a alimentação elétrica dos fios que você for medir estão desligados. Como funciona o Megômetro? O megômetro aplica uma tensão de teste no qual ele faz a leitura do fluxo de corrente no produto e assim consegue medir a resistência de isolação.",
+      "specs": null,
+      "category": "megômetro",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas de Medição",
+        "Megômetro"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/4402/mi-2552-meg-metro-digital-minipa-01.jpeg",
+      "images": null,
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/mi-2552-megometro-digital-minipa"
+    },
+    {
+      "id": "422601",
+      "sku": "422601",
+      "name": "ET-4310 Terrômetro Digital CAT III 300V - Minipa",
+      "slug": "et-4310-terrometro-digital-minipa-cat-iii-300v",
+      "brand": null,
+      "price": 5151.42,
+      "priceFormatted": "R$ 5.151,42",
+      "stock": null,
+      "inStock": true,
+      "description": "Display LCD/Contagem 4 Dígitos/9999\nIluminação\nIndicação de Bateria Fraca\nCorrente AC\u00010~30A\nResistência\u00010,01~1000?\nAbertura de Garra 30mm\nData Hold\nAutodesligamento\nMudança de Faixa\u0001Automática\nMemória 30 Registros\nPrecisão Básica\u00011,5%\nCategoria de Segurança CAT III 300V\nAlimentação\u00014x1,5V AA\nDimensões/Peso 304x104x68mm\nGarantia 12 meses",
+      "specs": null,
+      "category": "terrômetro",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas de Medição",
+        "Terrômetro"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/4494/422601.jpeg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/4494/422601.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/14208/4226011.jpeg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/et-4310-terrometro-digital-minipa-cat-iii-300v"
+    },
+    {
+      "id": "10813",
+      "sku": "10813",
+      "name": "Fonte de Alimentação Chaveada com Saída 24V 20A",
+      "slug": "fonte-de-alimentac-o-chaveada-com-saida-24v-20a-ndr-480-24",
+      "brand": null,
+      "price": 1739.03,
+      "priceFormatted": "R$ 1.739,03",
+      "stock": null,
+      "inStock": true,
+      "description": "Fonte de Alimentação Chaveada com Saída 24V 20A | NDR-480-24 A Fonte de Alimentação Chaveada Mean Well NDR-480-24 é uma excelente escolha para aplicações que necessitam de alta confiabilidade e estabilidade. Com uma estrutura de metal robusta e ventilação por convecção de ar livre, esta fonte de alimentação é altamente resistente. Com uma única saída de +24Vcc capaz de suportar cargas de até 20A, a NDR-480-24 é ideal para alimentar equipamentos eletrônicos que exigem alta potência e estabilidade de tensão. Sua ampla faixa de tensão de entrada de 90 a 264VAC e 127 a 370VDC permite que ela seja utilizada em diversas aplicações. Além disso, a NDR-480-24 é altamente eficiente, com uma potência máxima de 480 watts e uma eficiência de até 93%. Isso ajuda a reduzir o desperdício de energia e minimizar os custos de operação. Ao escolher a Fonte de Alimentação Chaveada Mean Well NDR-480-24, você pode ter certeza de que está investindo em uma fonte de alimentação confiável e durável que atenderá às suas necessidades de energia de forma eficiente e eficaz. Características: Saída única: +24Vcc / 20A; ? Potência máxima: 480 Watts; Faixa de tensão de entrada AC: 90 á 264 VAC; Faixa de tensão de entrada DC: 127 Á 370VDC; Estrutura de metal com ventilação por convecção de ar livre; Alta confiabilidade e estabilidade; Adequada para uso em ambientes exigentes; Ideal para alimentar equipamentos eletrônicos que exigem alta potência e estabilidade de tensão. Dimensões: 123 x 85 x 125 mm (C x L x A)",
+      "specs": null,
+      "category": "fontes-24-volts",
+      "categoryPath": [
+        "Fontes",
+        "Fontes 24 Volts"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/07/produto/18256/10813.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/07/produto/18256/10813.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/07/produto/18255/10813-2.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/01/produto/22524/10813-a-fonte-chaveada-trilho-din-24v-20a-480w-ndr-480-24-mean-well.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/fonte-de-alimentac-o-chaveada-com-saida-24v-20a-ndr-480-24"
+    },
+    {
+      "id": "11133",
+      "sku": "11133",
+      "name": "Display LCD Gráfico 240X128 - WG-240128A-YYH-VZ",
+      "slug": "display-lcd-grafico-240x128-wg-240128a-yyh-vz-com-back-verde",
+      "brand": null,
+      "price": 1302.6,
+      "priceFormatted": "R$ 1.302,60",
+      "stock": null,
+      "inStock": true,
+      "description": "Display Gráfico 240 X 128 WG240128A Descrição",
+      "specs": null,
+      "category": "lcd",
+      "categoryPath": [
+        "Componentes",
+        "Displays",
+        "LCD"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/10340/display-winstar.jpeg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/10340/display-winstar.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/13034/display-2.jpeg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/display-lcd-grafico-240x128-wg-240128a-yyh-vz-com-back-verde"
+    },
+    {
+      "id": "113943",
+      "sku": "113943",
+      "name": "Inversor Sibratec 3,7kW 380V SN160MN-3R7GB-T4",
+      "slug": "inversor-de-frequencia-sn160mn-3r7gb-t4-trifasico-380v-50-60hz-3-7kw-sibratec",
+      "brand": null,
+      "price": 1461.75,
+      "priceFormatted": "R$ 1.461,75",
+      "stock": null,
+      "inStock": true,
+      "description": "O que é o Inversor de Frequência SN160MN-3R7GB-T4 5CV 3,75KW Entrada Trifásico 380V - Sibratec? O Inversor de Frequência SN160MN-3R7GB-T4 da Sibratec é um equipamento trifásico 380V com potência de 3,7 kW (5 CV), projetado para controle preciso de motores em aplicações industriais. Com modos de controle vetorial e escalar (V/f), oferece bom desempenho em variações de carga. Conta com frenagem DC, controle PID, comunicação RS485 (Modbus RTU) e proteção completa contra falhas elétricas. Indicado para esteiras, ventiladores, bombas, máquinas CNC e compressores, é ideal para automação industrial em novos projetos ou retrofits. Destaca-se pela facilidade de configuração, integração e suporte técnico nacional. Especificações do SN160MN-3R7GB-T4 Potência: 3,7 kW / 5 CVTensão de entrada: Trifásica 380VTensão de saída: Trifásica 380VCorrente nominal de saída: 9 AFrequência de saída: 0 a 650 HzModos de controle: Vetorial (sensorless) e escalar (V/f)Entradas digitais: 5 programáveisEntrada analógica: 1 (0–10V ou 4–20mA)Saída a relé: 1 configurávelComunicação: RS485 – Modbus RTUFrenagem DC integradaProteções: Sobrecorrente, sobretensão, falhas à terra, sobrecarga, etc.Grau de proteção: IP20Dimensões: 110 × 170 × 175 mm (L × A × P)Peso: ~2,2 kg Faça o Download do Datasheet Perguntas frequentes (FAQ) Posso usar este inversor com motor de 5 CV em 380V? Sim, ele é projetado para motores trifásicos de até 3,7kW (5 CV). O inversor tem controle vetorial de torque? Sim, ele opera com controle vetorial sensorless, ideal para torque constante. Ele armazena as configurações após desligar? Sim, todas as configurações ficam gravadas em memória não volátil. Pode ser usado em ambientes industriais pesados? Sim, desde que respeitado o grau de proteção IP20 e ventilação adequada. Quantos modos de operação ele possui? Possui dois principais: escalar (V/f) e vetorial (sensorless).",
+      "specs": null,
+      "category": "inversor-de-frequência",
+      "categoryPath": [
+        "Automação e Desenvolvimento",
+        "Inversor de frequência"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26627/113943-a-inversor-freq-sn160mn-3r7gb-t4-entr-380v-trif-5cv-3-75kw-sibratec.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26627/113943-a-inversor-freq-sn160mn-3r7gb-t4-entr-380v-trif-5cv-3-75kw-sibratec.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26626/113943-b-inversor-freq-sn160mn-3r7gb-t4-entr-380v-trif-5cv-3-75kw-sibratec.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26625/113943-c-inversor-freq-sn160mn-3r7gb-t4-entr-380v-trif-5cv-3-75kw-sibratec.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26624/113943-d-inversor-freq-sn160mn-3r7gb-t4-entr-380v-trif-5cv-3-75kw-sibratec.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26623/113943-e-inversor-freq-sn160mn-3r7gb-t4-entr-380v-trif-5cv-3-75kw-sibratec.jpg"
+      ],
+      "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26533/manual-inversor-de-frequencia-sn160mn-3r7gb.pdf",
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-sn160mn-3r7gb-t4-trifasico-380v-50-60hz-3-7kw-sibratec"
+    },
+    {
+      "id": "113990",
+      "sku": "113990",
+      "name": "Inversor de Frequência SN160MN-11GB-T4 15CV 11kW 380V Trifásico",
+      "slug": "inversor-de-frequencia-sn160mn-11gb-t4-15cv-11kw-trifasico-380v-sibratec",
+      "brand": null,
+      "price": 3456.12,
+      "priceFormatted": "R$ 3.456,12",
+      "stock": null,
+      "inStock": true,
+      "description": "O que é Inversor de Frequência SN160MN-11GB-T4 15CV 11kW Entrada Trifásico 380V - Sibratec? O Inversor de Frequência SN160MN-11GB-T4 11kW Trifásico 380V da Sibratec controla com precisão a velocidade e o torque de motores trifásicos, protegendo contra sobrecarga e falhas elétricas. Indicado para transportadores, bombas, ventiladores, compressores e máquinas industriais, permite ajuste avançado de parâmetros e integração com sistemas de automação via MODBUS, garantindo operação segura, otimização de desempenho e maior vida útil dos motores. Especificações do SN160MN-11GB-T4: Potência: 11 kW / 15CVTensão: Trifásico 380VCorrente nominal: 25AFrequência de saída: 0-400 HzControle de torque e velocidade: SimProteções integradas: Sobrecarga, subtensão, sobretensão, falta de faseComunicação: MODBUSOperação: Teclado e display integradosDimensões: 430 x 300 x 200 mmAplicação: Motores trifásicos industriais Faça o Download do Datasheet Perguntas frequentes (FAQ): Pode ser usado em bombas industriais? Sim, é ideal para bombas, ventiladores, compressores e transportadores. Possui proteção contra sobrecarga? Sim, inclui múltiplas proteções elétricas. É possível controlar a velocidade do motor manualmente? Sim, via painel integrado ou comunicação MODBUS. O inversor permite programação de rampas de aceleração e desaceleração? Sim, todas as rampas são configuráveis pelo usuário. Preciso de um técnico para instalar? Sim, é recomendado profissional qualificado.",
+      "specs": null,
+      "category": "inversor-de-frequência",
+      "categoryPath": [
+        "Automação e Desenvolvimento",
+        "Inversor de frequência"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26639/113990-a-inversor-freq-sn160mn-11gb-t4-entr-380v-trif-15cv-11kw-sibratec.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26639/113990-a-inversor-freq-sn160mn-11gb-t4-entr-380v-trif-15cv-11kw-sibratec.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26638/113990-b-inversor-freq-sn160mn-11gb-t4-entr-380v-trif-15cv-11kw-sibratec.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26637/113990-c-inversor-freq-sn160mn-11gb-t4-entr-380v-trif-15cv-11kw-sibratec.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26636/113990-d-inversor-freq-sn160mn-11gb-t4-entr-380v-trif-15cv-11kw-sibratec.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26635/113990-e-inversor-freq-sn160mn-11gb-t4-entr-380v-trif-15cv-11kw-sibratec.jpg"
+      ],
+      "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26634/manual-inversor-de-frequencia-sn160mn-11gb-t4-trifasico-380v-5060hz-11kw.pdf",
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-sn160mn-11gb-t4-15cv-11kw-trifasico-380v-sibratec"
+    },
+    {
+      "id": "113944",
+      "sku": "113944",
+      "name": "Inversor de Frequência SN160MN-5R5GB-T4 5,5kW 380V Trifásico Sibratec",
+      "slug": "inversor-de-frequencia-sn160mn-5r5gb-t4-trifasico-380v-50-60hz-5-5kw-sibratec",
+      "brand": null,
+      "price": 1536.8,
+      "priceFormatted": "R$ 1.536,80",
+      "stock": null,
+      "inStock": true,
+      "description": "O que é o Inversor de Frequência SN160MN-5R5GB-T4 7,5CV 5,5kW Trifásico 380V - Sibratec? O SN160MN-5R5GB-T4 é um inversor de frequência trifásico 380V, 5,5kW, projetado para controle preciso da velocidade de motores de indução. Ideal para aplicações industriais, permite ajustar frequência e tensão, garantindo partidas suaves, operação estável e menor esforço mecânico. É indicado para sistemas com ventiladores, bombas, compressores, esteiras e outros equipamentos que exigem controle de velocidade e torque, sendo útil em linhas de produção, automação e refrigeração. Entre seus diferenciais estão a alta precisão no controle, proteção contra sobrecarga e curto-circuito, operação estável em uso contínuo e fácil parametrização, reduzindo tempo de instalação e ajustes. Especificações do Inversor Tensão de entrada: 380V trifásicoFrequência de operação: 50/60HzPotência nominal: 5,5 kW - 7,5CVCorrente nominal de saída: conforme modeloModulação PWM vetorialFator de potência elevadoControle de velocidade de alta precisãoProteção contra sobrecarga, subtensão e curto-circuitoInterface de operação digital integradaInstalação em painel ou estrutura fixaAplicável em motores de indução trifásicos Faça o Download do Datasheet Perguntas frequentes (FAQ) O que este inversor de frequência controla exatamente? Ele controla a frequência e a tensão de alimentação do motor, permitindo ajustar sua velocidade e torque conforme a necessidade da aplicação. Este modelo pode ser usado em bombas industriais? Sim. Ele é muito utilizado em bombas centrífugas, sistemas de irrigação e pressurização. É possível usar este inversor com motores trifásicos de diferentes potências? Sim, desde que a potência e a corrente do motor sejam compatíveis com a capacidade do inversor. O produto possui proteção contra sobrecarga? Sim, o inversor conta com proteção integrada contra sobrecarga, subtensão, sobretensão e curto-circuito. Pode ser instalado em ambientes externos? A instalação deve respeitar o grau de pro...",
+      "specs": null,
+      "category": "inversor-de-frequência",
+      "categoryPath": [
+        "Automação e Desenvolvimento",
+        "Inversor de frequência"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26632/113944-a-inversor-freq-sn160mn-5r5gb-t4-entr-380v-trif-7-5cv-5-5kw-sibratec.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26632/113944-a-inversor-freq-sn160mn-5r5gb-t4-entr-380v-trif-7-5cv-5-5kw-sibratec.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26631/113944-b-inversor-freq-sn160mn-5r5gb-t4-entr-380v-trif-7-5cv-5-5kw-sibratec.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26630/113944-c-inversor-freq-sn160mn-5r5gb-t4-entr-380v-trif-7-5cv-5-5kw-sibratec.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26629/113944-d-inversor-freq-sn160mn-5r5gb-t4-entr-380v-trif-7-5cv-5-5kw-sibratec.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26628/113944-e-inversor-freq-sn160mn-5r5gb-t4-entr-380v-trif-7-5cv-5-5kw-sibratec.jpg"
+      ],
+      "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26546/manual-inversor-de-frequencia-sn160mn-5r5gb-t4.pdf",
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-sn160mn-5r5gb-t4-trifasico-380v-50-60hz-5-5kw-sibratec"
+    },
+    {
+      "id": "11272",
+      "sku": "11272",
+      "name": "Inversor de Frequência Trifásica 1,5 CV",
+      "slug": "inversor-de-frequencia-trifasica-380vac-1-5-cv-2-6a-1-rele-cfw300a02p6t4nb20-weg",
+      "brand": null,
+      "price": 2119.98,
+      "priceFormatted": "R$ 2.119,98",
+      "stock": null,
+      "inStock": true,
+      "description": "Características: Aplicações Conectividade (WPS) ACESSE TODAS AS INFORMAÇÕES E LINKS PARA DOWNLOAD AQUI",
+      "specs": null,
+      "category": "trifásico",
+      "categoryPath": [
+        "Automação e Desenvolvimento",
+        "Inversor de frequência",
+        "Trifásico"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/12038/wegtrif3.jpeg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/12038/wegtrif3.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/10528/cfw300-1.jpeg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-trifasica-380vac-1-5-cv-2-6a-1-rele-cfw300a02p6t4nb20-weg"
+    },
+    {
+      "id": "11273",
+      "sku": "11273",
+      "name": "Inversor de Frequência Trifásica 3,0 CV",
+      "slug": "inversor-de-frequencia-trifasica-380vac-3-0-cv-4-8a-1-rele-cfw300a04p8t4nb20-weg",
+      "brand": null,
+      "price": 1984.76,
+      "priceFormatted": "R$ 1.984,76",
+      "stock": null,
+      "inStock": true,
+      "description": "Características: Aplicações Conectividade (WPS) ACESSE TODAS AS INFORMAÇÕES E LINKS PARA DOWNLOAD AQUI",
+      "specs": null,
+      "category": "trifásico",
+      "categoryPath": [
+        "Automação e Desenvolvimento",
+        "Inversor de frequência",
+        "Trifásico"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/12038/wegtrif3.jpeg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/12038/wegtrif3.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/10528/cfw300-1.jpeg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-trifasica-380vac-3-0-cv-4-8a-1-rele-cfw300a04p8t4nb20-weg"
+    },
+    {
+      "id": "11769",
+      "sku": "11769",
+      "name": "Termovisora MTV-120 - Câmera Termográfica Profissional - Minipa",
+      "slug": "mtv-120-termovisora-profissional-minipa",
+      "brand": null,
+      "price": 5059.76,
+      "priceFormatted": "R$ 5.059,76",
+      "stock": null,
+      "inStock": true,
+      "description": "MTV-120 - Termovisora Profissional - Drop Test - Minipa A MTV-120 é uma câmera termográfica profissional de alta precisão, projetada para diagnósticos térmicos avançados em sistemas elétricos e mecânicos. Com sensor de 10.800 pixels (120x90), faixa de temperatura de -10°C a 400°C e sensibilidade térmica de ≤60mK, permite identificar falhas e componentes superaquecidos antes que ocorram falhas críticas. Conta com proteção IP65, resistência a quedas de até 2 metros (Drop Test) e armazenamento via cartão micro SD. Desenvolvida para manutenção preditiva e corretiva, a MTV-120 é essencial na inspeção de painéis elétricos, motores, transformadores e máquinas industriais, prevenindo paradas inesperadas. Ideal para indústrias, prestadores de serviço e técnicos especializados, possibilita a substituição preventiva de componentes críticos, evitando prejuízos operacionais. Seu diferencial está na alta resolução térmica e óptica (640x480 pixels na câmera visual), interface intuitiva com display TFT LCD de 2,8”, e modos avançados de medição como rastreamento de alta temperatura, ponto central e ROI (área de interesse). Com diversas paletas de cores e fusão de imagem, oferece análise detalhada e relatórios eficientes para um diagnóstico preciso. Especificações Técnicas: Display: LCD TFT 2,8”Faixa de Temperatura: -10°C ~ 400°CResolução IR: 10.800 pixels (120 x 90)Campo de Visão (FOV): 50° (H) x 38° (V)Resolução Espacial (IFOV): 7,3mradSensibilidade Térmica (NETD): ≤60mKTaxa de Atualização: ≤25HzResposta Espectral: 8 ~ 14µmEmissividade Ajustável: 0,01 ~ 0,99Resolução do Display: 320 x 240 pixelsResolução da Câmera Visual: 640 x 480 pixelsModos de Medição: Ponto central, rastreamento de alta temperatura, ROIModos de Imagem: Fusão de imagem, imagem visual, imagem térmicaBrilho da Tela: Ajustável (alto, médio, baixo)Armazenamento: Cartão micro SDGrau de Proteção: IP65Resistência a Impacto: Queda de até 2 metrosInterface: USB Tipo-CAlimentação: Bateria de íon-lítio 3,6V / 5000mAhAut...",
+      "specs": null,
+      "category": "termovisor",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas de Medição",
+        "Termovisor"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/11058/011769-1.jpeg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/11058/011769-1.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/14890/011769-31.jpeg"
+      ],
+      "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26849/mtv-120-termovisora-profissional-drop-test-minipa-manual.pdf",
+      "sourceUrl": "https://www.proesi.com.br/mtv-120-termovisora-profissional-minipa"
+    },
+    {
+      "id": "11883",
+      "sku": "11883",
+      "name": "ET-2233 l Multímetro CAT IV 600V TRUE RMS INTERFACE USB",
+      "slug": "et-2233-l-multimetro-digital-cat-iv-600v-l-true-rms-e-data-hold",
+      "brand": null,
+      "price": 1328.89,
+      "priceFormatted": "R$ 1.328,89",
+      "stock": null,
+      "inStock": true,
+      "description": "ET-2233 l Multímetro Digital - CAT IV 600V l TRUE RMS e DATA HOLD Esse multímetro diferencia-se por ser um modelo com 6000 contagens e interface USB. Ele faz medidas de Resistência, Capacitância, frequência de rede, duty cycle, testes de diodos, temperatura e continuidade. Principais Características: O multímetro ET-2233 tem a função de desligamento automático, indicação de bateria fraca, função máximo e mínimo e relativo, uma ótima qualidade é as medidas feitas em baixa impedância (LoZ). Este instrumento vem de acordo com a norma IEC61010-1 categoria III 1000V / Categoria IV 600v e Contém dupla isolação, de acordo com a norma NR-10. Baixe aqui o Software do ET-2233 Dados Técnicos:",
+      "specs": null,
+      "category": "multímetros",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas de Medição",
+        "Multímetros"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/11178/multimetro-digital-minipa-et2233-7.jpeg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/11178/multimetro-digital-minipa-et2233-7.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15263/multimetro-digital-minipa-et2233-5.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15539/multimetro-digital-minipa-et2233-4.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15611/multimetro-digital-minipa-et2233-2.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15637/multimetro-digital-minipa-et2233-1.jpeg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/et-2233-l-multimetro-digital-cat-iv-600v-l-true-rms-e-data-hold"
+    },
+    {
+      "id": "408204",
+      "sku": "408204",
+      "name": "Fonte de Bancada Hikari HF-3205S 32V 5A Bivolt",
+      "slug": "fonte-de-alimentacao-hikari-dc-5a-hf-3205s-bivolt",
+      "brand": null,
+      "price": 1159.15,
+      "priceFormatted": "R$ 1.159,15",
+      "stock": null,
+      "inStock": true,
+      "description": "Fonte De Bancada Hikari 32v DC 5A HF-3205S - Bivolt A fonte de Bancada DC variável modelo HF-3205S se destaca pela alta precisão, alinhados com estabilidade, proteção, dígitos selecionáveis, através de um único potenciômetro para ajuste fino e grosso de tensão e corrente, saídas variáveis: 0 ~ 32V e 0 ~ 5A. Possui proteção de sobrecarga e inversão de polaridade, função de travamento de configuração, ajuste de limite de corrente. A fonte de alimentação DC HF-3205S pode ser utilizada em laboratórios de assistências técnicas, escolas, linhas de produção entre outros. ESPECIFICAÇÕES: Tensão de Saída: 0 a 32V DCCorrente de Saída: 0 a 5APotência: 110WAlimentação: 127/220V (bivolt automático)Regulação: LinearDisplays: LED para tensão e correnteProteção: Sobrecarga e curto-circuitoDimensões: 25 x 15 x 8 cmPeso: 4,8 kg AproximadamenteFrequência: 50/60 HzVentilação: Forçada (com cooler)Modelo: HF-3205S",
+      "specs": null,
+      "category": "fontes-de-bancada",
+      "categoryPath": [
+        "Fontes",
+        "Fontes de Bancada"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2025/05/produto/24423/408204-a-fonte-de-alimentacao-hikari-dc-5a-hf-3205s-bivolt.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2025/05/produto/24423/408204-a-fonte-de-alimentacao-hikari-dc-5a-hf-3205s-bivolt.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/05/produto/24421/408204-c-fonte-de-alimentacao-hikari-dc-5a-hf-3205s-bivolt.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/05/produto/24422/408204-b-fonte-de-alimentacao-hikari-dc-5a-hf-3205s-bivolt.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/05/produto/24420/408204-d-fonte-de-alimentacao-hikari-dc-5a-hf-3205s-bivolt.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/05/produto/24419/408204-e-fonte-de-alimentacao-hikari-dc-5a-hf-3205s-bivolt.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/fonte-de-alimentacao-hikari-dc-5a-hf-3205s-bivolt"
+    },
+    {
+      "id": "113363",
+      "sku": "113363",
+      "name": "Megômetro Digital MI-2702 Minipa CAT III 1000V",
+      "slug": "megometro-digital-portatil-mi-2702",
+      "brand": null,
+      "price": 2041.49,
+      "priceFormatted": "R$ 2.041,49",
+      "stock": null,
+      "inStock": true,
+      "description": "Megômetro Digital Portátil - MI-2702 Instrumento portátil para medição de resistência de isolamento, o MI-2702 realiza testes com tensões de até 1000V, oferecendo alta precisão, praticidade e segurança em aplicações profissionais e industriais. Ideal para verificação de isolamentos em motores, cabos, transformadores, painéis elétricos e sistemas de energia, sendo indicado para técnicos de manutenção, instaladores e engenheiros elétricos. Possui dupla isolação, desligamento automático e indicador de bateria fraca. Seu design compacto facilita o uso em campo, e a certificação CAT III 1000V garante segurança nas medições de alta tensão. Especificações Técnicas: Tensão de teste: 250V / 500V / 1000VResistência de isolamento: até 2000MΩTensão máxima: 1000V DCDisplay: 2000 contagensCategoria de segurança: CAT III 1000VDesligamento automático: SimIndicação de bateria fraca: SimAlimentação: 6x pilhas AADimensões: 165x82x45 mmPeso: 410gGrau de proteção: IP40",
+      "specs": null,
+      "category": "megômetro",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas de Medição",
+        "Megômetro"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2025/04/produto/24095/113363-a-megometro-digital-portatil-minipa-mi-2702.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2025/04/produto/24095/113363-a-megometro-digital-portatil-minipa-mi-2702.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/04/produto/24094/113363-b-megometro-digital-portatil-minipa-mi-2702.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/04/produto/24093/113363-c-megometro-digital-portatil-minipa-mi-2702.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/04/produto/24092/113363-d-megometro-digital-portatil-minipa-mi-2702.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/04/produto/24090/113363-f-megometro-digital-portatil-minipa-mi-2702.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/04/produto/24091/113363-e-megometro-digital-portatil-minipa-mi-2702.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/megometro-digital-portatil-mi-2702"
+    },
+    {
+      "id": "434060",
+      "sku": "434060",
+      "name": "Encoder FNC-58SM-6630V360-R2 - 360 Pulsos",
+      "slug": "encoder-fenac-incremental-fnc-58sm-6630v360-r2-360-pulsos",
+      "brand": null,
+      "price": 1213.11,
+      "priceFormatted": "R$ 1.213,11",
+      "stock": null,
+      "inStock": true,
+      "description": "Encoder Fenac Incremental FNC-58SM-6630V360-R2 - 360 Pulsos O encoder FENAC incremental FNC-58SM-6630V360-R2 é um dispositivo de feedback de posição que gera 360 pulsos por rotação. Aplicação: Ele é projetado para ser utilizado em aplicações que exigem alta precisão na medição da posição angular, como em máquinas CNC, robôs industriais, equipamentos médicos, entre outros. Vantagens: Esse encoder é incremental, o que significa que ele fornece informações sobre o movimento angular em relação a uma posição de referência, mas não informa a posição absoluta. Ele é compatível com diversos tipos de interfaces de comunicação e pode ser facilmente integrado em sistemas eletrônicos complexos. Especificações: -Modelo: FNC-58SM-6630V360-R2-Pulsos por Volta: 360-Diâmetro do Eixo: 6mm-Tensão de Alimentação: 5-30V-Quantidade de Fios de Sáida: 6-Frequência: 100 kHz-Temperatura de Operação: -10°C  até +60°C",
+      "specs": null,
+      "category": "encoder",
+      "categoryPath": [
+        "Automação e Desenvolvimento",
+        "Encoder"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/4690/encoder-fenac-incremental-fnc-58sm-6630v360-r2-360-pulsos-434060-1-1.jpeg",
+      "images": null,
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/encoder-fenac-incremental-fnc-58sm-6630v360-r2-360-pulsos"
+    },
+    {
+      "id": "112707",
+      "sku": "112707",
+      "name": "Tiristor Semikron SKKT 323 / 16E",
+      "slug": "tiristor-semikron-skkt-323-16e",
+      "brand": null,
+      "price": 1288.63,
+      "priceFormatted": "R$ 1.288,63",
+      "stock": null,
+      "inStock": true,
+      "description": "Tiristor Semikron SKKT 323 / 16E O SKKT 323/16E é um módulo tiristor um dispositivo eletrônico que controla o fluxo de corrente de um circuito, que tem como finalidade enviar o fluxo de corrente em uma só direção.Fabricado pela líder global em tecnologia de semicondutores, os produtos da Semikron são sinônimo de qualidade e confiabilidade. Seus produtos são projetados para suportar condições das mais diversas em ambientes industriais, seus módulos oferecem uma alta qualidade de operação com durabilidade e resistencia sem igual, que garante o funcionamento do seu sistema sem quaisquer problemas. Especificações Técnicas: Tensão Máxima Reversa (VRRM): 1600VCorrente Média Maxima (ITAV): 320ACorrente de Gatilho com Disparo (IGT): 150mA",
+      "specs": null,
+      "category": "st---skt---skkt",
+      "categoryPath": [
+        "Componentes",
+        "Tiristor",
+        "ST - SKT - SKKT"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/08/produto/18389/112707.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/08/produto/18389/112707.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/04/produto/16323/112707-b.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/tiristor-semikron-skkt-323-16e"
+    },
+    {
+      "id": "252032P",
+      "sku": "252032P",
+      "name": "Estação de Retrabalho Hikari HK-939 PRO - 220V",
+      "slug": "estac-o-de-retrabalho-hikari-hk-939-pro-220v",
+      "brand": null,
+      "price": 2124.91,
+      "priceFormatted": "R$ 2.124,91",
+      "stock": null,
+      "inStock": true,
+      "description": "Estação de Retrabalho Hikari HK-939 PRO - 220V A Estação de Retrabalho é perfeita para fazer o retrabalho em placas eletrônicas que possuem componentes SMD.A Estação de Retrabalho HK-939 PRO é um equipamento robusto indicado para trabalhos de longa duração o que faz dela uma ótima ferramenta para uso profissional. Podemos encontrar este modelo em laboratórios de assistências técnicas e dentro da indústria.Se destaca por possuir aquecimento rápido, gabinete antiestética (ESD), estabilidade térmica, e facilidade nas troca de bocais, agilizando assim a remoção dos componentes eletrônicos da placa. Características: - Numero Hikari: 21Q009- Display Digital LCD- Potência Nominal: 320W- Proteção contra descargas eletrostáticas (ESD)- Faixa de Temperatura Ajustável: 100°C ~ 480°C- Vazão de Ar: Ajustável de 7 a 24L/minuto- Resfriamento Automático- Alimentação: 220V- Dimensões: 187x135x245mm- Peso: Aproximadamente 4,2Kg Itens inclusos - 4 bocais de reposição- 2 pinças de Remoção Garantia de 24 meses Manual Peças de Reposição ( vendidos separadamente ) Resistência para Estação - Hikari HK-939 PRO Tubo para Estação de Solda Hikari HK-939PRO Alça para Estação de Solda Hikari HK-939PRO Mangueira para Estação",
+      "specs": null,
+      "category": "estação-de-retrabalho",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas para Soldagem",
+        "Estação de Retrabalho"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/3060/estacao-de-retrabalho-hikari-hk-939-pro-220v-2.jpeg",
+      "images": null,
+      "datasheet": "https://www.hikariferramentas.com.br/_global/_ssf/ssf.aspx?d=/_upload/downloads/&arquivo=20190606095246-21Q008-21Q009-MANUAL-ESTACAO-RETRABALHO-HK-939-PRO.pdf",
+      "sourceUrl": "https://www.proesi.com.br/estac-o-de-retrabalho-hikari-hk-939-pro-220v"
+    },
+    {
+      "id": "11256",
+      "sku": "11256",
+      "name": "Inversor de Frequência Monofasico 1,0 CV",
+      "slug": "inversor-de-frequencia-monofasico-1-0cv-200-a-240-vca-4-2a-3-rele-cfw100c04p2s220g2-weg",
+      "brand": null,
+      "price": 1290.26,
+      "priceFormatted": "R$ 1.290,26",
+      "stock": null,
+      "inStock": true,
+      "description": "Características: Alta performance e simplicidade Aplicações Conectividade (WPS) ACESSE TODAS AS INFORMAÇÕES E LINKS PARA DOWNLOAD AQUI",
+      "specs": null,
+      "category": "monofásico",
+      "categoryPath": [
+        "Automação e Desenvolvimento",
+        "Inversor de frequência",
+        "Monofásico"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/12696/frete-gratis-2.jpeg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/12696/frete-gratis-2.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/10514/inversor-de-frequencia.jpeg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-monofasico-1-0cv-200-a-240-vca-4-2a-3-rele-cfw100c04p2s220g2-weg"
+    },
+    {
+      "id": "11242",
+      "sku": "11242",
+      "name": "Inversor de Frequência Monofasico 2,0 CV",
+      "slug": "inversor-de-frequencia-cfw300a07p3s2nb20-monofasico-200-a-240-vca-7-3a-weg",
+      "brand": null,
+      "price": 1914.72,
+      "priceFormatted": "R$ 1.914,72",
+      "stock": null,
+      "inStock": true,
+      "description": "Inversor de Frequência Monofasico 220Vac | 2,0 CV / 7,3A / 1 Rele | CFW300A07P3S2NB20 | WEG O inversor de frequência WEG modelo CFW300 é um equipamento com excelente custo benefício, compacto e que possibilita o acionamento de velocidade variável com alta performance para motores de indução trifásicos. Possui controle vetorial (VVW) ou escalar (V/F) selecionável,. Interface de operação e filosofa plug and play, permitindo a instalação dos acessórios automaticamente de forma rápida e simples. Métodos de Controle: V/f (escalar) e VVW Rendimento típico na condição nominal: ? 97% Conformal Coating: 3C2 Possui incorporado SoftPLC Temperatura: 0 °C a 50 °C Grau de proteção: IP20 Porta USB: Sim, via CFW300-CUSB E/S padrão: 4 x DI; 1 relé NA/NF x DO; 1 x AI; Somente com plug-in x AO. Display: LCD Numérico Cartão de memória Não incluso no produto Características: Corrente nominal de saída: 7,3A Tensão de alimentação monofásico: 200 á 240 VAC Potencia nominal de saída: 2,0 CV 4x entradas digitais PNP ou NPN 1x saída a relé 0,5 A / 250 V CA 1x entrada analógica 0-10 V CC / 4-20 mA Revestimento classe 3C2 (IEC 60721-3-3) nos circuitos internos Aplicações Máquinas e Equipamentos Comércio ou Residências Fechamento ou Abertura de portões Alimentação Monofásica Granuladores e Esteiras, Paletizadores Agitadores e Misturadores Bombas dosadoras de processos Bombas centrífugas Ventiladores e Exaustores Conectividade (WPS) O software de aplicação é gratuito para programação, controle e monitoramento do CFW300; SoftPLC é um recurso de software incorporado ao CFW300, no qual permite ao usuário a depuração e implementação de projetos de lógica equivalentes a um CLP (Controlador Lógico Programável) de pequeno porte, customizando e integrando o CFW300 à aplicação. ACESSE TODAS AS INFORMAÇÕES E LINKS PARA DOWNLOAD AQUI",
+      "specs": null,
+      "category": "monofásico",
+      "categoryPath": [
+        "Automação e Desenvolvimento",
+        "Inversor de frequência",
+        "Monofásico"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/12694/frete-gratis-cfw300.jpeg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/12694/frete-gratis-cfw300.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/10482/inversor-de-frenquencia-weg-cfw300-2.jpeg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-cfw300a07p3s2nb20-monofasico-200-a-240-vca-7-3a-weg"
+    },
+    {
+      "id": "11238",
+      "sku": "11238",
+      "name": "Inversor de Frequência Trifásica 1,5 CV",
+      "slug": "inversor-de-frequencia-trifasica-380vac-1-5-cv-2-6a-1-rele-cfw300a02p6t4nb20-weg-1",
+      "brand": null,
+      "price": 1508.33,
+      "priceFormatted": "R$ 1.508,33",
+      "stock": null,
+      "inStock": true,
+      "description": "O inversor de frequência WEG modelo CFW300 é um equipamento com excelente custo benefício, compacto e que possibilita o acionamento de velocidade variável com alta performance para motores de indução trifásicos. Possui controle vetorial (VVW) ou escalar (V/F) selecionável,. Interface de operação e filosofa plug and play, permitindo a instalação dos acessórios automaticamente de forma rápida e simples. Características: Tensão de alimentação monofásico: 200 á 240 VACPotencia nominal de saída: 1,0 CV Aplicações Máquinas e EquipamentosComércio ou ResidênciasFechamento ou Abertura de portõesAlimentação MonofásicaGranuladores e Esteiras,PaletizadoresAgitadores e MisturadoresBombas dosadoras de processosBombas centrífugasVentiladores e Exaustores Conectividade (WPS) O software de aplicação é gratuito para programação, controle e monitoramento do CFW300;SoftPLC é um recurso de software incorporado ao CFW300, no qual permite ao usuário a depuração e implementação de projetos de lógica equivalentes a um CLP (Controlador Lógico Programável) de pequeno porte, customizando e integrando o CFW300 à aplicação. ACESSE TODAS AS INFORMAÇÕES E LINKS PARA DOWNLOAD AQUI",
+      "specs": null,
+      "category": "monofásico",
+      "categoryPath": [
+        "Automação e Desenvolvimento",
+        "Inversor de frequência",
+        "Monofásico"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/10484/cfw300a04p2s2nb20.jpeg",
+      "images": null,
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-trifasica-380vac-1-5-cv-2-6a-1-rele-cfw300a02p6t4nb20-weg-1"
+    },
+    {
+      "id": "11607",
+      "sku": "11607",
+      "name": "Fonte de Alimentação NDR-480-48 Mean Well",
+      "slug": "fonte-de-alimentac-o-ndr-480-48-mean-well-fixa-trilho-48v-10a",
+      "brand": null,
+      "price": 1789.75,
+      "priceFormatted": "R$ 1.789,75",
+      "stock": null,
+      "inStock": true,
+      "description": "Fonte de Alimentação NDR-480-48 Mean Well Fixa Trilho +48V 10A A fonte de alimentaçãoNDR-480-48chaveadaMean Wellé a melhor opção para aplicações que priorizam confiabilidade, ela é projetada em estrutura de metal com ventilação por convecção de ar livre.O modeloNDR-480-48possui uma unica saída, sendo ela +48Vcc que suporta cargas de até 10 Amp. Dados Técnicos: Potencia máxima: 480 WattsTensão de saída: + 48VccCH1: +48 Vcc / 10 AmpDimensões: 123 x 85 x 125 mm (C x L x A)",
+      "specs": null,
+      "category": "fontes-48-volts",
+      "categoryPath": [
+        "Fontes",
+        "Fontes 48 Volts"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/07/produto/18260/11607.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/07/produto/18260/11607.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/07/produto/18259/11607-2.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/01/produto/22525/11607-a-fonte-chaveada-trilho-din-48v-10a-480w-ndr-480-48-mean-well.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/fonte-de-alimentac-o-ndr-480-48-mean-well-fixa-trilho-48v-10a"
+    },
+    {
+      "id": "287923",
+      "sku": "287923",
+      "name": "RSP-1000-24 Fonte Alimentação Mean Well 1000W Saída 24V 41.6A",
+      "slug": "rsp-1000-24-fonte-alimentac-o-mean-well-1000w-saida-24v-41-6a",
+      "brand": null,
+      "price": 4320.45,
+      "priceFormatted": "R$ 4.320,45",
+      "stock": null,
+      "inStock": true,
+      "description": "A fonte de alimentação chaveada Mean Well é a melhor opção para aplicações que priorizam confiabilidade, ela é projetada em estrutura de metal com ventilação por convecção de ar livre.\n\nO modelo SE-1000-24 possui uma unica saída, sendo ela +24Vcc que suporta cargas de até 41,6 Amp.\n\nTensão de entrada AC: 90 á 264 VAC\nTensão de entrada DC: 254 Á 370VDC\nPotencia máxima: 1000 Watts\n\nTensão de saída:\nCH1: +24 Vcc / 41,6 Amp",
+      "specs": null,
+      "category": "fontes-24-volts",
+      "categoryPath": [
+        "Fontes",
+        "Fontes 24 Volts"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/3234/274.jpeg",
+      "images": null,
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/rsp-1000-24-fonte-alimentac-o-mean-well-1000w-saida-24v-41-6a"
+    },
+    {
+      "id": "113324",
+      "sku": "113324",
+      "name": "Cabo de Rede Furukawa Soho Plus CAT6 Vemelho",
+      "slug": "cabo-de-rede-furukawa-soho-plus-cat6-vemelho-rolo-305-metros",
+      "brand": null,
+      "price": 1738.5,
+      "priceFormatted": "R$ 1.738,50",
+      "stock": null,
+      "inStock": true,
+      "description": "O que é o Cabo de Rede Furukawa Soho Plus CAT6 Vermelho | Rolo 305 Metros? O Cabo de Rede Furukawa Soho Plus CAT6 Vermelho é um cabo de alta performance desenvolvido para atender às necessidades de transmissão de dados em ambientes residenciais, comerciais e industriais. Fabricado pela Furukawa, referência mundial em cabeamento estruturado, este cabo categoria 6 (CAT6) garante velocidade de transmissão superior a 1000 Mbps, oferecendo qualidade e estabilidade na conexão de rede. Sua construção conta com condutor de cobre eletrolítico nu, capa em PVC retardante a chama e cruzeta interna que reduz interferências e melhora a performance do sinal. Este cabo é indicado para profissionais de TI, instaladores, empresas e usuários que necessitam de infraestrutura de rede confiável para suportar aplicações que exigem alta largura de banda. Pode ser utilizado em redes de computadores, sistemas de monitoramento por câmeras IP, servidores, switches e roteadores, garantindo comunicação rápida e estável. É ideal tanto para escritórios que demandam conexões seguras e de alto desempenho quanto para indústrias e ambientes corporativos que precisam de cabeamento estruturado de acordo com normas internacionais. O diferencial do Cabo Furukawa CAT6 Soho Plus está na sua certificação Anatel e conformidade com normas como ANSI/TIA-568.2-D e ISO/IEC 11801, que asseguram confiabilidade e padronização. Além disso, seu desempenho supera cabos de categorias inferiores (como CAT5e), proporcionando maior velocidade, menor latência e redução de perdas de sinal. Outro ponto relevante é o fato de ser fabricado de acordo com a diretiva RoHS e norma ISO 14001, garantindo responsabilidade ambiental. Comprar este cabo significa investir em um produto durável, seguro e que prepara sua rede para demandas futuras de conectividade em alta velocidade. Especificações do Cabo de Rede Categoria: CAT6 (suporte a mais de 1000 Mbps)Ambiente de instalação: InternoCondutor: Fio sólido de cobre eletrolítico nuEst...",
+      "specs": null,
+      "category": "cabo-de-rede",
+      "categoryPath": [
+        "Fios e Cabos",
+        "Cabo de Rede"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2025/03/produto/23385/113324-rolo-305-metros-cabo-rede-furukawa-sohoplus-cat6-verm.jpg",
+      "images": null,
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/cabo-de-rede-furukawa-soho-plus-cat6-vemelho-rolo-305-metros"
+    },
+    {
+      "id": "408207",
+      "sku": "408207",
+      "name": "Fonte de Alimentação",
+      "slug": "mps-3005-fonte-de-alimentac-o-para-bancada-bivolt-minipa-saida-variavel-dc-0-30v-0-5a",
+      "brand": null,
+      "price": 1137.67,
+      "priceFormatted": "R$ 1.137,67",
+      "stock": null,
+      "inStock": true,
+      "description": "Fonte de Alimentação Minipa MPS-3005B As fontes de alimentação DC regulada da Minipa foram projetadas visando suprir as necessidades mais frequentes de laboratórios de pesquisa e desenvolvimento, escolas, centros de manutenção e linhas de produção.O modeloMPS-3005Bdispõe de uma saída variável de 0 á 30V / 0 á 5A Dentre as características destas fontes, pode-se destacar: - Alta estabilidade e baixo ripple.- Display de fácil leitura para apresentação simultânea da tensão e corrente de saída.- Ajuste da tensão e da corrente através de potenciômetros de precisão.- Possibilidade de operação contínua mesmo nas condições de máxima carga.- Resfriamento com ventilação forçada.- Circuito de proteção de sobrecarga. Características: - Display LCD: 4 Dígitos- Tensão/Corrente: 0 á 30V / 0 á 5A- Saída Variável: Simples- Proteção de Sobrecarga: SIM- Precisão Básica Display: -0,01- Regulação carga em Tensão: <0,01% + 5mV- Regulação carga em Corrente: <0,2% + 3mA- Ripple/Ruído (Tensão/Corrente): 1mV/3mA RMS- Consumo Máximo: 260W- Método de Resfriamento: Ventilação Forçada- Alimentação: 110V/220V- Dimensões (mm): 145x128x285mm- Garantia: 12 meses",
+      "specs": null,
+      "category": "fontes-de-bancada",
+      "categoryPath": [
+        "Fontes",
+        "Fontes de Bancada"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/12724/fonte-de-alimenta-o-2.jpeg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/12724/fonte-de-alimenta-o-2.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/4388/fonte-de-alimenta-o-3.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15249/ponta-de-prova-1.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15557/fonte-de-alimenta-o-1.jpeg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/mps-3005-fonte-de-alimentac-o-para-bancada-bivolt-minipa-saida-variavel-dc-0-30v-0-5a"
+    },
+    {
+      "id": "252033",
+      "sku": "252033",
+      "name": "Estação Solda Hakko FX-888D ESD 220V",
+      "slug": "estacao-de-solda-hakko-fx-888d-esd-220v",
+      "brand": null,
+      "price": 2052.35,
+      "priceFormatted": "R$ 2.052,35",
+      "stock": null,
+      "inStock": true,
+      "description": "Estação de Solda Hakko FX-888D ESD 220V Estação de solda da Hakko aFX-888D, é indicada para uso profissional, possui temperatura ajustável de 200°C a 480ºC e potência máxima de pico de 70W, conseguindo recuperação termica em 12 segundos sendo possível soldar desde componentes eletrônicos a peças e cabos de maiores espessuras.Este modelo é compacto e perfeito para ter em sua bancada com as dimensões de 100 X 120 X 120mm, se torna um equipamento pequeno e poderoso.Um dos recursos interessante disponiveis nesta estação e o travamento de temperatura por senha, onde e possivel definir uma temperatura e travar através de senha, recurso importante para quando estiver trabalhando e evitar que mexam em seu equipamento. CARACTERÍSTICAS GERAIS: - Numero Hikari: 13A945- Tensão de alimentação 220V- Temperatura Ajustável: 200 ~480ºC- Pico de Potência: 70W- Potência Nominal: 20W- Estabilidade Térmica: ±1°C (200°C a 480°C)- Travamento de Temperatura: Digital Por Senha- Estabilidade térmica: +/- 1°C- Comprimento do cabo do ferro: 1,2m- Dimensões: 100 x 120 x 120mm- Peso: 1,2Kg ACESSÓRIOS INCLUSOS: 1 x Estação de Solda Hakko FX-888D1 x Ferro de Solda FX-88011 x Ponta de solda cônica T18 B1 x Suporte de ferro com esponja metálica e vegetal",
+      "specs": null,
+      "category": "estação-de-solda",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas para Soldagem",
+        "Estação de Solda"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2025/01/produto/22552/252033-a-estacao-de-solda-hakko-fx-888d-esd-220v.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2025/01/produto/22552/252033-a-estacao-de-solda-hakko-fx-888d-esd-220v.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/01/produto/22551/252033-c-estacao-de-solda-hakko-fx-888d-esd-220v.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/01/produto/22369/252031-4-estacao-de-solda-hakko-fx-888d-esd-127v.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/01/produto/22553/252033-b-estacao-de-solda-hakko-fx-888d-esd-220v.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/01/produto/22368/252031-5-estacao-de-solda-hakko-fx-888d-esd-127v.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/estacao-de-solda-hakko-fx-888d-esd-220v"
+    },
+    {
+      "id": "397303",
+      "sku": "397303",
+      "name": "SKM195GB066D - Módulo IGBT Semikron",
+      "slug": "skm195gb066d-modulo-igbt-semikron",
+      "brand": null,
+      "price": 1092.21,
+      "priceFormatted": "R$ 1.092,21",
+      "stock": null,
+      "inStock": true,
+      "description": "Módulo IGBT - SKM195GB066D | Semikron Os módulos da Semikron são muito conhecidos por sua excelente qualidade e um ótimo preço. O Módulo IGBT é utilizado em diversos equipamentos de potencia, conseguimos encontrar facilmente em Inversores, drives de potencia, UPS, Soldadores Eletrônicos entre outros. Características: Fabricante: SEMIKRON.VCES in V: 600.IC em 25ºC: 265A.IC em 80ºC: 200A. Acompanha:4xTerminais Faston mini Dourado 2,8 mm3xParafuso com Arruela de Pressão, 5 X 10mm",
+      "specs": null,
+      "category": "módulos",
+      "categoryPath": [
+        "Automação e Desenvolvimento",
+        "Módulos"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/08/produto/18506/397303.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/08/produto/18506/397303.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2024/08/produto/18505/397303-2.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/skm195gb066d-modulo-igbt-semikron"
+    },
+    {
+      "id": "10826",
+      "sku": "10826",
+      "name": "Fonte Chaveada Mean Well PSP-600-24 600W 24V 25A",
+      "slug": "psp-600-24-fonte-chav-pfc-paralela-univ-dc-ac-600w-24v-25a",
+      "brand": null,
+      "price": 2230.54,
+      "priceFormatted": "R$ 2.230,54",
+      "stock": null,
+      "inStock": true,
+      "description": "Fonte Chaveada Mean Well PSP-600-24 600W 24V 25A Dados Técnicos",
+      "specs": null,
+      "category": "fontes-24-volts",
+      "categoryPath": [
+        "Fontes",
+        "Fontes 24 Volts"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/10040/psp-600-mean-well.jpeg",
+      "images": null,
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/psp-600-24-fonte-chav-pfc-paralela-univ-dc-ac-600w-24v-25a"
+    },
+    {
+      "id": "113380",
+      "sku": "113380",
+      "name": "Multímetro Bancada Digital Minipa MDM-8145B",
+      "slug": "multimetro-bancada-dig-minipa-mdm-8145b",
+      "brand": null,
+      "price": 2103.67,
+      "priceFormatted": "R$ 2.103,67",
+      "stock": null,
+      "inStock": true,
+      "description": "O que é Multímetro Bancada Digital Minipa MDM-8145B? O Multímetro de Bancada Digital Minipa MDM-8145B é um equipamento de alta precisão desenvolvido para atender profissionais que precisam de medições detalhadas e completas em seus projetos. Com display LCD de 55.000 contagens e tela TFT colorida de 3,5”, garante leitura clara e fácil dos resultados em tempo real. Ele realiza medições True RMS de tensão, corrente, resistência, capacitância, frequência, temperatura, além de testes de continuidade e diodo. Oferece ainda funções avançadas como registros Máx/Mín, medições relativas, cálculos em dB/dBm e armazenamento interno de dados, que podem ser exportados via USB para análise em computador. É uma ferramenta versátil para engenheiros, técnicos e estudantes avançados, sua precisão e recursos extras fazem dele um aliado essencial em calibração, desenvolvimento de equipamentos, controle de qualidade e diagnóstico de circuitos em ambientes profissionais e acadêmicos. Especificações do Multímetro Display: LCD 4 5/6 dígitos (55.000 contagens) + TFT 3,5” (480x320)Taxa de amostragem: 4, 16 ou 65 leituras por segundoTensão DC: até 1000 V, precisão ±(0,05%+5)Tensão AC (True RMS): até 750 V, precisão ±(0,5%+30)Corrente DC: até 10 A, precisão ±(0,15%+10)Corrente AC (True RMS): até 10 A, precisão ±(0,5%+20)Resistência: até 50 MΩ, precisão ±(0,15%+5)Capacitância: até 50 mF, precisão ±(2,5%+10)Frequência: até 60 MHz, precisão ±(0,2%+10)Temperatura: tipo K (-200 °C a 1300 °C) e PT100 (-200 °C a 800 °C)Testes: continuidade, diodo, dB/dBm, funções Máx/Mín/Relativo e Data HoldInterface: USB para integração com PCData logger: até 1000 registrosDimensões: 86,5 x 200 x 64 mmPeso: aprox. 450 gAlimentação: 90 a 240 V AC, 50/60 HzConsumo: 15 WSegurança: IEC61010-1 CAT I 1000V / CAT II 600V Faça o Download do Datasheet Perguntas frequentes (FAQ) O MDM-8145B realiza medições True RMS? Sim, tanto para tensão quanto para corrente AC, garantindo leituras precisas em sinais senoidais e não seno...",
+      "specs": null,
+      "category": "multímetros",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas de Medição",
+        "Multímetros"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2025/04/produto/24144/113380-b-multimetro-bancada-dig-minipa-usb-mdm-8145b-cat-ii-600v-10a-true-rms-ac.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2025/04/produto/24144/113380-b-multimetro-bancada-dig-minipa-usb-mdm-8145b-cat-ii-600v-10a-true-rms-ac.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/04/produto/24145/113380-a-multimetro-bancada-dig-minipa-usb-mdm-8145b-cat-ii-600v-10a-true-rms-ac.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/04/produto/24143/113380-c-multimetro-bancada-dig-minipa-usb-mdm-8145b-cat-ii-600v-10a-true-rms-ac.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/04/produto/24142/113380-d-multimetro-bancada-dig-minipa-usb-mdm-8145b-cat-ii-600v-10a-true-rms-ac.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/04/produto/24139/113380-h-multimetro-bancada-dig-minipa-usb-mdm-8145b-cat-ii-600v-10a-true-rms-ac.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/04/produto/24141/113380-f-multimetro-bancada-dig-minipa-usb-mdm-8145b-cat-ii-600v-10a-true-rms-ac.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/04/produto/24140/113380-e-multimetro-bancada-dig-minipa-usb-mdm-8145b-cat-ii-600v-10a-true-rms-ac.jpg"
+      ],
+      "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/09/produto/26045/manual-de-instrucoes-mdm8145b.pdf",
+      "sourceUrl": "https://www.proesi.com.br/multimetro-bancada-dig-minipa-mdm-8145b"
+    },
+    {
+      "id": "12238",
+      "sku": "12238",
+      "name": "Osciloscópio Portátil MS-350 Minipa 50MHz com Multímetro",
+      "slug": "ms-350-osciloscopio-portatil-digital-minipa-50mhz-cat-ii-400v",
+      "brand": null,
+      "price": 2690.75,
+      "priceFormatted": "R$ 2.690,75",
+      "stock": null,
+      "inStock": true,
+      "description": "MS-350 | Osciloscópio Portátil Digital Minipa - 50MHz com Função Multímetro MS-350 da Minipa: O Osciloscópio Portátil 2 em 1 que Não Pode Faltar na Sua Bancada Se você trabalha com manutenção eletrônica, automação ou projetos técnicos, sabe o quanto ter os instrumentos certos faz toda a diferença no resultado. E quando um único equipamento une osciloscópio digital + multímetro completo, a produtividade e a precisão disparam. Esse é o caso do MS-350 da Minipa, um osciloscópio portátil de 50MHz com função multímetro, ideal para quem busca versatilidade, mobilidade e desempenho em qualquer ambiente — seja em bancada ou em campo. Osciloscópio Digital Projetado com uma tela LCD colorida de 3,5” (320x240) e interface intuitiva, o MS-350 permite uma visualização clara e detalhada das formas de onda. Largura de banda: 50MHzCanais: 2 entradas independentesAmostragem em tempo real: 125MSa/s (2 canais) | 250MSa/s (1 canal)Base de tempo: 5ns/div a 1000s/divSensibilidade vertical: 10mV/div a 10V/divTrigger: modos Auto, Normal e Single | Detecção de borda (subida/descida)Tempo de subida: ≤ 8nsImpedância de entrada: 1MΩ ±2%, 16pF ±10%Tensão máxima de entrada: 400V (DC + AC, pico a pico)Modos de medição automática: Período, frequência, amplitude, valor médio, pico-a-pico, máximo, mínimoModos de cursor: ΔV e ΔT Multímetro Digital True RMS Além de osciloscópio, o MS-350 também funciona como um multímetro digital completo, oferecendo todas as medições essenciais com precisão. Tensão AC: 200mV a 750VTensão DC: 200mV a 1000VCorrente AC/DC: 200mA e 10AResistência: até 100MΩCapacitância: até 2mFTeste de diodo: até 2V com leitura de queda de tensãoTeste de continuidade: com buzzerResolução: até 0,01mV / 0,01Ω / 1pF (variável por faixa) Recursos Adicionais: True RMS para medições AC mais precisasMudança de faixa automáticaLuz de fundo ajustável e desligamento automático configurávelAlimentação por 2 baterias 18650 (3,7V / 2200mAh)Conectividade via USBCompatível com software HOS (Windows ...",
+      "specs": null,
+      "category": "osciloscópio",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas de Medição",
+        "Osciloscópio"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/11606/osciloscopio.jpeg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/11606/osciloscopio.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15245/pontas-osciloscopio.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15527/ponta-de-prova-osciloscopio.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15607/osciloscopio-bag.jpeg"
+      ],
+      "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26848/ms-350-osciloscopio-portatil-digital-minipa-50mhz-com-funcao-multimetro-manual.pdf",
+      "sourceUrl": "https://www.proesi.com.br/ms-350-osciloscopio-portatil-digital-minipa-50mhz-cat-ii-400v"
+    },
+    {
+      "id": "252031",
+      "sku": "252031",
+      "name": "Hakko FX-888D ESD 127V – Estação de Solda Profissional",
+      "slug": "estac-o-de-solda-hakko-fx-888d-127v",
+      "brand": null,
+      "price": 1476.37,
+      "priceFormatted": "R$ 1.476,37",
+      "stock": null,
+      "inStock": true,
+      "description": "O que é a Estação de Solda Hakko FX-888D ESD 127V? A Estação de Solda Hakko FX-888D ESD 127V é um equipamento profissional desenvolvido para oferecer soldagens de alta qualidade com máxima estabilidade térmica. Projetada pela Hakko, referência mundial em ferramentas de soldagem, essa estação combina tecnologia avançada com design compacto para atender às mais diversas demandas, desde a manutenção de dispositivos eletrônicos delicados até a soldagem de cabos e componentes de maior espessura. Ela possui controle digital de temperatura entre 200°C e 480°C, pico de potência de 70W e recuperação térmica em apenas 12 segundos, garantindo agilidade e precisão em qualquer projeto. Além disso, conta com recurso exclusivo de travamento de temperatura por senha, evitando alterações indevidas durante o trabalho. A Hakko FX-888D é indicada para profissionais de eletrônica, engenheiros, técnicos em manutenção, laboratórios de pesquisa e até hobbistas avançados que buscam uma estação confiável e de alto desempenho. Pode ser utilizada em reparo de placas eletrônicas, montagem de circuitos, confecção de protótipos e até em trabalhos de soldagem mais exigentes, como cabos de maior diâmetro. Seu tamanho reduzido facilita o uso em bancadas de trabalho com espaço limitado, tornando-a uma ferramenta prática e indispensável. O grande diferencial da Estação de Solda Hakko FX-888D está em sua estabilidade térmica, mantendo a temperatura constante mesmo em longos períodos de uso. A recuperação rápida em 12 segundos permite trabalhar sem interrupções, aumentando a produtividade. O recurso de bloqueio de temperatura por senha é outro atrativo, oferecendo segurança adicional em ambientes de uso compartilhado. Além disso, acompanha acessórios essenciais como suporte para ferro com esponja vegetal e metálica, ponta cônica T18-B e cabo de 1,2m, proporcionando praticidade no dia a dia. Especificações da Estação de Solda Número Hikari: 13A944Tensão de alimentação: 127VTemperatura ajustável: 200°C...",
+      "specs": null,
+      "category": "estação-de-solda",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas para Soldagem",
+        "Estação de Solda"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2025/01/produto/22552/252033-a-estacao-de-solda-hakko-fx-888d-esd-220v.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2025/01/produto/22552/252033-a-estacao-de-solda-hakko-fx-888d-esd-220v.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/01/produto/22551/252033-c-estacao-de-solda-hakko-fx-888d-esd-220v.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/01/produto/22369/252031-4-estacao-de-solda-hakko-fx-888d-esd-127v.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/01/produto/22553/252033-b-estacao-de-solda-hakko-fx-888d-esd-220v.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/01/produto/22368/252031-5-estacao-de-solda-hakko-fx-888d-esd-127v.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/estac-o-de-solda-hakko-fx-888d-127v"
+    },
+    {
+      "id": "12157",
+      "sku": "12157",
+      "name": "ET- 4710",
+      "slug": "et-4710-alicate-amperimetro-para-painel-solar-minipa",
+      "brand": null,
+      "price": 2699.76,
+      "priceFormatted": "R$ 2.699,76",
+      "stock": null,
+      "inStock": true,
+      "description": "O que é o Conector Jack Ethernet RJ45 com 4 Portas | 90 Graus? O Conector Jack Ethernet RJ45 com 4 Portas em ângulo de 90 graus é um componente eletrônico desenvolvido para facilitar conexões de rede em equipamentos de telecomunicações, informática e automação. Ele permite a instalação de múltiplos cabos de rede em um único módulo, garantindo estabilidade no sinal e compatibilidade com sistemas que utilizam o padrão RJ45. O design em 90 graus proporciona uma montagem prática em placas de circuito impresso (PCI), otimizando o espaço interno de dispositivos e assegurando melhor organização dos cabos. Este conector é amplamente utilizado em switches, roteadores, painéis de rede, equipamentos industriais e dispositivos de comunicação que exigem múltiplas conexões RJ45 em um único ponto. É ideal para técnicos em eletrônica, engenheiros de redes, integradores de sistemas e profissionais de manutenção que precisam de soluções confiáveis para montagem de circuitos e equipamentos. Em aplicações práticas, pode ser encontrado em servidores, controladores industriais, centrais de telecomunicação e sistemas embarcados. O grande diferencial do Conector Jack Ethernet RJ45 com 4 Portas | 90 Graus é sua capacidade de reunir quatro portas em um único componente, reduzindo o espaço necessário em placas e equipamentos. Além disso, o ângulo de 90 graus facilita a instalação em locais com restrição de espaço, evitando esforços mecânicos nos cabos e garantindo maior durabilidade das conexões. Esse conector oferece desempenho estável, confiabilidade no tráfego de dados e praticidade em projetos de rede e eletrônica avançada. Especificações do Conector Padrão RJ454 portas de conexãoÂngulo de 90° para montagem em PCICompatível com aplicações de rede EthernetEstrutura em material resistenteMontagem simplificada em equipamentos eletrônicos Perguntas Frequentes (FAQ) 1. Este conector suporta qualquer tipo de cabo de rede? Sim, ele é compatível com cabos que utilizam padrão RJ45, amplamente u...",
+      "specs": {
+        "Categoria de proteção": "Cat 4",
+        "Corrente": "AC e DC",
+        "Fabricante": "Minipa"
+      },
+      "category": "alicate-amperimetro",
+      "categoryPath": [
+        "Ferramentas",
+        "Ferramentas de Medição",
+        "Alicate amperimetro"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/11506/inteiro.jpeg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/11506/inteiro.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15313/garra.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15525/pontas-2.jpeg",
+        "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15627/bag.jpeg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.proesi.com.br/et-4710-alicate-amperimetro-para-painel-solar-minipa"
+    },
+    {
+      "id": "113879",
+      "sku": "113879",
+      "name": "IHM PI3070N 7\" Touch Colorida Ethernet 24V",
+      "slug": "ihm-pi3070n-7-polegadas-colorida-touch-ethernet-24v-sibratec",
+      "brand": null,
+      "price": 3327.63,
+      "priceFormatted": "R$ 3.327,63",
+      "stock": null,
+      "inStock": true,
+      "description": "O que é IHM PI3070N 7 Polegadas Colorida Touch Ethernet 24V - Sibratec? A IHM PI3070N é uma interface homem-máquina de 7\" com tela colorida touch, resolução 800×480 e memória flash de 128MB, suportando cartão SD e disco USB. Com conexão Ethernet e alimentação 24V, permite monitorar e controlar processos industriais em linhas de produção, máquinas CNC, sistemas automatizados e monitoramento de variáveis em tempo real. Seu diferencial está na combinação de tela touch, conectividade e armazenamento expansível, garantindo integração fácil, operação contínua e maior produtividade em indústrias de médio e grande porte. Especificações do IHM PI3070N: Tela TFT colorida de 7 polegadasResolução: 800×480 pixelsMemória Flash: 128MBSuporte para cartão SDSuporte para disco USBConexão EthernetAlimentação: 24V DCTela sensível ao toque (touch screen)Dimensões compatíveis com painéis industriais padrãoOperação contínua em ambiente industrial Faça o Download do Datasheet Perguntas frequentes (FAQ): Qual é a resolução da tela da IHM PI3070N? A tela possui resolução de 800×480 pixels, garantindo boa definição de gráficos e textos. Ela suporta conexão com PLCs? Sim, possui porta Ethernet para comunicação direta com PLCs e outros sistemas de automação. É possível armazenar dados na IHM? Sim, através da memória flash de 128MB e suporte para cartão SD ou disco USB. Pode ser utilizada em linhas de produção? Sim, é indicada para monitoramento e controle de processos industriais diversos. Quais tipos de arquivos podem ser usados via USB ou SD? É possível usar arquivos de programa, logs de operação e atualizações do sistema.",
+      "specs": null,
+      "category": "ihm",
+      "categoryPath": [
+        "Automação e Desenvolvimento",
+        "IHM"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26670/113879-a-interface-ihm-pi3070i-a-24v-7-colorida-touch-ethernet-sibratec.jpg",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26670/113879-a-interface-ihm-pi3070i-a-24v-7-colorida-touch-ethernet-sibratec.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26669/113879-b-interface-ihm-pi3070i-a-24v-7-colorida-touch-ethernet-sibratec.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26668/113879-c-interface-ihm-pi3070i-a-24v-7-colorida-touch-ethernet-sibratec.jpg",
+        "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26667/113879-d-interface-ihm-pi3070i-a-24v-7-colorida-touch-ethernet-sibratec.jpg"
+      ],
+      "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26608/ihm-pi3070.pdf",
+      "sourceUrl": "https://www.proesi.com.br/ihm-pi3070n-7-polegadas-colorida-touch-ethernet-24v-sibratec"
+    },
+    {
+      "id": "114007",
+      "sku": "114007",
+      "name": "Soft Starter SST-NX11 Entrada e Saída Trifásica 25a 7,5cv 200v / 15cv 380v - Sibratec",
+      "slug": "soft-starter-sst-nx11-entrada-e-saida-trifasica-25a-7-5cv-200v-15cv-380v-sibratec",
+      "brand": null,
+      "price": 2088.21,
+      "priceFormatted": "R$ 2.088,21",
+      "stock": null,
+      "inStock": true,
+      "description": "O que é a Soft Starter SST-NX11 (7,5CV 220V / 15cv 380V) Entrada e Saída Trifásica 25A - Sibratec? A Soft Starter SST-NX11 da Sibratec realiza o acionamento suave de motores trifásicos, controlando a tensão de partida para evitar picos de corrente e desgastes mecânicos. Suporta 25A, sendo indicada para motores de 7,5CV em 220V e 15CV em 380V. Ideal para bombas, ventiladores, compressores, esteiras e misturadores, oferece partidas e paradas estáveis, maior durabilidade do motor e ajustes simples de configuração. Funciona em redes de 200V a 380V, garantindo operação segura e baixa necessidade de manutenção. Especificações da Soft Starter SST-NX11 Corrente nominal: 25AMotor Trifásico 220v: 7,5HPMotor Trifásico 380v: 15HPTipo de entrada e saída: TrifásicaControle de rampa de partida e parada ajustávelIndicação de status por LEDsProteção contra sobrecorrente e subtensãoGrau de proteção: IP20Frequência: 50/60HzInstalação: Montagem em painel elétricoPeso: 1.703KgTensão Nominal: 200~415v (-15%+10%)Comprimento Máximo dos Cabos de Ligação: 300mNúmero de Ligações: 20 vezes/hora Faça o Download do Datasheet Perguntas Frequentes (FAQ) O que faz uma soft starter? Ela controla a tensão de partida do motor, reduzindo o pico de corrente e evitando choques mecânicos durante a partida e a parada. A SST-NX11 substitui o sistema estrela-triângulo? Sim. Ela é uma alternativa moderna e mais precisa ao sistema tradicional estrela-triângulo. Pode ser usada com qualquer motor trifásico? Sim, desde que o motor esteja dentro da faixa de corrente e potência especificada (até 25A). A SST-NX11 tem proteção interna contra sobrecorrente? Sim, possui proteção eletrônica integrada para evitar danos em casos de sobrecarga. Pode ser instalada em painéis existentes? Sim, seu formato e conexões facilitam a integração em painéis elétricos já instalados.",
+      "specs": null,
+      "category": "soft-starter",
+      "categoryPath": [
+        "Automação e Desenvolvimento",
+        "Soft Starter"
+      ],
+      "image": "https://proesi.cdn.magazord.com.br/img/2025/11/produto/26902/05-soft-starter-sst-nx11-entrada-e-saida-trifasica-25a-7-5cv-200v-15cv-380v-sibratec.png",
+      "images": [
+        "https://proesi.cdn.magazord.com.br/img/2025/11/produto/26902/05-soft-starter-sst-nx11-entrada-e-saida-trifasica-25a-7-5cv-200v-15cv-380v-sibratec.png",
+        "https://proesi.cdn.magazord.com.br/img/2025/11/produto/26901/04-soft-starter-sst-nx11-entrada-e-saida-trifasica-25a-7-5cv-200v-15cv-380v-sibratec.png",
+        "https://proesi.cdn.magazord.com.br/img/2025/11/produto/26898/01-soft-starter-sst-nx11-entrada-e-saida-trifasica-25a-7-5cv-200v-15cv-380v-sibratec.png",
+        "https://proesi.cdn.magazord.com.br/img/2025/11/produto/26899/02-soft-starter-sst-nx11-entrada-e-saida-trifasica-25a-7-5cv-200v-15cv-380v-sibratec.png",
+        "https://proesi.cdn.magazord.com.br/img/2025/11/produto/26900/03-soft-starter-sst-nx11-entrada-e-saida-trifasica-25a-7-5cv-200v-15cv-380v-sibratec.png"
+      ],
+      "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26840/manual-soft-starter.pdf",
+      "sourceUrl": "https://www.proesi.com.br/soft-starter-sst-nx11-entrada-e-saida-trifasica-25a-7-5cv-200v-15cv-380v-sibratec"
     }
   ],
   "categories": [
     {
+      "id": "inversor-de-frequência",
+      "name": "Inversor De Frequência",
+      "count": 5
+    },
+    {
       "id": "encoder",
       "name": "Encoder",
+      "count": 4
+    },
+    {
+      "id": "fontes-24-volts",
+      "name": "Fontes 24 Volts",
+      "count": 4
+    },
+    {
+      "id": "alicate-amperimetro",
+      "name": "Alicate Amperimetro",
+      "count": 4
+    },
+    {
+      "id": "monofásico",
+      "name": "Monofásico",
+      "count": 4
+    },
+    {
+      "id": "megômetro",
+      "name": "Megômetro",
       "count": 3
     },
     {
       "id": "terrômetro",
       "name": "Terrômetro",
-      "count": 2
+      "count": 3
     },
     {
-      "id": "inversor-de-frequência",
-      "name": "Inversor De Frequência",
-      "count": 2
+      "id": "multímetros",
+      "name": "Multímetros",
+      "count": 3
     },
     {
-      "id": "megômetro",
-      "name": "Megômetro",
-      "count": 1
+      "id": "fontes-de-bancada",
+      "name": "Fontes De Bancada",
+      "count": 3
     },
     {
       "id": "estação-de-retrabalho",
       "name": "Estação De Retrabalho",
-      "count": 1
+      "count": 2
+    },
+    {
+      "id": "cabo-de-rede",
+      "name": "Cabo De Rede",
+      "count": 2
+    },
+    {
+      "id": "lcd",
+      "name": "Lcd",
+      "count": 2
+    },
+    {
+      "id": "osciloscópio",
+      "name": "Osciloscópio",
+      "count": 2
+    },
+    {
+      "id": "fontes-48-volts",
+      "name": "Fontes 48 Volts",
+      "count": 2
+    },
+    {
+      "id": "trifásico",
+      "name": "Trifásico",
+      "count": 2
+    },
+    {
+      "id": "estação-de-solda",
+      "name": "Estação De Solda",
+      "count": 2
     },
     {
       "id": "esr",
@@ -596,48 +1613,38 @@
       "count": 1
     },
     {
-      "id": "cabo-de-rede",
-      "name": "Cabo De Rede",
-      "count": 1
-    },
-    {
-      "id": "lcd",
-      "name": "Lcd",
-      "count": 1
-    },
-    {
-      "id": "fontes-24-volts",
-      "name": "Fontes 24 Volts",
-      "count": 1
-    },
-    {
-      "id": "alicate-amperimetro",
-      "name": "Alicate Amperimetro",
-      "count": 1
-    },
-    {
       "id": "estação-dessoldadora",
       "name": "Estação Dessoldadora",
       "count": 1
     },
     {
-      "id": "osciloscópio",
-      "name": "Osciloscópio",
-      "count": 1
-    },
-    {
-      "id": "multímetros",
-      "name": "Multímetros",
-      "count": 1
-    },
-    {
-      "id": "fontes-de-bancada",
-      "name": "Fontes De Bancada",
-      "count": 1
-    },
-    {
       "id": "analisador-de-energia",
       "name": "Analisador De Energia",
+      "count": 1
+    },
+    {
+      "id": "termovisor",
+      "name": "Termovisor",
+      "count": 1
+    },
+    {
+      "id": "st---skt---skkt",
+      "name": "St   Skt   Skkt",
+      "count": 1
+    },
+    {
+      "id": "módulos",
+      "name": "Módulos",
+      "count": 1
+    },
+    {
+      "id": "ihm",
+      "name": "Ihm",
+      "count": 1
+    },
+    {
+      "id": "soft-starter",
+      "name": "Soft Starter",
       "count": 1
     }
   ]

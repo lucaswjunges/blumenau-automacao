@@ -229,11 +229,33 @@
                             </div>
                         </div>
 
-                        <div class="mt-4 p-4 bg-primary-700 rounded-lg">
-                            <p class="text-sm text-gray-400">
-                                <strong class="text-accent-400">Frete:</strong> O valor do frete será calculado e informado após a confirmação do pedido.
-                                Trabalhamos com envio via Correios e transportadoras.
-                            </p>
+                        <!-- Opções de Frete -->
+                        <div id="shipping-options-container" class="mt-4">
+                            <div id="shipping-loading" class="hidden p-4 bg-primary-700 rounded-lg">
+                                <div class="flex items-center gap-3">
+                                    <svg class="w-5 h-5 animate-spin text-accent-400" fill="none" viewBox="0 0 24 24">
+                                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+                                    </svg>
+                                    <span class="text-sm text-gray-400">Calculando frete...</span>
+                                </div>
+                            </div>
+
+                            <div id="shipping-options" class="hidden space-y-2">
+                                <label class="block text-sm font-medium mb-2">Escolha a forma de envio *</label>
+                                <!-- Options populated by JS -->
+                            </div>
+
+                            <div id="shipping-placeholder" class="p-4 bg-primary-700 rounded-lg">
+                                <p class="text-sm text-gray-400">
+                                    <strong class="text-accent-400">Frete:</strong> Digite o CEP para calcular as opções de envio.
+                                    <br><span class="text-green-400">Frete grátis para Blumenau e região!</span>
+                                </p>
+                            </div>
+
+                            <div id="shipping-error" class="hidden p-4 bg-red-900/30 border border-red-500/50 rounded-lg">
+                                <p class="text-sm text-red-400">Não foi possível calcular o frete. Tente novamente.</p>
+                            </div>
                         </div>
                     </div>
 
@@ -297,10 +319,25 @@
                         </p>
 
                         <!-- Logos Pagamento -->
-                        <div class="flex items-center justify-center gap-4 mt-4 pt-4 border-t border-primary-700">
-                            <img src="https://http2.mlstatic.com/frontend-assets/mp-web-navigation/badge/pix-icon.svg" alt="Pix" class="h-8">
-                            <img src="https://http2.mlstatic.com/frontend-assets/mp-web-navigation/badge/credit-card-icon.svg" alt="Cartão" class="h-8">
-                            <img src="https://http2.mlstatic.com/frontend-assets/mp-web-navigation/badge/boleto-icon.svg" alt="Boleto" class="h-8">
+                        <div class="flex items-center justify-center gap-6 mt-4 pt-4 border-t border-primary-700">
+                            <div class="flex flex-col items-center gap-1 text-gray-400">
+                                <svg class="h-6 w-6" viewBox="0 0 512 512" fill="currentColor">
+                                    <path d="M242.4 292.5C247.8 287.1 257.1 287.1 262.5 292.5L339.5 369.5C353.7 383.7 372.5 391.6 395.2 404C419.7 404 444.3 395.2 463.5 376L506.5 333C525.7 313.8 534.5 289.2 534.5 264.5C534.5 240 525.7 215.3 506.5 196.1L463.5 153.1C451.7 141.3 437.1 134 421.5 131.9L377.6 133.6C363.5 134.1 349.8 128.7 339.6 118.5L262.5 41.4C257.1 36 247.8 36 242.4 41.4L165.4 118.4C155.2 128.6 141.5 134 127.4 133.5L83.46 131.8C67.96 134 53.3 141.3 41.52 153.1L-1.488 196.1C-20.68 215.3 -29.46 239.9 -29.46 264.5C-29.46 289.1 -20.68 313.8 -1.488 333L41.52 376C60.72 395.2 85.32 404 109.9 404C134.5 404 159.2 395.2 178.4 376L242.4 292.5zM261.1 107.5L305.8 152.2C327.6 173.1 356.6 183.3 385.8 181.6L428.9 179.9C433.5 179.8 437.8 181.4 441.2 184.7L484.2 227.7C493.1 236.6 498.5 248.9 498.5 261.5C498.5 274.1 493.1 286.4 484.2 295.3L441.2 338.3C437.8 341.6 433.5 343.2 428.9 343.1L385.8 341.4C356.6 339.7 327.6 349.9 305.8 370.8L261.1 415.5C257.1 419.5 250.8 419.5 246.9 415.5L202.2 370.8C180.4 349.9 151.4 339.7 122.2 341.4L79.07 343.1C74.47 343.2 70.18 341.6 66.81 338.3L23.81 295.3C14.93 286.4 9.538 274.1 9.538 261.5C9.538 248.9 14.93 236.6 23.81 227.7L66.81 184.7C70.18 181.4 74.47 179.8 79.07 179.9L122.2 181.6C151.4 183.3 180.4 173.1 202.2 152.2L246.9 107.5C250.8 103.5 257.1 103.5 261.1 107.5z"/>
+                                </svg>
+                                <span class="text-xs">Pix</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1 text-gray-400">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
+                                </svg>
+                                <span class="text-xs">Cartão</span>
+                            </div>
+                            <div class="flex flex-col items-center gap-1 text-gray-400">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                </svg>
+                                <span class="text-xs">Boleto</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -374,12 +411,17 @@
             e.target.value = maskCEP(e.target.value);
         });
 
-        // Busca CEP via ViaCEP
+        // Estado do frete selecionado
+        let selectedShipping = null;
+        let shippingOptions = [];
+
+        // Busca CEP via ViaCEP e calcula frete
         document.getElementById('shipping-zip').addEventListener('blur', async (e) => {
             const cep = e.target.value.replace(/\D/g, '');
             if (cep.length !== 8) return;
 
             try {
+                // Busca endereço via ViaCEP
                 const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
                 const data = await response.json();
 
@@ -389,10 +431,109 @@
                     document.getElementById('shipping-city').value = data.localidade || '';
                     document.getElementById('shipping-state').value = data.uf || '';
                 }
+
+                // Calcula frete
+                await calculateShipping(cep);
+
             } catch (error) {
                 console.error('Erro ao buscar CEP:', error);
             }
         });
+
+        // Calcular frete
+        async function calculateShipping(cep) {
+            const loadingEl = document.getElementById('shipping-loading');
+            const optionsEl = document.getElementById('shipping-options');
+            const placeholderEl = document.getElementById('shipping-placeholder');
+            const errorEl = document.getElementById('shipping-error');
+
+            // Reset estado
+            loadingEl.classList.remove('hidden');
+            optionsEl.classList.add('hidden');
+            placeholderEl.classList.add('hidden');
+            errorEl.classList.add('hidden');
+
+            const cart = getCart();
+            const items = cart.map(item => ({ id: item.id, quantity: item.quantity }));
+
+            try {
+                const response = await fetch('/api/shipping', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ cep, items })
+                });
+
+                const result = await response.json();
+
+                if (!result.success || !result.options?.length) {
+                    throw new Error('Sem opções de frete');
+                }
+
+                shippingOptions = result.options;
+
+                // Renderiza opções
+                optionsEl.innerHTML = `
+                    <label class="block text-sm font-medium mb-2">Escolha a forma de envio *</label>
+                    ${result.options.map((opt, idx) => `
+                        <label class="flex items-center gap-3 p-3 bg-primary-700 rounded-lg cursor-pointer hover:bg-primary-600 transition-colors border-2 ${idx === 0 ? 'border-accent-500' : 'border-transparent'}" data-shipping-option="${idx}">
+                            <input type="radio" name="shipping-option" value="${idx}" ${idx === 0 ? 'checked' : ''} class="w-4 h-4 text-accent-500">
+                            <div class="flex-1">
+                                <div class="flex items-center gap-2">
+                                    <span class="font-medium">${opt.service}</span>
+                                    ${opt.isFree ? '<span class="text-xs bg-green-500 text-white px-2 py-0.5 rounded-full">GRÁTIS</span>' : ''}
+                                </div>
+                                <span class="text-xs text-gray-400">${opt.daysText} - ${opt.carrier}</span>
+                            </div>
+                            <span class="font-bold ${opt.isFree ? 'text-green-400' : 'text-accent-400'}">${opt.priceFormatted}</span>
+                        </label>
+                    `).join('')}
+                `;
+
+                // Seleciona primeira opção
+                selectedShipping = shippingOptions[0];
+                updateTotals();
+
+                // Event listeners para opções
+                optionsEl.querySelectorAll('input[name="shipping-option"]').forEach(input => {
+                    input.addEventListener('change', (e) => {
+                        const idx = parseInt(e.target.value);
+                        selectedShipping = shippingOptions[idx];
+
+                        // Atualiza visual
+                        optionsEl.querySelectorAll('[data-shipping-option]').forEach(label => {
+                            label.classList.remove('border-accent-500');
+                            label.classList.add('border-transparent');
+                        });
+                        e.target.closest('[data-shipping-option]').classList.remove('border-transparent');
+                        e.target.closest('[data-shipping-option]').classList.add('border-accent-500');
+
+                        updateTotals();
+                    });
+                });
+
+                loadingEl.classList.add('hidden');
+                optionsEl.classList.remove('hidden');
+
+            } catch (error) {
+                console.error('Erro ao calcular frete:', error);
+                loadingEl.classList.add('hidden');
+                errorEl.classList.remove('hidden');
+            }
+        }
+
+        // Atualiza totais com frete
+        function updateTotals() {
+            const cart = getCart();
+            const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+            const shippingCost = selectedShipping?.price || 0;
+            const total = subtotal + shippingCost;
+
+            document.getElementById('subtotal').textContent = formatPrice(subtotal);
+            document.getElementById('shipping-cost').textContent = selectedShipping
+                ? (selectedShipping.isFree ? 'Grátis' : formatPrice(shippingCost))
+                : 'A calcular';
+            document.getElementById('total').textContent = formatPrice(total);
+        }
 
         // Renderizar itens do carrinho
         function renderCart() {
@@ -426,7 +567,7 @@
             }).join('');
 
             document.getElementById('subtotal').textContent = formatPrice(subtotal);
-            document.getElementById('total').textContent = formatPrice(subtotal);
+            updateTotals();
         }
 
         // Processar checkout
@@ -454,7 +595,11 @@
                 complement: document.getElementById('shipping-complement').value.trim(),
                 neighborhood: document.getElementById('shipping-neighborhood').value.trim(),
                 city: document.getElementById('shipping-city').value.trim(),
-                state: document.getElementById('shipping-state').value
+                state: document.getElementById('shipping-state').value,
+                // Dados do frete selecionado
+                method: selectedShipping?.service || null,
+                carrier: selectedShipping?.carrier || null,
+                cost: selectedShipping?.price || 0
             };
 
             const cart = getCart();

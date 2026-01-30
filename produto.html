@@ -198,7 +198,7 @@
                     <!-- Description -->
                     <div id="description-section" class="hidden">
                         <h3 class="text-lg font-semibold mb-2">Descrição</h3>
-                        <p id="product-description" class="text-gray-300 leading-relaxed"></p>
+                        <div id="product-description" class="text-gray-300 leading-relaxed prose prose-invert prose-sm max-w-none [&_table]:w-full [&_table]:border-collapse [&_th]:bg-primary-700 [&_th]:text-left [&_th]:p-2 [&_th]:border [&_th]:border-primary-600 [&_td]:p-2 [&_td]:border [&_td]:border-primary-600 [&_tr:nth-child(even)]:bg-primary-700/30"></div>
                     </div>
 
                     <!-- Actions -->
@@ -228,14 +228,42 @@
                         </div>
 
                         <!-- Pagamento seguro -->
-                        <div class="flex items-center justify-center gap-4 pt-2">
+                        <div class="flex items-center justify-center gap-3 pt-2">
                             <span class="text-xs text-gray-500">Pagamento seguro:</span>
-                            <img src="https://http2.mlstatic.com/frontend-assets/mp-web-navigation/badge/pix-icon.svg" alt="Pix" class="h-5 opacity-60">
-                            <img src="https://http2.mlstatic.com/frontend-assets/mp-web-navigation/badge/credit-card-icon.svg" alt="Cartão" class="h-5 opacity-60">
+                            <!-- Pix -->
+                            <div class="flex items-center gap-1 text-gray-400" title="Pix">
+                                <svg class="h-4 w-4" viewBox="0 0 512 512" fill="currentColor">
+                                    <path d="M242.4 292.5C247.8 287.1 257.1 287.1 262.5 292.5L339.5 369.5C353.7 383.7 googl372.5 googl391.6 395.2 googl404 419.7 404 444.3 395.2 463.5 376L506.5 333C525.7 313.8 534.5 289.2 534.5 264.5C534.5 240 525.7 215.3 506.5 196.1L463.5 153.1C451.7 141.3 437.1 134 421.5 131.9L377.6 133.6C363.5 134.1 349.8 128.7 339.6 118.5L262.5 41.4C257.1 36 247.8 36 242.4 41.4L165.4 118.4C155.2 128.6 141.5 134 127.4 133.5L83.46 131.8C67.96 134 53.3 141.3 41.52 153.1L-1.488 196.1C-20.68 215.3 -29.46 239.9 -29.46 264.5C-29.46 289.1 -20.68 313.8 -1.488 333L41.52 376C60.72 395.2 85.32 404 109.9 404C134.5 404 159.2 395.2 178.4 376L178.4 376L242.4 292.5zM261.1 107.5L305.8 152.2C327.6 173.1 356.6 183.3 385.8 181.6L428.9 179.9C433.5 179.8 437.8 181.4 441.2 184.7L484.2 227.7C493.1 236.6 498.5 248.9 498.5 261.5C498.5 274.1 493.1 286.4 484.2 295.3L441.2 338.3C437.8 341.6 433.5 343.2 428.9 343.1L385.8 341.4C356.6 339.7 327.6 349.9 305.8 370.8L261.1 415.5C257.1 419.5 250.8 419.5 246.9 415.5L202.2 370.8C180.4 349.9 151.4 339.7 122.2 341.4L79.07 343.1C74.47 343.2 70.18 341.6 66.81 338.3L23.81 295.3C14.93 286.4 9.538 274.1 9.538 261.5C9.538 248.9 14.93 236.6 23.81 227.7L66.81 184.7C70.18 181.4 74.47 179.8 79.07 179.9L122.2 181.6C151.4 183.3 180.4 173.1 202.2 152.2L246.9 107.5C250.8 103.5 257.1 103.5 261.1 107.5V107.5z"/>
+                                </svg>
+                                <span class="text-xs">Pix</span>
+                            </div>
+                            <!-- Cartão -->
+                            <div class="flex items-center gap-1 text-gray-400" title="Cartão de Crédito">
+                                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
+                                </svg>
+                                <span class="text-xs">Cartão</span>
+                            </div>
+                            <!-- Boleto -->
+                            <div class="flex items-center gap-1 text-gray-400" title="Boleto">
+                                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                </svg>
+                                <span class="text-xs">Boleto</span>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Source info (link removido - Proesi bloqueia acesso externo) -->
+                    <!-- Link para fornecedor -->
+                    <div id="supplier-link" class="hidden pt-4 border-t border-primary-700 mt-4">
+                        <a id="supplier-url" href="#" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-accent-400 transition-colors">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                            Ver produto no fornecedor (Proesi)
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -278,7 +306,7 @@
     <footer class="bg-primary-800 border-t border-primary-700 py-8 mt-auto">
         <div class="max-w-[1400px] mx-auto px-4 sm:px-6 text-center text-gray-400 text-sm">
             <p>&copy; 2025 Blumenau Automação. Todos os direitos reservados.</p>
-            <p class="mt-2">CNPJ: XX.XXX.XXX/0001-XX | Blumenau - SC</p>
+            <p class="mt-2">Rua João Pessoa, 2750, Bloco B - Velha, Blumenau/SC, 89036-256</p>
         </div>
     </footer>
 
@@ -330,6 +358,289 @@
             document.getElementById('error').classList.remove('hidden');
         }
 
+        // Formata a descrição no estilo Proesi
+        // skipSpecs = true quando a API já forneceu specs separadamente
+        function formatDescription(desc, skipSpecs = false) {
+            if (!desc) return '';
+
+            // Padrões para detectar seções (apenas títulos de seção, não palavras no meio do texto)
+            // Deve ter ":" depois e estar no início ou após pontuação
+            const sectionPatterns = {
+                caracteristicas: /(?:^|\.\s+|\n)Características:\s/i,
+                specs: /(?:^|\.\s+|\n)(?:Especificações(?:\s*Técnicas)?|Dados Técnicos|Características Técnicas):\s/i
+            };
+
+            let mainDesc = desc;
+            let caracteristicasText = '';
+            let specsText = '';
+
+            // Extrai seções do texto
+            // Primeiro encontra onde cada seção começa
+            const caracteristicasMatch = desc.match(sectionPatterns.caracteristicas);
+            const specsMatch = desc.match(sectionPatterns.specs);
+
+            // Ajusta index para começar no título (pula o . ou \n que precede)
+            let caracteristicasIndex = -1;
+            if (caracteristicasMatch) {
+                caracteristicasIndex = caracteristicasMatch.index;
+                // Pula caractere inicial se for . ou \n
+                if (desc[caracteristicasIndex] === '.' || desc[caracteristicasIndex] === '\n') {
+                    caracteristicasIndex += desc.substring(caracteristicasIndex).search(/[A-Za-z]/);
+                }
+            }
+
+            let specsIndex = -1;
+            if (specsMatch) {
+                specsIndex = specsMatch.index;
+                if (desc[specsIndex] === '.' || desc[specsIndex] === '\n') {
+                    specsIndex += desc.substring(specsIndex).search(/[A-Za-z]/);
+                }
+            }
+
+            // Determina a ordem das seções e extrai o texto
+            if (caracteristicasIndex >= 0 && specsIndex >= 0) {
+                // Ambas seções existem
+                if (caracteristicasIndex < specsIndex) {
+                    mainDesc = desc.substring(0, caracteristicasIndex).trim();
+                    caracteristicasText = desc.substring(caracteristicasIndex, specsIndex).trim();
+                    specsText = desc.substring(specsIndex).trim();
+                } else {
+                    mainDesc = desc.substring(0, specsIndex).trim();
+                    specsText = desc.substring(specsIndex, caracteristicasIndex).trim();
+                    caracteristicasText = desc.substring(caracteristicasIndex).trim();
+                }
+            } else if (caracteristicasIndex >= 0) {
+                mainDesc = desc.substring(0, caracteristicasIndex).trim();
+                caracteristicasText = desc.substring(caracteristicasIndex).trim();
+            } else if (specsIndex >= 0 && !skipSpecs) {
+                mainDesc = desc.substring(0, specsIndex).trim();
+                specsText = desc.substring(specsIndex).trim();
+            }
+
+            // Se skipSpecs (API já forneceu), limpa specsText
+            if (skipSpecs) {
+                specsText = '';
+            }
+
+            // Formata descrição principal com parágrafos
+            // Detecta onde quebrar parágrafos (frases que terminam com . seguido de maiúscula)
+            let formattedMain = mainDesc
+                .replace(/\.([A-Z])/g, '.</p><p class="mb-4">$1')
+                .replace(/\n\n/g, '</p><p class="mb-4">')
+                .replace(/\n/g, '<br>');
+
+            // Detecta subtítulos (texto seguido de :)
+            formattedMain = formattedMain.replace(
+                /([A-Z][^.!?:]{5,40}:)(?!\d)/g,
+                '</p><h4 class="text-base font-semibold text-white mt-6 mb-2">$1</h4><p class="mb-4">'
+            );
+
+            let html = `<div class="space-y-4"><p class="mb-4">${formattedMain}</p></div>`;
+
+            // Se tem seção de Características
+            if (caracteristicasText) {
+                // Remove o título
+                const caracContent = caracteristicasText.replace(/^Características:?\s*/i, '').trim();
+
+                // Extrai itens como lista (geralmente são frases curtas ou bullet points)
+                const caracItems = caracContent
+                    .split(/(?=[A-Z][^.]{10,}[.:])|(?=[-•]\s)/)
+                    .map(item => item.replace(/^[-•]\s*/, '').trim())
+                    .filter(item => item.length > 5);
+
+                if (caracItems.length > 0) {
+                    html += `
+                        <div class="mt-8 pt-8 border-t-2 border-accent-500/30">
+                            <h3 class="text-xl font-bold mb-6 text-accent-400 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Características
+                            </h3>
+                            <ul class="space-y-3">
+                                ${caracItems.map(item => `
+                                    <li class="flex items-start gap-3">
+                                        <span class="flex-shrink-0 w-1.5 h-1.5 bg-accent-400 rounded-full mt-2"></span>
+                                        <span class="text-gray-300">${item}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                    `;
+                }
+            }
+
+            // Se tem specs embutidos, formata como seção separada
+            if (specsText) {
+                // Remove o título de specs do texto
+                specsText = specsText.replace(/^(Especificações Técnicas|Dados Técnicos|Características Técnicas|Características):?\s*/i, '');
+
+                // Detecta subseções (ex: "Conjunto Geral:", "Estação de Retrabalho:")
+                const sections = specsText.split(/([A-Z][^:]{3,30}:)(?=\s*[A-Z])/);
+
+                let specsHtml = '';
+                let currentSection = '';
+                const specPairs = [];
+
+                for (let i = 0; i < sections.length; i++) {
+                    const part = sections[i].trim();
+                    if (!part) continue;
+
+                    // É um título de subseção?
+                    if (part.match(/^[A-Z][^:]{3,30}:$/) && i + 1 < sections.length) {
+                        if (specPairs.length > 0) {
+                            specsHtml += renderSpecsTable(specPairs, currentSection);
+                            specPairs.length = 0;
+                        }
+                        currentSection = part.replace(/:$/, '');
+                    } else {
+                        // Extrai pares chave:valor
+                        const pairs = part.split(/(?=[A-Z][^:]{2,30}:)/);
+                        for (const pair of pairs) {
+                            const colonIndex = pair.indexOf(':');
+                            if (colonIndex > 0 && colonIndex < 40) {
+                                const key = pair.substring(0, colonIndex).trim();
+                                const value = pair.substring(colonIndex + 1).trim();
+                                if (key && value) {
+                                    specPairs.push({ key, value });
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // Renderiza última seção
+                if (specPairs.length > 0) {
+                    specsHtml += renderSpecsTable(specPairs, currentSection);
+                }
+
+                if (specsHtml) {
+                    html += `
+                        <div class="mt-8 pt-8 border-t-2 border-accent-500/30">
+                            <h3 class="text-xl font-bold mb-6 text-accent-400 flex items-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+                                </svg>
+                                Especificações Técnicas
+                            </h3>
+                            ${specsHtml}
+                        </div>
+                    `;
+                }
+            }
+
+            return html;
+        }
+
+        // Renderiza tabela de especificações
+        function renderSpecsTable(specs, sectionTitle) {
+            if (!specs || specs.length === 0) return '';
+
+            let html = '';
+            if (sectionTitle) {
+                html += `<h4 class="text-sm font-semibold text-gray-300 uppercase tracking-wide mt-6 mb-3 pb-2 border-b border-primary-600">${sectionTitle}</h4>`;
+            }
+
+            html += `<div class="bg-primary-700/30 rounded-lg overflow-hidden mb-4">
+                <table class="w-full text-sm">
+                    <tbody>
+                        ${specs.map((s, i) => `
+                            <tr class="${i % 2 === 0 ? 'bg-primary-700/50' : ''}">
+                                <td class="py-2.5 px-4 text-gray-400 font-medium w-2/5">${s.key}</td>
+                                <td class="py-2.5 px-4 text-white">${s.value}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            </div>`;
+
+            return html;
+        }
+
+        // Busca descrição completa do produto na Proesi
+        async function fetchFullDescription(sourceUrl, descEl) {
+            try {
+                const apiUrl = `/api/product-description?url=${encodeURIComponent(sourceUrl)}`;
+                const response = await fetch(apiUrl);
+
+                if (!response.ok) return;
+
+                const data = await response.json();
+
+                if (data.success && data.hasContent) {
+                    const hasApiSpecs = data.specs && Object.keys(data.specs).length > 0;
+                    const hasApiTables = data.tables && data.tables.length > 0;
+
+                    if (data.description) {
+                        // Limpa CSS vazado e formata descrição
+                        let cleanDesc = data.description
+                            .replace(/p\s*\{[^}]*\}/g, '')  // Remove p{...}
+                            .replace(/td\s*\{[^}]*\}/g, '') // Remove td{...}
+                            .replace(/^\s+/, '');            // Remove espaços iniciais
+
+                        // Se tem tabela da API, remove a parte de specs/dados técnicos do texto
+                        if (hasApiTables || hasApiSpecs) {
+                            cleanDesc = cleanDesc.replace(/Dados Técnicos:[\s\S]*/i, '').trim();
+                            cleanDesc = cleanDesc.replace(/Especificações:[\s\S]*/i, '').trim();
+                        }
+
+                        descEl.innerHTML = formatDescription(cleanDesc, hasApiSpecs || hasApiTables);
+                    }
+
+                    // Se veio tabela HTML da API, usar diretamente
+                    if (hasApiTables) {
+                        const specsSection = document.getElementById('specs-section');
+                        const specsTable = document.getElementById('specs-table');
+
+                        // Limpa e estiliza a tabela HTML original
+                        let tableHtml = data.tables[0]
+                            .replace(/style="[^"]*"/g, '')  // Remove estilos inline
+                            .replace(/class="[^"]*"/g, '')  // Remove classes originais
+                            .replace(/width="[^"]*"/g, '')
+                            .replace(/height="[^"]*"/g, '')
+                            .replace(/border="[^"]*"/g, '')
+                            .replace(/cellspacing="[^"]*"/g, '')
+                            .replace(/cellpadding="[^"]*"/g, '')
+                            .replace(/<colgroup>[\s\S]*?<\/colgroup>/g, '')
+                            .replace(/<table/g, '<table class="w-full text-sm"')
+                            .replace(/<tr/g, '<tr class="border-b border-primary-600 hover:bg-primary-700/30"')
+                            .replace(/<td/g, '<td class="py-3 px-4"');
+
+                        specsSection.classList.remove('hidden');
+                        specsTable.innerHTML = `
+                            <div class="bg-primary-700/30 rounded-lg overflow-hidden">
+                                ${tableHtml}
+                            </div>
+                        `;
+                    } else if (hasApiSpecs) {
+                        // Fallback: usa specs extraídos como tabela
+                        const specsSection = document.getElementById('specs-section');
+                        const specsTable = document.getElementById('specs-table');
+                        const mergedSpecs = { ...(product.specs || {}), ...data.specs };
+
+                        specsSection.classList.remove('hidden');
+                        specsTable.innerHTML = `
+                            <div class="bg-primary-700/30 rounded-lg overflow-hidden">
+                                <table class="w-full text-sm">
+                                    <tbody>
+                                        ${Object.entries(mergedSpecs).map(([key, value], i) => `
+                                            <tr class="border-b border-primary-600 hover:bg-primary-700/30 ${i % 2 === 0 ? 'bg-primary-700/20' : ''}">
+                                                <td class="py-3 px-4 text-gray-400 font-medium w-2/5">${key}</td>
+                                                <td class="py-3 px-4 text-white">${value}</td>
+                                            </tr>
+                                        `).join('')}
+                                    </tbody>
+                                </table>
+                            </div>
+                        `;
+                    }
+                }
+            } catch (error) {
+                console.log('Não foi possível buscar descrição completa:', error);
+                // Mantém a descrição local se falhar
+            }
+        }
+
         function renderProduct() {
             // Update page title and meta
             document.title = `${product.name} | Blumenau Automação`;
@@ -379,6 +690,14 @@
                 document.getElementById('product-sku').textContent = `SKU: ${product.sku}`;
             }
 
+            // Supplier link
+            if (product.sourceUrl) {
+                const supplierLink = document.getElementById('supplier-link');
+                const supplierUrl = document.getElementById('supplier-url');
+                supplierLink.classList.remove('hidden');
+                supplierUrl.href = product.sourceUrl;
+            }
+
             // Price
             document.getElementById('product-price').textContent = product.priceFormatted || formatPrice(product.price);
 
@@ -400,10 +719,20 @@
                 document.getElementById('add-to-cart-btn').classList.add('opacity-50', 'cursor-not-allowed');
             }
 
-            // Description
-            if (product.description) {
+            // Description - tenta buscar completa da Proesi
+            if (product.description || product.sourceUrl) {
                 document.getElementById('description-section').classList.remove('hidden');
-                document.getElementById('product-description').textContent = product.description;
+                const descEl = document.getElementById('product-description');
+
+                // Mostra descrição local primeiro (pode estar truncada)
+                if (product.description) {
+                    descEl.innerHTML = formatDescription(product.description);
+                }
+
+                // Tenta buscar descrição completa da Proesi
+                if (product.sourceUrl) {
+                    fetchFullDescription(product.sourceUrl, descEl);
+                }
             }
 
             // Specs
