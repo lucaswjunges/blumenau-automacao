@@ -1,0 +1,20 @@
+name = "blumenau-automacao"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = "./"
+
+# Cloudflare D1 Database
+[[d1_databases]]
+binding = "DB"
+database_name = "blumenau-ecommerce"
+database_id = "YOUR_D1_DATABASE_ID"  # Substituir após criar: wrangler d1 create blumenau-ecommerce
+
+# Variáveis de ambiente (secrets via dashboard ou wrangler secret put)
+# MERCADOPAGO_ACCESS_TOKEN - Token de produção do Mercado Pago
+# MERCADOPAGO_WEBHOOK_SECRET - Secret para validar webhooks (opcional mas recomendado)
+# SITE_URL - URL do site para redirects (ex: https://blumenauautomacao.com.br)
+
+[vars]
+ENVIRONMENT = "production"
+
+[observability]
+enabled = true

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento não Aprovado | Blumenau Automação</title>
+
+    <link rel="icon" type="image/png" href="logo1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 900: '#1a1a2e', 800: '#16213e', 700: '#1f2b47' },
+                        accent: { 500: '#195F79', 400: '#4a9bb5' }
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-primary-900 text-gray-200 font-sans min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-primary-900/95 border-b border-primary-700">
+        <div class="max-w-[1200px] mx-auto px-4 py-4">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="logo1.png" alt="Blumenau Automação" class="h-10 w-auto">
+                <span class="text-xl font-bold text-accent-400">Blumenau Automação</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-1 flex items-center justify-center p-6">
+        <div class="text-center max-w-lg">
+            <!-- Ícone de Erro -->
+            <div class="w-24 h-24 mx-auto mb-6 bg-red-500/20 rounded-full flex items-center justify-center">
+                <svg class="w-12 h-12 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </div>
+
+            <h1 class="text-3xl font-bold mb-2 text-red-400">Pagamento não Aprovado</h1>
+            <p class="text-gray-300 mb-6">
+                Infelizmente não foi possível processar seu pagamento. Mas não se preocupe, você pode tentar novamente!
+            </p>
+
+            <div class="bg-primary-800 rounded-2xl p-6 text-left mb-6">
+                <h2 class="font-semibold mb-3">Possíveis motivos:</h2>
+                <ul class="space-y-2 text-sm text-gray-300">
+                    <li class="flex items-start gap-2">
+                        <span class="text-red-400">•</span>
+                        <span>Cartão sem limite disponível</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-red-400">•</span>
+                        <span>Dados do cartão incorretos</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-red-400">•</span>
+                        <span>Cartão bloqueado pelo banco</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="text-red-400">•</span>
+                        <span>Pagamento não concluído a tempo</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="space-y-3">
+                <a href="checkout.html" class="block w-full bg-accent-500 text-white py-3 px-6 rounded-xl font-semibold hover:bg-accent-400 transition-colors">
+                    Tentar Novamente
+                </a>
+                <a href="https://wa.me/5547988677798?text=Olá! Tive um problema com meu pagamento e preciso de ajuda." target="_blank"
+                    class="block w-full bg-green-600 text-white py-3 px-6 rounded-xl font-semibold hover:bg-green-700 transition-colors">
+                    Preciso de Ajuda
+                </a>
+                <a href="produtos.html" class="block w-full border border-primary-600 text-gray-300 py-3 px-6 rounded-xl font-semibold hover:bg-primary-800 transition-colors">
+                    Voltar para Produtos
+                </a>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

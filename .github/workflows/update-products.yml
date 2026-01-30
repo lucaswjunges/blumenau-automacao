@@ -56,6 +56,93 @@ jobs:
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
+      - name: Setup Node.js (for Wrangler)
+        if: steps.changes.outputs.changed == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Wrangler
+        if: steps.changes.outputs.changed == 'true'
+        run: npm install -g wrangler
+
+      - name: Sync products to D1
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          # Gera SQL de UPSERT a partir do JSON
+          python3 << 'EOF'
+          import json
+          import sys
+
+          with open('products.json', 'r') as f:
+              data = json.load(f)
+
+          products = data.get('products', [])
+          if not products:
+              print("Nenhum produto para sincronizar")
+              sys.exit(0)
+
+          sql_statements = []
+
+          for p in products:
+              # Escape single quotes
+              name = (p.get('name') or '').replace("'", "''")
+              slug = (p.get('slug') or '').replace("'", "''")
+              brand = (p.get('brand') or '').replace("'", "''") if p.get('brand') else 'NULL'
+              description = (p.get('description') or '').replace("'", "''")[:2000]  # Limita tamanho
+              category = (p.get('category') or '').replace("'", "''")
+              category_path = json.dumps(p.get('categoryPath', [])).replace("'", "''")
+              image = p.get('image') or ''
+              images = json.dumps(p.get('images') or []).replace("'", "''")
+              datasheet = p.get('datasheet') or ''
+              source_url = p.get('sourceUrl') or ''
+
+              price = p.get('price') or 0
+              price_formatted = (p.get('priceFormatted') or '').replace("'", "''")
+              in_stock = 1 if p.get('inStock', True) else 0
+              stock = p.get('stock') if p.get('stock') is not None else 'NULL'
+
+              brand_val = f"'{brand}'" if brand != 'NULL' else 'NULL'
+              stock_val = stock if stock == 'NULL' else str(stock)
+
+              sql = f"""INSERT INTO products (id, sku, name, slug, brand, price, price_formatted, stock, in_stock, description, category, category_path, image, images, datasheet, source_url, updated_at)
+          VALUES ('{p['id']}', '{p.get('sku', p['id'])}', '{name}', '{slug}', {brand_val}, {price}, '{price_formatted}', {stock_val}, {in_stock}, '{description}', '{category}', '{category_path}', '{image}', '{images}', '{datasheet}', '{source_url}', datetime('now'))
+          ON CONFLICT(id) DO UPDATE SET
+              name = excluded.name,
+              slug = excluded.slug,
+              brand = excluded.brand,
+              price = excluded.price,
+              price_formatted = excluded.price_formatted,
+              stock = excluded.stock,
+              in_stock = excluded.in_stock,
+              description = excluded.description,
+              category = excluded.category,
+              category_path = excluded.category_path,
+              image = excluded.image,
+              images = excluded.images,
+              datasheet = excluded.datasheet,
+              source_url = excluded.source_url,
+              updated_at = datetime('now');"""
+
+              sql_statements.append(sql)
+
+          # Escreve o arquivo SQL
+          with open('sync_products.sql', 'w') as f:
+              f.write('\n'.join(sql_statements))
+
+          print(f"Gerado SQL para {len(products)} produtos")
+          EOF
+
+          # Executa o SQL no D1
+          if [ -f sync_products.sql ]; then
+            echo "Sincronizando com Cloudflare D1..."
+            wrangler d1 execute blumenau-ecommerce --file=sync_products.sql --remote || echo "Aviso: D1 sync falhou (banco pode não existir ainda)"
+            rm sync_products.sql
+          fi
+
       - name: Commit and push changes
         if: steps.changes.outputs.changed == 'true'
         run: |

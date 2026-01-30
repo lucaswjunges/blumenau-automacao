@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido Confirmado! | Blumenau Automação</title>
+
+    <link rel="icon" type="image/png" href="logo1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 900: '#1a1a2e', 800: '#16213e', 700: '#1f2b47' },
+                        accent: { 500: '#195F79', 400: '#4a9bb5' }
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-primary-900 text-gray-200 font-sans min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-primary-900/95 border-b border-primary-700">
+        <div class="max-w-[1200px] mx-auto px-4 py-4">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="logo1.png" alt="Blumenau Automação" class="h-10 w-auto">
+                <span class="text-xl font-bold text-accent-400">Blumenau Automação</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-1 flex items-center justify-center p-6">
+        <div class="text-center max-w-lg">
+            <!-- Ícone de Sucesso -->
+            <div class="w-24 h-24 mx-auto mb-6 bg-green-500/20 rounded-full flex items-center justify-center">
+                <svg class="w-12 h-12 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+            </div>
+
+            <h1 class="text-3xl font-bold mb-2 text-green-400">Pedido Confirmado!</h1>
+            <p class="text-gray-300 mb-6">
+                Seu pagamento foi aprovado. Você receberá um e-mail com os detalhes do pedido.
+            </p>
+
+            <!-- Detalhes do Pedido -->
+            <div id="order-details" class="bg-primary-800 rounded-2xl p-6 text-left mb-6">
+                <h2 class="font-semibold mb-4">Detalhes do Pedido</h2>
+                <div id="order-info" class="space-y-2 text-sm">
+                    <p class="text-gray-400">Carregando...</p>
+                </div>
+            </div>
+
+            <div class="space-y-3">
+                <a href="produtos.html" class="block w-full bg-accent-500 text-white py-3 px-6 rounded-xl font-semibold hover:bg-accent-400 transition-colors">
+                    Continuar Comprando
+                </a>
+                <a href="https://wa.me/5547988677798?text=Olá! Acabei de fazer um pedido e gostaria de acompanhar." target="_blank"
+                    class="block w-full bg-green-600 text-white py-3 px-6 rounded-xl font-semibold hover:bg-green-700 transition-colors">
+                    Falar no WhatsApp
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        async function loadOrderDetails() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const ref = urlParams.get('ref');
+
+            if (!ref) return;
+
+            try {
+                const response = await fetch(`/api/order/${ref}`);
+                const result = await response.json();
+
+                if (result.success) {
+                    const order = result.data;
+                    document.getElementById('order-info').innerHTML = `
+                        <div class="flex justify-between py-2 border-b border-primary-700">
+                            <span class="text-gray-400">Pedido</span>
+                            <span class="font-mono">#${order.id}</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-primary-700">
+                            <span class="text-gray-400">Status</span>
+                            <span class="text-green-400 font-semibold">Aprovado</span>
+                        </div>
+                        <div class="flex justify-between py-2 border-b border-primary-700">
+                            <span class="text-gray-400">Total</span>
+                            <span class="font-semibold">R$ ${order.total.toFixed(2).replace('.', ',')}</span>
+                        </div>
+                        <div class="flex justify-between py-2">
+                            <span class="text-gray-400">E-mail</span>
+                            <span>${order.customer_email}</span>
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                console.error('Error loading order:', error);
+            }
+        }
+
+        loadOrderDetails();
+    </script>
+
+</body>
+</html>

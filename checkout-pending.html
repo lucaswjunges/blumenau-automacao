@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento Pendente | Blumenau Automação</title>
+
+    <link rel="icon" type="image/png" href="logo1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 900: '#1a1a2e', 800: '#16213e', 700: '#1f2b47' },
+                        accent: { 500: '#195F79', 400: '#4a9bb5' }
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-primary-900 text-gray-200 font-sans min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-primary-900/95 border-b border-primary-700">
+        <div class="max-w-[1200px] mx-auto px-4 py-4">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="logo1.png" alt="Blumenau Automação" class="h-10 w-auto">
+                <span class="text-xl font-bold text-accent-400">Blumenau Automação</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-1 flex items-center justify-center p-6">
+        <div class="text-center max-w-lg">
+            <!-- Ícone Pendente -->
+            <div class="w-24 h-24 mx-auto mb-6 bg-yellow-500/20 rounded-full flex items-center justify-center">
+                <svg class="w-12 h-12 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+            </div>
+
+            <h1 class="text-3xl font-bold mb-2 text-yellow-400">Pagamento Pendente</h1>
+            <p class="text-gray-300 mb-6">
+                Seu pedido foi registrado! Estamos aguardando a confirmação do pagamento.
+            </p>
+
+            <div class="bg-primary-800 rounded-2xl p-6 text-left mb-6">
+                <h2 class="font-semibold mb-3">Próximos passos:</h2>
+                <ul class="space-y-2 text-sm text-gray-300">
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span><strong>Pix:</strong> Use o código/QR Code para pagar (válido por 30 min)</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span><strong>Boleto:</strong> Pague até a data de vencimento</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <svg class="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Você receberá um e-mail quando o pagamento for confirmado</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="space-y-3">
+                <a href="produtos.html" class="block w-full bg-accent-500 text-white py-3 px-6 rounded-xl font-semibold hover:bg-accent-400 transition-colors">
+                    Continuar Comprando
+                </a>
+                <a href="https://wa.me/5547988677798?text=Olá! Fiz um pedido e gostaria de confirmar o pagamento." target="_blank"
+                    class="block w-full bg-green-600 text-white py-3 px-6 rounded-xl font-semibold hover:bg-green-700 transition-colors">
+                    Dúvidas? Fale Conosco
+                </a>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
