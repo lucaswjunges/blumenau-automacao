@@ -27,3 +27,20 @@ Thumbs.db
 
 # Node (caso use no futuro)
 node_modules/
+
+# Wrangler (Cloudflare)
+.wrangler/
+
+# Arquivos scraped/temporários
+*_files/
+Busca por *.html
+Proesi *.html
+Uniflair *.html
+
+# Arquivos de prompt/notas
+gemini.md
+prompt.md
+v2.md
+
+# Imagens duplicadas/temporárias
+*Cópia*
