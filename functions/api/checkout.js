@@ -74,7 +74,7 @@ ${items.map(item => `<li>${item.name} (${item.quantity}x) - R$ ${(item.price * i
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'Blumenau Automação <pedidos@blumenauautomacao.com.br>',
+        from: env.RESEND_FROM_EMAIL || 'Blumenau Automação <onboarding@resend.dev>',
         to: [env.NOTIFICATION_EMAIL || 'contato@blumenauautomacao.com.br'],
         subject: `🛒 Novo Pedido #${externalReference.substring(0, 8)} - ${customer.name}`,
         html: emailHtml,
