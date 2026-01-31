@@ -890,8 +890,9 @@
                 document.getElementById('product-sku').textContent = `SKU: ${product.sku}`;
             }
 
-            // Supplier link
-            if (product.sourceUrl) {
+            // Supplier link (só mostra com ?admin=1)
+            const isAdmin = urlParams.get('admin') === '1';
+            if (product.sourceUrl && isAdmin) {
                 const supplierLink = document.getElementById('supplier-link');
                 const supplierUrl = document.getElementById('supplier-url');
                 const supplierName = document.getElementById('supplier-name');
