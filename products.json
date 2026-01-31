@@ -1,7 +1,11 @@
 {
-  "lastUpdated": "2026-01-30T19:55:39.036690+00:00",
-  "source": "proesi",
-  "totalProducts": 56,
+  "lastUpdated": "2026-01-30T23:05:02.584955+00:00",
+  "sources": [
+    "Proesi",
+    "Loja Vale",
+    "Seel Distribuidora"
+  ],
+  "totalProducts": 186,
   "products": [
     {
       "id": "423963",
@@ -31,7 +35,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15639/fonte-1-3.jpeg"
       ],
       "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26852/mi-2705-1103-br-manual.pdf",
-      "sourceUrl": "https://www.proesi.com.br/mi-2705-megometro-digital-minipa"
+      "sourceUrl": "https://www.proesi.com.br/mi-2705-megometro-digital-minipa",
+      "supplier": "Proesi"
     },
     {
       "id": "11427",
@@ -57,7 +62,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/14980/011427-c.jpeg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/estac-o-de-retrabalho-digital-hikari-hk-852x-220v"
+      "sourceUrl": "https://www.proesi.com.br/estac-o-de-retrabalho-digital-hikari-hk-852x-220v",
+      "supplier": "Proesi"
     },
     {
       "id": "112926",
@@ -82,7 +88,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/08/produto/18579/12107-b.jpg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/encoder-fenac-incremental-fnc40bm6630v100-r2-100-pulsos"
+      "sourceUrl": "https://www.proesi.com.br/encoder-fenac-incremental-fnc40bm6630v100-r2-100-pulsos",
+      "supplier": "Proesi"
     },
     {
       "id": "419114",
@@ -110,7 +117,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15545/medidor-lcr-minipa-digital-mx1050-4-1.jpeg"
       ],
       "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/11/produto/27050/manual-mx-1050.pdf",
-      "sourceUrl": "https://www.proesi.com.br/medidor-lcr-minipa-mx-1050"
+      "sourceUrl": "https://www.proesi.com.br/medidor-lcr-minipa-mx-1050",
+      "supplier": "Proesi"
     },
     {
       "id": "112372",
@@ -143,7 +151,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/04/produto/16341/112372.jpg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/mtr-1522-terrometro-digital-cat-iii-600v-minipa"
+      "sourceUrl": "https://www.proesi.com.br/mtr-1522-terrometro-digital-cat-iii-600v-minipa",
+      "supplier": "Proesi"
     },
     {
       "id": "11426",
@@ -173,7 +182,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/10/produto/21371/11426-4.jpg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/estacao-digital-conjugada-solda-e-retrabalho-hikari-hk-701x-220v"
+      "sourceUrl": "https://www.proesi.com.br/estacao-digital-conjugada-solda-e-retrabalho-hikari-hk-701x-220v",
+      "supplier": "Proesi"
     },
     {
       "id": "12107",
@@ -198,7 +208,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/08/produto/18577/112926-b.jpg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/encoder-fenac-incremental-fnc58s10630v1024-r2-1024-pulsos"
+      "sourceUrl": "https://www.proesi.com.br/encoder-fenac-incremental-fnc58s10630v1024-r2-1024-pulsos",
+      "supplier": "Proesi"
     },
     {
       "id": "113323",
@@ -220,7 +231,8 @@
       "image": "https://proesi.cdn.magazord.com.br/img/2025/03/produto/23380/113323-rolo-305-metros-cabo-rede-furukawa-sohoplus-cat5e-azul.jpg",
       "images": null,
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/cabo-de-rede-cat5e-rolo-305-metros"
+      "sourceUrl": "https://www.proesi.com.br/cabo-de-rede-cat5e-rolo-305-metros",
+      "supplier": "Proesi"
     },
     {
       "id": "180330",
@@ -243,7 +255,8 @@
       "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/2978/display-lcd-grafico-240x128-wg-240128a-tmi-com-back-azul-2.jpeg",
       "images": null,
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/display-lcd-grafico-240x128-wg-240128a-tmi-com-back-azul"
+      "sourceUrl": "https://www.proesi.com.br/display-lcd-grafico-240x128-wg-240128a-tmi-com-back-azul",
+      "supplier": "Proesi"
     },
     {
       "id": "113353",
@@ -269,7 +282,8 @@
         "https://proesi.cdn.magazord.com.br/img/2025/03/produto/23959/113353-c-fonte-chaveada-colmeia-24v-25a-600w-lrs-600-24-mean-well.jpg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/fonte-chaveada-colmeia-24v-25a-600w-lrs-600-24-mean-well"
+      "sourceUrl": "https://www.proesi.com.br/fonte-chaveada-colmeia-24v-25a-600w-lrs-600-24-mean-well",
+      "supplier": "Proesi"
     },
     {
       "id": "402030",
@@ -303,7 +317,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15385/alicate-amperimetro-3.jpeg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/et-3367c-alicate-amperimetro-digital-minipa-true-rms-cat-iv-600v"
+      "sourceUrl": "https://www.proesi.com.br/et-3367c-alicate-amperimetro-digital-minipa-true-rms-cat-iv-600v",
+      "supplier": "Proesi"
     },
     {
       "id": "113762",
@@ -333,7 +348,8 @@
         "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26130/113762-e-estacao-dessoldadora-digital-hikari-hk-917-bivolt.jpg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/estacao-dessoldadora-digital-hikari-hk-917-bivolt"
+      "sourceUrl": "https://www.proesi.com.br/estacao-dessoldadora-digital-hikari-hk-917-bivolt",
+      "supplier": "Proesi"
     },
     {
       "id": "113187",
@@ -363,7 +379,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/11/produto/21761/113187-a.jpg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/mo-1102c-osciloscopio-digital-100mhz-minipa"
+      "sourceUrl": "https://www.proesi.com.br/mo-1102c-osciloscopio-digital-100mhz-minipa",
+      "supplier": "Proesi"
     },
     {
       "id": "434070",
@@ -385,7 +402,8 @@
       "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/4694/encoder-tns-incremental-ntp-58bx08-1024z28l2c2-8-0mm.jpeg",
       "images": null,
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/encoder-tns-incremental-ntp-58bx08-1024z28l2c2-8-0mm-1024-pulsos"
+      "sourceUrl": "https://www.proesi.com.br/encoder-tns-incremental-ntp-58bx08-1024z28l2c2-8-0mm-1024-pulsos",
+      "supplier": "Proesi"
     },
     {
       "id": "414166",
@@ -416,7 +434,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15259/multimetro-et-2507.jpeg"
       ],
       "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26854/et-2507b-1102-br-manual.pdf",
-      "sourceUrl": "https://www.proesi.com.br/et-2507b-multimetro-digital-minipa-ac-dc-cat-iv-600v"
+      "sourceUrl": "https://www.proesi.com.br/et-2507b-multimetro-digital-minipa-ac-dc-cat-iv-600v",
+      "supplier": "Proesi"
     },
     {
       "id": "422670",
@@ -446,7 +465,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15641/bolsa-hikari.jpeg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/terrometro-digital-hikari-htr-770"
+      "sourceUrl": "https://www.proesi.com.br/terrometro-digital-hikari-htr-770",
+      "supplier": "Proesi"
     },
     {
       "id": "112424",
@@ -474,7 +494,8 @@
         "https://proesi.cdn.magazord.com.br/img/2025/11/produto/27100/112424-e-fonte-de-bancada-mpc-3005-dc-0-30v-0-5a-saida-dupla-minipa.jpg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/fonte-alimentacao-30v-5a-mpc-3005-dc-dupla-minipa"
+      "sourceUrl": "https://www.proesi.com.br/fonte-alimentacao-30v-5a-mpc-3005-dc-dupla-minipa",
+      "supplier": "Proesi"
     },
     {
       "id": "11969",
@@ -501,7 +522,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15509/0011965-1.jpeg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/dmi-p3000r-v2-analisador-de-energia-bidirecional"
+      "sourceUrl": "https://www.proesi.com.br/dmi-p3000r-v2-analisador-de-energia-bidirecional",
+      "supplier": "Proesi"
     },
     {
       "id": "113939",
@@ -529,7 +551,8 @@
         "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26618/113939-e-inversor-freq-sn160mn-0r7gb-s2-entr-220v-mono-1cv-0-75kw-sibratec.jpg"
       ],
       "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26528/manual-inversor-de-frequencia-sn160mn-0r7gb-s2.pdf",
-      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-sn160mn-0r7gb-s2-monofasico-220v-50-60hz-0-75kw-sibratec"
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-sn160mn-0r7gb-s2-monofasico-220v-50-60hz-0-75kw-sibratec",
+      "supplier": "Proesi"
     },
     {
       "id": "113699",
@@ -556,7 +579,8 @@
         "https://proesi.cdn.magazord.com.br/img/2025/08/produto/25520/113699-inversor-frequencia-provolt-pi100-2r2g1z-monof-3-0cv-220vac.jpg"
       ],
       "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/09/produto/26053/manual-pi100.pdf",
-      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-provolt-pi100-3-0cv-220v-monofasico"
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-provolt-pi100-3-0cv-220v-monofasico",
+      "supplier": "Proesi"
     },
     {
       "id": "11237",
@@ -582,7 +606,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/10482/inversor-de-frenquencia-weg-cfw300-2.jpeg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-cfw300a02p6s2nb20-monofasico-0-50cv-200-a-240-vca-2-6a-weg"
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-cfw300a02p6s2nb20-monofasico-0-50cv-200-a-240-vca-2-6a-weg",
+      "supplier": "Proesi"
     },
     {
       "id": "287930",
@@ -604,7 +629,8 @@
       "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/3238/244.jpeg",
       "images": null,
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/fonte-de-alimentac-o-rsp-500-48-500w-48v-10a"
+      "sourceUrl": "https://www.proesi.com.br/fonte-de-alimentac-o-rsp-500-48-500w-48v-10a",
+      "supplier": "Proesi"
     },
     {
       "id": "11767",
@@ -640,7 +666,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15629/alicate-amperimetro.jpeg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/hdc3000a-alicate-amperimetro-digital-profissional"
+      "sourceUrl": "https://www.proesi.com.br/hdc3000a-alicate-amperimetro-digital-profissional",
+      "supplier": "Proesi"
     },
     {
       "id": "112870",
@@ -674,7 +701,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/11/produto/21765/112870d.jpg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/et-3712-alicate-amperimetro-digital-cat-iv-600v-minipa"
+      "sourceUrl": "https://www.proesi.com.br/et-3712-alicate-amperimetro-digital-cat-iv-600v-minipa",
+      "supplier": "Proesi"
     },
     {
       "id": "413070",
@@ -697,7 +725,8 @@
       "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/4402/mi-2552-meg-metro-digital-minipa-01.jpeg",
       "images": null,
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/mi-2552-megometro-digital-minipa"
+      "sourceUrl": "https://www.proesi.com.br/mi-2552-megometro-digital-minipa",
+      "supplier": "Proesi"
     },
     {
       "id": "422601",
@@ -723,7 +752,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/14208/4226011.jpeg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/et-4310-terrometro-digital-minipa-cat-iii-300v"
+      "sourceUrl": "https://www.proesi.com.br/et-4310-terrometro-digital-minipa-cat-iii-300v",
+      "supplier": "Proesi"
     },
     {
       "id": "10813",
@@ -749,7 +779,8 @@
         "https://proesi.cdn.magazord.com.br/img/2025/01/produto/22524/10813-a-fonte-chaveada-trilho-din-24v-20a-480w-ndr-480-24-mean-well.jpg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/fonte-de-alimentac-o-chaveada-com-saida-24v-20a-ndr-480-24"
+      "sourceUrl": "https://www.proesi.com.br/fonte-de-alimentac-o-chaveada-com-saida-24v-20a-ndr-480-24",
+      "supplier": "Proesi"
     },
     {
       "id": "11133",
@@ -775,7 +806,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/13034/display-2.jpeg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/display-lcd-grafico-240x128-wg-240128a-yyh-vz-com-back-verde"
+      "sourceUrl": "https://www.proesi.com.br/display-lcd-grafico-240x128-wg-240128a-yyh-vz-com-back-verde",
+      "supplier": "Proesi"
     },
     {
       "id": "113943",
@@ -803,7 +835,8 @@
         "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26623/113943-e-inversor-freq-sn160mn-3r7gb-t4-entr-380v-trif-5cv-3-75kw-sibratec.jpg"
       ],
       "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26533/manual-inversor-de-frequencia-sn160mn-3r7gb.pdf",
-      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-sn160mn-3r7gb-t4-trifasico-380v-50-60hz-3-7kw-sibratec"
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-sn160mn-3r7gb-t4-trifasico-380v-50-60hz-3-7kw-sibratec",
+      "supplier": "Proesi"
     },
     {
       "id": "113990",
@@ -831,7 +864,8 @@
         "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26635/113990-e-inversor-freq-sn160mn-11gb-t4-entr-380v-trif-15cv-11kw-sibratec.jpg"
       ],
       "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26634/manual-inversor-de-frequencia-sn160mn-11gb-t4-trifasico-380v-5060hz-11kw.pdf",
-      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-sn160mn-11gb-t4-15cv-11kw-trifasico-380v-sibratec"
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-sn160mn-11gb-t4-15cv-11kw-trifasico-380v-sibratec",
+      "supplier": "Proesi"
     },
     {
       "id": "113944",
@@ -859,7 +893,8 @@
         "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26628/113944-e-inversor-freq-sn160mn-5r5gb-t4-entr-380v-trif-7-5cv-5-5kw-sibratec.jpg"
       ],
       "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26546/manual-inversor-de-frequencia-sn160mn-5r5gb-t4.pdf",
-      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-sn160mn-5r5gb-t4-trifasico-380v-50-60hz-5-5kw-sibratec"
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-sn160mn-5r5gb-t4-trifasico-380v-50-60hz-5-5kw-sibratec",
+      "supplier": "Proesi"
     },
     {
       "id": "11272",
@@ -885,7 +920,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/10528/cfw300-1.jpeg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-trifasica-380vac-1-5-cv-2-6a-1-rele-cfw300a02p6t4nb20-weg"
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-trifasica-380vac-1-5-cv-2-6a-1-rele-cfw300a02p6t4nb20-weg",
+      "supplier": "Proesi"
     },
     {
       "id": "11273",
@@ -911,7 +947,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/10528/cfw300-1.jpeg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-trifasica-380vac-3-0-cv-4-8a-1-rele-cfw300a04p8t4nb20-weg"
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-trifasica-380vac-3-0-cv-4-8a-1-rele-cfw300a04p8t4nb20-weg",
+      "supplier": "Proesi"
     },
     {
       "id": "11769",
@@ -937,7 +974,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/14890/011769-31.jpeg"
       ],
       "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26849/mtv-120-termovisora-profissional-drop-test-minipa-manual.pdf",
-      "sourceUrl": "https://www.proesi.com.br/mtv-120-termovisora-profissional-minipa"
+      "sourceUrl": "https://www.proesi.com.br/mtv-120-termovisora-profissional-minipa",
+      "supplier": "Proesi"
     },
     {
       "id": "11883",
@@ -966,7 +1004,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15637/multimetro-digital-minipa-et2233-1.jpeg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/et-2233-l-multimetro-digital-cat-iv-600v-l-true-rms-e-data-hold"
+      "sourceUrl": "https://www.proesi.com.br/et-2233-l-multimetro-digital-cat-iv-600v-l-true-rms-e-data-hold",
+      "supplier": "Proesi"
     },
     {
       "id": "408204",
@@ -994,7 +1033,8 @@
         "https://proesi.cdn.magazord.com.br/img/2025/05/produto/24419/408204-e-fonte-de-alimentacao-hikari-dc-5a-hf-3205s-bivolt.jpg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/fonte-de-alimentacao-hikari-dc-5a-hf-3205s-bivolt"
+      "sourceUrl": "https://www.proesi.com.br/fonte-de-alimentacao-hikari-dc-5a-hf-3205s-bivolt",
+      "supplier": "Proesi"
     },
     {
       "id": "113363",
@@ -1024,7 +1064,8 @@
         "https://proesi.cdn.magazord.com.br/img/2025/04/produto/24091/113363-e-megometro-digital-portatil-minipa-mi-2702.jpg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/megometro-digital-portatil-mi-2702"
+      "sourceUrl": "https://www.proesi.com.br/megometro-digital-portatil-mi-2702",
+      "supplier": "Proesi"
     },
     {
       "id": "434060",
@@ -1046,7 +1087,8 @@
       "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/4690/encoder-fenac-incremental-fnc-58sm-6630v360-r2-360-pulsos-434060-1-1.jpeg",
       "images": null,
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/encoder-fenac-incremental-fnc-58sm-6630v360-r2-360-pulsos"
+      "sourceUrl": "https://www.proesi.com.br/encoder-fenac-incremental-fnc-58sm-6630v360-r2-360-pulsos",
+      "supplier": "Proesi"
     },
     {
       "id": "112707",
@@ -1072,7 +1114,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/04/produto/16323/112707-b.jpg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/tiristor-semikron-skkt-323-16e"
+      "sourceUrl": "https://www.proesi.com.br/tiristor-semikron-skkt-323-16e",
+      "supplier": "Proesi"
     },
     {
       "id": "252032P",
@@ -1095,7 +1138,8 @@
       "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/3060/estacao-de-retrabalho-hikari-hk-939-pro-220v-2.jpeg",
       "images": null,
       "datasheet": "https://www.hikariferramentas.com.br/_global/_ssf/ssf.aspx?d=/_upload/downloads/&arquivo=20190606095246-21Q008-21Q009-MANUAL-ESTACAO-RETRABALHO-HK-939-PRO.pdf",
-      "sourceUrl": "https://www.proesi.com.br/estac-o-de-retrabalho-hikari-hk-939-pro-220v"
+      "sourceUrl": "https://www.proesi.com.br/estac-o-de-retrabalho-hikari-hk-939-pro-220v",
+      "supplier": "Proesi"
     },
     {
       "id": "11256",
@@ -1121,7 +1165,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/10514/inversor-de-frequencia.jpeg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-monofasico-1-0cv-200-a-240-vca-4-2a-3-rele-cfw100c04p2s220g2-weg"
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-monofasico-1-0cv-200-a-240-vca-4-2a-3-rele-cfw100c04p2s220g2-weg",
+      "supplier": "Proesi"
     },
     {
       "id": "11242",
@@ -1147,7 +1192,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/10482/inversor-de-frenquencia-weg-cfw300-2.jpeg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-cfw300a07p3s2nb20-monofasico-200-a-240-vca-7-3a-weg"
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-cfw300a07p3s2nb20-monofasico-200-a-240-vca-7-3a-weg",
+      "supplier": "Proesi"
     },
     {
       "id": "11238",
@@ -1170,7 +1216,8 @@
       "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/10484/cfw300a04p2s2nb20.jpeg",
       "images": null,
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-trifasica-380vac-1-5-cv-2-6a-1-rele-cfw300a02p6t4nb20-weg-1"
+      "sourceUrl": "https://www.proesi.com.br/inversor-de-frequencia-trifasica-380vac-1-5-cv-2-6a-1-rele-cfw300a02p6t4nb20-weg-1",
+      "supplier": "Proesi"
     },
     {
       "id": "11607",
@@ -1196,7 +1243,8 @@
         "https://proesi.cdn.magazord.com.br/img/2025/01/produto/22525/11607-a-fonte-chaveada-trilho-din-48v-10a-480w-ndr-480-48-mean-well.jpg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/fonte-de-alimentac-o-ndr-480-48-mean-well-fixa-trilho-48v-10a"
+      "sourceUrl": "https://www.proesi.com.br/fonte-de-alimentac-o-ndr-480-48-mean-well-fixa-trilho-48v-10a",
+      "supplier": "Proesi"
     },
     {
       "id": "287923",
@@ -1218,7 +1266,8 @@
       "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/3234/274.jpeg",
       "images": null,
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/rsp-1000-24-fonte-alimentac-o-mean-well-1000w-saida-24v-41-6a"
+      "sourceUrl": "https://www.proesi.com.br/rsp-1000-24-fonte-alimentac-o-mean-well-1000w-saida-24v-41-6a",
+      "supplier": "Proesi"
     },
     {
       "id": "113324",
@@ -1240,7 +1289,8 @@
       "image": "https://proesi.cdn.magazord.com.br/img/2025/03/produto/23385/113324-rolo-305-metros-cabo-rede-furukawa-sohoplus-cat6-verm.jpg",
       "images": null,
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/cabo-de-rede-furukawa-soho-plus-cat6-vemelho-rolo-305-metros"
+      "sourceUrl": "https://www.proesi.com.br/cabo-de-rede-furukawa-soho-plus-cat6-vemelho-rolo-305-metros",
+      "supplier": "Proesi"
     },
     {
       "id": "408207",
@@ -1267,7 +1317,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15557/fonte-de-alimenta-o-1.jpeg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/mps-3005-fonte-de-alimentac-o-para-bancada-bivolt-minipa-saida-variavel-dc-0-30v-0-5a"
+      "sourceUrl": "https://www.proesi.com.br/mps-3005-fonte-de-alimentac-o-para-bancada-bivolt-minipa-saida-variavel-dc-0-30v-0-5a",
+      "supplier": "Proesi"
     },
     {
       "id": "252033",
@@ -1296,7 +1347,8 @@
         "https://proesi.cdn.magazord.com.br/img/2025/01/produto/22368/252031-5-estacao-de-solda-hakko-fx-888d-esd-127v.jpg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/estacao-de-solda-hakko-fx-888d-esd-220v"
+      "sourceUrl": "https://www.proesi.com.br/estacao-de-solda-hakko-fx-888d-esd-220v",
+      "supplier": "Proesi"
     },
     {
       "id": "397303",
@@ -1321,7 +1373,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/08/produto/18505/397303-2.jpg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/skm195gb066d-modulo-igbt-semikron"
+      "sourceUrl": "https://www.proesi.com.br/skm195gb066d-modulo-igbt-semikron",
+      "supplier": "Proesi"
     },
     {
       "id": "10826",
@@ -1343,7 +1396,8 @@
       "image": "https://proesi.cdn.magazord.com.br/img/2024/01/produto/10040/psp-600-mean-well.jpeg",
       "images": null,
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/psp-600-24-fonte-chav-pfc-paralela-univ-dc-ac-600w-24v-25a"
+      "sourceUrl": "https://www.proesi.com.br/psp-600-24-fonte-chav-pfc-paralela-univ-dc-ac-600w-24v-25a",
+      "supplier": "Proesi"
     },
     {
       "id": "113380",
@@ -1374,7 +1428,8 @@
         "https://proesi.cdn.magazord.com.br/img/2025/04/produto/24140/113380-e-multimetro-bancada-dig-minipa-usb-mdm-8145b-cat-ii-600v-10a-true-rms-ac.jpg"
       ],
       "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/09/produto/26045/manual-de-instrucoes-mdm8145b.pdf",
-      "sourceUrl": "https://www.proesi.com.br/multimetro-bancada-dig-minipa-mdm-8145b"
+      "sourceUrl": "https://www.proesi.com.br/multimetro-bancada-dig-minipa-mdm-8145b",
+      "supplier": "Proesi"
     },
     {
       "id": "12238",
@@ -1402,7 +1457,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15607/osciloscopio-bag.jpeg"
       ],
       "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26848/ms-350-osciloscopio-portatil-digital-minipa-50mhz-com-funcao-multimetro-manual.pdf",
-      "sourceUrl": "https://www.proesi.com.br/ms-350-osciloscopio-portatil-digital-minipa-50mhz-cat-ii-400v"
+      "sourceUrl": "https://www.proesi.com.br/ms-350-osciloscopio-portatil-digital-minipa-50mhz-cat-ii-400v",
+      "supplier": "Proesi"
     },
     {
       "id": "252031",
@@ -1431,7 +1487,8 @@
         "https://proesi.cdn.magazord.com.br/img/2025/01/produto/22368/252031-5-estacao-de-solda-hakko-fx-888d-esd-127v.jpg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/estac-o-de-solda-hakko-fx-888d-127v"
+      "sourceUrl": "https://www.proesi.com.br/estac-o-de-solda-hakko-fx-888d-127v",
+      "supplier": "Proesi"
     },
     {
       "id": "12157",
@@ -1463,7 +1520,8 @@
         "https://proesi.cdn.magazord.com.br/img/2024/01/produto/15627/bag.jpeg"
       ],
       "datasheet": null,
-      "sourceUrl": "https://www.proesi.com.br/et-4710-alicate-amperimetro-para-painel-solar-minipa"
+      "sourceUrl": "https://www.proesi.com.br/et-4710-alicate-amperimetro-para-painel-solar-minipa",
+      "supplier": "Proesi"
     },
     {
       "id": "113879",
@@ -1490,7 +1548,8 @@
         "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26667/113879-d-interface-ihm-pi3070i-a-24v-7-colorida-touch-ethernet-sibratec.jpg"
       ],
       "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26608/ihm-pi3070.pdf",
-      "sourceUrl": "https://www.proesi.com.br/ihm-pi3070n-7-polegadas-colorida-touch-ethernet-24v-sibratec"
+      "sourceUrl": "https://www.proesi.com.br/ihm-pi3070n-7-polegadas-colorida-touch-ethernet-24v-sibratec",
+      "supplier": "Proesi"
     },
     {
       "id": "114007",
@@ -1518,134 +1577,3318 @@
         "https://proesi.cdn.magazord.com.br/img/2025/11/produto/26900/03-soft-starter-sst-nx11-entrada-e-saida-trifasica-25a-7-5cv-200v-15cv-380v-sibratec.png"
       ],
       "datasheet": "https://proesi.cdn.magazord.com.br/img/2025/10/produto/26840/manual-soft-starter.pdf",
-      "sourceUrl": "https://www.proesi.com.br/soft-starter-sst-nx11-entrada-e-saida-trifasica-25a-7-5cv-200v-15cv-380v-sibratec"
-    }
-  ],
-  "categories": [
-    {
-      "id": "inversor-de-frequência",
-      "name": "Inversor De Frequência",
-      "count": 5
+      "sourceUrl": "https://www.proesi.com.br/soft-starter-sst-nx11-entrada-e-saida-trifasica-25a-7-5cv-200v-15cv-380v-sibratec",
+      "supplier": "Proesi"
     },
     {
-      "id": "encoder",
-      "name": "Encoder",
-      "count": 4
+      "id": "500000",
+      "sku": "",
+      "name": "Cabo Potência Schneider VW3M5104R250 Lexium 32 25m",
+      "slug": "cabo-de-potencia-sermot-m40-4-x-10-mm2-vw3m5104r250",
+      "brand": "Schneider Electric",
+      "price": 28975.99,
+      "priceFormatted": "R$ 28.975,99",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/11/produto/4854/01-kit-de-conectores-para-clp.jpeg?ims=600x600",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/11/produto/4854/01-kit-de-conectores-para-clp.jpeg?ims=600x600"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/cabo-de-potencia-sermot-m40-4-x-10-mm2-vw3m5104r250",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "fontes-24-volts",
-      "name": "Fontes 24 Volts",
-      "count": 4
+      "id": "500001",
+      "sku": "",
+      "name": "Nobreak Easy Ups Srv 10Kva 230V",
+      "slug": "nobreak-easy-ups-srv-10kva-230v",
+      "brand": "Schneider Electric",
+      "price": 28268.33,
+      "priceFormatted": "R$ 28.268,33",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/08/produto/2266/01-nobreak-easy-ups-srv-10kva-230v.jpg?ims=600x600",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/08/produto/2266/01-nobreak-easy-ups-srv-10kva-230v.jpg?ims=600x600"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/nobreak-easy-ups-srv-10kva-230v",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "alicate-amperimetro",
-      "name": "Alicate Amperimetro",
-      "count": 4
+      "id": "500002",
+      "sku": "",
+      "name": "Nobreak APC Schneider SRT5KXLI 5000VA Torre 230V",
+      "slug": "nobreak-inteligente-srt-da-apc-5000-va-e-230-v-srt5kxli",
+      "brand": "Schneider Electric",
+      "price": 28262.97,
+      "priceFormatted": "R$ 28.262,97",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1078/srt5kxli.jpg?ims=600x600",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1078/srt5kxli.jpg?ims=600x600"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/nobreak-inteligente-srt-da-apc-5000-va-e-230-v-srt5kxli",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "monofásico",
-      "name": "Monofásico",
-      "count": 4
+      "id": "500003",
+      "sku": "",
+      "name": "Inversor De Frequência Schneider ATV630D30M3 40Cv 200/240V",
+      "slug": "inversor-de-frequencia-schneider-200-240vca-corrente-nominal-de-saida-nd-123a-potencia-do-motor-nd-atv630d30m3",
+      "brand": "Schneider Electric",
+      "price": 24852.33,
+      "priceFormatted": "R$ 24.852,33",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1434/01-inversor-de-frequencia-schneider-200-240vca-corrente-nominal-de-saida-nd-123a-potencia-do-motor-nd.png?ims=600x600",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1434/01-inversor-de-frequencia-schneider-200-240vca-corrente-nominal-de-saida-nd-123a-potencia-do-motor-nd.png?ims=600x600"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/inversor-de-frequencia-schneider-200-240vca-corrente-nominal-de-saida-nd-123a-potencia-do-motor-nd-atv630d30m3",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "megômetro",
-      "name": "Megômetro",
-      "count": 3
+      "id": "500005",
+      "sku": "",
+      "name": "Inversor de Frequência ATV630D30N4 40CV 380/480V",
+      "slug": "inversor-de-frequencia-schneider-380480vca-corrente-nominal-de-saida-nd-61-5a-potencia-do-motor-n",
+      "brand": "Schneider Electric",
+      "price": 23008.5,
+      "priceFormatted": "R$ 23.008,50",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1921/02-inversor-de-frequencia-schneider-200-240vca-corrente-nominal-de-saida-nd-63-4a-potencia-do-motor-n.png?ims=600x600",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1921/02-inversor-de-frequencia-schneider-200-240vca-corrente-nominal-de-saida-nd-63-4a-potencia-do-motor-n.png?ims=600x600"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/inversor-de-frequencia-schneider-380480vca-corrente-nominal-de-saida-nd-61-5a-potencia-do-motor-n",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "terrômetro",
-      "name": "Terrômetro",
-      "count": 3
+      "id": "500006",
+      "sku": "",
+      "name": "Gabinete NetShelter SX AR3814 24U",
+      "slug": "gabinete-netshelter-sx-ar3814-24u",
+      "brand": "Schneider Electric",
+      "price": 22363.56,
+      "priceFormatted": "R$ 22.363,56",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2025/06/produto/7532/e5c1953299dea2ac8525776500584fdf-slie-87hm3j-fr-v-hi-1500.jpg?ims=600x600",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2025/06/produto/7532/e5c1953299dea2ac8525776500584fdf-slie-87hm3j-fr-v-hi-1500.jpg?ims=600x600"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/gabinete-netshelter-sx-ar3814-24u",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "multímetros",
-      "name": "Multímetros",
-      "count": 3
+      "id": "500007",
+      "sku": "",
+      "name": "Nobreak Easy Ups Srv 6Kva 230V",
+      "slug": "nobreak-easy-ups-srv-6kva-230v",
+      "brand": "Schneider Electric",
+      "price": 22080.14,
+      "priceFormatted": "R$ 22.080,14",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2025/03/produto/7332/03-nobreak-easy-ups-srv-6kva-230v.jpeg?ims=600x600",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2025/03/produto/7332/03-nobreak-easy-ups-srv-6kva-230v.jpeg?ims=600x600"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/nobreak-easy-ups-srv-6kva-230v",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "fontes-de-bancada",
-      "name": "Fontes De Bancada",
-      "count": 3
+      "id": "500008",
+      "sku": "",
+      "name": "Kit de Chave Kirk APC Schneider GVSOPT004 Bypass Galaxy VS/VL",
+      "slug": "gvs-kit-kirk-key-p-gab-byp-manut",
+      "brand": "Schneider Electric",
+      "price": 21787.59,
+      "priceFormatted": "R$ 21.787,59",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/08/produto/2333/01-gvs-kit-kirk-key-p-gab-byp-manut.jpg?ims=600x600",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/08/produto/2333/01-gvs-kit-kirk-key-p-gab-byp-manut.jpg?ims=600x600"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/gvs-kit-kirk-key-p-gab-byp-manut",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "estação-de-retrabalho",
-      "name": "Estação De Retrabalho",
-      "count": 2
+      "id": "500009",
+      "sku": "",
+      "name": "Inversor De Frequência Schneider ATV630D22M3 30Cv 200/240V",
+      "slug": "inversor-de-frequencia-schneider-200-240vca-corrente-nominal-de-saida-nd-92-6a-potencia-do-motor-n-atv630d22m3",
+      "brand": "Schneider Electric",
+      "price": 21580.93,
+      "priceFormatted": "R$ 21.580,93",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1960/atv630d18m3.jpg?ims=600x600",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1960/atv630d18m3.jpg?ims=600x600"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/inversor-de-frequencia-schneider-200-240vca-corrente-nominal-de-saida-nd-92-6a-potencia-do-motor-n-atv630d22m3",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "cabo-de-rede",
-      "name": "Cabo De Rede",
-      "count": 2
+      "id": "500010",
+      "sku": "",
+      "name": "Módulo de Interface Schneider VW3E704000000 Slave/SUB-D Fêmea",
+      "slug": "Modulo-de-Interface-Schneider-VW3E704000000-Slave-SUB-D-Femea",
+      "brand": "Schneider Electric",
+      "price": 20951.46,
+      "priceFormatted": "R$ 20.951,46",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1561/01-modulo-comunicacao-pd3-lmc-interface-pro.jpg?ims=600x600",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1561/01-modulo-comunicacao-pd3-lmc-interface-pro.jpg?ims=600x600"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/Modulo-de-Interface-Schneider-VW3E704000000-Slave-SUB-D-Femea",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "lcd",
-      "name": "Lcd",
-      "count": 2
+      "id": "500013",
+      "sku": "",
+      "name": "Inversor de Frequência ATV340D30N4E 40CV 380/480V Ethernet",
+      "slug": "inversor-freq-trif-380-480vca",
+      "brand": "Schneider Electric",
+      "price": 19524.55,
+      "priceFormatted": "R$ 19.524,55",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/559/atv340d30n4e.jpg?ims=600x600",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/559/atv340d30n4e.jpg?ims=600x600"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/inversor-freq-trif-380-480vca",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "osciloscópio",
-      "name": "Osciloscópio",
-      "count": 2
+      "id": "500014",
+      "sku": "",
+      "name": "Rack Sx 19\" 42U 750Mmx1070Mm",
+      "slug": "rack-sx-19-42u-750mmx1070mm",
+      "brand": "Schneider Electric",
+      "price": 19477.36,
+      "priceFormatted": "R$ 19.477,36",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2025/03/produto/7389/09-rack-sx-19-42u-750mmx1070mm.jpeg?ims=600x600",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2025/03/produto/7389/09-rack-sx-19-42u-750mmx1070mm.jpeg?ims=600x600"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/rack-sx-19-42u-750mmx1070mm",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "fontes-48-volts",
-      "name": "Fontes 48 Volts",
-      "count": 2
+      "id": "500015",
+      "sku": "",
+      "name": "Inversor de Frequência ATV610D45N4 60CV 380/460V",
+      "slug": "inversor-de-frequencia-trifasico-380-415v-corrente-nominal-de-saida-88a-potencia-do-motor-45kw-60c",
+      "brand": "Schneider Electric",
+      "price": 19171.88,
+      "priceFormatted": "R$ 19.171,88",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/568/atv610d30n4.jpg?ims=600x600",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/568/atv610d30n4.jpg?ims=600x600"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/inversor-de-frequencia-trifasico-380-415v-corrente-nominal-de-saida-88a-potencia-do-motor-45kw-60c",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "trifásico",
-      "name": "Trifásico",
-      "count": 2
+      "id": "500016",
+      "sku": "",
+      "name": "Módulo De Expansão Schneider TM2DMM24DRF 16 Entrada/8 Saída",
+      "slug": "modulo-de-expansao-digital-16-entradaspn",
+      "brand": "Schneider Electric",
+      "price": 19104.1,
+      "priceFormatted": "R$ 19.104,10",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/08/produto/2892/01-modulo-de-expansao-digital-16-entradaspn.jpg?ims=600x600",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/08/produto/2892/01-modulo-de-expansao-digital-16-entradaspn.jpg?ims=600x600"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/modulo-de-expansao-digital-16-entradaspn",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "estação-de-solda",
-      "name": "Estação De Solda",
-      "count": 2
+      "id": "500017",
+      "sku": "",
+      "name": "Softstarter Icl 170A 45/90Kw Trifásico 230-440V",
+      "slug": "softstarter-icl-170a-45-90kw-trifasico-230-440v",
+      "brand": "Schneider Electric",
+      "price": 18437.28,
+      "priceFormatted": "R$ 18.437,28",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/2000/01-softstarter-icl-62a-15-37kw-trifasico-230-600v.png?ims=600x600",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/2000/01-softstarter-icl-62a-15-37kw-trifasico-230-600v.png?ims=600x600"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/softstarter-icl-170a-45-90kw-trifasico-230-440v",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "esr",
-      "name": "Esr",
-      "count": 1
+      "id": "500019",
+      "sku": "",
+      "name": "Inversor de Frequência ATV340D22N4E 30CV 380/480V",
+      "slug": "inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-em-heavy-duty-46a-em-normal-atv340d22n4e",
+      "brand": "Schneider Electric",
+      "price": 17725.62,
+      "priceFormatted": "R$ 17.725,62",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1425/01-inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-em-heavy-duty-46a-em-normal.png?ims=600x600",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1425/01-inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-em-heavy-duty-46a-em-normal.png?ims=600x600"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-em-heavy-duty-46a-em-normal-atv340d22n4e",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "estação-conjugada",
-      "name": "Estação Conjugada",
-      "count": 1
+      "id": "500020",
+      "sku": "",
+      "name": "Inversor de Frequência ATV630D18N4 25CV 380/480V",
+      "slug": "inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-nd-39-2a-potencia-do-motor-n-atv630d18n4",
+      "brand": "Schneider Electric",
+      "price": 17414.77,
+      "priceFormatted": "R$ 17.414,77",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1433/01-inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-nd-46-3a-potencia-do-motor-n.jpg?ims=600x600",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1433/01-inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-nd-46-3a-potencia-do-motor-n.jpg?ims=600x600"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-nd-39-2a-potencia-do-motor-n-atv630d18n4",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "estação-dessoldadora",
-      "name": "Estação Dessoldadora",
-      "count": 1
+      "id": "500021",
+      "sku": "",
+      "name": "Inversor de Frequência ATV340D22N4 30CV 380/480V",
+      "slug": "inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-em-heavy-duty-46a-em-normal",
+      "brand": "Schneider Electric",
+      "price": 17002.31,
+      "priceFormatted": "R$ 17.002,31",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1425/01-inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-em-heavy-duty-46a-em-normal.png?ims=600x600",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1425/01-inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-em-heavy-duty-46a-em-normal.png?ims=600x600"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-em-heavy-duty-46a-em-normal",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "analisador-de-energia",
-      "name": "Analisador De Energia",
-      "count": 1
+      "id": "500022",
+      "sku": "ACRH301P",
+      "name": "Uniflair InRow Direct Expansion ACRH301P 27kW",
+      "slug": "uniflair-inrow-direct-expansion-acrh301p-27kw",
+      "brand": "Schneider Electric",
+      "price": 183076.39,
+      "priceFormatted": "R$ 183.076,39",
+      "stock": null,
+      "inStock": true,
+      "description": "Folha de dados:  ACRH301P\n\nDesempenho e Eficiência\nO Uniflair InRow Direct Expansion ACRH301P é um sistema de resfriamento de precisão projetado para data centers e salas de servidores , garantindo controle térmico eficiente com capacidade de 27 kW . Utiliza compressor scroll de alta eficiência, fluxo de ar horizontal de 1.374,3 l/s e inclui serpentina dupla, umidificador e reaquecimento , ideal para ambientes críticos que exigem refrigeração contínua e confiável.\n\nRobustez e Durabilidade\nPossui construção robusta em aço e certificações CE, UL e RoHS , adequando-se a instalações protegidas. Opera em temperaturas ambiente de -25°C a 46°C , com nível acústico de 77,1 dBA , e é compatível com altitudes de até 10.000 pés . A interface LCD multifunção permite monitoramento em tempo real, incluindo alarmes para manutenção preventiva.\n\nEspecificações Técnicas\nO sistema opera com tensão de entrada monofásica de 200-240V CA , fluxo de ar horizontal ajustável para otimização térmica e dimensões de 1991 mm (A) x 300 mm (L) x 1095 mm (P) , com peso de 200 kg . Inclui controle PID ajustável , proteções contra sobrecarga, sobretensão e subtensão, além de conformidade com normas EN/IEC 60204-1 para segurança operacional. A montagem é do tipo InRow , integrando-se diretamente em racks, e requer distâncias de segurança conforme especificações do manual. O produto não inclui embalagens plásticas e utiliza papelão reciclável, seguindo diretrizes de sustentabilidade.",
+      "specs": null,
+      "category": "Nobreak",
+      "categoryPath": [
+        "Nobreak"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2025/06/produto/7523/acrh301p-indoor-rl-1500.jpg?ims=600x600",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2025/06/produto/7523/acrh301p-indoor-rl-1500.jpg?ims=600x600"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/uniflair-inrow-direct-expansion-acrh301p-27kw",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "termovisor",
-      "name": "Termovisor",
-      "count": 1
+      "id": "500023",
+      "sku": "500023",
+      "name": "Uniflair InRow Direct Expansion ACRD301S 30kW",
+      "slug": "uniflair-inrow-direct-expansion-acrd301s-30kw",
+      "brand": "Schneider Electric",
+      "price": 163143.3,
+      "priceFormatted": "R$ 163.143,30",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2025/06/produto/7516/859b9c5579f24c93852583af0035ca0d-nsch-b9uuk9-f-v-hi-1500.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2025/06/produto/7516/859b9c5579f24c93852583af0035ca0d-nsch-b9uuk9-f-v-hi-1500.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/uniflair-inrow-direct-expansion-acrd301s-30kw",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "st---skt---skkt",
-      "name": "St   Skt   Skkt",
-      "count": 1
+      "id": "500024",
+      "sku": "500024",
+      "name": "Nobreak Easyups 3M 100Kva 380V Trifásico",
+      "slug": "nobreak-easyups-3m-100kva-380v-trifasico",
+      "brand": "Schneider Electric",
+      "price": 133836.43,
+      "priceFormatted": "R$ 133.836,43",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/08/produto/2268/01-nobreak-easyups-3m-100kva-380v-trifasico.png",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/08/produto/2268/01-nobreak-easyups-3m-100kva-380v-trifasico.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/nobreak-easyups-3m-100kva-380v-trifasico",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "módulos",
-      "name": "Módulos",
-      "count": 1
+      "id": "500025",
+      "sku": "500025",
+      "name": "Inversor de Frequência ATV630C16N4 200CV 380/480V",
+      "slug": "inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-nd-302a-potencia-do-motor-nd-atv630c16n4",
+      "brand": "Schneider Electric",
+      "price": 92628.27,
+      "priceFormatted": "R$ 92.628,27",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1430/01-inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-nd-302a-potencia-do-motor-nd.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1430/01-inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-nd-302a-potencia-do-motor-nd.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-nd-302a-potencia-do-motor-nd-atv630c16n4",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "ihm",
-      "name": "Ihm",
-      "count": 1
+      "id": "500026",
+      "sku": "500026",
+      "name": "Nobreak Easy Ups 3S De 30Kva Tri-Mono",
+      "slug": "nobreak-easy-ups-3s-de-30kva-tri-mono",
+      "brand": "Schneider Electric",
+      "price": 84084.39,
+      "priceFormatted": "R$ 84.084,39",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2025/03/produto/7324/01-nobreak-easy-ups-3s-de-30kva-tri-mono.jpeg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2025/03/produto/7324/01-nobreak-easy-ups-3s-de-30kva-tri-mono.jpeg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/nobreak-easy-ups-3s-de-30kva-tri-mono",
+      "supplier": "Loja Vale"
     },
     {
-      "id": "soft-starter",
-      "name": "Soft Starter",
-      "count": 1
+      "id": "500027",
+      "sku": "500027",
+      "name": "Módulo da fonte Schneider TSXPSY5500M 100/120VAC 55W",
+      "slug": "modulo-premium-fonte-100120vac-55w",
+      "brand": "Schneider Electric",
+      "price": 79527.19,
+      "priceFormatted": "R$ 79.527,19",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/08/produto/3127/01-modulo-premium-fonte-100120vac-55w.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/08/produto/3127/01-modulo-premium-fonte-100120vac-55w.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/modulo-premium-fonte-100120vac-55w",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500028",
+      "sku": "500028",
+      "name": "Inversor de Frequência ATV630C13N4 175CV 380/480V",
+      "slug": "inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-nd-250a-potencia-do-motor-nd",
+      "brand": "Schneider Electric",
+      "price": 78532.58,
+      "priceFormatted": "R$ 78.532,58",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1430/01-inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-nd-302a-potencia-do-motor-nd.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1430/01-inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-nd-302a-potencia-do-motor-nd.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-nd-250a-potencia-do-motor-nd",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500029",
+      "sku": "500029",
+      "name": "Motor Trifásico MTE22255W0AAAA0001 75Cv 4P B3T",
+      "slug": "440V",
+      "brand": "Schneider Electric",
+      "price": 71027.32,
+      "priceFormatted": "R$ 71.027,32",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/749/captura-de-tela-2024-07-04-a-s-22-39-06.png",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/749/captura-de-tela-2024-07-04-a-s-22-39-06.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/Motor-Trifasico-MTE22255W0AAAA0001-75Cv-4P-B3T-220/380/440V",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500030",
+      "sku": "500030",
+      "name": "Inversor de Frequência ATV930D90N4 125CV 380/480V",
+      "slug": "inversor-de-frequencia-schneider-380480vca-corrente-nominal-de-saida-nd-173a-potencia-do-motor-nd",
+      "brand": "Schneider Electric",
+      "price": 64211.47,
+      "priceFormatted": "R$ 64.211,47",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1845/01-inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-nd-106a-potencia-do-motor-nd.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1845/01-inversor-de-frequencia-schneider-380-480vca-corrente-nominal-de-saida-nd-106a-potencia-do-motor-nd.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/inversor-de-frequencia-schneider-380480vca-corrente-nominal-de-saida-nd-173a-potencia-do-motor-nd",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500031",
+      "sku": "500031",
+      "name": "Inversor De Frequência Schneider Atv630D90N4 125Cv",
+      "slug": "inversor-de-frequencia-trifasico-380-480vca-corrente-nominal-de-saida-nd-173a-potencia-do-motor-nd",
+      "brand": "Schneider Electric",
+      "price": 58504.65,
+      "priceFormatted": "R$ 58.504,65",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/577/atv630d55n4.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/577/atv630d55n4.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/inversor-de-frequencia-trifasico-380-480vca-corrente-nominal-de-saida-nd-173a-potencia-do-motor-nd",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500032",
+      "sku": "500032",
+      "name": "Inversor de Frequência ATV610D37N4 50CV 380/460V",
+      "slug": "inversor-de-frequencia-trifasico-380-415v-corrente-nominal-de-saida-74-5a-potencia-do-motor-37kw-5",
+      "brand": "Schneider Electric",
+      "price": 18589.35,
+      "priceFormatted": "R$ 18.589,35",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/568/atv610d30n4.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/568/atv610d30n4.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/inversor-de-frequencia-trifasico-380-415v-corrente-nominal-de-saida-74-5a-potencia-do-motor-37kw-5",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500033",
+      "sku": "500033",
+      "name": "Transformador de Isolamento Smart-UPS SRV6KTF 6kVA 230V/120V",
+      "slug": "transformador-6kva-para-ups",
+      "brand": "Schneider Electric",
+      "price": 17936.96,
+      "priceFormatted": "R$ 17.936,96",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/12/produto/5175/03-banco-de-baterias-para-nobreak-de-6kva-modulo-de-baterias-easy-ups6-e-1okva.jpeg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/12/produto/5175/03-banco-de-baterias-para-nobreak-de-6kva-modulo-de-baterias-easy-ups6-e-1okva.jpeg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/transformador-6kva-para-ups",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500034",
+      "sku": "500034",
+      "name": "Switch Gerenciável Schneider TCSESM043F2CU0 2P TX + 2P FX",
+      "slug": "Switch-Gerenciavel-Schneider-TCSESM043F2CU0-2P-TX-2P-FX",
+      "brand": "Schneider Electric",
+      "price": 17671.5,
+      "priceFormatted": "R$ 17.671,50",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/320/tcsesm043f2cu0.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/320/tcsesm043f2cu0.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/Switch-Gerenciavel-Schneider-TCSESM043F2CU0-2P-TX-2P-FX",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500035",
+      "sku": "500035",
+      "name": "Inversor De Frequência Schneider ATV630D15M3 20Cv 200/240V",
+      "slug": "inversor-de-frequencia-schneider-200-240vca-corrente-nominal-de-saida-nd-63-4a-potencia-do-motor-n-atv630d15m3",
+      "brand": "Schneider Electric",
+      "price": 17552.47,
+      "priceFormatted": "R$ 17.552,47",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1921/02-inversor-de-frequencia-schneider-200-240vca-corrente-nominal-de-saida-nd-63-4a-potencia-do-motor-n.png",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1921/02-inversor-de-frequencia-schneider-200-240vca-corrente-nominal-de-saida-nd-63-4a-potencia-do-motor-n.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/inversor-de-frequencia-schneider-200-240vca-corrente-nominal-de-saida-nd-63-4a-potencia-do-motor-n-atv630d15m3",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500036",
+      "sku": "500036",
+      "name": "Módulo M580 Ethernet Remote I/O Drop P",
+      "slug": "modulo-m580-ethernet-remote-i-o-drop-p",
+      "brand": "Schneider Electric",
+      "price": 17489.85,
+      "priceFormatted": "R$ 17.489,85",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/585/bmecra31210.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/585/bmecra31210.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/modulo-m580-ethernet-remote-i-o-drop-p",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500037",
+      "sku": "500037",
+      "name": "Apc Smart Ups Rt 3000Va Brazil 120V 2100 W",
+      "slug": "apc-smart-ups-rt-3000va-brazil-120v-2100-w",
+      "brand": "Schneider Electric",
+      "price": 16892.82,
+      "priceFormatted": "R$ 16.892,82",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/08/produto/2334/01-apc-smart-ups-rt-3000va-brazil-120v-2100-w.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/08/produto/2334/01-apc-smart-ups-rt-3000va-brazil-120v-2100-w.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/apc-smart-ups-rt-3000va-brazil-120v-2100-w",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500038",
+      "sku": "500038",
+      "name": "IHM Schneider HMIDM7421 15\" Touchscreen USB LED",
+      "slug": "Display-IHM-Schneider-HMIDM7421-15p-Touchscreen-USB-LED",
+      "brand": "Schneider Electric",
+      "price": 16797.03,
+      "priceFormatted": "R$ 16.797,03",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/664/hmidm7421.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/664/hmidm7421.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/Display-IHM-Schneider-HMIDM7421-15p-Touchscreen-USB-LED",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500039",
+      "sku": "500039",
+      "name": "Módulo X80 Comunicação Ethernet 10/1",
+      "slug": "modulo-x80-comunicacao-ethernet-10-1",
+      "brand": "Schneider Electric",
+      "price": 16790.33,
+      "priceFormatted": "R$ 16.790,33",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/603/bmxnoe0100.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/603/bmxnoe0100.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/modulo-x80-comunicacao-ethernet-10-1",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500040",
+      "sku": "500040",
+      "name": "Clp Schneider TM262L10MESE8T 4 entradas/4 saídas 24V",
+      "slug": "4-saidas-24V-Sernos-III",
+      "brand": "Schneider Electric",
+      "price": 14026.8,
+      "priceFormatted": "R$ 14.026,80",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/283/tm262l10mese8t.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/283/tm262l10mese8t.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/Clp-Schneider-TM262L10MESE8T-4-entradas/4-saidas-24V-Sernos-III",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500041",
+      "sku": "500041",
+      "name": "Inversor de Frequência ATV610D22N4 30CV 380/460V",
+      "slug": "inversor-de-frequencia-trifasico-380-415v-corrente-nominal-de-saida-46-3a-potencia-do-motor-22kw-3",
+      "brand": "Schneider Electric",
+      "price": 13983.2,
+      "priceFormatted": "R$ 13.983,20",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/566/atv610d18n4.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/566/atv610d18n4.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/inversor-de-frequencia-trifasico-380-415v-corrente-nominal-de-saida-46-3a-potencia-do-motor-22kw-3",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500042",
+      "sku": "500042",
+      "name": "Módulo de Bateria APC SRV240BP-9A Easy UPS 6-10kVA 240V",
+      "slug": "banco-de-baterias-para-nobreak-de-6kva-modulo-de-baterias-easy-ups6-e-1okva",
+      "brand": "Schneider Electric",
+      "price": 13939.64,
+      "priceFormatted": "R$ 13.939,64",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/12/produto/5175/03-banco-de-baterias-para-nobreak-de-6kva-modulo-de-baterias-easy-ups6-e-1okva.jpeg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/12/produto/5175/03-banco-de-baterias-para-nobreak-de-6kva-modulo-de-baterias-easy-ups6-e-1okva.jpeg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/banco-de-baterias-para-nobreak-de-6kva-modulo-de-baterias-easy-ups6-e-1okva",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500043",
+      "sku": "500043",
+      "name": "Inversor de Frequência ATV320D15N4B 20CV 380/480V",
+      "slug": "inversor-de-frequencia-schneider-380-500vca-modelo-book-corrente-nominal-de-saida-33a-potencia-do-motor-20cv",
+      "brand": "Schneider Electric",
+      "price": 13763.74,
+      "priceFormatted": "R$ 13.763,74",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1402/01-inversor-de-frequencia-schneider-380-460v-corrente-nominal-de-saida-em-heavy-dutty-39a.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1402/01-inversor-de-frequencia-schneider-380-460v-corrente-nominal-de-saida-em-heavy-dutty-39a.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/inversor-de-frequencia-schneider-380-500vca-modelo-book-corrente-nominal-de-saida-33a-potencia-do-motor-20cv",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500044",
+      "sku": "500044",
+      "name": "Motor Trifásico MTE13207W5AAAA0001 10Cv 4P B3T 220/380/440V",
+      "slug": "440V",
+      "brand": "Schneider Electric",
+      "price": 10578.45,
+      "priceFormatted": "R$ 10.578,45",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/751/captura-de-tela-2024-07-04-a-s-22-45-31.png",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/751/captura-de-tela-2024-07-04-a-s-22-45-31.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/Motor-Trifasico-MTE13207W5AAAA0001-10Cv-4P-B3T-220/380/440V",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500045",
+      "sku": "500045",
+      "name": "Inversor De Frequência Schneider ATV610D15N4 20Cv 380/460V",
+      "slug": "inversor-de-frequencia-trifasico-380-415v-corrente-nominal-de-saida-31-7a-potencia-do-motor-15kw-2",
+      "brand": "Schneider Electric",
+      "price": 10526.16,
+      "priceFormatted": "R$ 10.526,16",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/568/atv610d30n4.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/568/atv610d30n4.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/inversor-de-frequencia-trifasico-380-415v-corrente-nominal-de-saida-31-7a-potencia-do-motor-15kw-2",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500046",
+      "sku": "500046",
+      "name": "Módulo de Expansão Schneider XPSMCMCO0000EI Ethernet RJ45 24V",
+      "slug": "Modulo-de-Expansao-Schneider-XPSMCMCO0000EI-Ethernet-RJ45-24V",
+      "brand": "Schneider Electric",
+      "price": 10273.34,
+      "priceFormatted": "R$ 10.273,34",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/992/xpsmcmco0000ei.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/992/xpsmcmco0000ei.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/Modulo-de-Expansao-Schneider-XPSMCMCO0000EI-Ethernet-RJ45-24V",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500047",
+      "sku": "500047",
+      "name": "Nobreak APC SRVPM3KIL-BR 2000VA Torre 230V",
+      "slug": "nobreak-srv-3-kva-220v-sem-baterias",
+      "brand": "Schneider Electric",
+      "price": 9523.84,
+      "priceFormatted": "R$ 9.523,84",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2025/01/produto/6111/03-nobreak-srv-3-kva-220v-sem-baterias.jpeg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2025/01/produto/6111/03-nobreak-srv-3-kva-220v-sem-baterias.jpeg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/nobreak-srv-3-kva-220v-sem-baterias",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500048",
+      "sku": "500048",
+      "name": "Módulo De Expansão Schneider TM3DQ32TK 32 Saídas 24V",
+      "slug": "modulo-de-expansao-tm3-32-saidas-a-trans-tm3dq32tk",
+      "brand": "Schneider Electric",
+      "price": 3538.53,
+      "priceFormatted": "R$ 3.538,53",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/08/produto/2895/01-modulo-de-expansao-tm3-32-saidas-a-trans.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/08/produto/2895/01-modulo-de-expansao-tm3-32-saidas-a-trans.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/modulo-de-expansao-tm3-32-saidas-a-trans-tm3dq32tk",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500049",
+      "sku": "500049",
+      "name": "Roteador Celular Teltonika RUTX11 LTE Cat 6 Dual SIM",
+      "slug": "roteador-celular-teltonika-rutx11-lte-cat-6-dual-sim",
+      "brand": "Schneider Electric",
+      "price": 3376.64,
+      "priceFormatted": "R$ 3.376,64",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/12/produto/5456/rutx11-black-1-840xauto-removebg-preview.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/12/produto/5456/rutx11-black-1-840xauto-removebg-preview.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/roteador-celular-teltonika-rutx11-lte-cat-6-dual-sim",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500050",
+      "sku": "500050",
+      "name": "Inversor de Frequência ATV320U11N4C 1,5CV 380/480V",
+      "slug": "inversor-de-frequencia-schneider-380-500vca-modelo-compact-corrente-nominal-de-saida-3a-potencia",
+      "brand": "Schneider Electric",
+      "price": 3376.09,
+      "priceFormatted": "R$ 3.376,09",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1857/01-inversor-de-frequencia-schneider-380-500vca-modelo-compact-corrente-nominal-de-saida-1-5a-potenci.png",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1857/01-inversor-de-frequencia-schneider-380-500vca-modelo-compact-corrente-nominal-de-saida-1-5a-potenci.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/inversor-de-frequencia-schneider-380-500vca-modelo-compact-corrente-nominal-de-saida-3a-potencia",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500051",
+      "sku": "500051",
+      "name": "CLP TM172PDG28R com display 16 Entradas/12 Saídas",
+      "slug": "clp-tm172pdg28r-com-display-16-entradas-12-saidas-schneider-electric",
+      "brand": "Schneider Electric",
+      "price": 3352.52,
+      "priceFormatted": "R$ 3.352,52",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/305/tm172pdg28r.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/305/tm172pdg28r.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/clp-tm172pdg28r-com-display-16-entradas-12-saidas-schneider-electric",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500052",
+      "sku": "500052",
+      "name": "IHM Schneider HMIET6401 7\" Touchscreen Serial",
+      "slug": "Ihm-Schneider-HMIET6401-7P-Touchscreen-Serial",
+      "brand": "Schneider Electric",
+      "price": 3339.61,
+      "priceFormatted": "R$ 3.339,61",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1473/01-ihm-schneider-et6-7-pol-serial.png",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/1473/01-ihm-schneider-et6-7-pol-serial.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/Ihm-Schneider-HMIET6401-7P-Touchscreen-Serial",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500053",
+      "sku": "500053",
+      "name": "Disjuntor Motor Schneider GV2ME21 17-23A 3P 690V",
+      "slug": "disjuntor-termomagnetico-3-polos-ajuste-de-protecao-termica-17-23a-acionamento-por-botao-a-impuls",
+      "brand": "Schneider Electric",
+      "price": 652.89,
+      "priceFormatted": "R$ 652,89",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/610/gv2me21.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/610/gv2me21.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/disjuntor-termomagnetico-3-polos-ajuste-de-protecao-termica-17-23a-acionamento-por-botao-a-impuls",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500054",
+      "sku": "500054",
+      "name": "Sensor Indutivo Faceado M18 Metalico",
+      "slug": "sensor-indutivo-faceado-m18-metalico-distancia-de-operacao-8mm-tipo-de-saida-pnp-funcao-de-saida-xs118b3pcm12",
+      "brand": "Schneider Electric",
+      "price": 648.75,
+      "priceFormatted": "R$ 648,75",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/829/xs118b3pcm12.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/829/xs118b3pcm12.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/sensor-indutivo-faceado-m18-metalico-distancia-de-operacao-8mm-tipo-de-saida-pnp-funcao-de-saida-xs118b3pcm12",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500055",
+      "sku": "500055",
+      "name": "Fim De Curso Telemecanique XCKM121 1NA+1NF 500V",
+      "slug": "interruptor-fim-de-curso-500v-10a-contat",
+      "brand": "Schneider Electric",
+      "price": 642.08,
+      "priceFormatted": "R$ 642,08",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Automação Industrial",
+      "categoryPath": [
+        "Automação Industrial"
+      ],
+      "image": "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/445/xckm121.jpg",
+      "images": [
+        "https://lojavale.cdn.magazord.com.br/img/2024/07/produto/445/xckm121.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.lojavale.com.br/interruptor-fim-de-curso-500v-10a-contat",
+      "supplier": "Loja Vale"
+    },
+    {
+      "id": "500056",
+      "sku": "500056",
+      "name": "Interfone Coletivo Celular Bravo - Pináculo",
+      "slug": "interfone-coletivo-celular-bravo-pinaculo",
+      "brand": null,
+      "price": 2328.0,
+      "priceFormatted": "R$ 2.328,00",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/543/01-interfone-coletivo-celular-bravo-pinaculo.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/543/01-interfone-coletivo-celular-bravo-pinaculo.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/545/03-interfone-coletivo-celular-bravo-pinaculo.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/interfone-coletivo-celular-bravo-pinaculo",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500057",
+      "sku": "500057",
+      "name": "Central de Alarme de Incêndio ECAI Endereçável - Equipel",
+      "slug": "central-de-alarme-de-incendio-ecai-enderecavel-equipel",
+      "brand": null,
+      "price": 1874.79,
+      "priceFormatted": "R$ 1.874,79",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/405/01-central-de-alarme-de-incendio-enderecavel-equipel.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/405/01-central-de-alarme-de-incendio-enderecavel-equipel.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/406/02-central-de-alarme-de-incendio-enderecavel-equipel.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/407/03-central-de-alarme-de-incendio-enderecavel-equipel.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/central-de-alarme-de-incendio-ecai-enderecavel-equipel",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500058",
+      "sku": "500058",
+      "name": "Vídeo Porteiro Inteligente HP7 - EZVIZ",
+      "slug": "video-porteiro-inteligente-hp7-ezviz",
+      "brand": null,
+      "price": 1637.25,
+      "priceFormatted": "R$ 1.637,25",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/769/05-video-porteiro-inteligente-hp7-ezviz.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/769/05-video-porteiro-inteligente-hp7-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/471/02-video-porteiro-inteligente-hp7-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/472/03-video-porteiro-inteligente-hp7-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/473/04-video-porteiro-inteligente-hp7-ezviz.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/video-porteiro-inteligente-hp7-ezviz",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500059",
+      "sku": "500059",
+      "name": "Controle de Acesso Facial iDFace Max Mifare - Control iD",
+      "slug": "controle-de-acesso-facial-idface-max-control-id",
+      "brand": null,
+      "price": 1590.0,
+      "priceFormatted": "R$ 1.590,00",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/988/id-face-max.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/988/id-face-max.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/987/id-face-max-2.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/controle-de-acesso-facial-idface-max-control-id",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500060",
+      "sku": "500060",
+      "name": "Deslizante SR800 - Nice",
+      "slug": "kit-deslizante-sr800-nice",
+      "brand": null,
+      "price": 1575.09,
+      "priceFormatted": "R$ 1.575,09",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/732/01-deslizante-sr800-nice-std.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/732/01-deslizante-sr800-nice-std.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/736/02-deslizante-sr800-nice-std.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/738/03-deslizante-sr800-nice-std.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/614/02-kit-deslizante-sr800-nice-flash.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/617/05-kit-deslizante-sr800-nice-flash.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/kit-deslizante-sr800-nice",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500061",
+      "sku": "500061",
+      "name": "Deslizante Super - Nice",
+      "slug": "kit-deslizante-super-nice",
+      "brand": null,
+      "price": 1552.89,
+      "priceFormatted": "R$ 1.552,89",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/910/08-deslizante-super-nice.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/910/08-deslizante-super-nice.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/663/04-deslizante-super-nice.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/754/02-deslizante-super-nice-std.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/kit-deslizante-super-nice",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500062",
+      "sku": "500062",
+      "name": "Central de Alarme de Incêndio ECAI 20S Sem Bateria - Equipel",
+      "slug": "central-de-alarme-de-incendio-ecai-20s-sem-bateria-equipel",
+      "brand": null,
+      "price": 1395.0,
+      "priceFormatted": "R$ 1.395,00",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/07/produto/1000/ecai-concencional-1-1024x1024.jpg",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/07/produto/1000/ecai-concencional-1-1024x1024.jpg",
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/875/central-ecai-20s-standat.png",
+        "https://compreseg.cdn.magazord.com.br/img/2026/01/produto/1041/central-de-alarme-de-incendio-ecai-20s.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/central-de-alarme-de-incendio-ecai-20s-sem-bateria-equipel",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500063",
+      "sku": "500063",
+      "name": "Deslizante SR 600 - Nice",
+      "slug": "kit-deslizante-sr-600-nice",
+      "brand": null,
+      "price": 1243.2,
+      "priceFormatted": "R$ 1.243,20",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/891/sr600-std.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/891/sr600-std.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/900/desl-tras.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/729/01-deslizante-sr600-nice-std.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/730/02-deslizante-sr600-nice-std.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/731/03-deslizante-sr600-nice-std.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/608/12-kit-deslizante-sr600-nice-ihsc.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/889/sr600-flash.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/kit-deslizante-sr-600-nice",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500064",
+      "sku": "500064",
+      "name": "Controle de Acesso Digital iDFlex - Control iD",
+      "slug": "controle-de-acesso-digital-idflex-control-id",
+      "brand": null,
+      "price": 1209.9,
+      "priceFormatted": "R$ 1.209,90",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/431/05-controle-de-acesso-digital-idflex-control-id.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/431/05-controle-de-acesso-digital-idflex-control-id.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/432/06-controle-de-acesso-digital-idflex-control-id.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/428/02-controle-de-acesso-digital-idflex-control-id.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/429/03-controle-de-acesso-digital-idflex-control-id.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/430/04-controle-de-acesso-digital-idflex-control-id.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/controle-de-acesso-digital-idflex-control-id",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500065",
+      "sku": "500065",
+      "name": "Controle de Acesso Facial iDFace - Control iD",
+      "slug": "controle-de-acesso-facial-id-face-control-id",
+      "brand": null,
+      "price": 1190.0,
+      "priceFormatted": "R$ 1.190,00",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/271/id-face-controlid-1-1-1.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/271/id-face-controlid-1-1-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/274/id-face-controlid-2-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/174/secbox-face1.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/controle-de-acesso-facial-id-face-control-id",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500066",
+      "sku": "500066",
+      "name": "Fechadura Eletrônica Inteligente DL05 - EZVIZ",
+      "slug": "fechadura-eletronica-inteligente-dl05-ezviz",
+      "brand": null,
+      "price": 1108.89,
+      "priceFormatted": "R$ 1.108,89",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/805/01-fechadura-eletronica-inteligente-dl05-ezviz.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/805/01-fechadura-eletronica-inteligente-dl05-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/806/02-fechadura-eletronica-inteligente-dl05-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/807/03-fechadura-eletronica-inteligente-dl05-ezviz.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/fechadura-eletronica-inteligente-dl05-ezviz",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500067",
+      "sku": "500067",
+      "name": "DVR 16 Canais 1MP - Hikvision",
+      "slug": "dvr-16-canais-1mp-hikvision",
+      "brand": null,
+      "price": 964.59,
+      "priceFormatted": "R$ 964,59",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/666/03-dvr-08-canais-1mp-ds-7208hghi-f1-n-hikvision.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/666/03-dvr-08-canais-1mp-ds-7208hghi-f1-n-hikvision.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/664/01-dvr-08-canais-1mp-ds-7208hghi-f1-n-hikvision.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/667/01-dvr-16-canais-1mp-ds-7216hghi-f1-n-hikvision.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/dvr-16-canais-1mp-hikvision",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500068",
+      "sku": "500068",
+      "name": "Vídeo Porteiro VP7\" Plus - AGL",
+      "slug": "video-porteiro-vp7-plus-agl",
+      "brand": null,
+      "price": 921.3,
+      "priceFormatted": "R$ 921,30",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/967/05-video-porteiro-vp7-plus-agl.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/967/05-video-porteiro-vp7-plus-agl.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/516/01-video-porteiro-vp7-plus-agl.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/966/04-video-porteiro-vp7-plus-agl.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/video-porteiro-vp7-plus-agl",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500069",
+      "sku": "500069",
+      "name": "Fechadura Eletrônica Biométrica iDLock Bio - Control iD",
+      "slug": "fechadura-eletronica-biometrica-idlock-bio-control-id",
+      "brand": null,
+      "price": 886.89,
+      "priceFormatted": "R$ 886,89",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/436/01-fechadura-eletronica-biometrica-idlock-bio-control-id.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/436/01-fechadura-eletronica-biometrica-idlock-bio-control-id.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/437/02-fechadura-eletronica-biometrica-idlock-bio-control-id.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/438/03-fechadura-eletronica-biometrica-idlock-bio-control-id.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/fechadura-eletronica-biometrica-idlock-bio-control-id",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500070",
+      "sku": "500070",
+      "name": "Impressora Print iD Touch - Control iD",
+      "slug": "impressora-print-id-touch-control-id",
+      "brand": null,
+      "price": 864.69,
+      "priceFormatted": "R$ 864,69",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/467/01-impressora-print-id-touch-control-id.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/467/01-impressora-print-id-touch-control-id.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/766/02-impressora-print-id-touch-control-id.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/440/impressora-termica-cupom-controlid3.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/441/impressora-termica-cupom-controlid4.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/442/impressora-termica-cupom-controlid5.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/443/impressora-termica-cupom-controlid6.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/impressora-print-id-touch-control-id",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500071",
+      "sku": "500071",
+      "name": "Câmera Wi-Fi H9C Dual - EZVIZ",
+      "slug": "camera-wi-fi-h9c-dual-ezviz",
+      "brand": null,
+      "price": 853.59,
+      "priceFormatted": "R$ 853,59",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1014/h9c-frente.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1014/h9c-frente.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1013/h9c-diagonal.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1015/h9c-lateral-direita.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1017/h9c-retaguarda.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1016/h9c-lateral-esquerda.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/camera-wi-fi-h9c-dual-ezviz",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500072",
+      "sku": "500072",
+      "name": "DVR Full HD 2MP Com Áudio - Hikvision",
+      "slug": "dvr-full-hd-2mp-com-audio-ids-72xxhqhi-m1-e-hikvision",
+      "brand": null,
+      "price": 833.22,
+      "priceFormatted": "R$ 833,22",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1026/ids-7216hqhi-m1-e-1.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1026/ids-7216hqhi-m1-e-1.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/dvr-full-hd-2mp-com-audio-ids-72xxhqhi-m1-e-hikvision",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500073",
+      "sku": "500073",
+      "name": "DVR 08 Canais 1MP - Hikvision",
+      "slug": "dvr-08-canais-1mp-hikvision",
+      "brand": null,
+      "price": 753.69,
+      "priceFormatted": "R$ 753,69",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/666/03-dvr-08-canais-1mp-ds-7208hghi-f1-n-hikvision.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/666/03-dvr-08-canais-1mp-ds-7208hghi-f1-n-hikvision.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/664/01-dvr-08-canais-1mp-ds-7208hghi-f1-n-hikvision.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/665/02-dvr-08-canais-1mp-ds-7208hghi-f1-n-hikvision.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/dvr-08-canais-1mp-hikvision",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500074",
+      "sku": "500074",
+      "name": "Vídeo Porteiro Smart LR-4500 - Lider",
+      "slug": "video-porteiro-smart-lr-4500-lider",
+      "brand": null,
+      "price": 753.69,
+      "priceFormatted": "R$ 753,69",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/02/produto/823/01-video-porteiro-smart-lr-4500-lider.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/02/produto/823/01-video-porteiro-smart-lr-4500-lider.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/02/produto/825/03-video-porteiro-smart-lr-4500-lider.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/02/produto/824/02-video-porteiro-smart-lr-4500-lider.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/video-porteiro-smart-lr-4500-lider",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500075",
+      "sku": "500075",
+      "name": "Central de Alarme 8 Setores 4G + IP - Viaweb",
+      "slug": "central-de-alarme-8-setores-4g-ip-viaweb",
+      "brand": null,
+      "price": 742.59,
+      "priceFormatted": "R$ 742,59",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/589/02-central-de-alarme-8-setores-4g-ip-viaweb.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/589/02-central-de-alarme-8-setores-4g-ip-viaweb.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/937/07-central-de-alarme-8-setores-4g-ip-viaweb.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/936/06-central-de-alarme-8-setores-4g-ip-viaweb.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/central-de-alarme-8-setores-4g-ip-viaweb",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500076",
+      "sku": "500076",
+      "name": "Central de Iluminação de Emergência Equilux 4 - Equipel",
+      "slug": "central-de-emergencia-equilux-4-equipel",
+      "brand": null,
+      "price": 715.95,
+      "priceFormatted": "R$ 715,95",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/465/02-central-de-emergencia-equilux-4-24v-equipel-1600w.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/465/02-central-de-emergencia-equilux-4-24v-equipel-1600w.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/466/03-central-de-emergencia-equilux-4-24v-equipel-1600w.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/464/01-central-de-emergencia-equilux-4-24v-equipel-1600w.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/711/manual-central-de-iluminacao-de-emergencia-equilux-4.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/712/manual-central-de-iluminacao-de-emergencia-equilux-4-2.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/713/diagrama-central-de-iluminacao-de-emergencia-equilux-4.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/714/diagrama-central-de-iluminacao-de-emergencia-equilux-4-2.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/central-de-emergencia-equilux-4-equipel",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500077",
+      "sku": "500077",
+      "name": "Fechadura Eletrônica Inteligente DL03 - EZVIZ",
+      "slug": "fechadura-eletronica-inteligente-dl03-ezviz",
+      "brand": null,
+      "price": 688.2,
+      "priceFormatted": "R$ 688,20",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/808/01-fechadura-eletronica-inteligente-dl03-ezviz.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/808/01-fechadura-eletronica-inteligente-dl03-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/809/02-fechadura-eletronica-inteligente-dl03-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/810/03-fechadura-eletronica-inteligente-dl03-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/811/04-fechadura-eletronica-inteligente-dl03-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/812/05-fechadura-eletronica-inteligente-dl03-ezviz.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/fechadura-eletronica-inteligente-dl03-ezviz",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500078",
+      "sku": "500078",
+      "name": "DVR Full HD 2MP iDS-72XXHQHI-M1/S - Hikvision",
+      "slug": "dvr-full-hd-2mp-ids-72xxhqhi-m1-s-hikvision",
+      "brand": null,
+      "price": 666.55,
+      "priceFormatted": "R$ 666,55",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1026/ids-7216hqhi-m1-e-1.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1026/ids-7216hqhi-m1-e-1.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/dvr-full-hd-2mp-ids-72xxhqhi-m1-s-hikvision",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500079",
+      "sku": "500079",
+      "name": "Mini Access Bio - AGL",
+      "slug": "mini-access-bio-agl",
+      "brand": null,
+      "price": 576.09,
+      "priceFormatted": "R$ 576,09",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/977/acess-card-bio.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/977/acess-card-bio.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/976/acess-card-bio-2.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/mini-access-bio-agl",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500080",
+      "sku": "500080",
+      "name": "Porteiro Coletivo Smart com RFID LR800R - Lider",
+      "slug": "porteiro-coletivo-smart-com-rfid-lr800r-lider",
+      "brand": null,
+      "price": 549.45,
+      "priceFormatted": "R$ 549,45",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/535/porteiro-coletivo-rfid-8pontos-lider.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/535/porteiro-coletivo-rfid-8pontos-lider.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/531/porteiro-coletivo-rfid-2pontos-lider.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/533/porteiro-coletivo-rfid-4pontos-lider.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/537/porteiro-coletivo-rfid-16pontos-lider.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/porteiro-coletivo-smart-com-rfid-lr800r-lider",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500081",
+      "sku": "500081",
+      "name": "Câmera Wi-Fi H8C - EZVIZ",
+      "slug": "camera-wi-fi-h8c-ezviz",
+      "brand": null,
+      "price": 520.59,
+      "priceFormatted": "R$ 520,59",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/818/06-camera-wi-fi-h8c-ezviz.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/818/06-camera-wi-fi-h8c-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/785/02-camera-wi-fi-h8c-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/786/03-camera-wi-fi-h8c-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/787/04-camera-wi-fi-h8c-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/788/05-camera-wi-fi-h8c-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/789/06-camera-wi-fi-h8c-ezviz.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/camera-wi-fi-h8c-ezviz",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500082",
+      "sku": "500082",
+      "name": "Central para Portão Eletrônico CP 4030 - Nice",
+      "slug": "central-para-portao-eletronico-cp-4030-nice",
+      "brand": null,
+      "price": 518.37,
+      "priceFormatted": "R$ 518,37",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/301/central-cp-4030-nice1-1-1.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/301/central-cp-4030-nice1-1-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/303/central-cp-4030-nice3-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/302/central-cp-4030-nice2-1-1.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/central-para-portao-eletronico-cp-4030-nice",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500083",
+      "sku": "500083",
+      "name": "Deslizante Fast Gatter - Nice",
+      "slug": "kit-deslizante-fast-gatter-nice",
+      "brand": null,
+      "price": 476.19,
+      "priceFormatted": "R$ 476,19",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/888/gatter.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/888/gatter.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/886/gatter-3.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/887/gatter-2.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/884/gatter-5.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/kit-deslizante-fast-gatter-nice",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500084",
+      "sku": "500084",
+      "name": "Câmera Externa Wi-Fi H3C - EZVIZ",
+      "slug": "camera-externa-wi-fi-h3c-ezviz",
+      "brand": null,
+      "price": 462.11,
+      "priceFormatted": "R$ 462,11",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1018/h3c-diagonal.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1018/h3c-diagonal.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1020/h3c-lateral-direita.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1022/h3c-retaguarda.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1021/h3c-lateral-esquerda.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1019/h3c-frente.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/camera-externa-wi-fi-h3c-ezviz",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500085",
+      "sku": "500085",
+      "name": "Central de Alarme Flex-1080 Wifi - TEM",
+      "slug": "central-de-alarme-flex-1080-wifi-tem",
+      "brand": null,
+      "price": 449.55,
+      "priceFormatted": "R$ 449,55",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/06/produto/991/central-1080-wifi.jpg",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/06/produto/991/central-1080-wifi.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/central-de-alarme-flex-1080-wifi-tem",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500086",
+      "sku": "500086",
+      "name": "Fechadura Solenoide AL 1000 - AGL",
+      "slug": "fechadura-solenoide-al-1000-agl",
+      "brand": null,
+      "price": 410.0,
+      "priceFormatted": "R$ 410,00",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/970/01-fechadura-solenoide-al-1000-agl.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/970/01-fechadura-solenoide-al-1000-agl.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/971/02-fechadura-solenoide-al-1000-agl.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/fechadura-solenoide-al-1000-agl",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500087",
+      "sku": "500087",
+      "name": "Central para Portão Eletrônico CP 4020 - Nice",
+      "slug": "central-para-portao-eletronico-cp-4020-nice",
+      "brand": null,
+      "price": 398.49,
+      "priceFormatted": "R$ 398,49",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/299/central-cp-4020-nice1-1-1-1.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/299/central-cp-4020-nice1-1-1-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/300/central-cp-4020-nice2-1.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/central-para-portao-eletronico-cp-4020-nice",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500088",
+      "sku": "500088",
+      "name": "Mini Access Card - AGL",
+      "slug": "mini-access-card-agl",
+      "brand": null,
+      "price": 376.29,
+      "priceFormatted": "R$ 376,29",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/979/mini-acess-card.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/979/mini-acess-card.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/978/mini-acess-card-2.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/mini-access-card-agl",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500089",
+      "sku": "500089",
+      "name": "Acionador de Incêndio IP55 - Equipel",
+      "slug": "acionador-de-incendio-ip55-equipel",
+      "brand": null,
+      "price": 371.85,
+      "priceFormatted": "R$ 371,85",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/853/ip55-2.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/853/ip55-2.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/855/ip55.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/854/ip55-3.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/716/manual-acionador-de-incendio-convencional-ip55.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/715/manual-acionador-de-incendio-convencional-ip55-2.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/acionador-de-incendio-ip55-equipel",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500090",
+      "sku": "500090",
+      "name": "Câmera Wi-Fi CB1 - EZVIZ",
+      "slug": "camera-wi-fi-cb1-ezviz",
+      "brand": null,
+      "price": 366.19,
+      "priceFormatted": "R$ 366,19",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/703/07-camera-wi-fi-c1c-ezviz.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/703/07-camera-wi-fi-c1c-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/843/cb1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/845/cb1-3.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/846/cb1-4.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/camera-wi-fi-cb1-ezviz",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500091",
+      "sku": "500091",
+      "name": "Câmera Wi-Fi H6C - EZVIZ",
+      "slug": "camera-wi-fi-h6c-ezviz",
+      "brand": null,
+      "price": 365.19,
+      "priceFormatted": "R$ 365,19",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/726/05-camera-wi-fi-h6c-ezviz.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/726/05-camera-wi-fi-h6c-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/413/02-camera-wi-fi-h6c-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/414/03-camera-wi-fi-h6c-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/415/04-camera-wi-fi-h6c-ezviz.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/camera-wi-fi-h6c-ezviz",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500092",
+      "sku": "500092",
+      "name": "Central de Alarme Flex-1085 Lite - TEM",
+      "slug": "central-de-alarme-flex-1085-tem",
+      "brand": null,
+      "price": 360.75,
+      "priceFormatted": "R$ 360,75",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/06/produto/990/central-1085-lite.jpg",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/06/produto/990/central-1085-lite.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/central-de-alarme-flex-1085-tem",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500093",
+      "sku": "500093",
+      "name": "Porteiro Coletivo Smart LR-800 - Lider",
+      "slug": "porteiro-coletivo-smart-lr800-lider",
+      "brand": null,
+      "price": 360.75,
+      "priceFormatted": "R$ 360,75",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/641/05-porteiro-coletivo-smart-lr800-lider-08.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/641/05-porteiro-coletivo-smart-lr800-lider-08.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/637/01-porteiro-coletivo-smart-lr800-lider-08.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/639/03-porteiro-coletivo-smart-lr800-lider-08.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/644/08-porteiro-coletivo-smart-lr800-lider-08.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/porteiro-coletivo-smart-lr800-lider",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500094",
+      "sku": "500094",
+      "name": "Câmera Wi-Fi TY2 - EZVIZ",
+      "slug": "camera-wi-fi-ty2-ezviz",
+      "brand": null,
+      "price": 320.79,
+      "priceFormatted": "R$ 320,79",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/702/01-camera-wi-fi-ty2-ezviz.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/702/01-camera-wi-fi-ty2-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/848/ty2.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/850/ty2-3.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/851/ty2-4.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/114/acessorio-ty2-ezviz4-1-1.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/camera-wi-fi-ty2-ezviz",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500095",
+      "sku": "500095",
+      "name": "Central para Portão Eletrônico CP 4000 - Nice",
+      "slug": "central-para-portao-eletronico-cp-4000-nice",
+      "brand": null,
+      "price": 309.69,
+      "priceFormatted": "R$ 309,69",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/295/central-cp-4000-nice1-1-1-1.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/295/central-cp-4000-nice1-1-1-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/296/central-cp-4000-nice2-1-1.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/central-para-portao-eletronico-cp-4000-nice",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500096",
+      "sku": "500096",
+      "name": "Câmera Bullet ColorVu - DS-2CE10DFT-FC - Hikvision",
+      "slug": "camera-bullet-colorvu-ds-2ce10dft-fc-hikvision",
+      "brand": null,
+      "price": 287.49,
+      "priceFormatted": "R$ 287,49",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/559/01-camera-mini-bullet-colorvu-ds-2ce10dft-fc-hikvision.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/559/01-camera-mini-bullet-colorvu-ds-2ce10dft-fc-hikvision.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/561/colorvu-1-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/560/02-camera-mini-bullet-colorvu-ds-2ce10dft-fc-hikvision.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/camera-bullet-colorvu-ds-2ce10dft-fc-hikvision",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500097",
+      "sku": "500097",
+      "name": "Controle de Acesso iDTouch Prox - Control iD",
+      "slug": "controle-de-acesso-idtouch-prox-control-id",
+      "brand": null,
+      "price": 266.4,
+      "priceFormatted": "R$ 266,40",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/425/05-controle-de-acesso-idtouch-prox-control-id-125khz.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/425/05-controle-de-acesso-idtouch-prox-control-id-125khz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/426/06-controle-de-acesso-idtouch-prox-control-id-125khz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/422/02-controle-de-acesso-idtouch-prox-control-id-125khz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/767/06-controle-de-acesso-idtouch-prox-control-id-125khz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/424/04-controle-de-acesso-idtouch-prox-control-id-125khz.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/controle-de-acesso-idtouch-prox-control-id",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500098",
+      "sku": "500098",
+      "name": "Fechadura Eletroímã AL150 - AGL",
+      "slug": "fechadura-eletroima-al150-agl",
+      "brand": null,
+      "price": 259.0,
+      "priceFormatted": "R$ 259,00",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/965/30-fechadura-eletroima-al150-agl.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/965/30-fechadura-eletroima-al150-agl.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/964/29-fechadura-eletroima-al150-agl.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/963/28-fechadura-eletroima-al150-agl.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/957/24-fechadura-eletroima-al150-agl.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/962/27-fechadura-eletroima-al150-agl.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/500/05-fechadura-eletroima-al150-agl-cromado.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/fechadura-eletroima-al150-agl",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500099",
+      "sku": "500099",
+      "name": "Câmera Wi-Fi C1C - EZVIZ",
+      "slug": "camera-wi-fi-c1c-ezviz",
+      "brand": null,
+      "price": 254.19,
+      "priceFormatted": "R$ 254,19",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/700/camera-wifi-c1cb-ezviz.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/700/camera-wifi-c1cb-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/400/02-camera-wi-fi-c1c-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/401/03-camera-wi-fi-c1c-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/403/05-camera-wi-fi-c1c-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/402/04-camera-wi-fi-c1c-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/704/07-camera-wi-fi-c1c-ezviz.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/camera-wi-fi-c1c-ezviz",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500100",
+      "sku": "500100",
+      "name": "Câmera Wi-Fi C2C - EZVIZ",
+      "slug": "camera-wi-fi-c2c-ezviz",
+      "brand": null,
+      "price": 249.75,
+      "priceFormatted": "R$ 249,75",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/701/01-camera-wi-fi-c2c-ezviz.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/701/01-camera-wi-fi-c2c-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/837/c2c-2.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/838/c2c-3.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/263/acessorios-c2c-5-1-1.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/camera-wi-fi-c2c-ezviz",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500101",
+      "sku": "500101",
+      "name": "Câmera Wi-Fi H1c - EZVIZ",
+      "slug": "camera-wi-fi-h1c-ezviz",
+      "brand": null,
+      "price": 238.65,
+      "priceFormatted": "R$ 238,65",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/798/01-camera-wi-fi-h1c-ezviz.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/798/01-camera-wi-fi-h1c-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/799/02-camera-wi-fi-h1c-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/800/03-camera-wi-fi-h1c-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/802/04-camera-wi-fi-h1c-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/803/05-camera-wi-fi-h1c-ezviz.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/804/06-camera-wi-fi-h1c-ezviz.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/camera-wi-fi-h1c-ezviz",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500102",
+      "sku": "500102",
+      "name": "Leitor de Proximidade iDProx Compact - Control iD",
+      "slug": "leitor-de-proximidade-idprox-compact-control-id",
+      "brand": null,
+      "price": 235.0,
+      "priceFormatted": "R$ 235,00",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/434/02-letor-de-proximidade-idprox-compact-control-id.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/434/02-letor-de-proximidade-idprox-compact-control-id.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/435/03-letor-de-proximidade-idprox-compact-control-id.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/433/01-letor-de-proximidade-idprox-compact-control-id.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/leitor-de-proximidade-idprox-compact-control-id",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500103",
+      "sku": "500103",
+      "name": "Câmera Bullet Com Áudio e Luz Dupla 2MP - Hikvision",
+      "slug": "camera-bullet-com-audio-e-luz-dupla-2mp-hikvision",
+      "brand": null,
+      "price": 219.89,
+      "priceFormatted": "R$ 219,89",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1023/ds-2ce16d0t-lpfs-1.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1023/ds-2ce16d0t-lpfs-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1024/ds-2ce16d0t-lpfs-2.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1025/ds-2ce16d0t-lpfs-3.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/camera-bullet-com-audio-e-luz-dupla-2mp-hikvision",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500104",
+      "sku": "500104",
+      "name": "Central para Portão Eletrônico SB1000 - Nice",
+      "slug": "central-para-portao-eletronico-sb1000-nice",
+      "brand": null,
+      "price": 218.67,
+      "priceFormatted": "R$ 218,67",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/939/01-central-para-portao-eletronico-sb1000-nice.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/939/01-central-para-portao-eletronico-sb1000-nice.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/central-para-portao-eletronico-sb1000-nice",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500105",
+      "sku": "500105",
+      "name": "Fechadura Eletroímã AL 60 - AGL",
+      "slug": "fechadura-eletroima-al-60-agl",
+      "brand": null,
+      "price": 205.0,
+      "priceFormatted": "R$ 205,00",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/975/eletroima-al60.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/975/eletroima-al60.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/973/eletroima-al60-3.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/974/eletroima-al60-4.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/972/eletroima-al60-2.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/fechadura-eletroima-al-60-agl",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500106",
+      "sku": "500106",
+      "name": "Câmera Bullet com Áudio - DS-2CE16D0T-ITPFS - Hikvision",
+      "slug": "camera-bullet-com-audio-ds-2ce16d0t-itpfs-hikvision",
+      "brand": null,
+      "price": 198.69,
+      "priceFormatted": "R$ 198,69",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/567/camera-bullet-itpfs-hikvision3.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/567/camera-bullet-itpfs-hikvision3.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/566/camera-bullet-itpfs-hikvision2.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/565/camera-bullet-itpfs-hikvision.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/camera-bullet-com-audio-ds-2ce16d0t-itpfs-hikvision",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500107",
+      "sku": "500107",
+      "name": "Sensor de Presença IVP VW-PTK - Viaweb",
+      "slug": "sensor-de-presenca-ivp-vw-ptk-viaweb",
+      "brand": null,
+      "price": 187.59,
+      "priceFormatted": "R$ 187,59",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/934/04-sensor-de-presenca-ivp-vw-ptk-viaweb.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/934/04-sensor-de-presenca-ivp-vw-ptk-viaweb.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/629/01-sensor-de-presenca-ivp-vw-ptk-viaweb.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/630/02-sensor-de-presenca-ivp-vw-ptk-viaweb.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/sensor-de-presenca-ivp-vw-ptk-viaweb",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500108",
+      "sku": "500108",
+      "name": "Porteiro Eletrônico Residencial LR-570 Smart - Lider",
+      "slug": "porteiro-eletronico-residencial-lr-570-smart-lider",
+      "brand": null,
+      "price": 176.49,
+      "priceFormatted": "R$ 176,49",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/705/02-porteiro-eletronico-residencial-lr-570-smart-lider.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/705/02-porteiro-eletronico-residencial-lr-570-smart-lider.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/645/01-porteiro-eletronico-residencial-lr-570-smart-lider.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/529/interfone-lr580-lider2.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/724/manual-porteiro-eletronico-lr-570-smart.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/723/manual-porteiro-eletronico-lr-570-smart-2.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/porteiro-eletronico-residencial-lr-570-smart-lider",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500109",
+      "sku": "500109",
+      "name": "Porteiro Eletrônico Residencial LR-580 Smart - Lider",
+      "slug": "porteiro-eletronico-residencial-lr-580-smart-lider",
+      "brand": null,
+      "price": 176.49,
+      "priceFormatted": "R$ 176,49",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/980/02-porteiro-eletronico-residencial-lr-580-smart-lider.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/980/02-porteiro-eletronico-residencial-lr-580-smart-lider.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/981/03-porteiro-eletronico-residencial-lr-580-smart-lider.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/982/04-porteiro-eletronico-residencial-lr-580-smart-lider.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/porteiro-eletronico-residencial-lr-580-smart-lider",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500110",
+      "sku": "500110",
+      "name": "Porteiro Eletrônico Residencial LR-520S Baby - Lider",
+      "slug": "porteiro-eletronico-residencial-lr-520s-baby-lider",
+      "brand": null,
+      "price": 176.49,
+      "priceFormatted": "R$ 176,49",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/985/11-porteiro-eletronico-residencial-lr-520s-baby-lider.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/985/11-porteiro-eletronico-residencial-lr-520s-baby-lider.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/982/04-porteiro-eletronico-residencial-lr-580-smart-lider.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/porteiro-eletronico-residencial-lr-520s-baby-lider",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500111",
+      "sku": "500111",
+      "name": "Câmera Bullet Full HD 2 MP - DS-2CE16D0T-EXLPF - Hikvision",
+      "slug": "camera-bullet-full-hd-2-mp-ds-2ce16d0t-exlpf-hikvision",
+      "brand": null,
+      "price": 168.0,
+      "priceFormatted": "R$ 168,00",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1023/ds-2ce16d0t-lpfs-1.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1023/ds-2ce16d0t-lpfs-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1024/ds-2ce16d0t-lpfs-2.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/12/produto/1025/ds-2ce16d0t-lpfs-3.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/camera-bullet-full-hd-2-mp-ds-2ce16d0t-exlpf-hikvision",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500112",
+      "sku": "500112",
+      "name": "Câmera Dome Híbrida Metal - DS-2CE56C0T-IRMF - Hikvision",
+      "slug": "camera-dome-hibrida-metal-ds-2ce56c0t-irmf-hikvision",
+      "brand": null,
+      "price": 167.61,
+      "priceFormatted": "R$ 167,61",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/569/camera-dome-metal-irmf-hikvision2-1.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/569/camera-dome-metal-irmf-hikvision2-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/728/02-camera-dome-hibrida-metal-ds-2ce56c0t-irmf-hikvision.jpeg",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/570/camera-dome-metal-irmf-hikvision3-1.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/camera-dome-hibrida-metal-ds-2ce56c0t-irmf-hikvision",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500113",
+      "sku": "500113",
+      "name": "Câmera Bullet Híbrida Metal - DS-2CE16C0T-IRF - Hikvision",
+      "slug": "camera-bullet-hibrida-metal-ds-2ce16c0t-irf-hikvision",
+      "brand": null,
+      "price": 160.95,
+      "priceFormatted": "R$ 160,95",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/668/01-camera-bullet-hibrida-metal-ds-2ce16c0t-irf-hikvision.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/668/01-camera-bullet-hibrida-metal-ds-2ce16c0t-irf-hikvision.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/669/02-camera-bullet-hibrida-metal-ds-2ce16c0t-irf-hikvision.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/670/03-camera-bullet-hibrida-metal-ds-2ce16c0t-irf-hikvision.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/camera-bullet-hibrida-metal-ds-2ce16c0t-irf-hikvision",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500114",
+      "sku": "500114",
+      "name": "Sensor Magnético de Abertura VW-PTK - Viaweb",
+      "slug": "sensor-magnetico-de-abertura-vw-ptk-viaweb",
+      "brand": null,
+      "price": 153.18,
+      "priceFormatted": "R$ 153,18",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/938/04-sensor-magnetico-de-abertura-vw-ptk-viaweb.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/938/04-sensor-magnetico-de-abertura-vw-ptk-viaweb.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/623/02-sensor-magnetico-de-abertura-vw-ptk-viaweb.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/sensor-magnetico-de-abertura-vw-ptk-viaweb",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500115",
+      "sku": "500115",
+      "name": "Acionador Touch Mini - AGL",
+      "slug": "acionador-touch-mini-agl",
+      "brand": null,
+      "price": 140.0,
+      "priceFormatted": "R$ 140,00",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/958/08-acionador-touch-mini-agl.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/958/08-acionador-touch-mini-agl.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/959/09-acionador-touch-mini-agl.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/acionador-touch-mini-agl",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500116",
+      "sku": "500116",
+      "name": "Câmera Bullet Híbrida 1MP DS-2CE16C0T-IRPF - Hikvision",
+      "slug": "camera-bullet-hibrida-1mp-hikvision",
+      "brand": null,
+      "price": 129.87,
+      "priceFormatted": "R$ 129,87",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/672/01-camera-bullet-hibrida-ds-2ce16c0t-irpf-hikvision-2-8mm.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/672/01-camera-bullet-hibrida-ds-2ce16c0t-irpf-hikvision-2-8mm.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/673/02-camera-bullet-hibrida-ds-2ce16c0t-irpf-hikvision-2-8mm.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/674/03-camera-bullet-hibrida-ds-2ce16c0t-irpf-hikvision-2-8mm.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/675/04-camera-bullet-hibrida-ds-2ce16c0t-irpf-hikvision-2-8mm.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/camera-bullet-hibrida-1mp-hikvision",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500117",
+      "sku": "500117",
+      "name": "Câmera Dome Híbrida - DS-2CE56C0T-IRPF - Hikvision",
+      "slug": "camera-dome-hibrida-ds-2ce56c0t-irpf-hikvision",
+      "brand": null,
+      "price": 127.65,
+      "priceFormatted": "R$ 127,65",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2026/01/produto/1028/01-camera-dome-hibrida-ds-2ce56c0t-irpf-hikvision.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2026/01/produto/1028/01-camera-dome-hibrida-ds-2ce56c0t-irpf-hikvision.png",
+        "https://compreseg.cdn.magazord.com.br/img/2026/01/produto/1029/02-camera-dome-hibrida-ds-2ce56c0t-irpf-hikvision.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/camera-dome-hibrida-ds-2ce56c0t-irpf-hikvision",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500118",
+      "sku": "500118",
+      "name": "Teclado de Senha TK-200 - TEM",
+      "slug": "teclado-de-senha-tk-200-tem",
+      "brand": null,
+      "price": 108.78,
+      "priceFormatted": "R$ 108,78",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2026/01/produto/1039/02-teclado-de-senha-tk-200-tem.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2026/01/produto/1039/02-teclado-de-senha-tk-200-tem.png",
+        "https://compreseg.cdn.magazord.com.br/img/2026/01/produto/1040/03-teclado-de-senha-tk-200-tem.png",
+        "https://compreseg.cdn.magazord.com.br/img/2026/01/produto/1038/01-teclado-de-senha-tk-200-tem.png",
+        "https://compreseg.cdn.magazord.com.br/img/2026/01/produto/1031/manual-tk200.png",
+        "https://compreseg.cdn.magazord.com.br/img/2026/01/produto/1030/manual-tk200-2.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/teclado-de-senha-tk-200-tem",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500119",
+      "sku": "500119",
+      "name": "Detector Óptico de Fumaça - Equipel",
+      "slug": "detector-optico-de-fumaca-equipel",
+      "brand": null,
+      "price": 105.45,
+      "priceFormatted": "R$ 105,45",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/923/02-detector-optico-de-fumaca-equipel.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/923/02-detector-optico-de-fumaca-equipel.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/925/03-detector-optico-de-fumaca-equipel.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/926/04-detector-optico-de-fumaca-equipel.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/291/detector-fumca-optico-equipel2-1-1-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/718/manual-detector-optico-de-fumaca.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/717/manual-detector-optico-de-fumaca-2.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/detector-optico-de-fumaca-equipel",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500120",
+      "sku": "500120",
+      "name": "Fecho Eletromagnético - AGL",
+      "slug": "fecho-eletromagnetico-agl",
+      "brand": null,
+      "price": 103.0,
+      "priceFormatted": "R$ 103,00",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/969/05-fecho-eletromagnetico-agl.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/969/05-fecho-eletromagnetico-agl.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/968/04-fecho-eletromagnetico-agl.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/fecho-eletromagnetico-agl",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500121",
+      "sku": "500121",
+      "name": "SENSOR ATIVO F15 DIGITAL FEIXE SIMPLES - IPEC",
+      "slug": "sensor-ativo-f15-digital-feixe-simples-ipec",
+      "brand": null,
+      "price": 102.12,
+      "priceFormatted": "R$ 102,12",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/989/sensor-ipen-f15.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/989/sensor-ipen-f15.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/sensor-ativo-f15-digital-feixe-simples-ipec",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500122",
+      "sku": "500122",
+      "name": "Acionador de Incêndio Convencional IP20 - Equipel",
+      "slug": "acionador-de-incendio-convencional-equipel",
+      "brand": null,
+      "price": 95.0,
+      "priceFormatted": "R$ 95,00",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/287/acionador-ip20-1-1-1.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/287/acionador-ip20-1-1-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/285/acionador-ip-20-equipel2-1-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/282/acionador-ip-20-equipel-3-1-1-1.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/acionador-de-incendio-convencional-equipel",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500123",
+      "sku": "500123",
+      "name": "Sensor Infravermelho DuoPet - TEM",
+      "slug": "sensor-infravermelho-duopet-tem",
+      "brand": null,
+      "price": 91.02,
+      "priceFormatted": "R$ 91,02",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/06/produto/994/duo-pet.jpg",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/06/produto/994/duo-pet.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/sensor-infravermelho-duopet-tem",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500124",
+      "sku": "500124",
+      "name": "Controle Remoto para Alarme VW-PTK - Viaweb",
+      "slug": "controle-remoto-para-alarme-vw-ptk-viaweb",
+      "brand": null,
+      "price": 88.8,
+      "priceFormatted": "R$ 88,80",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/627/01-controle-remoto-para-alarme-vw-ptk-viaweb.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/627/01-controle-remoto-para-alarme-vw-ptk-viaweb.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/628/02-controle-remoto-para-alarme-vw-ptk-viaweb.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/921/03-controle-remoto-para-alarme-vw-ptk-viaweb.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/controle-remoto-para-alarme-vw-ptk-viaweb",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500125",
+      "sku": "500125",
+      "name": "Sensor de Presença IVP VW 433 - Viaweb",
+      "slug": "sensor-de-presenca-ivp-vw-433-viaweb",
+      "brand": null,
+      "price": 87.69,
+      "priceFormatted": "R$ 87,69",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/920/03-sensor-de-presenca-com-fio-vw100-viaweb.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/920/03-sensor-de-presenca-com-fio-vw100-viaweb.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/621/02-sensor-de-presenca-ivp-vw-433-viaweb.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/624/03-sensor-magnetico-de-abertura-vw-ptk-viaweb.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/sensor-de-presenca-ivp-vw-433-viaweb",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500126",
+      "sku": "500126",
+      "name": "Iluminação de Emergência Lumeea LED - Equipel",
+      "slug": "iluminacao-de-emergencia-lumeea-led-equipel",
+      "brand": null,
+      "price": 86.58,
+      "priceFormatted": "R$ 86,58",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/444/lumeea-1.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/444/lumeea-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/445/lumeea-2.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/446/lumeea-3.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/722/manual-luminaria-de-emergencia-lumea-led.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/01/produto/721/manual-luminaria-de-emergencia-lumea-led-2.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/iluminacao-de-emergencia-lumeea-led-equipel",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500127",
+      "sku": "500127",
+      "name": "Sensor de Presença Com Fio VW100 - Viaweb",
+      "slug": "sensor-de-presenca-com-fio-vw100-viaweb",
+      "brand": null,
+      "price": 65.9,
+      "priceFormatted": "R$ 65,90",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/935/04-sensor-de-presenca-com-fio-vw100-viaweb.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/05/produto/935/04-sensor-de-presenca-com-fio-vw100-viaweb.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/621/02-sensor-de-presenca-ivp-vw-433-viaweb.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/624/03-sensor-magnetico-de-abertura-vw-ptk-viaweb.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/sensor-de-presenca-com-fio-vw100-viaweb",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500128",
+      "sku": "500128",
+      "name": "Sensor Infravermelho Passivo com fio Viper Digital - TEM",
+      "slug": "sensor-infravermelho-passivo-com-fio-viper-digital-tem",
+      "brand": null,
+      "price": 63.27,
+      "priceFormatted": "R$ 63,27",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/06/produto/997/viper-pet-digital.jpg",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/06/produto/997/viper-pet-digital.jpg"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/sensor-infravermelho-passivo-com-fio-viper-digital-tem",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500129",
+      "sku": "500129",
+      "name": "Controle Remoto VW-433 - Viaweb",
+      "slug": "controle-remoto-para-alarme-vw-433-viaweb",
+      "brand": null,
+      "price": 43.29,
+      "priceFormatted": "R$ 43,29",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/625/01-controle-remoto-para-alarme-vw-433-viaweb.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/625/01-controle-remoto-para-alarme-vw-433-viaweb.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/12/produto/626/02-controle-remoto-para-alarme-vw-433-viaweb.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/922/04-controle-remoto-para-alarme-vw-ptk-viaweb.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/controle-remoto-para-alarme-vw-433-viaweb",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500130",
+      "sku": "500130",
+      "name": "Controle Remoto Era Inti - Nice",
+      "slug": "controle-remoto-era-inti-nice",
+      "brand": null,
+      "price": 41.07,
+      "priceFormatted": "R$ 41,07",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/388/controle-era-inti-nice-1.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/388/controle-era-inti-nice-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/389/controle-era-inti-nice-2.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/11/produto/390/controle-era-inti-nice-3.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/controle-remoto-era-inti-nice",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500131",
+      "sku": "500131",
+      "name": "Controle Remoto TX 3C - Nice",
+      "slug": "controle-tx-3c-nice",
+      "brand": null,
+      "price": 36.63,
+      "priceFormatted": "R$ 36,63",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/232/controle-3c-preto-nice1-1-1.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/232/controle-3c-preto-nice1-1-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/141/controle-3c-preto-nice2-1-1-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/227/controle-3c-amarelo-nice1-1-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/179/controle-3c-azul-nice1-1-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/231/controle-3c-cinza-nice1-2-1-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/137/controle-3c-laranja-nice1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/233/controle-3c-rosa-nice1-1-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/235/controle-3c-verde-nice1-1-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/236/controle-3c-vermelho-nice1-1-1.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/controle-tx-3c-nice",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500132",
+      "sku": "500132",
+      "name": "Controle Remoto Open Tech - Nice",
+      "slug": "controle-remoto-open-tech-nice",
+      "brand": null,
+      "price": 26.64,
+      "priceFormatted": "R$ 26,64",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/882/controle-open-tech.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/882/controle-open-tech.png",
+        "https://compreseg.cdn.magazord.com.br/img/2025/04/produto/883/controle-open-tech-azul.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/controle-remoto-open-tech-nice",
+      "supplier": "Seel Distribuidora"
+    },
+    {
+      "id": "500133",
+      "sku": "500133",
+      "name": "Sirene Média - Nice",
+      "slug": "sirene-media-nice",
+      "brand": null,
+      "price": 26.64,
+      "priceFormatted": "R$ 26,64",
+      "stock": null,
+      "inStock": true,
+      "description": "",
+      "specs": null,
+      "category": "Segurança e Automação Residencial",
+      "categoryPath": [
+        "Segurança e Automação Residencial"
+      ],
+      "image": "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/203/sirene-nice-preta2-1-1.png",
+      "images": [
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/203/sirene-nice-preta2-1-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/204/sirene-nice-preta3-1-1.png",
+        "https://compreseg.cdn.magazord.com.br/img/2024/10/produto/242/sirene-branca-nice1-1-1.png"
+      ],
+      "datasheet": null,
+      "sourceUrl": "https://www.seeldistribuidora.com.br/sirene-media-nice",
+      "supplier": "Seel Distribuidora"
     }
   ]
 }
