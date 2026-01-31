@@ -246,6 +246,40 @@ function extractProductDescription(html) {
     image = imageMatch[1];
   }
 
+  // 8. Extrai videos (YouTube/Vimeo da Loja Vale/Magazord)
+  const videos = [];
+  const videoPattern = /<div[^>]*class="[^"]*video-mini[^"]*"[^>]*data-url-video="([^"]+)"[^>]*>/gi;
+  let videoMatch;
+
+  while ((videoMatch = videoPattern.exec(html)) !== null) {
+    let videoUrl = videoMatch[1].trim();
+    if (!videoUrl) continue;
+
+    let platform = 'unknown';
+
+    // Detecta e normaliza YouTube
+    if (videoUrl.includes('youtube.com') || videoUrl.includes('youtu.be')) {
+      platform = 'youtube';
+      const ytMatch = videoUrl.match(/(?:youtube\.com\/(?:embed\/|watch\?v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+      if (ytMatch) {
+        videoUrl = `https://www.youtube.com/embed/${ytMatch[1]}`;
+      }
+    }
+    // Detecta e normaliza Vimeo
+    else if (videoUrl.includes('vimeo.com')) {
+      platform = 'vimeo';
+      const vimeoMatch = videoUrl.match(/vimeo\.com\/(?:video\/)?(\d+)/);
+      if (vimeoMatch) {
+        videoUrl = `https://player.vimeo.com/video/${vimeoMatch[1]}`;
+      }
+    }
+
+    // Evita duplicatas
+    if (!videos.some(v => v.url === videoUrl)) {
+      videos.push({ url: videoUrl, platform });
+    }
+  }
+
   return {
     description,
     descriptionHtml: description.length > 0,
@@ -257,7 +291,8 @@ function extractProductDescription(html) {
     datasheet,
     price,
     image,
-    hasContent: description.length > 0 || Object.keys(specs).length > 0 || characteristics.length > 0
+    videos,
+    hasContent: description.length > 0 || Object.keys(specs).length > 0 || characteristics.length > 0 || videos.length > 0
   };
 }
 

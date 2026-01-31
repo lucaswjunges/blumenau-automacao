@@ -704,9 +704,10 @@
                             `<span class="absolute top-2 right-2 bg-green-500/90 text-white text-xs px-2 py-1 rounded-full">Em estoque</span>` :
                             `<span class="absolute top-2 right-2 bg-red-500/90 text-white text-xs px-2 py-1 rounded-full">Indisponível</span>`
                         }
+                        <span class="absolute top-2 left-2 bg-blue-500/90 text-white text-xs px-2 py-1 rounded-full">Novo</span>
                     </div>
                     <div class="p-4">
-                        <p class="text-gray-500 text-xs mb-1">${product.brand || 'Marca não informada'}</p>
+                        ${product.brand ? `<p class="text-gray-500 text-xs mb-1">${product.brand}</p>` : ''}
                         <h3 class="font-semibold mb-2 line-clamp-2 h-12">${product.name}</h3>
                         <p class="text-accent-400 text-xl font-bold mb-4">
                             ${product.priceFormatted || 'Sob consulta'}
@@ -874,7 +875,7 @@
             </div>
             <div class="border-t border-primary-700 pt-6 text-center text-gray-500 text-sm">
                 <p>&copy; 2025 Blumenau Automação. Todos os direitos reservados.</p>
-                <p class="text-xs mt-1">Rua João Pessoa, 2750, Bloco B - Velha, Blumenau/SC - CEP 89036-256</p>
+                <p class="text-xs mt-1">Rua João Pessoa, 2750, Bloco B - Velha, Blumenau/SC - CEP 89036-256 | <a href="https://www.google.com/maps?q=-26.920583,-49.099500" target="_blank" rel="noopener noreferrer" class="text-accent-400 hover:text-accent-300">Ver no Mapa</a></p>
             </div>
         </div>
     </footer>

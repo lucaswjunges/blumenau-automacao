@@ -1,175 +1,150 @@
-name: Update Products
+name: Atualizar Produtos
 
 on:
-  # Executar diariamente às 09:00 UTC (06:00 BRT)
   schedule:
+    # Roda diariamente às 6h de Brasília (9h UTC)
     - cron: '0 9 * * *'
-
-  # Permitir execução manual
-  workflow_dispatch:
-    inputs:
-      test_mode:
-        description: 'Modo teste (apenas 10 produtos)'
-        required: false
-        default: 'false'
-        type: boolean
+  workflow_dispatch: # Permite rodar manualmente
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
+    timeout-minutes: 60
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.12'
           cache: 'pip'
-          cache-dependency-path: 'scripts/requirements.txt'
 
-      - name: Install dependencies
+      - name: Instalar dependencias
         run: |
-          python -m pip install --upgrade pip
-          pip install -r scripts/requirements.txt
+          pip install requests beautifulsoup4 lxml
 
-      - name: Run scraper
+      - name: Rodar scraper
         run: |
-          if [ "${{ github.event.inputs.test_mode }}" == "true" ]; then
-            python scripts/scraper.py --test
-          else
-            python scripts/scraper.py
-          fi
-
-      - name: Check for changes
-        id: changes
-        run: |
-          if git diff --quiet products.json 2>/dev/null; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
-            echo "changed=true" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Setup Node.js (for Wrangler)
-        if: steps.changes.outputs.changed == 'true'
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install Wrangler
-        if: steps.changes.outputs.changed == 'true'
-        run: npm install -g wrangler
-
-      - name: Sync products to D1
-        if: steps.changes.outputs.changed == 'true'
+          cd scripts
+          python scraper.py --source all --min-price 100 --workers 8 --delay 0.3
         env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          PYTHONUNBUFFERED: '1'
+
+      - name: Atualizar sitemap
         run: |
-          # Gera SQL de UPSERT a partir do JSON
           python3 << 'EOF'
           import json
-          import sys
+          from datetime import datetime
+
+          BASE_URL = "https://www.blumenauautomacao.com.br"
+          today = datetime.now().strftime("%Y-%m-%d")
 
           with open('products.json', 'r') as f:
               data = json.load(f)
 
           products = data.get('products', [])
-          if not products:
-              print("Nenhum produto para sincronizar")
-              sys.exit(0)
+          categories = data.get('categories', [])
 
-          sql_statements = []
+          sitemap = '''<?xml version="1.0" encoding="UTF-8"?>
+          <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+                  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+            <url>
+              <loc>{base}/</loc>
+              <lastmod>{today}</lastmod>
+              <changefreq>daily</changefreq>
+              <priority>1.0</priority>
+            </url>
+            <url>
+              <loc>{base}/produtos.html</loc>
+              <lastmod>{today}</lastmod>
+              <changefreq>daily</changefreq>
+              <priority>0.95</priority>
+            </url>
+            <url>
+              <loc>{base}/tecnologias.html</loc>
+              <lastmod>{today}</lastmod>
+              <changefreq>weekly</changefreq>
+              <priority>0.85</priority>
+            </url>
+            <url>
+              <loc>{base}/know-how.html</loc>
+              <lastmod>{today}</lastmod>
+              <changefreq>weekly</changefreq>
+              <priority>0.80</priority>
+            </url>
+          '''.format(base=BASE_URL, today=today)
 
-          for p in products:
-              # Escape single quotes
-              name = (p.get('name') or '').replace("'", "''")
-              slug = (p.get('slug') or '').replace("'", "''")
-              brand = (p.get('brand') or '').replace("'", "''") if p.get('brand') else 'NULL'
-              description = (p.get('description') or '').replace("'", "''")[:2000]  # Limita tamanho
-              category = (p.get('category') or '').replace("'", "''")
-              category_path = json.dumps(p.get('categoryPath', [])).replace("'", "''")
-              image = p.get('image') or ''
-              images = json.dumps(p.get('images') or []).replace("'", "''")
-              datasheet = p.get('datasheet') or ''
-              source_url = p.get('sourceUrl') or ''
+          # Top 50 categorias
+          top_cats = sorted(categories, key=lambda x: x['count'], reverse=True)[:50]
+          for cat in top_cats:
+              sitemap += f'''
+            <url>
+              <loc>{BASE_URL}/produtos.html?category={cat['id']}</loc>
+              <lastmod>{today}</lastmod>
+              <changefreq>weekly</changefreq>
+              <priority>0.75</priority>
+            </url>'''
 
-              price = p.get('price') or 0
-              price_formatted = (p.get('priceFormatted') or '').replace("'", "''")
-              in_stock = 1 if p.get('inStock', True) else 0
-              stock = p.get('stock') if p.get('stock') is not None else 'NULL'
+          # Artigos
+          artigos = [
+              'agentes-ia-automacao', 'digitalizacao-industrial', 'esp32-monitoramento',
+              'manutencao-preditiva', 'modernizacao-sistemas-legados', 'n8n-automatizar-tarefas',
+              'oee-eficiencia-producao'
+          ]
+          for art in artigos:
+              sitemap += f'''
+            <url>
+              <loc>{BASE_URL}/artigos/{art}.html</loc>
+              <lastmod>{today}</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>0.70</priority>
+            </url>'''
 
-              brand_val = f"'{brand}'" if brand != 'NULL' else 'NULL'
-              stock_val = stock if stock == 'NULL' else str(stock)
+          # Paginas institucionais
+          for page in ['politica-privacidade', 'termos-uso', 'politica-trocas']:
+              sitemap += f'''
+            <url>
+              <loc>{BASE_URL}/{page}.html</loc>
+              <lastmod>{today}</lastmod>
+              <changefreq>yearly</changefreq>
+              <priority>0.30</priority>
+            </url>'''
 
-              sql = f"""INSERT INTO products (id, sku, name, slug, brand, price, price_formatted, stock, in_stock, description, category, category_path, image, images, datasheet, source_url, updated_at)
-          VALUES ('{p['id']}', '{p.get('sku', p['id'])}', '{name}', '{slug}', {brand_val}, {price}, '{price_formatted}', {stock_val}, {in_stock}, '{description}', '{category}', '{category_path}', '{image}', '{images}', '{datasheet}', '{source_url}', datetime('now'))
-          ON CONFLICT(id) DO UPDATE SET
-              name = excluded.name,
-              slug = excluded.slug,
-              brand = excluded.brand,
-              price = excluded.price,
-              price_formatted = excluded.price_formatted,
-              stock = excluded.stock,
-              in_stock = excluded.in_stock,
-              description = excluded.description,
-              category = excluded.category,
-              category_path = excluded.category_path,
-              image = excluded.image,
-              images = excluded.images,
-              datasheet = excluded.datasheet,
-              source_url = excluded.source_url,
-              updated_at = datetime('now');"""
+          # Produtos ordenados por preco
+          products_sorted = sorted(products, key=lambda x: x.get('price', 0) or 0, reverse=True)
+          for i, p in enumerate(products_sorted):
+              priority = 0.65 if i < 100 else (0.60 if i < 600 else 0.55)
+              image_tag = ""
+              if p.get('image'):
+                  img = p['image'].replace('&', '&amp;')
+                  name = (p.get('name', '') or '')[:100].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+                  image_tag = f'''
+              <image:image>
+                <image:loc>{img}</image:loc>
+                <image:title>{name}</image:title>
+              </image:image>'''
+              sitemap += f'''
+            <url>
+              <loc>{BASE_URL}/produto.html?id={p['id']}</loc>
+              <lastmod>{today}</lastmod>
+              <changefreq>weekly</changefreq>
+              <priority>{priority}</priority>{image_tag}
+            </url>'''
 
-              sql_statements.append(sql)
+          sitemap += '''
+          </urlset>'''
 
-          # Escreve o arquivo SQL
-          with open('sync_products.sql', 'w') as f:
-              f.write('\n'.join(sql_statements))
-
-          print(f"Gerado SQL para {len(products)} produtos")
+          with open('sitemap.xml', 'w') as f:
+              f.write(sitemap)
+          print(f"Sitemap atualizado: {len(products)} produtos")
           EOF
 
-          # Executa o SQL no D1
-          if [ -f sync_products.sql ]; then
-            echo "Sincronizando com Cloudflare D1..."
-            wrangler d1 execute blumenau-ecommerce --file=sync_products.sql --remote || echo "Aviso: D1 sync falhou (banco pode não existir ainda)"
-            rm sync_products.sql
-          fi
-
-      - name: Commit and push changes
-        if: steps.changes.outputs.changed == 'true'
+      - name: Commit e Push
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add products.json
-
-          # Gerar mensagem de commit com estatísticas
-          TOTAL=$(jq '.totalProducts' products.json)
-          DATE=$(date '+%Y-%m-%d %H:%M')
-
-          git commit -m "chore: atualizar produtos ($TOTAL produtos) - $DATE"
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add products.json sitemap.xml
+          git diff --staged --quiet || git commit -m "chore: atualiza produtos $(date +'%Y-%m-%d')"
           git push
-
-      - name: Summary
-        run: |
-          echo "## Resumo da Atualização" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-
-          if [ -f products.json ]; then
-            TOTAL=$(jq '.totalProducts' products.json)
-            UPDATED=$(jq '.lastUpdated' products.json)
-            CATEGORIES=$(jq '.categories | length' products.json)
-
-            echo "- **Total de produtos:** $TOTAL" >> $GITHUB_STEP_SUMMARY
-            echo "- **Categorias:** $CATEGORIES" >> $GITHUB_STEP_SUMMARY
-            echo "- **Última atualização:** $UPDATED" >> $GITHUB_STEP_SUMMARY
-          else
-            echo "Nenhum produto encontrado" >> $GITHUB_STEP_SUMMARY
-          fi

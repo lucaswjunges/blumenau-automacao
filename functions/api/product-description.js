@@ -18,112 +18,169 @@ const corsHeaders = {
 function extractProductDescription(html) {
   let description = '';
   let specs = {};
+  let tables = [];
 
-  // 1. Tenta extrair do JSON-LD (dados estruturados para SEO)
-  const jsonLdPattern = /<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi;
-  let jsonLdMatch;
+  // 1. PRIMEIRO: Busca tabelas de especificações na div de descrição
+  // Proesi usa #descricao-produto > .content com tabelas
+  // Regex simplificada - apenas encontra o conteúdo entre <div class="content"> e </div></div>
+  const descStartPattern = /<div[^>]*id="descricao-produto"[^>]*>\s*<div[^>]*class="content"[^>]*>/i;
+  const descStartMatch = descStartPattern.exec(html);
 
-  while ((jsonLdMatch = jsonLdPattern.exec(html)) !== null) {
-    try {
-      const jsonData = JSON.parse(jsonLdMatch[1]);
-      if (jsonData['@type'] === 'Product' || (Array.isArray(jsonData) && jsonData.find(item => item['@type'] === 'Product'))) {
-        const product = jsonData['@type'] === 'Product' ? jsonData : jsonData.find(item => item['@type'] === 'Product');
-        if (product && product.description) {
-          description = product.description;
+  if (descStartMatch) {
+    // Encontra onde começa o conteúdo
+    const contentStart = descStartMatch.index + descStartMatch[0].length;
+    // Encontra onde termina (</div></div> do descricao-produto)
+    const endPattern = /<\/div>\s*<\/div>\s*<div[^>]*(?:class="[^"]*caracteristicas|id="caracteristicas")/i;
+    const endMatch = endPattern.exec(html.substring(contentStart));
+    const contentEnd = endMatch ? contentStart + endMatch.index : html.indexOf('</div></div>', contentStart);
+    const contentHtml = html.substring(contentStart, contentEnd);
+
+    // Extrai tabelas do conteúdo
+    const tablePattern = /<table[^>]*>([\s\S]*?)<\/table>/gi;
+    let tableMatch;
+    while ((tableMatch = tablePattern.exec(contentHtml)) !== null) {
+      tables.push(tableMatch[0]);
+
+      // Extrai specs de cada tabela
+      const rowPattern = /<tr[^>]*>([\s\S]*?)<\/tr>/gi;
+      let rowMatch;
+      while ((rowMatch = rowPattern.exec(tableMatch[0])) !== null) {
+        const cellPattern = /<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/gi;
+        const cells = [];
+        let cellMatch;
+        while ((cellMatch = cellPattern.exec(rowMatch[1])) !== null) {
+          const text = cellMatch[1]
+            .replace(/<[^>]+>/g, '')
+            .replace(/&nbsp;/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim();
+          if (text) cells.push(text);
+        }
+        if (cells.length >= 2) {
+          specs[cells[0]] = cells[1];
         }
       }
-    } catch (e) {
-      // JSON inválido, continua tentando outros métodos
+    }
+
+    // Extrai descrição SEM as tabelas
+    let descText = contentHtml
+      .replace(/<table[\s\S]*?<\/table>/gi, '')  // Remove tabelas
+      .replace(/<iframe[\s\S]*?<\/iframe>/gi, '') // Remove iframes (YouTube etc)
+      .replace(/<script[\s\S]*?<\/script>/gi, '')
+      .replace(/<style[\s\S]*?<\/style>/gi, '')
+      .replace(/<!--[\s\S]*?-->/g, '');
+
+    // Remove seção de "Dados Técnicos" / "Especificações" se já extraímos tabela
+    if (tables.length > 0) {
+      // Remove heading de dados técnicos e tudo que vem depois (incluindo variações de acentuação)
+      descText = descText.replace(/<h[1-6][^>]*>[^<]*(?:Dados\s*T[eé]cnicos|Especifica[çc][oõ]es)[^<]*<\/h[1-6]>[\s\S]*/gi, '');
+    }
+
+    // Converte paragrafos e headings para texto formatado
+    descText = descText
+      .replace(/<h[1-6][^>]*>([\s\S]*?)<\/h[1-6]>/gi, '\n\n$1\n\n')
+      .replace(/<p[^>]*>([\s\S]*?)<\/p>/gi, '$1\n\n')
+      .replace(/<br\s*\/?>/gi, '\n')
+      .replace(/<li[^>]*>([\s\S]*?)<\/li>/gi, '• $1\n')
+      .replace(/<[^>]+>/g, '')  // Remove outras tags
+      .replace(/&nbsp;/g, ' ')
+      .replace(/\n{3,}/g, '\n\n')  // Max 2 newlines
+      .trim();
+
+    // Remove "Dados Técnicos" do texto final também (caso tenha vazado do HTML para o texto)
+    if (tables.length > 0) {
+      // Remove qualquer texto que contenha "Dados Técnicos" ou "Especificações" e tudo depois
+      descText = descText.replace(/[^.!?]*(?:Dados\s*T[eé]cnicos|Especifica[çc][oõ]es\s*T[eé]cnicas?)[\s\S]*/gi, '').trim();
+
+      // Limpa final - remove frases de call-to-action (usando regex não-gulosa)
+      descText = descText.replace(/\.?\s*Confira[^.]*?(?:a\s*baixo|abaixo)\.?\s*$/gi, '.').trim();
+      descText = descText.replace(/\.?\s*Veja[^.]*?(?:a\s*baixo|abaixo)\.?\s*$/gi, '.').trim();
+      // Remove trailing punctuation, hifens e espaços
+      descText = descText.replace(/\s*[-–:.]\s*$/g, '').trim();
+    }
+
+    description = decodeHtmlEntities(descText);
+  }
+
+  // 2. Se não encontrou na div, tenta JSON-LD (fallback, menos preferido)
+  if (!description) {
+    const jsonLdPattern = /<script[^>]*type="application\/ld\+json"[^>]*id="product-schema"[^>]*>([\s\S]*?)<\/script>/i;
+    const jsonLdMatch = jsonLdPattern.exec(html);
+
+    if (jsonLdMatch) {
+      try {
+        const jsonData = JSON.parse(jsonLdMatch[1]);
+        if (jsonData['@type'] === 'Product' && jsonData.description) {
+          // Remove a parte de "Dados Técnicos" se tiver tabela
+          let desc = jsonData.description;
+          if (tables.length > 0) {
+            // Corta antes de "Dados Técnicos" ou similar
+            desc = desc.replace(/\s*(Alicate Amperímetro [^-]+-\s*)?Dados Técnicos[\s\S]*/i, '');
+            desc = desc.replace(/\s*Especificações Técnicas[\s\S]*/i, '');
+          }
+          description = desc.trim();
+        }
+      } catch (e) {
+        // JSON inválido
+      }
     }
   }
 
-  // 2. Tenta extrair do __NEXT_DATA__ ou dados React embutidos
-  const nextDataPattern = /<script[^>]*id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/i;
-  const nextDataMatch = nextDataPattern.exec(html);
-  if (nextDataMatch) {
-    try {
-      const nextData = JSON.parse(nextDataMatch[1]);
-      // Procura descrição em diferentes caminhos comuns
-      const desc = nextData?.props?.pageProps?.product?.description ||
-                   nextData?.props?.pageProps?.data?.description ||
-                   nextData?.pageProps?.product?.description;
-      if (desc) description = desc;
-    } catch (e) {}
-  }
-
-  // 3. Tenta extrair de window.__INITIAL_STATE__ ou similar (Magazord/outros)
-  const initialStatePattern = /window\.__(?:INITIAL_STATE__|PRELOADED_STATE__|DATA__)__?\s*=\s*({[\s\S]*?});?\s*<\/script>/i;
-  const stateMatch = initialStatePattern.exec(html);
-  if (stateMatch) {
-    try {
-      const state = JSON.parse(stateMatch[1]);
-      const desc = state?.product?.description || state?.pageData?.product?.description;
-      if (desc) description = desc;
-    } catch (e) {}
-  }
-
-  // 4. Padrões de HTML para descrição
+  // 3. Se ainda não tem descrição, tenta padrões genéricos de HTML
   if (!description) {
     const descPatterns = [
       /<div[^>]*class="[^"]*descricao[^"]*produto[^"]*"[^>]*>([\s\S]*?)<\/div>/gi,
       /<div[^>]*class="[^"]*product-description[^"]*"[^>]*>([\s\S]*?)<\/div>/gi,
-      /<div[^>]*id="[^"]*descricao[^"]*"[^>]*>([\s\S]*?)<\/div>/gi,
       /<section[^>]*class="[^"]*descricao[^"]*"[^>]*>([\s\S]*?)<\/section>/gi,
-      /<div[^>]*class="[^"]*aba-descricao[^"]*"[^>]*>([\s\S]*?)<\/div>/gi,
     ];
 
     for (const pattern of descPatterns) {
       const match = pattern.exec(html);
       if (match && match[1] && match[1].length > 100) {
-        description = match[1];
+        description = match[1]
+          .replace(/<table[\s\S]*?<\/table>/gi, '')
+          .replace(/<[^>]+>/g, '')
+          .replace(/&nbsp;/g, ' ')
+          .trim();
+        description = decodeHtmlEntities(description);
         break;
       }
     }
   }
 
-  // 5. Busca tabelas de especificações
-  const tablePattern = /<table[^>]*>([\s\S]*?)<\/table>/gi;
-  const tables = [];
-  let tableMatch;
+  // 4. Se não encontrou tabelas na descrição, busca em todo o documento
+  if (tables.length === 0) {
+    const globalTablePattern = /<table[^>]*>([\s\S]*?)<\/table>/gi;
+    let tableMatch;
+    while ((tableMatch = globalTablePattern.exec(html)) !== null) {
+      // Ignora tabelas de navegação/layout (geralmente sem <td> com conteúdo útil)
+      if (tableMatch[0].includes('<td') && tableMatch[0].length > 200) {
+        tables.push(tableMatch[0]);
 
-  while ((tableMatch = tablePattern.exec(html)) !== null) {
-    tables.push(tableMatch[0]);
-  }
-
-  // Extrai specs de tabelas
-  for (const table of tables) {
-    const rowPattern = /<tr[^>]*>([\s\S]*?)<\/tr>/gi;
-    let rowMatch;
-
-    while ((rowMatch = rowPattern.exec(table)) !== null) {
-      const cellPattern = /<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/gi;
-      const cells = [];
-      let cellMatch;
-
-      while ((cellMatch = cellPattern.exec(rowMatch[1])) !== null) {
-        const text = cellMatch[1]
-          .replace(/<[^>]+>/g, '')
-          .replace(/&nbsp;/g, ' ')
-          .trim();
-        if (text) cells.push(text);
-      }
-
-      if (cells.length >= 2) {
-        specs[cells[0]] = cells[1];
+        // Extrai specs
+        const rowPattern = /<tr[^>]*>([\s\S]*?)<\/tr>/gi;
+        let rowMatch;
+        while ((rowMatch = rowPattern.exec(tableMatch[0])) !== null) {
+          const cellPattern = /<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/gi;
+          const cells = [];
+          let cellMatch;
+          while ((cellMatch = cellPattern.exec(rowMatch[1])) !== null) {
+            const text = cellMatch[1]
+              .replace(/<[^>]+>/g, '')
+              .replace(/&nbsp;/g, ' ')
+              .replace(/\s+/g, ' ')
+              .trim();
+            if (text) cells.push(text);
+          }
+          if (cells.length >= 2) {
+            specs[cells[0]] = cells[1];
+          }
+        }
       }
     }
   }
 
-  // Limpa a descrição
-  description = description
-    .replace(/<script[\s\S]*?<\/script>/gi, '')
-    .replace(/<style[\s\S]*?<\/style>/gi, '')
-    .replace(/<!--[\s\S]*?-->/g, '');
-
-  // Decodifica entidades HTML
-  description = decodeHtmlEntities(description);
-
-  // Decodifica specs também
+  // Decodifica specs
   const decodedSpecs = {};
   for (const [key, value] of Object.entries(specs)) {
     decodedSpecs[decodeHtmlEntities(key)] = decodeHtmlEntities(value);

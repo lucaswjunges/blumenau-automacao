@@ -149,8 +149,7 @@
                 <span class="mx-2">/</span>
                 <a href="produtos.html" class="hover:text-white">Produtos</a>
                 <span class="mx-2">/</span>
-                <span id="breadcrumb-category" class="hover:text-white"></span>
-                <span class="mx-2">/</span>
+                <span id="breadcrumb-category-wrapper"></span>
                 <span id="breadcrumb-product" class="text-gray-300"></span>
             </nav>
 
@@ -183,16 +182,35 @@
                     <p id="product-sku" class="text-gray-400 text-sm"></p>
 
                     <!-- Price -->
-                    <div class="space-y-2">
-                        <p id="product-price" class="text-4xl font-bold text-accent-400"></p>
-                        <p class="text-sm text-gray-400">
-                            ou consulte condições especiais via WhatsApp
-                        </p>
+                    <div class="space-y-3">
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase tracking-wide mb-1">Preço pelo site</p>
+                            <p id="product-price" class="text-4xl font-bold text-accent-400"></p>
+                        </div>
+                        <div class="bg-green-900/30 border border-green-700/50 rounded-lg p-3">
+                            <p class="text-sm text-green-300 flex items-center gap-2">
+                                <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                                <span><strong>Via WhatsApp:</strong> pague via Pix direto e economize a taxa da plataforma!</span>
+                            </p>
+                        </div>
                     </div>
 
                     <!-- Stock Status -->
                     <div id="stock-status" class="flex items-center gap-2">
                         <!-- Populated by JS -->
+                    </div>
+
+                    <!-- Frete Grátis Blumenau -->
+                    <div class="flex items-center gap-2 bg-accent-500/10 border border-accent-500/30 rounded-lg px-4 py-3">
+                        <svg class="w-6 h-6 text-accent-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/>
+                        </svg>
+                        <div>
+                            <p class="text-accent-300 font-semibold text-sm">Frete Grátis para Blumenau</p>
+                            <p class="text-gray-400 text-xs">Entrega ou retirada sem custo adicional</p>
+                        </div>
                     </div>
 
                     <!-- Description -->
@@ -227,29 +245,62 @@
                             </a>
                         </div>
 
-                        <!-- Pagamento seguro -->
-                        <div class="flex items-center justify-center gap-3 pt-2">
-                            <span class="text-xs text-gray-500">Pagamento seguro:</span>
-                            <!-- Pix -->
-                            <div class="flex items-center gap-1 text-gray-400" title="Pix">
-                                <svg class="h-4 w-4" viewBox="0 0 512 512" fill="currentColor">
-                                    <path d="M242.4 292.5C247.8 287.1 257.1 287.1 262.5 292.5L339.5 369.5C353.7 383.7 googl372.5 googl391.6 395.2 googl404 419.7 404 444.3 395.2 463.5 376L506.5 333C525.7 313.8 534.5 289.2 534.5 264.5C534.5 240 525.7 215.3 506.5 196.1L463.5 153.1C451.7 141.3 437.1 134 421.5 131.9L377.6 133.6C363.5 134.1 349.8 128.7 339.6 118.5L262.5 41.4C257.1 36 247.8 36 242.4 41.4L165.4 118.4C155.2 128.6 141.5 134 127.4 133.5L83.46 131.8C67.96 134 53.3 141.3 41.52 153.1L-1.488 196.1C-20.68 215.3 -29.46 239.9 -29.46 264.5C-29.46 289.1 -20.68 313.8 -1.488 333L41.52 376C60.72 395.2 85.32 404 109.9 404C134.5 404 159.2 395.2 178.4 376L178.4 376L242.4 292.5zM261.1 107.5L305.8 152.2C327.6 173.1 356.6 183.3 385.8 181.6L428.9 179.9C433.5 179.8 437.8 181.4 441.2 184.7L484.2 227.7C493.1 236.6 498.5 248.9 498.5 261.5C498.5 274.1 493.1 286.4 484.2 295.3L441.2 338.3C437.8 341.6 433.5 343.2 428.9 343.1L385.8 341.4C356.6 339.7 327.6 349.9 305.8 370.8L261.1 415.5C257.1 419.5 250.8 419.5 246.9 415.5L202.2 370.8C180.4 349.9 151.4 339.7 122.2 341.4L79.07 343.1C74.47 343.2 70.18 341.6 66.81 338.3L23.81 295.3C14.93 286.4 9.538 274.1 9.538 261.5C9.538 248.9 14.93 236.6 23.81 227.7L66.81 184.7C70.18 181.4 74.47 179.8 79.07 179.9L122.2 181.6C151.4 183.3 180.4 173.1 202.2 152.2L246.9 107.5C250.8 103.5 257.1 103.5 261.1 107.5V107.5z"/>
-                                </svg>
-                                <span class="text-xs">Pix</span>
+                        <!-- Segurança e Pagamento -->
+                        <div class="bg-primary-700/50 rounded-xl p-4 space-y-4">
+                            <!-- Selo de Segurança Principal -->
+                            <div class="flex items-center gap-3 pb-3 border-b border-primary-600">
+                                <div class="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-7 h-7 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-green-400 font-semibold flex items-center gap-1.5">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                        </svg>
+                                        Site 100% Seguro
+                                    </p>
+                                    <p class="text-xs text-gray-400">Conexão criptografada SSL/HTTPS</p>
+                                </div>
                             </div>
-                            <!-- Cartão -->
-                            <div class="flex items-center gap-1 text-gray-400" title="Cartão de Crédito">
-                                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
-                                </svg>
-                                <span class="text-xs">Cartão</span>
+
+                            <!-- Badges de Segurança -->
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="flex items-center gap-2 text-xs">
+                                    <svg class="w-5 h-5 text-blue-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                    </svg>
+                                    <span class="text-gray-300">Compra Protegida</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs">
+                                    <svg class="w-5 h-5 text-yellow-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"/>
+                                    </svg>
+                                    <span class="text-gray-300">Dados Criptografados</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs">
+                                    <svg class="w-5 h-5 text-purple-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                                    </svg>
+                                    <span class="text-gray-300">Certificado Digital</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs">
+                                    <svg class="w-5 h-5 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
+                                    </svg>
+                                    <span class="text-gray-300">Mercado Pago</span>
+                                </div>
                             </div>
-                            <!-- Boleto -->
-                            <div class="flex items-center gap-1 text-gray-400" title="Boleto">
-                                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                                </svg>
-                                <span class="text-xs">Boleto</span>
+
+                            <!-- Formas de Pagamento -->
+                            <div class="pt-3 border-t border-primary-600">
+                                <p class="text-xs text-gray-500 mb-2">Formas de pagamento:</p>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-primary-600 text-gray-300 text-xs px-2.5 py-1 rounded-full">Pix</span>
+                                    <span class="bg-primary-600 text-gray-300 text-xs px-2.5 py-1 rounded-full">Cartão até 12x</span>
+                                    <span class="bg-primary-600 text-gray-300 text-xs px-2.5 py-1 rounded-full">Boleto</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -266,6 +317,21 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Videos Section -->
+            <section id="videos-section" class="hidden mt-12">
+                <div class="bg-primary-800 rounded-2xl p-6 md:p-8">
+                    <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                        <svg class="w-7 h-7 text-red-500" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                        Vídeos do Produto
+                    </h2>
+                    <div id="videos-container" class="grid md:grid-cols-2 gap-6">
+                        <!-- Videos populated by JS -->
+                    </div>
+                </div>
+            </section>
 
             <!-- Specifications -->
             <section id="specs-section" class="hidden mt-12">
@@ -341,7 +407,7 @@
             <!-- Copyright -->
             <div class="border-t border-primary-700 pt-6 text-center text-gray-500 text-sm">
                 <p>&copy; 2025 Blumenau Automação. Todos os direitos reservados.</p>
-                <p class="text-xs mt-1">Rua João Pessoa, 2750, Bloco B - Velha, Blumenau/SC - CEP 89036-256</p>
+                <p class="text-xs mt-1">Rua João Pessoa, 2750, Bloco B - Velha, Blumenau/SC - CEP 89036-256 | <a href="https://www.google.com/maps?q=-26.920583,-49.099500" target="_blank" rel="noopener noreferrer" class="text-accent-400 hover:text-accent-300">Ver no Mapa</a></p>
             </div>
         </div>
     </footer>
@@ -662,6 +728,12 @@
                         }
                     }
 
+                    // Se a API retornou vídeos e o produto não tinha vídeos
+                    if (data.videos && data.videos.length > 0 && (!product.videos || product.videos.length === 0)) {
+                        product.videos = data.videos;
+                        renderVideos();
+                    }
+
                     // Se a API retornou "O que vem na caixa"
                     if (data.boxContents && data.boxContents.trim().length > 0) {
                         const boxItems = data.boxContents
@@ -754,11 +826,18 @@
             document.getElementById('product-content').classList.remove('hidden');
 
             // Breadcrumb
+            // Breadcrumb - só mostra categoria se existir
+            const categoryWrapper = document.getElementById('breadcrumb-category-wrapper');
             if (product.categoryPath && product.categoryPath.length > 0) {
-                document.getElementById('breadcrumb-category').innerHTML =
-                    `<a href="produtos.html?category=${product.category}" class="hover:text-white">${product.categoryPath[product.categoryPath.length - 1]}</a>`;
+                categoryWrapper.innerHTML = `
+                    <a href="produtos.html?category=${product.category}" class="hover:text-white">${product.categoryPath[product.categoryPath.length - 1]}</a>
+                    <span class="mx-2">/</span>
+                `;
             } else if (product.category) {
-                document.getElementById('breadcrumb-category').textContent = product.category;
+                categoryWrapper.innerHTML = `
+                    <span class="hover:text-white">${product.category}</span>
+                    <span class="mx-2">/</span>
+                `;
             }
             document.getElementById('breadcrumb-product').textContent = product.name;
 
@@ -819,14 +898,17 @@
             if (product.inStock) {
                 const stockText = product.stock ? `${product.stock} unidades` : 'Disponível';
                 stockStatus.innerHTML = `
+                    <span class="bg-blue-500 text-white text-xs px-2 py-1 rounded-full mr-2">Produto Novo</span>
                     <span class="w-3 h-3 bg-green-500 rounded-full"></span>
                     <span class="text-green-400 font-medium">Em estoque</span>
                     <span class="text-gray-400">(${stockText})</span>
+                    ${product.warranty ? `<span class="ml-3 text-gray-400">| <svg class="w-4 h-4 inline text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg> ${product.warranty}</span>` : ''}
                 `;
             } else {
                 stockStatus.innerHTML = `
                     <span class="w-3 h-3 bg-red-500 rounded-full"></span>
                     <span class="text-red-400 font-medium">Indisponível</span>
+                    ${product.warranty ? `<span class="ml-3 text-gray-400">| <svg class="w-4 h-4 inline text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg> ${product.warranty}</span>` : ''}
                 `;
                 document.getElementById('add-to-cart-btn').disabled = true;
                 document.getElementById('add-to-cart-btn').classList.add('opacity-50', 'cursor-not-allowed');
@@ -878,8 +960,85 @@
             // Buy now button - adds to cart and redirects to checkout
             document.getElementById('buy-now-btn').onclick = () => buyNow(product);
 
+            // Videos
+            renderVideos();
+
             // Related products
             renderRelatedProducts();
+        }
+
+        function renderVideos() {
+            if (!product.videos || product.videos.length === 0) return;
+
+            document.getElementById('videos-section').classList.remove('hidden');
+            const container = document.getElementById('videos-container');
+
+            container.innerHTML = product.videos.map((video, index) => {
+                const isYoutube = video.platform === 'youtube';
+                const isVimeo = video.platform === 'vimeo';
+
+                // Extrair thumbnail para YouTube
+                let thumbnailUrl = '';
+                if (isYoutube) {
+                    const videoIdMatch = video.url.match(/embed\/([a-zA-Z0-9_-]{11})/);
+                    if (videoIdMatch) {
+                        thumbnailUrl = `https://img.youtube.com/vi/${videoIdMatch[1]}/maxresdefault.jpg`;
+                    }
+                }
+
+                return `
+                    <div class="video-card bg-primary-700/50 rounded-xl overflow-hidden group">
+                        <div class="relative aspect-video cursor-pointer" onclick="playVideo(this, '${video.url}')">
+                            ${thumbnailUrl ? `
+                                <img src="${thumbnailUrl}" alt="Vídeo ${index + 1}"
+                                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                     onerror="this.src='https://via.placeholder.com/640x360/1f2b47/4a9bb5?text=Vídeo'">
+                            ` : `
+                                <div class="w-full h-full bg-primary-600 flex items-center justify-center">
+                                    <span class="text-gray-400">Clique para reproduzir</span>
+                                </div>
+                            `}
+                            <!-- Play button overlay -->
+                            <div class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/50 transition-colors">
+                                <div class="w-16 h-16 md:w-20 md:h-20 bg-red-600 rounded-full flex items-center justify-center transform group-hover:scale-110 transition-transform shadow-lg">
+                                    <svg class="w-8 h-8 md:w-10 md:h-10 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <!-- Platform badge -->
+                            <div class="absolute top-3 right-3">
+                                ${isYoutube ? `
+                                    <span class="bg-red-600 text-white text-xs px-2 py-1 rounded-full font-medium flex items-center gap-1">
+                                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                        </svg>
+                                        YouTube
+                                    </span>
+                                ` : isVimeo ? `
+                                    <span class="bg-blue-500 text-white text-xs px-2 py-1 rounded-full font-medium">Vimeo</span>
+                                ` : ''}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function playVideo(element, videoUrl) {
+            // Substitui a thumbnail pelo iframe do vídeo
+            const container = element.parentElement;
+            container.innerHTML = `
+                <div class="aspect-video">
+                    <iframe
+                        src="${videoUrl}?autoplay=1&rel=0"
+                        class="w-full h-full rounded-xl"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            `;
         }
 
         function setMainImage(src) {

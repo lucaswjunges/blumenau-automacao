@@ -21,6 +21,11 @@ Thumbs.db
 # Logs
 *.log
 
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
 # Temporary files
 *.tmp
 *.bak

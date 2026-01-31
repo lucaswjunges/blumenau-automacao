@@ -1,0 +1,49 @@
+# Blumenau Automacao - robots.txt
+# https://www.blumenauautomacao.com.br
+
+User-agent: *
+
+# Permitir tudo exceto areas privadas
+Allow: /
+
+# Bloquear paginas de checkout e area do cliente (privadas)
+Disallow: /checkout.html
+Disallow: /checkout-success.html
+Disallow: /checkout-pending.html
+Disallow: /checkout-failure.html
+Disallow: /area-cliente.html
+
+# Bloquear APIs
+Disallow: /api/
+
+# Bloquear scripts e arquivos de desenvolvimento
+Disallow: /scripts/
+Disallow: /*.db$
+
+# Crawl-delay para nao sobrecarregar o servidor
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://www.blumenauautomacao.com.br/sitemap.xml
+
+# Google
+User-agent: Googlebot
+Allow: /
+Disallow: /checkout*
+Disallow: /area-cliente.html
+Disallow: /api/
+
+# Google Images - permitir imagens de produtos
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.webp
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Disallow: /checkout*
+Disallow: /area-cliente.html
+Disallow: /api/
+Crawl-delay: 2
