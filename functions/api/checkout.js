@@ -41,7 +41,7 @@ async function sendOrderNotification(env, orderData, externalReference) {
 <strong>Nome:</strong> ${customer.name}<br>
 <strong>Email:</strong> ${customer.email}<br>
 <strong>Telefone:</strong> ${customer.phone}<br>
-${customer.cpf ? `<strong>CPF:</strong> ${customer.cpf}<br>` : ''}
+${customer.cpf ? `<strong>CPF:</strong> ${customer.cpf}<br>` : ''}${customer.cnpj ? `<strong>CNPJ:</strong> ${customer.cnpj}<br>` : ''}
 </p>
 
 <h3>Endereço de Entrega</h3>
@@ -138,9 +138,9 @@ async function createMercadoPagoPreference(accessToken, orderData, siteUrl, exte
         area_code: customer.phone?.replace(/\D/g, '').substring(0, 2) || '',
         number: customer.phone?.replace(/\D/g, '').substring(2) || '',
       },
-      identification: customer.cpf ? {
-        type: 'CPF',
-        number: customer.cpf.replace(/\D/g, ''),
+      identification: (customer.cpf || customer.cnpj) ? {
+        type: customer.cnpj ? 'CNPJ' : 'CPF',
+        number: (customer.cnpj || customer.cpf).replace(/\D/g, ''),
       } : undefined,
       address: shipping ? {
         zip_code: cep.replace(/\D/g, ''),

@@ -143,10 +143,17 @@
                             </div>
 
                             <div>
-                                <label class="block text-sm font-medium mb-1">CPF</label>
-                                <input type="text" id="customer-cpf"
-                                    class="w-full bg-primary-700 border border-primary-600 rounded-lg px-4 py-3 focus:outline-none focus:border-accent-400 transition-colors"
-                                    placeholder="000.000.000-00">
+                                <label class="block text-sm font-medium mb-1">Documento</label>
+                                <div class="flex gap-2">
+                                    <select id="customer-doc-type"
+                                        class="bg-primary-700 border border-primary-600 rounded-lg px-3 py-3 focus:outline-none focus:border-accent-400 transition-colors">
+                                        <option value="cpf">CPF</option>
+                                        <option value="cnpj">CNPJ</option>
+                                    </select>
+                                    <input type="text" id="customer-doc"
+                                        class="flex-1 bg-primary-700 border border-primary-600 rounded-lg px-4 py-3 focus:outline-none focus:border-accent-400 transition-colors"
+                                        placeholder="000.000.000-00">
+                                </div>
                                 <p class="text-xs text-gray-500 mt-1">Opcional, mas necessário para nota fiscal</p>
                             </div>
                         </div>
@@ -400,6 +407,16 @@
                 .slice(0, 14);
         }
 
+        function maskCNPJ(value) {
+            return value
+                .replace(/\D/g, '')
+                .replace(/(\d{2})(\d)/, '$1.$2')
+                .replace(/(\d{3})(\d)/, '$1.$2')
+                .replace(/(\d{3})(\d)/, '$1/$2')
+                .replace(/(\d{4})(\d{1,2})$/, '$1-$2')
+                .slice(0, 18);
+        }
+
         function maskCEP(value) {
             return value
                 .replace(/\D/g, '')
@@ -412,8 +429,15 @@
             e.target.value = maskPhone(e.target.value);
         });
 
-        document.getElementById('customer-cpf').addEventListener('input', (e) => {
-            e.target.value = maskCPF(e.target.value);
+        document.getElementById('customer-doc').addEventListener('input', (e) => {
+            const docType = document.getElementById('customer-doc-type').value;
+            e.target.value = docType === 'cpf' ? maskCPF(e.target.value) : maskCNPJ(e.target.value);
+        });
+
+        document.getElementById('customer-doc-type').addEventListener('change', (e) => {
+            const docInput = document.getElementById('customer-doc');
+            docInput.value = '';
+            docInput.placeholder = e.target.value === 'cpf' ? '000.000.000-00' : '00.000.000/0000-00';
         });
 
         document.getElementById('shipping-zip').addEventListener('input', (e) => {
@@ -590,11 +614,14 @@
             errorContainer.classList.add('hidden');
 
             // Coleta dados do formulário
+            const docType = document.getElementById('customer-doc-type').value;
+            const docValue = document.getElementById('customer-doc').value.replace(/\D/g, '') || null;
             const customer = {
                 name: document.getElementById('customer-name').value.trim(),
                 email: document.getElementById('customer-email').value.trim(),
                 phone: document.getElementById('customer-phone').value.replace(/\D/g, ''),
-                cpf: document.getElementById('customer-cpf').value.replace(/\D/g, '') || null
+                cpf: docType === 'cpf' ? docValue : null,
+                cnpj: docType === 'cnpj' ? docValue : null
             };
 
             const shipping = {
