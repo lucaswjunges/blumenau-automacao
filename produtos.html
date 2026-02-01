@@ -460,6 +460,12 @@
         }
 
         function addToCart(product) {
+            // Não permite adicionar produtos indisponíveis
+            if (!product.inStock) {
+                showToast('Produto indisponível', 'error');
+                return;
+            }
+
             const existing = cart.find(item => item.id === product.id);
             if (existing) {
                 existing.quantity++;
