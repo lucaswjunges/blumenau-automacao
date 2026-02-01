@@ -10,11 +10,13 @@ export async function onRequestGet(context) {
   const url = new URL(request.url);
   const code = url.searchParams.get('code');
   const error = url.searchParams.get('error');
+  const state = url.searchParams.get('state'); // code_verifier para PKCE
 
   // Credenciais do ML
   const CLIENT_ID = env.ML_CLIENT_ID || '683384146533245';
   const CLIENT_SECRET = env.ML_CLIENT_SECRET;
   const REDIRECT_URI = 'https://www.blumenauautomacao.com.br/api/ml-callback';
+  const CODE_VERIFIER = state || env.ML_CODE_VERIFIER; // PKCE code_verifier
 
   // Se houver erro
   if (error) {
@@ -113,6 +115,7 @@ export async function onRequestGet(context) {
         client_secret: CLIENT_SECRET,
         code: code,
         redirect_uri: REDIRECT_URI,
+        code_verifier: CODE_VERIFIER,
       }),
     });
 
