@@ -53,3 +53,7 @@ v2.md
 # Mercado Livre exports
 mercadolivre_products.csv
 mercadolivre_products_simples.csv
+
+# Mercado Livre config (contém tokens)
+config_mercadolivre.json
+mercadolivre_sync.log
