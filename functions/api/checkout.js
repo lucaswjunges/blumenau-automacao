@@ -74,8 +74,8 @@ ${items.map(item => `<li>${item.name} (${item.quantity}x) - R$ ${(item.price * i
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: env.RESEND_FROM_EMAIL || 'Blumenau Automação <onboarding@resend.dev>',
-        to: [env.NOTIFICATION_EMAIL || 'contato@blumenauautomacao.com.br'],
+        from: 'Blumenau Automação <contato@blumenauautomacao.com.br>',
+        to: ['lucasw.junges@hotmail.com'],
         subject: `🛒 Novo Pedido #${externalReference.substring(0, 8)} - ${customer.name}`,
         html: emailHtml,
       }),
@@ -237,8 +237,12 @@ export async function onRequestPost(context) {
     // Gera referência única
     const externalReference = generateUUID();
 
-    // Envia notificação por email (async, não bloqueia)
-    sendOrderNotification(env, { items, customer, shipping }, externalReference);
+    // Envia notificação por email
+    try {
+      await sendOrderNotification(env, { items, customer, shipping }, externalReference);
+    } catch (emailError) {
+      console.error('Erro ao enviar email de notificação:', emailError);
+    }
 
     // Cria preferência no Mercado Pago
     const siteUrl = env.SITE_URL || 'https://www.blumenauautomacao.com.br';
