@@ -322,6 +322,22 @@
                         </div>
                     </div>
 
+                    <!-- Link para Mercado Livre -->
+                    <div id="ml-link" class="hidden pt-4 border-t border-primary-700 mt-4">
+                        <a id="ml-url" href="#" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center gap-2 text-sm text-yellow-400 hover:text-yellow-300 transition-colors font-medium">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2.4c5.302 0 9.6 4.298 9.6 9.6s-4.298 9.6-9.6 9.6S2.4 17.302 2.4 12 6.698 2.4 12 2.4zm-.6 3.6v2.4h1.2V6h-1.2zm0 3.6v8.4h1.2V9.6h-1.2z"/>
+                            </svg>
+                            <span class="flex items-center gap-1">
+                                Ver no <span class="text-yellow-300 font-bold">Mercado Livre</span>
+                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+
                     <!-- Link para fornecedor -->
                     <div id="supplier-link" class="hidden pt-4 border-t border-primary-700 mt-4">
                         <a id="supplier-url" href="#" target="_blank" rel="noopener noreferrer"
@@ -906,6 +922,28 @@
                 } else if (product.sourceUrl.includes('proesi')) {
                     supplierName.textContent = 'Proesi';
                 }
+            }
+
+            // Link para Mercado Livre (busca no mapeamento)
+            const sku = product.sku || product.id;
+            if (sku) {
+                fetch('/ml_products_map.json')
+                    .then(r => r.json())
+                    .then(mlMap => {
+                        // Tenta SKU direto, depois sem prefixos (LV-, SE-)
+                        let mlProduct = mlMap[sku];
+                        if (!mlProduct) {
+                            const skuClean = sku.replace(/^(LV-|SE-)/, '');
+                            mlProduct = mlMap[skuClean];
+                        }
+                        if (mlProduct && mlProduct.url && mlProduct.status === 'active') {
+                            const mlLink = document.getElementById('ml-link');
+                            const mlUrl = document.getElementById('ml-url');
+                            mlLink.classList.remove('hidden');
+                            mlUrl.href = mlProduct.url;
+                        }
+                    })
+                    .catch(() => {}); // Silently ignore if map not found
             }
 
             // Price
