@@ -183,6 +183,23 @@
                     <div id="thumbnails" class="flex gap-3 overflow-x-auto pb-2">
                         <!-- Populated by JS -->
                     </div>
+
+                    <!-- Datasheet abaixo das fotos -->
+                    <div id="datasheet-inline" class="hidden">
+                        <a id="datasheet-inline-link" href="#" target="_blank" class="flex items-center gap-3 bg-primary-800 hover:bg-primary-700 transition-colors rounded-xl px-4 py-3 border border-primary-700">
+                            <svg class="w-8 h-8 text-red-500 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/>
+                                <path d="M8 12h8v2H8zm0 4h8v2H8z"/>
+                            </svg>
+                            <div>
+                                <p class="font-semibold text-white">Datasheet / Manual</p>
+                                <p class="text-sm text-gray-400">Baixar PDF com especificações</p>
+                            </div>
+                            <svg class="w-5 h-5 text-gray-400 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Product Info -->
@@ -388,19 +405,6 @@
                 </div>
             </section>
 
-            <!-- Datasheet -->
-            <section id="datasheet-section" class="hidden mt-8">
-                <a id="datasheet-link" href="#" target="_blank" class="inline-flex items-center gap-3 bg-primary-800 hover:bg-primary-700 transition-colors rounded-xl px-6 py-4">
-                    <svg class="w-8 h-8 text-red-500" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/>
-                        <path d="M8 12h8v2H8zm0 4h8v2H8z"/>
-                    </svg>
-                    <div>
-                        <p class="font-semibold">Datasheet / Manual</p>
-                        <p class="text-sm text-gray-400">Baixar PDF com especificações completas</p>
-                    </div>
-                </a>
-            </section>
 
             <!-- Related Products -->
             <section id="related-section" class="hidden mt-16">
@@ -1048,10 +1052,10 @@
                 `).join('');
             }
 
-            // Datasheet
+            // Datasheet (abaixo das fotos)
             if (product.datasheet) {
-                document.getElementById('datasheet-section').classList.remove('hidden');
-                document.getElementById('datasheet-link').href = product.datasheet;
+                document.getElementById('datasheet-inline').classList.remove('hidden');
+                document.getElementById('datasheet-inline-link').href = product.datasheet;
             }
 
             // Source link removido - Proesi bloqueia acesso externo (403)
