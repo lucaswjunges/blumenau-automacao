@@ -214,6 +214,34 @@
                         </div>
                     </div>
 
+                    <!-- Comparação de Preços - Mercado Livre -->
+                    <div id="ml-price-compare" class="hidden">
+                        <div class="bg-yellow-900/20 border border-yellow-600/40 rounded-xl p-4">
+                            <div class="flex items-center gap-2 mb-3">
+                                <img src="logo_mercadolivre.png" alt="Mercado Livre" class="h-5 w-auto">
+                                <span class="text-sm font-medium text-yellow-400">Compare os preços</span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-primary-800/50 rounded-lg p-3 text-center">
+                                    <p class="text-xs text-gray-400 mb-1">Nosso site</p>
+                                    <p id="compare-site-price" class="text-xl font-bold text-accent-400"></p>
+                                    <p class="text-xs text-green-400 mt-1">Melhor preço</p>
+                                </div>
+                                <a id="ml-compare-link" href="#" target="_blank" rel="noopener noreferrer" class="bg-yellow-900/30 hover:bg-yellow-900/50 rounded-lg p-3 text-center transition-colors group">
+                                    <p class="text-xs text-gray-400 mb-1">Mercado Livre</p>
+                                    <p id="compare-ml-price" class="text-xl font-bold text-yellow-400"></p>
+                                    <p class="text-xs text-yellow-500 mt-1 flex items-center justify-center gap-1">
+                                        Ver no ML
+                                        <svg class="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                        </svg>
+                                    </p>
+                                </a>
+                            </div>
+                            <p id="price-savings" class="text-center text-sm text-green-400 mt-3 font-medium hidden"></p>
+                        </div>
+                    </div>
+
                     <!-- Stock Status -->
                     <div id="stock-status" class="flex items-center gap-2">
                         <!-- Populated by JS -->
@@ -320,22 +348,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Link para Mercado Livre -->
-                    <div id="ml-link" class="hidden pt-4 border-t border-primary-700 mt-4">
-                        <a id="ml-url" href="#" target="_blank" rel="noopener noreferrer"
-                           class="inline-flex items-center gap-2 text-sm text-yellow-400 hover:text-yellow-300 transition-colors font-medium">
-                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2.4c5.302 0 9.6 4.298 9.6 9.6s-4.298 9.6-9.6 9.6S2.4 17.302 2.4 12 6.698 2.4 12 2.4zm-.6 3.6v2.4h1.2V6h-1.2zm0 3.6v8.4h1.2V9.6h-1.2z"/>
-                            </svg>
-                            <span class="flex items-center gap-1">
-                                Ver no <span class="text-yellow-300 font-bold">Mercado Livre</span>
-                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                                </svg>
-                            </span>
-                        </a>
                     </div>
 
                     <!-- Link para fornecedor -->
@@ -924,7 +936,7 @@
                 }
             }
 
-            // Link para Mercado Livre (busca no mapeamento)
+            // Comparação de preços com Mercado Livre
             const sku = product.sku || product.id;
             if (sku) {
                 fetch('/ml_products_map.json')
@@ -936,11 +948,29 @@
                             const skuClean = sku.replace(/^(LV-|SE-)/, '');
                             mlProduct = mlMap[skuClean];
                         }
-                        if (mlProduct && mlProduct.url && mlProduct.status === 'active') {
-                            const mlLink = document.getElementById('ml-link');
-                            const mlUrl = document.getElementById('ml-url');
-                            mlLink.classList.remove('hidden');
-                            mlUrl.href = mlProduct.url;
+                        if (mlProduct && mlProduct.url && mlProduct.status === 'active' && mlProduct.price) {
+                            const sitePrice = product.price;
+                            const mlPrice = mlProduct.price;
+
+                            // Mostra comparação
+                            const compareSection = document.getElementById('ml-price-compare');
+                            const compareSitePrice = document.getElementById('compare-site-price');
+                            const compareMlPrice = document.getElementById('compare-ml-price');
+                            const mlCompareLink = document.getElementById('ml-compare-link');
+                            const savingsEl = document.getElementById('price-savings');
+
+                            compareSection.classList.remove('hidden');
+                            compareSitePrice.textContent = formatPrice(sitePrice);
+                            compareMlPrice.textContent = formatPrice(mlPrice);
+                            mlCompareLink.href = mlProduct.url;
+
+                            // Calcula economia
+                            if (mlPrice > sitePrice) {
+                                const savings = mlPrice - sitePrice;
+                                const savingsPercent = Math.round((savings / mlPrice) * 100);
+                                savingsEl.innerHTML = `💰 Economize <strong>R$ ${savings.toFixed(2).replace('.', ',')}</strong> (${savingsPercent}%) comprando pelo site!`;
+                                savingsEl.classList.remove('hidden');
+                            }
                         }
                     })
                     .catch(() => {}); // Silently ignore if map not found
