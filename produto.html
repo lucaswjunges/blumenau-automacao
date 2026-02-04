@@ -12,8 +12,27 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1a1a2e">
     <title>Produto | Blumenau Automação</title>
-    <meta name="description" content="Detalhes do produto - Blumenau Automação">
+    <link rel="canonical" id="canonical-url" href="https://www.blumenauautomacao.com.br/produto.html">
+    <meta name="description" id="meta-description" content="Detalhes do produto - Blumenau Automação">
+    <meta name="geo.region" content="BR-SC">
+    <meta name="geo.placename" content="Blumenau">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="product">
+    <meta property="og:url" id="og-url" content="https://www.blumenauautomacao.com.br/produto.html">
+    <meta property="og:title" id="og-title" content="Produto | Blumenau Automação">
+    <meta property="og:description" id="og-description" content="Detalhes do produto - Blumenau Automação">
+    <meta property="og:image" id="og-image" content="https://www.blumenauautomacao.com.br/logo1.png">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Blumenau Automação">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" id="tw-title" content="Produto | Blumenau Automação">
+    <meta name="twitter:description" id="tw-description" content="Detalhes do produto - Blumenau Automação">
+    <meta name="twitter:image" id="tw-image" content="https://www.blumenauautomacao.com.br/logo1.png">
 
     <link rel="icon" type="image/png" href="logo1.png">
     <link rel="apple-touch-icon" href="logo1.png">
@@ -867,8 +886,56 @@
         }
 
         function renderProduct() {
-            // Update page title and meta
-            document.title = `${product.name} | Blumenau Automação`;
+            // Update page title and meta dynamically for SEO
+            const productTitle = `${product.name} | Blumenau Automação`;
+            const productDesc = product.description
+                ? product.description.substring(0, 155).replace(/\s+/g, ' ').trim() + '...'
+                : `${product.name} - Compre online na Blumenau Automação. Entrega em Blumenau e região.`;
+            const productUrl = `https://www.blumenauautomacao.com.br/produto.html?id=${encodeURIComponent(product.id)}`;
+            const productImage = product.image || 'https://www.blumenauautomacao.com.br/logo1.png';
+
+            document.title = productTitle;
+
+            // Meta tags
+            document.getElementById('meta-description').setAttribute('content', productDesc);
+            document.getElementById('canonical-url').setAttribute('href', productUrl);
+
+            // Open Graph
+            document.getElementById('og-url').setAttribute('content', productUrl);
+            document.getElementById('og-title').setAttribute('content', productTitle);
+            document.getElementById('og-description').setAttribute('content', productDesc);
+            document.getElementById('og-image').setAttribute('content', productImage);
+
+            // Twitter Card
+            document.getElementById('tw-title').setAttribute('content', productTitle);
+            document.getElementById('tw-description').setAttribute('content', productDesc);
+            document.getElementById('tw-image').setAttribute('content', productImage);
+
+            // Schema.org Product (JSON-LD)
+            const schema = {
+                '@context': 'https://schema.org',
+                '@type': 'Product',
+                'name': product.name,
+                'description': productDesc,
+                'image': product.images || [product.image],
+                'sku': product.sku || product.id,
+                'brand': product.brand ? { '@type': 'Brand', 'name': product.brand } : undefined,
+                'offers': {
+                    '@type': 'Offer',
+                    'url': productUrl,
+                    'priceCurrency': 'BRL',
+                    'price': product.price,
+                    'availability': product.inStock ? 'https://schema.org/InStock' : 'https://schema.org/OutOfStock',
+                    'seller': {
+                        '@type': 'Organization',
+                        'name': 'Blumenau Automação'
+                    }
+                }
+            };
+            const schemaScript = document.createElement('script');
+            schemaScript.type = 'application/ld+json';
+            schemaScript.textContent = JSON.stringify(schema);
+            document.head.appendChild(schemaScript);
 
             // Hide loading, show content
             document.getElementById('loading').classList.add('hidden');
