@@ -22,7 +22,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from abc import ABC, abstractmethod
 from typing import Optional, Dict, List, Any
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 from dataclasses import dataclass, asdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import threading
@@ -494,12 +494,21 @@ class MagazordScraper(BaseScraper):
         return urls
 
     def _extract_data_product(self, html_content: str) -> Optional[dict]:
-        """Extrai objeto window.dataProduct do JavaScript"""
+        """Extrai objeto dataProduct do JavaScript.
+
+        Magazord sites use different formats:
+        - Loja Vale: `const dataProduct = { id: '...', produto: {...}, ... };`
+          The outer object has JS keys (unquoted), but the inner `produto` value
+          is a valid JSON object with "produto_id", "midias", etc.
+        - Some sites: `window.dataProduct = {...};`
+        - Proesi/Seel: No dataProduct at all (images are in HTML gallery).
+        """
         result = {}
 
         # Tentar extrair o JSON completo primeiro
         patterns = [
             r'window\.dataProduct\s*=\s*({[\s\S]*?});?\s*(?:window\.|</script>)',
+            r'const\s+dataProduct\s*=\s*({[\s\S]*?});?\s*(?:</script>)',
             r'dataProduct\s*=\s*({[\s\S]*?});?\s*(?:window\.|</script>)',
         ]
 
@@ -514,30 +523,54 @@ class MagazordScraper(BaseScraper):
                 except json.JSONDecodeError:
                     pass
 
+        # Fallback: extrair o campo produto JSON de dentro de dataProduct
+        # (formato JS com chaves não-quoted: { id: '...', produto: {...} })
+        # Usa busca por brace-matching para extrair o JSON completo do produto
+        prod_start_match = re.search(r'(?:const|var|window\.)\s*dataProduct\s*=\s*\{[^}]*?produto:\s*(\{"produto_id")', html_content)
+        if prod_start_match:
+            json_start = prod_start_match.start(1)
+            brace_count = 0
+            i = json_start
+            while i < len(html_content):
+                if html_content[i] == '{':
+                    brace_count += 1
+                elif html_content[i] == '}':
+                    brace_count -= 1
+                    if brace_count == 0:
+                        json_end = i + 1
+                        try:
+                            produto_data = json.loads(html_content[json_start:json_end])
+                            result['produto'] = produto_data
+                        except json.JSONDecodeError:
+                            pass
+                        break
+                i += 1
+
         # Fallback: extrair campos individuais (formato JS não-JSON)
-        # Extrair breadcrumb
-        bc_match = re.search(r'breadcrumb:\s*(\[[\s\S]*?\])\s*,', html_content)
-        if bc_match:
-            try:
-                result['breadcrumb'] = json.loads(bc_match.group(1))
-            except json.JSONDecodeError:
-                pass
+        if not result:
+            # Extrair breadcrumb
+            bc_match = re.search(r'breadcrumb:\s*(\[[\s\S]*?\])\s*,', html_content)
+            if bc_match:
+                try:
+                    result['breadcrumb'] = json.loads(bc_match.group(1))
+                except json.JSONDecodeError:
+                    pass
 
-        # Extrair produto (JSON embedded)
-        prod_match = re.search(r'produto:\s*(\{"produto_id"[\s\S]*?\})\s*,\s*derivacao:', html_content)
-        if prod_match:
-            try:
-                result['produto'] = json.loads(prod_match.group(1))
-            except json.JSONDecodeError:
-                pass
+            # Extrair produto (JSON embedded antes de derivacao)
+            prod_match = re.search(r'produto:\s*(\{"produto_id"[\s\S]*?\})\s*,\s*derivacao:', html_content)
+            if prod_match:
+                try:
+                    result['produto'] = json.loads(prod_match.group(1))
+                except json.JSONDecodeError:
+                    pass
 
-        # Extrair derivacao (contém preço e estoque)
-        deriv_match = re.search(r'derivacao:\s*(\{[\s\S]*?"preco"[\s\S]*?\})\s*,\s*(?:breadcrumb|depositos):', html_content)
-        if deriv_match:
-            try:
-                result['derivacao'] = json.loads(deriv_match.group(1))
-            except json.JSONDecodeError:
-                pass
+            # Extrair derivacao (contém preço e estoque)
+            deriv_match = re.search(r'derivacao:\s*(\{[\s\S]*?"preco"[\s\S]*?\})\s*,\s*(?:breadcrumb|depositos):', html_content)
+            if deriv_match:
+                try:
+                    result['derivacao'] = json.loads(deriv_match.group(1))
+                except json.JSONDecodeError:
+                    pass
 
         return result if result else None
 
@@ -555,6 +588,21 @@ class MagazordScraper(BaseScraper):
             except (json.JSONDecodeError, TypeError):
                 continue
         return None
+
+    def _get_cdn_base(self) -> str:
+        """Retorna a URL base do CDN Magazord para este fornecedor.
+
+        Padrão: https://{subdomain}.cdn.magazord.com.br/
+        Ex: https://www.lojavale.com.br -> https://lojavale.cdn.magazord.com.br/
+            https://www.proesi.com.br -> https://proesi.cdn.magazord.com.br/
+            https://www.seeldistribuidora.com.br -> https://seeldistribuidora.cdn.magazord.com.br/
+        """
+        # Extrair subdomain do base_url
+        parsed = urlparse(self.base_url)
+        hostname = parsed.hostname or ''
+        # Remover 'www.' do início
+        subdomain = hostname.replace('www.', '').split('.')[0]
+        return f"https://{subdomain}.cdn.magazord.com.br/"
 
     def _clean_text(self, text: Optional[str]) -> Optional[str]:
         """Limpa texto removendo tags HTML e espaços extras"""
@@ -614,9 +662,19 @@ class MagazordScraper(BaseScraper):
             price = None
             price_pix = None
             if data_product:
+                # Formato antigo: derivacao.preco
                 preco_data = data_product.get('derivacao', {}).get('preco', {})
                 price = preco_data.get('precoPor') or preco_data.get('precoDe')
                 price_pix = preco_data.get('precoPix')
+
+                # Formato Loja Vale: produto.valor (string ou float)
+                if not price:
+                    valor = data_product.get('produto', {}).get('valor')
+                    if valor:
+                        try:
+                            price = float(str(valor).replace(',', '.'))
+                        except (ValueError, TypeError):
+                            pass
 
             if not price:
                 # Tentar meta tags
@@ -645,18 +703,40 @@ class MagazordScraper(BaseScraper):
             stock = None
             in_stock = True
             if data_product:
+                # Formato antigo: derivacao.estoque
                 estoque = data_product.get('derivacao', {}).get('estoque', {})
                 stock = estoque.get('quantidade')
                 in_stock = estoque.get('disponivel', True)
-            elif json_ld:
+
+                # Formato Loja Vale: produto.qtde_estoque
+                if stock is None:
+                    qtde = data_product.get('produto', {}).get('qtde_estoque')
+                    if qtde is not None:
+                        try:
+                            stock = int(qtde)
+                            in_stock = stock > 0
+                        except (ValueError, TypeError):
+                            pass
+
+            if in_stock and json_ld:
+                # Verificar JSON-LD como complemento
+                availability = json_ld.get('offers', {}).get('availability', '')
+                if 'OutOfStock' in availability:
+                    in_stock = False
+
+            if not data_product and not stock and json_ld:
                 availability = json_ld.get('offers', {}).get('availability', '')
                 in_stock = 'InStock' in availability
 
             # Marca
             brand = None
             if data_product:
-                brand = data_product.get('produto', {}).get('marca', {}).get('nome')
-            elif json_ld:
+                marca_data = data_product.get('produto', {}).get('marca')
+                if isinstance(marca_data, dict):
+                    brand = marca_data.get('nome')
+                elif isinstance(marca_data, str) and marca_data:
+                    brand = marca_data
+            if not brand and json_ld:
                 brand_data = json_ld.get('brand', {})
                 brand = brand_data.get('name') if isinstance(brand_data, dict) else brand_data
             if not brand:
@@ -668,6 +748,7 @@ class MagazordScraper(BaseScraper):
             image = None
             images = []
 
+            # 1. Tentar derivacao.imagens (formato antigo Magazord)
             if data_product:
                 imagens = data_product.get('derivacao', {}).get('imagens', [])
                 for img in imagens:
@@ -675,14 +756,82 @@ class MagazordScraper(BaseScraper):
                     if img_url and img_url not in images:
                         images.append(img_url)
 
+            # 2. Tentar produto.midias[] (formato Loja Vale / Magazord React)
+            #    Cada midia tem midia_path e midia_arquivo_nome que formam a URL CDN
+            if not images and data_product:
+                produto_data = data_product.get('produto', {})
+                midias = produto_data.get('midias', [])
+                if midias:
+                    # Detectar CDN base a partir do base_url do fornecedor
+                    # Ex: https://www.lojavale.com.br -> https://lojavale.cdn.magazord.com.br/
+                    cdn_base = self._get_cdn_base()
+                    for midia in midias:
+                        if midia.get('tipo_midia') == 1:  # tipo_midia 1 = imagem
+                            mpath = midia.get('midia_path', '')
+                            mnome = midia.get('midia_arquivo_nome', '')
+                            if mpath and mnome:
+                                img_url = f"{cdn_base}{mpath}{mnome}"
+                                if img_url not in images:
+                                    images.append(img_url)
+                    # Se nenhum tipo_midia==1, tentar todos
+                    if not images:
+                        for midia in midias:
+                            mpath = midia.get('midia_path', '')
+                            mnome = midia.get('midia_arquivo_nome', '')
+                            if mpath and mnome:
+                                img_url = f"{cdn_base}{mpath}{mnome}"
+                                if img_url not in images:
+                                    images.append(img_url)
+                # Fallback: midia_path/midia_arquivo_nome no nível do produto
+                if not images:
+                    mpath = produto_data.get('midia_path', '')
+                    mnome = produto_data.get('midia_arquivo_nome', '')
+                    if mpath and mnome:
+                        cdn_base = self._get_cdn_base()
+                        img_url = f"{cdn_base}{mpath}{mnome}"
+                        images.append(img_url)
+
+            # 3. Extrair da galeria HTML (Proesi, Seel, e outros Magazord)
+            #    O swiper gallery-thumbs contém thumbnails com data-img-full
+            #    que apontam para a imagem em resolução máxima (sem resize params)
             if not images:
-                # Fallback para meta og:image
+                gallery_slides = soup.select('.gallery-thumbs .swiper-slide a[data-img-full]')
+                for slide in gallery_slides:
+                    img_url = slide.get('data-img-full', '').strip()
+                    if img_url and img_url.startswith('http') and img_url not in images:
+                        images.append(img_url)
+
+            # 4. Fallback: imagens no gallery-main (data-img-full ou data-src-max)
+            if not images:
+                gallery_main_imgs = soup.select('.gallery-main .swiper-slide img[data-img-full]')
+                for img_el in gallery_main_imgs:
+                    img_url = img_el.get('data-img-full', '').strip()
+                    if img_url and img_url.startswith('http') and img_url not in images:
+                        images.append(img_url)
+                if not images:
+                    gallery_main_imgs = soup.select('.gallery-main .swiper-slide img[data-src-max]')
+                    for img_el in gallery_main_imgs:
+                        img_url = img_el.get('data-src-max', '').strip()
+                        if img_url and img_url.startswith('http') and img_url not in images:
+                            images.append(img_url)
+
+            # 5. Fallback: JSON-LD images (pode ter array de URLs)
+            if not images and json_ld:
+                ld_images = json_ld.get('image', [])
+                if isinstance(ld_images, str):
+                    ld_images = [ld_images]
+                for img_url in ld_images:
+                    if img_url and img_url not in images:
+                        images.append(img_url)
+
+            # 6. Fallback para meta og:image
+            if not images:
                 og_image = soup.select_one('meta[property="og:image"]')
                 if og_image and og_image.get('content'):
                     images.append(og_image['content'])
 
+            # 7. Fallback para imagens genéricas no HTML
             if not images:
-                # Fallback para imagens no HTML
                 img_elements = soup.select('[itemprop="image"], .product-image img, .gallery-image img')
                 for img_el in img_elements:
                     img_url = img_el.get('data-src-max') or img_el.get('data-src') or img_el.get('src')
@@ -821,7 +970,7 @@ class MagazordScraper(BaseScraper):
                 category=category,
                 categoryPath=category_path if category_path else None,
                 image=image,
-                images=images if len(images) > 1 else None,
+                images=images if images else None,
                 videos=videos if videos else None,
                 datasheet=datasheet,
                 warranty=warranty,
