@@ -665,10 +665,16 @@
             const stockOnly = document.getElementById('stock-filter').checked;
 
             filteredProducts = allProducts.filter(product => {
-                // Search
-                if (search && !product.name.toLowerCase().includes(search) &&
-                    !(product.sku && product.sku.toLowerCase().includes(search))) {
-                    return false;
+                // Search (all words must match in name, brand or SKU)
+                if (search) {
+                    const words = search.split(/\s+/).filter(w => w.length > 0);
+                    const name = product.name.toLowerCase();
+                    const brand = (product.brand || '').toLowerCase();
+                    const sku = (product.sku || '').toLowerCase();
+                    const text = name + ' ' + brand + ' ' + sku;
+                    if (!words.every(w => text.includes(w))) {
+                        return false;
+                    }
                 }
 
                 // Category
