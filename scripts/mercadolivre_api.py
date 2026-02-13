@@ -51,8 +51,12 @@ ML_FEES = {
 ML_FIXED_FEE_THRESHOLD = 79.00
 ML_FIXED_FEE = 6.00
 
-# Margem de segurança
-SAFETY_MARGIN = 0.02
+# Custo médio de frete grátis (cobrado do vendedor pelo ML)
+# Varia de R$ 15 a R$ 35 dependendo do peso/tamanho
+ML_FRETE_MEDIO = 25.00
+
+# Margem de segurança (para cobrir variações de frete e taxas)
+SAFETY_MARGIN = 0.05  # 5% de margem
 
 # Mapeamento de categorias (será preenchido dinamicamente)
 CATEGORY_CACHE = {}
@@ -349,13 +353,25 @@ def get_category_attributes(category_id):
     return []
 
 
+def is_category_valid(category_id):
+    """Verifica se uma categoria existe e permite publicação."""
+    cat_info = get_category_info(category_id)
+    if not cat_info:
+        return False
+    settings = cat_info.get('settings', {})
+    return settings.get('listing_allowed', False)
+
+
 def find_best_category(product):
     """Encontra a melhor categoria ML para um produto."""
-    # Tenta buscar por termos do produto
+    title = product.get('name', '')
+
+    # Busca por termos relevantes do produto
     search_terms = [
+        title,
         product.get('category', ''),
-        product.get('brand', ''),
         ' '.join(product.get('categoryPath', [])[:2] if product.get('categoryPath') else []),
+        product.get('brand', ''),
     ]
 
     for term in search_terms:
@@ -363,14 +379,24 @@ def find_best_category(product):
             continue
         results = search_category(term)
         if results:
-            # Retorna primeira categoria válida
             for cat in results:
-                cat_info = get_category_info(cat.get('category_id'))
-                if cat_info and cat_info.get('listing_allowed'):
-                    return cat.get('category_id')
+                cat_id = cat.get('category_id')
+                if cat_id and is_category_valid(cat_id):
+                    return cat_id
 
-    # Categoria padrão: Componentes Eletrônicos
-    return 'MLB1648'
+    # Fallback: tenta palavras do título progressivamente
+    words = title.split()
+    for i in range(min(4, len(words)), 0, -1):
+        query = ' '.join(words[:i])
+        results = search_category(query)
+        if results:
+            for cat in results:
+                cat_id = cat.get('category_id')
+                if cat_id and is_category_valid(cat_id):
+                    return cat_id
+
+    # Categoria padrão genérica
+    return 'MLB1905'
 
 
 # =============================================================================
@@ -378,14 +404,31 @@ def find_best_category(product):
 # =============================================================================
 
 def calculate_ml_price(cost_price, listing_type='gold_special'):
-    """Calcula preço ML para lucro zero."""
+    """
+    Calcula preço ML para lucro zero, considerando:
+    - Taxa de venda do ML (13% clássico)
+    - Custo do frete grátis (cobrado do vendedor)
+    - Margem de segurança (5%)
+
+    Fórmula: preço = (custo + frete) / (1 - taxa - margem)
+    """
     fee = ML_FEES.get(listing_type, 0.13)
-    total_fee = fee + SAFETY_MARGIN
+    total_fee = fee + SAFETY_MARGIN  # 13% + 5% = 18%
 
-    ml_price = cost_price / (1 - total_fee)
+    # Custo total = produto + frete médio
+    total_cost = cost_price + ML_FRETE_MEDIO
 
+    # Preço para cobrir custos após taxas
+    ml_price = total_cost / (1 - total_fee)
+
+    # Para produtos baratos, a taxa fixa pesa mais
     if ml_price < ML_FIXED_FEE_THRESHOLD:
-        ml_price = (cost_price + ML_FIXED_FEE) / (1 - total_fee)
+        ml_price = (total_cost + ML_FIXED_FEE) / (1 - total_fee)
+
+    # Garantir markup mínimo de 35% para segurança
+    min_price = cost_price * 1.35
+    if ml_price < min_price:
+        ml_price = min_price
 
     return round(ml_price, 2)
 
@@ -404,6 +447,78 @@ def clean_title(title, max_length=60):
         return title
 
     return title[:max_length-3].rsplit(' ', 1)[0] + '...'
+
+
+def get_required_attributes(category_id):
+    """Obtém atributos obrigatórios de uma categoria."""
+    attrs = get_category_attributes(category_id)
+    required = []
+    for attr in attrs:
+        tags = attr.get('tags', {})
+        if tags.get('required') or tags.get('catalog_required'):
+            required.append(attr)
+    return required
+
+
+def fill_required_attributes(category_id, product):
+    """Preenche atributos obrigatórios da categoria com valores inferidos ou padrão."""
+    required_attrs = get_required_attributes(category_id)
+    attributes = []
+
+    # Mapeamento de atributos para valores padrão
+    default_values = {
+        'POWER_SUPPLY_TYPE': 'Elétrica',
+        'NETWORK_CABLE_TYPE': 'Ethernet',
+        'CABLE_LENGTH': '5 m',
+        'COLOR': 'Preto',
+        'VOLTAGE': '220V',
+        'MATERIAL': 'Plástico',
+        'IS_RECHARGEABLE': 'Não',
+        'INCLUDES_CHARGER': 'Não',
+        'WITH_DISPLAY': 'Não',
+        'IS_WIRELESS': 'Não',
+        'CONNECTIVITY': 'Com fio',
+        'PART_NUMBER': product.get('sku', product.get('id', '')),
+        'ALPHANUMERIC_MODEL': product.get('sku', product.get('id', '')),
+        'SELLER_SKU': product.get('sku', product.get('id', '')),
+        'ITEM_CONDITION': 'Novo',
+        'LINE': 'Industrial',
+        'PACKAGE_WEIGHT': '500 g',
+        'UNITS_PER_PACKAGE': '1',
+        'SALE_FORMAT': 'Unidade',
+        'MANUFACTURER': product.get('brand', 'Genérico'),
+    }
+
+    for attr in required_attrs:
+        attr_id = attr.get('id')
+        attr_name = attr.get('name', '')
+
+        # Tenta encontrar valor nas specs do produto
+        specs = product.get('specs', {})
+        value = None
+
+        # Busca no specs do produto
+        for spec_key, spec_val in specs.items():
+            if attr_name.lower() in spec_key.lower() or attr_id.lower() in spec_key.lower():
+                value = spec_val
+                break
+
+        # Se não encontrou, usa valor padrão
+        if not value and attr_id in default_values:
+            value = default_values[attr_id]
+
+        # Se ainda não encontrou, tenta usar o primeiro valor permitido
+        if not value:
+            allowed_values = attr.get('values', [])
+            if allowed_values:
+                value = allowed_values[0].get('name')
+
+        # Adiciona o atributo se encontrou um valor
+        if value:
+            attr_entry = {'id': attr_id, 'value_name': str(value)}
+            attributes.append(attr_entry)
+
+    return attributes
 
 
 def prepare_listing(product, listing_type='gold_special'):
@@ -443,6 +558,47 @@ def prepare_listing(product, listing_type='gold_special'):
     if product.get('image'):
         pictures.append({'source': product['image']})
 
+    # Prepara atributos básicos
+    attributes = []
+
+    # Adiciona marca
+    brand = product.get('brand', 'Genérico')
+    attributes.append({
+        'id': 'BRAND',
+        'value_name': brand
+    })
+
+    # Adiciona modelo (usa SKU ou parte do nome)
+    model = product.get('sku', '')
+    if not model:
+        # Extrai modelo do nome (primeira parte antes de | ou -)
+        name = product.get('name', '')
+        if '|' in name:
+            model = name.split('|')[0].strip()[:60]
+        elif '-' in name:
+            model = name.split('-')[0].strip()[:60]
+        else:
+            model = name[:60]
+    attributes.append({
+        'id': 'MODEL',
+        'value_name': model[:60]
+    })
+
+    # Adiciona GTIN/EAN se disponível
+    gtin_val = product.get('ean') or product.get('gtin')
+    if gtin_val:
+        attributes.append({
+            'id': 'GTIN',
+            'value_name': str(gtin_val)
+        })
+
+    # Adiciona atributos obrigatórios da categoria
+    required_attrs = fill_required_attributes(category_id, product)
+    for attr in required_attrs:
+        # Evita duplicatas
+        if not any(a['id'] == attr['id'] for a in attributes):
+            attributes.append(attr)
+
     # Monta payload
     listing = {
         'title': clean_title(product.get('name', '')),
@@ -454,6 +610,7 @@ def prepare_listing(product, listing_type='gold_special'):
         'listing_type_id': listing_type,
         'condition': 'new',
         'pictures': pictures,
+        'attributes': attributes,
         'sale_terms': [
             {
                 'id': 'WARRANTY_TYPE',
@@ -468,21 +625,13 @@ def prepare_listing(product, listing_type='gold_special'):
         'seller_custom_field': product.get('sku', product.get('id', '')),
     }
 
-    # Adiciona atributo de marca se disponível
-    if product.get('brand'):
-        listing['attributes'] = [
-            {
-                'id': 'BRAND',
-                'value_name': product['brand']
-            }
-        ]
-
     return {
         'listing': listing,
         'description': description[:50000],
         'product': product,
         'cost_price': cost_price,
         'ml_price': ml_price,
+        'category_id': category_id,
     }
 
 
@@ -523,12 +672,28 @@ def get_my_items():
 
 
 def create_listing(prepared):
-    """Cria um anúncio no ML."""
+    """Cria um anúncio no ML, com retry usando categoria genérica se falhar."""
     listing = prepared['listing']
     description = prepared['description']
 
     # Cria o item
     result = api_post('/items', listing)
+
+    # Se falhou, tenta com categoria genérica MLB1905 (modo classified)
+    if not result and listing.get('category_id') != 'MLB1905':
+        original_cat = listing['category_id']
+        listing['category_id'] = 'MLB1905'
+        listing['buying_mode'] = 'classified'
+        listing['listing_type_id'] = 'silver'
+        listing.pop('tags', None)
+        listing.pop('sale_terms', None)
+        # Remove atributos específicos da categoria anterior
+        listing['attributes'] = [
+            a for a in listing.get('attributes', [])
+            if a['id'] in ('BRAND', 'MODEL', 'ITEM_CONDITION', 'SELLER_SKU')
+        ]
+        print(f"  ↳ Retry com MLB1905/classified (era {original_cat})...")
+        result = api_post('/items', listing)
 
     if not result:
         return None
@@ -570,18 +735,17 @@ def sync_products(dry_run=False, limit=None):
     if dry_run:
         print("\n⚠️  MODO SIMULAÇÃO (dry-run) - Nenhum anúncio será criado\n")
 
-    # Obtém itens existentes
-    existing_items = get_my_items()
+    # Obtém itens existentes via ml_products_map.json (muito mais rápido que consultar API)
+    ml_map_file = Path(__file__).parent.parent / 'ml_products_map.json'
     existing_skus = set()
+    if ml_map_file.exists():
+        with open(ml_map_file, 'r') as f:
+            ml_map = json.load(f)
+        existing_skus = set(ml_map.keys())
+    else:
+        ml_map = {}
 
-    for item_id in existing_items:
-        item_data = api_get(f'/items/{item_id}')
-        if item_data:
-            sku = item_data.get('seller_custom_field', '')
-            if sku:
-                existing_skus.add(sku)
-
-    print(f"Anúncios existentes: {len(existing_items)}")
+    print(f"Anúncios existentes (via mapa): {len(existing_skus)}")
 
     # Estatísticas
     stats = {
@@ -629,22 +793,39 @@ def sync_products(dry_run=False, limit=None):
         result = create_listing(prepared)
 
         if result:
-            print(f"  ✓ Criado: {result.get('id')} - {result.get('permalink', '')}")
+            ml_id = result.get('id', '')
+            print(f"  ✓ Criado: {ml_id} - {result.get('permalink', '')}")
             stats['created'] += 1
             log_entries.append({
                 'timestamp': datetime.now().isoformat(),
                 'action': 'created',
-                'item_id': result.get('id'),
+                'item_id': ml_id,
                 'sku': sku,
                 'title': prepared['listing']['title'],
                 'price': prepared['ml_price'],
             })
+            # Atualiza mapa local
+            ml_map[sku] = {
+                'ml_id': ml_id,
+                'status': 'active',
+                'price': prepared['ml_price'],
+            }
+            # Salva mapa a cada 10 criações
+            if stats['created'] % 10 == 0:
+                with open(ml_map_file, 'w') as f:
+                    json.dump(ml_map, f, indent=2, ensure_ascii=False)
         else:
             print(f"  ✗ Erro ao criar anúncio")
             stats['errors'] += 1
 
         # Rate limiting
         time.sleep(1)
+
+    # Salva mapa ML atualizado
+    if ml_map:
+        with open(ml_map_file, 'w') as f:
+            json.dump(ml_map, f, indent=2, ensure_ascii=False)
+        print(f"\n✓ Mapa ML salvo: {len(ml_map)} produtos")
 
     # Salva log
     if log_entries:
