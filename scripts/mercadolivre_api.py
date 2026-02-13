@@ -435,8 +435,8 @@ def find_best_category(product):
                 if cat_id and is_category_valid(cat_id):
                     return cat_id
 
-    # Categoria padrão genérica
-    return 'MLB1905'
+    # Sem categoria encontrada
+    return None
 
 
 # =============================================================================
@@ -520,20 +520,29 @@ def infer_attr_from_product(attr_id, attr_name, product):
             return None
         return None
 
-    if attr_id == 'PEAK_POWER' or attr_id == 'MAX_POWER':
+    if attr_id in ('PEAK_POWER', 'MAX_POWER', 'POWER_OUTPUT'):
         # Tenta extrair potência do nome (ex: "3kVA", "700VA", "2000W")
         m = re.search(r'(\d+(?:[.,]\d+)?)\s*(kva|va|kw|w)\b', name, re.IGNORECASE)
         if m:
             val, unit = m.group(1), m.group(2).upper()
             val = val.replace(',', '.')
-            if unit == 'KVA':
-                return f"{float(val) * 1000:.0f} VA"
-            elif unit == 'VA':
-                return f"{val} VA"
-            elif unit == 'KW':
-                return f"{float(val) * 1000:.0f} W"
+            # PEAK_POWER sempre usa VA
+            if attr_id == 'PEAK_POWER':
+                if unit in ('KVA', 'KW'):
+                    return f"{float(val) * 1000:.0f} VA"
+                elif unit == 'W':
+                    return f"{val} VA"
+                else:
+                    return f"{val} VA"
             else:
-                return f"{val} W"
+                if unit == 'KVA':
+                    return f"{float(val) * 1000:.0f} W"
+                elif unit == 'VA':
+                    return f"{val} W"
+                elif unit == 'KW':
+                    return f"{float(val) * 1000:.0f} W"
+                else:
+                    return f"{val} W"
 
     if attr_id == 'VOLTAGE':
         m = re.search(r'(\d+)\s*v(?:ac|dc|ca|cc)?\b', name, re.IGNORECASE)
@@ -589,8 +598,6 @@ def fill_required_attributes(category_id, product):
         'UNITS_PER_PACK': '1',
         'SALE_FORMAT': 'Unidade',
         'MANUFACTURER': product.get('brand', 'Genérico'),
-        'ELECTRIC_PLUG_TYPE': 'Brasileiro tipo N',
-        'CONNECTION_TYPE': 'Fixo',
         'PRODUCT_TYPES': 'Nobreak',
     }
 
@@ -604,6 +611,13 @@ def fill_required_attributes(category_id, product):
             'relé': '7243207',
             'rele': '7243207',
             '_default': '7243206',
+        },
+        'CONNECTION_TYPE': {
+            'fêmea': '2210105',
+            'femea': '2210105',
+            'macho': '2210104',
+            'plug': '2210104',
+            '_default': '2210105',
         },
     }
 
@@ -660,6 +674,10 @@ def prepare_listing(product, listing_type='gold_special'):
 
     ml_price = calculate_ml_price(cost_price, listing_type)
     category_id = find_best_category(product)
+
+    if not category_id:
+        print(f"  → Sem categoria ML encontrada")
+        return None
 
     # Monta descrição
     description = product.get('description', '')
@@ -860,8 +878,9 @@ def create_listing(prepared):
                             listing['attributes'].append({'id': attr_id, 'value_id': first['id']})
                         continue
 
-                    # Valor genérico baseado no tipo
-                    listing['attributes'].append({'id': attr_id, 'value_name': product.get('sku', 'N/A')})
+                    # Para atributos normalizáveis (number_unit), não enviar valor genérico
+                    if val_type not in ('number_unit',):
+                        listing['attributes'].append({'id': attr_id, 'value_name': product.get('sku', 'N/A')})
 
             print(f"  ↳ Retry com atributos preenchidos: {missing_attrs}")
             result = api_post('/items', listing)
