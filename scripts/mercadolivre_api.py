@@ -62,6 +62,24 @@ SAFETY_MARGIN = 0.05  # 5% de margem
 CATEGORY_CACHE = {}
 
 
+def generate_placeholder_gtin(product):
+    """Gera um EAN-13 único e válido para produtos sem código de barras real.
+    Usa hash do SKU/ID para gerar os 9 dígitos intermediários, com prefixo 789 (Brasil)."""
+    import hashlib
+    sku = str(product.get('sku', product.get('id', '')))
+    # Hash do SKU para gerar 9 dígitos únicos
+    h = hashlib.md5(sku.encode()).hexdigest()
+    digits_9 = str(int(h[:9], 16) % 1000000000).zfill(9)
+    # Prefixo 789 (Brasil) + 9 dígitos = 12 dígitos
+    code_12 = '789' + digits_9
+    # Calcula dígito verificador EAN-13
+    total = 0
+    for i, d in enumerate(code_12):
+        total += int(d) * (1 if i % 2 == 0 else 3)
+    check = (10 - (total % 10)) % 10
+    return code_12 + str(check)
+
+
 # =============================================================================
 # CONFIGURAÇÃO E AUTENTICAÇÃO
 # =============================================================================
@@ -298,6 +316,28 @@ def api_post(endpoint, data):
         return None
 
 
+def api_post_with_error(endpoint, data):
+    """Faz requisição POST retornando body de erro para análise."""
+    token = get_access_token()
+    if not token:
+        return None
+
+    headers = {
+        'Authorization': f'Bearer {token}',
+        'Content-Type': 'application/json',
+    }
+    response = requests.post(f"{ML_API_URL}{endpoint}", headers=headers, json=data)
+
+    if response.status_code in [200, 201]:
+        return response.json()
+    else:
+        print(f"❌ Erro API POST {endpoint}: {response.status_code} - {response.text}")
+        try:
+            return response.json()
+        except Exception:
+            return None
+
+
 def api_put(endpoint, data):
     """Faz requisição PUT na API."""
     token = get_access_token()
@@ -460,10 +500,71 @@ def get_required_attributes(category_id):
     return required
 
 
+def infer_attr_from_product(attr_id, attr_name, product):
+    """Tenta inferir valor de atributo a partir dos dados do produto."""
+    name = product.get('name', '').lower()
+    specs = product.get('specs', {})
+
+    # Busca no specs do produto
+    for spec_key, spec_val in specs.items():
+        if attr_name.lower() in spec_key.lower() or attr_id.lower() in spec_key.lower():
+            return spec_val
+
+    # Inferências específicas por atributo
+    if attr_id == 'CONTACTOR_AND_RELAY_TYPE':
+        if 'contator' in name or 'contactor' in name:
+            return None  # use value_id
+        elif 'relé térmico' in name or 'rele termico' in name:
+            return None
+        elif 'relé' in name or 'rele' in name:
+            return None
+        return None
+
+    if attr_id == 'PEAK_POWER' or attr_id == 'MAX_POWER':
+        # Tenta extrair potência do nome (ex: "3kVA", "700VA", "2000W")
+        m = re.search(r'(\d+(?:[.,]\d+)?)\s*(kva|va|kw|w)\b', name, re.IGNORECASE)
+        if m:
+            val, unit = m.group(1), m.group(2).upper()
+            val = val.replace(',', '.')
+            if unit == 'KVA':
+                return f"{float(val) * 1000:.0f} VA"
+            elif unit == 'VA':
+                return f"{val} VA"
+            elif unit == 'KW':
+                return f"{float(val) * 1000:.0f} W"
+            else:
+                return f"{val} W"
+
+    if attr_id == 'VOLTAGE':
+        m = re.search(r'(\d+)\s*v(?:ac|dc|ca|cc)?\b', name, re.IGNORECASE)
+        if m:
+            return f"{m.group(1)}V"
+
+    if attr_id == 'SECTION_SIZE':
+        # Extrai seção do cabo (ex: "0,32mm²", "2.5mm²", "6mm²")
+        m = re.search(r'(\d+(?:[.,]\d+)?)\s*mm²', name, re.IGNORECASE)
+        if m:
+            val = m.group(1).replace(',', '.')
+            return f"{val} mm²"
+
+    if attr_id == 'CONDUCTORS_NUMBER':
+        return '1'
+
+    if attr_id == 'CABLE_LENGTH':
+        m = re.search(r'(\d+(?:[.,]\d+)?)\s*m(?:etro)?s?\b', name, re.IGNORECASE)
+        if m:
+            val = m.group(1).replace(',', '.')
+            return f"{val} m"
+
+    return None
+
+
 def fill_required_attributes(category_id, product):
     """Preenche atributos obrigatórios da categoria com valores inferidos ou padrão."""
     required_attrs = get_required_attributes(category_id)
     attributes = []
+
+    name_lower = product.get('name', '').lower()
 
     # Mapeamento de atributos para valores padrão
     default_values = {
@@ -485,23 +586,53 @@ def fill_required_attributes(category_id, product):
         'LINE': 'Industrial',
         'PACKAGE_WEIGHT': '500 g',
         'UNITS_PER_PACKAGE': '1',
+        'UNITS_PER_PACK': '1',
         'SALE_FORMAT': 'Unidade',
         'MANUFACTURER': product.get('brand', 'Genérico'),
+        'ELECTRIC_PLUG_TYPE': 'Brasileiro tipo N',
+        'CONNECTION_TYPE': 'Fixo',
+        'PRODUCT_TYPES': 'Nobreak',
+    }
+
+    # Mapeamento de value_id para atributos com lista fechada
+    value_id_map = {
+        'CONTACTOR_AND_RELAY_TYPE': {
+            'contator': '7243206',
+            'contactor': '7243206',
+            'relé térmico': '47353864',
+            'rele termico': '47353864',
+            'relé': '7243207',
+            'rele': '7243207',
+            '_default': '7243206',
+        },
     }
 
     for attr in required_attrs:
         attr_id = attr.get('id')
         attr_name = attr.get('name', '')
 
-        # Tenta encontrar valor nas specs do produto
-        specs = product.get('specs', {})
-        value = None
+        # Pula GTIN e EMPTY_GTIN_REASON (tratados separadamente)
+        if attr_id in ('GTIN', 'EMPTY_GTIN_REASON'):
+            continue
 
-        # Busca no specs do produto
-        for spec_key, spec_val in specs.items():
-            if attr_name.lower() in spec_key.lower() or attr_id.lower() in spec_key.lower():
-                value = spec_val
-                break
+        # Tenta inferir do produto
+        value = infer_attr_from_product(attr_id, attr_name, product)
+
+        # Para atributos com value_id mapeado
+        if not value and attr_id in value_id_map:
+            vid_map = value_id_map[attr_id]
+            chosen_vid = None
+            for keyword, vid in vid_map.items():
+                if keyword == '_default':
+                    continue
+                if keyword in name_lower:
+                    chosen_vid = vid
+                    break
+            if not chosen_vid:
+                chosen_vid = vid_map.get('_default')
+            if chosen_vid:
+                attributes.append({'id': attr_id, 'value_id': chosen_vid})
+                continue
 
         # Se não encontrou, usa valor padrão
         if not value and attr_id in default_values:
@@ -584,13 +715,14 @@ def prepare_listing(product, listing_type='gold_special'):
         'value_name': model[:60]
     })
 
-    # Adiciona GTIN/EAN se disponível
+    # Adiciona GTIN/EAN - gera EAN-13 único por produto se não tem código real
     gtin_val = product.get('ean') or product.get('gtin')
-    if gtin_val:
-        attributes.append({
-            'id': 'GTIN',
-            'value_name': str(gtin_val)
-        })
+    if not gtin_val:
+        gtin_val = generate_placeholder_gtin(product)
+    attributes.append({
+        'id': 'GTIN',
+        'value_name': str(gtin_val)
+    })
 
     # Adiciona atributos obrigatórios da categoria
     required_attrs = fill_required_attributes(category_id, product)
@@ -672,38 +804,84 @@ def get_my_items():
 
 
 def create_listing(prepared):
-    """Cria um anúncio no ML, com retry usando categoria genérica se falhar."""
+    """Cria um anúncio no ML, com retry preenchendo atributos faltantes."""
     listing = prepared['listing']
     description = prepared['description']
 
     # Cria o item
-    result = api_post('/items', listing)
+    result = api_post_with_error('/items', listing)
 
-    # Se falhou, tenta com categoria genérica MLB1905 (modo classified)
-    if not result and listing.get('category_id') != 'MLB1905':
-        original_cat = listing['category_id']
-        listing['category_id'] = 'MLB1905'
-        listing['buying_mode'] = 'classified'
-        listing['listing_type_id'] = 'silver'
-        listing.pop('tags', None)
-        listing.pop('sale_terms', None)
-        # Remove atributos específicos da categoria anterior
-        listing['attributes'] = [
-            a for a in listing.get('attributes', [])
-            if a['id'] in ('BRAND', 'MODEL', 'ITEM_CONDITION', 'SELLER_SKU')
-        ]
-        print(f"  ↳ Retry com MLB1905/classified (era {original_cat})...")
-        result = api_post('/items', listing)
+    if isinstance(result, dict) and result.get('id'):
+        # Sucesso
+        pass
+    elif isinstance(result, dict) and result.get('cause'):
+        # Falhou - tenta preencher atributos faltantes do erro
+        causes = result.get('cause', [])
+        missing_attrs = []
+        for c in causes:
+            if c.get('type') == 'error' and 'missing' in c.get('code', ''):
+                msg = c.get('message', '')
+                # Extrai nomes de atributos da mensagem de erro
+                m = re.search(r'\[([A-Z_,\s]+)\]', msg)
+                if m:
+                    attrs = [a.strip() for a in m.group(1).split(',')]
+                    missing_attrs.extend(attrs)
 
-    if not result:
+        if missing_attrs:
+            cat_id = listing['category_id']
+            cat_attrs = get_category_attributes(cat_id)
+            product = prepared['product']
+            name_lower = product.get('name', '').lower()
+
+            for attr_id in missing_attrs:
+                # Pula se já existe
+                if any(a.get('id') == attr_id for a in listing['attributes']):
+                    continue
+
+                # Busca info do atributo na categoria
+                attr_info = next((a for a in cat_attrs if a.get('id') == attr_id), None)
+                if attr_info:
+                    # Tenta inferir valor
+                    value = infer_attr_from_product(attr_id, attr_info.get('name', ''), product)
+                    if value:
+                        listing['attributes'].append({'id': attr_id, 'value_name': str(value)})
+                        continue
+
+                    # Para atributos com value_type normalizable, usar value_name
+                    val_type = attr_info.get('value_type', '')
+
+                    # Usa primeiro valor permitido (preferir value_name para normalizable)
+                    allowed = attr_info.get('values', [])
+                    if allowed:
+                        first = allowed[0]
+                        if val_type in ('number_unit', 'string') or first.get('name'):
+                            listing['attributes'].append({'id': attr_id, 'value_name': first.get('name', str(first.get('id', '')))})
+                        else:
+                            listing['attributes'].append({'id': attr_id, 'value_id': first['id']})
+                        continue
+
+                    # Valor genérico baseado no tipo
+                    listing['attributes'].append({'id': attr_id, 'value_name': product.get('sku', 'N/A')})
+
+            print(f"  ↳ Retry com atributos preenchidos: {missing_attrs}")
+            result = api_post('/items', listing)
+        else:
+            result = None
+    else:
+        result = None
+
+    if not result or not isinstance(result, dict) or not result.get('id'):
         return None
 
     item_id = result.get('id')
 
     # Adiciona descrição
     if item_id and description:
+        desc_text = description
+        # Remove caracteres que podem causar erro de plain_text
+        desc_text = re.sub(r'[<>]', '', desc_text)
         api_post(f'/items/{item_id}/description', {
-            'plain_text': description
+            'plain_text': desc_text
         })
 
     return result

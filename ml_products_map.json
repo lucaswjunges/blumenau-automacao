@@ -28655,5 +28655,1535 @@
     "ml_id": "MLB4474049529",
     "status": "active",
     "price": 247153.13
+  },
+  "BVX1200I-BR": {
+    "ml_id": "MLB4473986525",
+    "status": "active",
+    "price": 2574.34
+  },
+  "BVX700-BR": {
+    "ml_id": "MLB4474115613",
+    "status": "active",
+    "price": 1600.87
+  },
+  "BVX700BI-BR": {
+    "ml_id": "MLB4473921497",
+    "status": "active",
+    "price": 1320.65
+  },
+  "112869": {
+    "ml_id": "MLB4473882997",
+    "status": "active",
+    "price": 944.64
+  },
+  "BVX600BI-BR": {
+    "ml_id": "MLB4474089567",
+    "status": "active",
+    "price": 1452.34
+  },
+  "SURTA3000XL-BR": {
+    "ml_id": "MLB4473844107",
+    "status": "active",
+    "price": 22805.31
+  },
+  "SMV1500AI-BR": {
+    "ml_id": "MLB4473986537",
+    "status": "active",
+    "price": 10957.29
+  },
+  "6030": {
+    "ml_id": "MLB4473986541",
+    "status": "active",
+    "price": 389.27
+  },
+  "6180": {
+    "ml_id": "MLB4474012259",
+    "status": "active",
+    "price": 573.28
+  },
+  "5113": {
+    "ml_id": "MLB4474024903",
+    "status": "active",
+    "price": 163.7
+  },
+  "6128": {
+    "ml_id": "MLB4474089581",
+    "status": "active",
+    "price": 197.5
+  },
+  "6032": {
+    "ml_id": "MLB4473856853",
+    "status": "active",
+    "price": 266.48
+  },
+  "6060": {
+    "ml_id": "MLB4473883021",
+    "status": "active",
+    "price": 182.91
+  },
+  "6110": {
+    "ml_id": "MLB4474050913",
+    "status": "active",
+    "price": 206.37
+  },
+  "BMXFTB2820": {
+    "ml_id": "MLB4474115637",
+    "status": "active",
+    "price": 948.43
+  },
+  "XB5AA41": {
+    "ml_id": "MLB4473870091",
+    "status": "active",
+    "price": 162.34
+  },
+  "XB5AA31": {
+    "ml_id": "MLB4473973467",
+    "status": "active",
+    "price": 162.34
+  },
+  "XB5AA42": {
+    "ml_id": "MLB4474063803",
+    "status": "active",
+    "price": 162.34
+  },
+  "ZB5AS864": {
+    "ml_id": "MLB4474089591",
+    "status": "active",
+    "price": 155.89
+  },
+  "ZB5AW343": {
+    "ml_id": "MLB4474063811",
+    "status": "active",
+    "price": 174.05
+  },
+  "ZB4BC2": {
+    "ml_id": "MLB4473896015",
+    "status": "active",
+    "price": 155.06
+  },
+  "113323": {
+    "ml_id": "MLB4474089627",
+    "status": "active",
+    "price": 2000.7
+  },
+  "113324": {
+    "ml_id": "MLB4473831185",
+    "status": "active",
+    "price": 2346.98
+  },
+  "11389": {
+    "ml_id": "MLB4474012439",
+    "status": "active",
+    "price": 167.1
+  },
+  "11388": {
+    "ml_id": "MLB4473908669",
+    "status": "active",
+    "price": 179.29
+  },
+  "11387": {
+    "ml_id": "MLB4474038009",
+    "status": "active",
+    "price": 179.29
+  },
+  "11386": {
+    "ml_id": "MLB4474051075",
+    "status": "active",
+    "price": 179.29
+  },
+  "11385": {
+    "ml_id": "MLB4473883139",
+    "status": "active",
+    "price": 179.29
+  },
+  "11384": {
+    "ml_id": "MLB4473973597",
+    "status": "active",
+    "price": 179.29
+  },
+  "11383": {
+    "ml_id": "MLB4473844257",
+    "status": "active",
+    "price": 179.29
+  },
+  "11382": {
+    "ml_id": "MLB4473934877",
+    "status": "active",
+    "price": 179.29
+  },
+  "113325": {
+    "ml_id": "MLB4474128731",
+    "status": "active",
+    "price": 303.66
+  },
+  "113319": {
+    "ml_id": "MLB4473947827",
+    "status": "active",
+    "price": 421.2
+  },
+  "113320": {
+    "ml_id": "MLB4473934883",
+    "status": "active",
+    "price": 568.35
+  },
+  "113333": {
+    "ml_id": "MLB4473896137",
+    "status": "active",
+    "price": 1348.65
+  },
+  "113332": {
+    "ml_id": "MLB4474102711",
+    "status": "active",
+    "price": 1140.75
+  },
+  "23085": {
+    "ml_id": "MLB4473870229",
+    "status": "active",
+    "price": 170.22
+  },
+  "3975": {
+    "ml_id": "MLB4473921701",
+    "status": "active",
+    "price": 546.21
+  },
+  "4505": {
+    "ml_id": "MLB4473947839",
+    "status": "active",
+    "price": 438.32
+  },
+  "4670": {
+    "ml_id": "MLB4473947843",
+    "status": "active",
+    "price": 181.95
+  },
+  "339": {
+    "ml_id": "MLB4474076679",
+    "status": "active",
+    "price": 183.05
+  },
+  "11227": {
+    "ml_id": "MLB4473921703",
+    "status": "active",
+    "price": 200.68
+  },
+  "11228": {
+    "ml_id": "MLB4474038031",
+    "status": "active",
+    "price": 225.52
+  },
+  "11229": {
+    "ml_id": "MLB4474025103",
+    "status": "active",
+    "price": 239.21
+  },
+  "11230": {
+    "ml_id": "MLB4473947853",
+    "status": "active",
+    "price": 203.91
+  },
+  "11231": {
+    "ml_id": "MLB4474089765",
+    "status": "active",
+    "price": 194.27
+  },
+  "11233": {
+    "ml_id": "MLB4473921717",
+    "status": "active",
+    "price": 212.71
+  },
+  "11234": {
+    "ml_id": "MLB4473870257",
+    "status": "active",
+    "price": 249.91
+  },
+  "113559": {
+    "ml_id": "MLB4473831311",
+    "status": "active",
+    "price": 430.47
+  },
+  "113873": {
+    "ml_id": "MLB6251804186",
+    "status": "active",
+    "price": 226.34
+  },
+  "113991": {
+    "ml_id": "MLB4474128765",
+    "status": "active",
+    "price": 271.8
+  },
+  "VCF02": {
+    "ml_id": "MLB4473973645",
+    "status": "active",
+    "price": 505.43
+  },
+  "VCF2": {
+    "ml_id": "MLB4473883185",
+    "status": "active",
+    "price": 1037.43
+  },
+  "11359": {
+    "ml_id": "MLB4473883189",
+    "status": "active",
+    "price": 214.34
+  },
+  "11360": {
+    "ml_id": "MLB4474025119",
+    "status": "active",
+    "price": 384.59
+  },
+  "VCF0": {
+    "ml_id": "MLB4474038061",
+    "status": "active",
+    "price": 618.75
+  },
+  "VCF1": {
+    "ml_id": "MLB4473999719",
+    "status": "active",
+    "price": 700.87
+  },
+  "XB4BD21": {
+    "ml_id": "MLB4474038067",
+    "status": "active",
+    "price": 282.46
+  },
+  "113063": {
+    "ml_id": "MLB4473844323",
+    "status": "active",
+    "price": 173.3
+  },
+  "113836": {
+    "ml_id": "MLB4473857053",
+    "status": "active",
+    "price": 285.4
+  },
+  "LC1E0610F7": {
+    "ml_id": "MLB4473973685",
+    "status": "active",
+    "price": 163.9
+  },
+  "113825": {
+    "ml_id": "MLB4473934937",
+    "status": "active",
+    "price": 175.62
+  },
+  "113824": {
+    "ml_id": "MLB4473921747",
+    "status": "active",
+    "price": 175.62
+  },
+  "113819": {
+    "ml_id": "MLB4473831371",
+    "status": "active",
+    "price": 198.23
+  },
+  "113826": {
+    "ml_id": "MLB4473921749",
+    "status": "active",
+    "price": 198.23
+  },
+  "113821": {
+    "ml_id": "MLB4474102763",
+    "status": "active",
+    "price": 198.23
+  },
+  "113829": {
+    "ml_id": "MLB4473883225",
+    "status": "active",
+    "price": 413.86
+  },
+  "113827": {
+    "ml_id": "MLB4473831373",
+    "status": "active",
+    "price": 462.43
+  },
+  "113828": {
+    "ml_id": "MLB6251804218",
+    "status": "active",
+    "price": 544.64
+  },
+  "11367": {
+    "ml_id": "MLB4473844335",
+    "status": "active",
+    "price": 195.09
+  },
+  "11366": {
+    "ml_id": "MLB4474012523",
+    "status": "active",
+    "price": 227.01
+  },
+  "11364": {
+    "ml_id": "MLB4474102767",
+    "status": "active",
+    "price": 265.0
+  },
+  "11365": {
+    "ml_id": "MLB4474089823",
+    "status": "active",
+    "price": 183.24
+  },
+  "114012": {
+    "ml_id": "MLB6251804222",
+    "status": "active",
+    "price": 713.11
+  },
+  "113662": {
+    "ml_id": "MLB4474064047",
+    "status": "active",
+    "price": 263.57
+  },
+  "113661": {
+    "ml_id": "MLB4473857079",
+    "status": "active",
+    "price": 222.56
+  },
+  "113750": {
+    "ml_id": "MLB4473947905",
+    "status": "active",
+    "price": 455.96
+  },
+  "113751": {
+    "ml_id": "MLB4473844337",
+    "status": "active",
+    "price": 455.96
+  },
+  "113753": {
+    "ml_id": "MLB4473986791",
+    "status": "active",
+    "price": 936.74
+  },
+  "113754": {
+    "ml_id": "MLB4474012533",
+    "status": "active",
+    "price": 1008.36
+  },
+  "113653": {
+    "ml_id": "MLB4473908755",
+    "status": "active",
+    "price": 637.73
+  },
+  "113652": {
+    "ml_id": "MLB4474064063",
+    "status": "active",
+    "price": 637.54
+  },
+  "113651": {
+    "ml_id": "MLB4473831397",
+    "status": "active",
+    "price": 637.54
+  },
+  "113654": {
+    "ml_id": "MLB4473999775",
+    "status": "active",
+    "price": 713.11
+  },
+  "113655": {
+    "ml_id": "MLB4474128809",
+    "status": "active",
+    "price": 713.11
+  },
+  "113656": {
+    "ml_id": "MLB4473857087",
+    "status": "active",
+    "price": 713.11
+  },
+  "113657": {
+    "ml_id": "MLB4474025155",
+    "status": "active",
+    "price": 713.11
+  },
+  "113752": {
+    "ml_id": "MLB4473921771",
+    "status": "active",
+    "price": 303.27
+  },
+  "113647": {
+    "ml_id": "MLB4473896225",
+    "status": "active",
+    "price": 388.11
+  },
+  "4406": {
+    "ml_id": "MLB4473999781",
+    "status": "active",
+    "price": 349.3
+  },
+  "5065": {
+    "ml_id": "MLB4474012541",
+    "status": "active",
+    "price": 271.83
+  },
+  "4941": {
+    "ml_id": "MLB4473908769",
+    "status": "active",
+    "price": 214.88
+  },
+  "DS-2CE16C0T-IRPF": {
+    "ml_id": "MLB4473986801",
+    "status": "active",
+    "price": 173.02
+  },
+  "4362": {
+    "ml_id": "MLB4474012545",
+    "status": "active",
+    "price": 207.15
+  },
+  "4953": {
+    "ml_id": "MLB4473934973",
+    "status": "active",
+    "price": 248.56
+  },
+  "3790": {
+    "ml_id": "MLB4473857101",
+    "status": "active",
+    "price": 170.6
+  },
+  "3821": {
+    "ml_id": "MLB4474128827",
+    "status": "active",
+    "price": 214.45
+  },
+  "4963": {
+    "ml_id": "MLB4473934987",
+    "status": "active",
+    "price": 561.47
+  },
+  "4402": {
+    "ml_id": "MLB4474051173",
+    "status": "active",
+    "price": 309.48
+  },
+  "4641": {
+    "ml_id": "MLB4473973737",
+    "status": "active",
+    "price": 304.61
+  },
+  "4964": {
+    "ml_id": "MLB4473896247",
+    "status": "active",
+    "price": 292.43
+  },
+  "4951": {
+    "ml_id": "MLB4473921795",
+    "status": "active",
+    "price": 632.52
+  },
+  "H9C": {
+    "ml_id": "MLB4474089847",
+    "status": "active",
+    "price": 1147.37
+  },
+  "4403": {
+    "ml_id": "MLB4473935001",
+    "status": "active",
+    "price": 389.76
+  },
+  "3794": {
+    "ml_id": "MLB4474102801",
+    "status": "active",
+    "price": 915.73
+  },
+  "4323": {
+    "ml_id": "MLB4473844363",
+    "status": "active",
+    "price": 1171.98
+  },
+  "IDS-72XXHQHI-M1-S": {
+    "ml_id": "MLB6251804268",
+    "status": "active",
+    "price": 809.87
+  },
+  "IDS-72XXHQHI-M1-E": {
+    "ml_id": "MLB4474012563",
+    "status": "active",
+    "price": 1012.37
+  },
+  "EZ9F33180": {
+    "ml_id": "MLB4474012567",
+    "status": "active",
+    "price": 159.54
+  },
+  "EZ9F33191": {
+    "ml_id": "MLB4473921805",
+    "status": "active",
+    "price": 159.54
+  },
+  "EZ9F33270": {
+    "ml_id": "MLB4474115919",
+    "status": "active",
+    "price": 165.79
+  },
+  "113840": {
+    "ml_id": "MLB4474051187",
+    "status": "active",
+    "price": 260.61
+  },
+  "113841": {
+    "ml_id": "MLB6251804282",
+    "status": "active",
+    "price": 260.61
+  },
+  "113842": {
+    "ml_id": "MLB6252313514",
+    "status": "active",
+    "price": 274.01
+  },
+  "113843": {
+    "ml_id": "MLB4474115929",
+    "status": "active",
+    "price": 274.01
+  },
+  "113844": {
+    "ml_id": "MLB4473857123",
+    "status": "active",
+    "price": 274.01
+  },
+  "113845": {
+    "ml_id": "MLB4473883279",
+    "status": "active",
+    "price": 274.01
+  },
+  "113846": {
+    "ml_id": "MLB4473935017",
+    "status": "active",
+    "price": 274.01
+  },
+  "113847": {
+    "ml_id": "MLB4473999825",
+    "status": "active",
+    "price": 274.01
+  },
+  "402021": {
+    "ml_id": "MLB4474102823",
+    "status": "active",
+    "price": 835.3
+  },
+  "12157": {
+    "ml_id": "MLB6251804294",
+    "status": "active",
+    "price": 3644.68
+  },
+  "414120": {
+    "ml_id": "MLB4473947965",
+    "status": "active",
+    "price": 155.09
+  },
+  "11762": {
+    "ml_id": "MLB6251804296",
+    "status": "active",
+    "price": 284.77
+  },
+  "414124": {
+    "ml_id": "MLB6252313532",
+    "status": "active",
+    "price": 241.74
+  },
+  "414125": {
+    "ml_id": "MLB4474128855",
+    "status": "active",
+    "price": 242.07
+  },
+  "414216": {
+    "ml_id": "MLB4474076811",
+    "status": "active",
+    "price": 286.57
+  },
+  "11241": {
+    "ml_id": "MLB4473870353",
+    "status": "active",
+    "price": 618.16
+  },
+  "414135": {
+    "ml_id": "MLB4473935033",
+    "status": "active",
+    "price": 633.06
+  },
+  "11883": {
+    "ml_id": "MLB4474064111",
+    "status": "active",
+    "price": 1794.0
+  },
+  "414160": {
+    "ml_id": "MLB6251804308",
+    "status": "active",
+    "price": 939.71
+  },
+  "414166": {
+    "ml_id": "MLB4473973777",
+    "status": "active",
+    "price": 2219.29
+  },
+  "414168": {
+    "ml_id": "MLB6251804312",
+    "status": "active",
+    "price": 724.83
+  },
+  "414955": {
+    "ml_id": "MLB4474102853",
+    "status": "active",
+    "price": 373.57
+  },
+  "11747": {
+    "ml_id": "MLB4473947977",
+    "status": "active",
+    "price": 505.76
+  },
+  "402010": {
+    "ml_id": "MLB4473973779",
+    "status": "active",
+    "price": 237.04
+  },
+  "402015": {
+    "ml_id": "MLB4474064121",
+    "status": "active",
+    "price": 533.76
+  },
+  "402030": {
+    "ml_id": "MLB4474025229",
+    "status": "active",
+    "price": 1448.46
+  },
+  "112870": {
+    "ml_id": "MLB4473870377",
+    "status": "active",
+    "price": 2260.76
+  },
+  "11776": {
+    "ml_id": "MLB4474089885",
+    "status": "active",
+    "price": 1289.49
+  },
+  "112459": {
+    "ml_id": "MLB4473999853",
+    "status": "active",
+    "price": 231.28
+  },
+  "785050": {
+    "ml_id": "MLB4473986893",
+    "status": "active",
+    "price": 256.61
+  },
+  "785063": {
+    "ml_id": "MLB4474051221",
+    "status": "active",
+    "price": 258.96
+  },
+  "785061": {
+    "ml_id": "MLB4474064133",
+    "status": "active",
+    "price": 268.8
+  },
+  "785060": {
+    "ml_id": "MLB4474102877",
+    "status": "active",
+    "price": 268.07
+  },
+  "10758": {
+    "ml_id": "MLB4474102881",
+    "status": "active",
+    "price": 460.55
+  },
+  "11427": {
+    "ml_id": "MLB4473883325",
+    "status": "active",
+    "price": 1827.5
+  },
+  "252032P": {
+    "ml_id": "MLB4473896323",
+    "status": "active",
+    "price": 2868.63
+  },
+  "252510": {
+    "ml_id": "MLB4474102893",
+    "status": "active",
+    "price": 601.38
+  },
+  "252500": {
+    "ml_id": "MLB4474038201",
+    "status": "active",
+    "price": 536.73
+  },
+  "4456": {
+    "ml_id": "MLB4473844399",
+    "status": "active",
+    "price": 255.49
+  },
+  "AL-150": {
+    "ml_id": "MLB4473973805",
+    "status": "active",
+    "price": 314.76
+  },
+  "3913": {
+    "ml_id": "MLB4474038203",
+    "status": "active",
+    "price": 498.15
+  },
+  "283105": {
+    "ml_id": "MLB4473844413",
+    "status": "active",
+    "price": 253.18
+  },
+  "283205": {
+    "ml_id": "MLB4474051239",
+    "status": "active",
+    "price": 351.46
+  },
+  "283200": {
+    "ml_id": "MLB4474051241",
+    "status": "active",
+    "price": 351.46
+  },
+  "283207": {
+    "ml_id": "MLB4474038213",
+    "status": "active",
+    "price": 492.97
+  },
+  "283085": {
+    "ml_id": "MLB4474051245",
+    "status": "active",
+    "price": 189.02
+  },
+  "283240": {
+    "ml_id": "MLB4473896351",
+    "status": "active",
+    "price": 395.93
+  },
+  "112336": {
+    "ml_id": "MLB4473999869",
+    "status": "active",
+    "price": 446.49
+  },
+  "282417": {
+    "ml_id": "MLB4473935079",
+    "status": "active",
+    "price": 196.83
+  },
+  "112454": {
+    "ml_id": "MLB4473935081",
+    "status": "active",
+    "price": 193.85
+  },
+  "288752": {
+    "ml_id": "MLB4473948013",
+    "status": "active",
+    "price": 764.21
+  },
+  "112781": {
+    "ml_id": "MLB4474115985",
+    "status": "active",
+    "price": 555.81
+  },
+  "310020": {
+    "ml_id": "MLB6251804354",
+    "status": "active",
+    "price": 620.18
+  },
+  "310025": {
+    "ml_id": "MLB4474076873",
+    "status": "active",
+    "price": 620.18
+  },
+  "11767": {
+    "ml_id": "MLB4473831497",
+    "status": "active",
+    "price": 1517.04
+  },
+  "398620": {
+    "ml_id": "MLB4473857185",
+    "status": "active",
+    "price": 1197.36
+  },
+  "398655": {
+    "ml_id": "MLB4474102931",
+    "status": "active",
+    "price": 1255.26
+  },
+  "112626": {
+    "ml_id": "MLB4474076887",
+    "status": "active",
+    "price": 258.55
+  },
+  "113266": {
+    "ml_id": "MLB4474089933",
+    "status": "active",
+    "price": 321.61
+  },
+  "113771": {
+    "ml_id": "MLB4474051261",
+    "status": "active",
+    "price": 809.91
+  },
+  "ABE7P16F310": {
+    "ml_id": "MLB4473986937",
+    "status": "active",
+    "price": 4119.4
+  },
+  "BRAVO": {
+    "ml_id": "MLB6252313606",
+    "status": "active",
+    "price": 2828.52
+  },
+  "VCD1": {
+    "ml_id": "MLB4474038243",
+    "status": "active",
+    "price": 700.87
+  },
+  "VCCF2": {
+    "ml_id": "MLB4473973833",
+    "status": "active",
+    "price": 1312.66
+  },
+  "GVBBK630EL": {
+    "ml_id": "MLB4474025301",
+    "status": "active",
+    "price": 21771.02
+  },
+  "GVSOPT004": {
+    "ml_id": "MLB4473908869",
+    "status": "active",
+    "price": 32681.38
+  },
+  "E3SOPT004": {
+    "ml_id": "MLB4474012677",
+    "status": "active",
+    "price": 3977.82
+  },
+  "112670": {
+    "ml_id": "MLB4473896381",
+    "status": "active",
+    "price": 224.94
+  },
+  "11430": {
+    "ml_id": "MLB4474012681",
+    "status": "active",
+    "price": 163.76
+  },
+  "398665": {
+    "ml_id": "MLB4473831515",
+    "status": "active",
+    "price": 631.81
+  },
+  "403204": {
+    "ml_id": "MLB4474089959",
+    "status": "active",
+    "price": 387.68
+  },
+  "GS2AH535": {
+    "ml_id": "MLB4474102955",
+    "status": "active",
+    "price": 884.75
+  },
+  "114009": {
+    "ml_id": "MLB4473870435",
+    "status": "active",
+    "price": 285.4
+  },
+  "11480": {
+    "ml_id": "MLB4473948049",
+    "status": "active",
+    "price": 327.75
+  },
+  "11481": {
+    "ml_id": "MLB4474089965",
+    "status": "active",
+    "price": 362.83
+  },
+  "113052": {
+    "ml_id": "MLB4473883365",
+    "status": "active",
+    "price": 223.3
+  },
+  "11472": {
+    "ml_id": "MLB4473883367",
+    "status": "active",
+    "price": 194.32
+  },
+  "11425": {
+    "ml_id": "MLB4473935115",
+    "status": "active",
+    "price": 294.04
+  },
+  "11420": {
+    "ml_id": "MLB6251804374",
+    "status": "active",
+    "price": 213.16
+  },
+  "11539": {
+    "ml_id": "MLB4473948057",
+    "status": "active",
+    "price": 213.16
+  },
+  "11363": {
+    "ml_id": "MLB4473986973",
+    "status": "active",
+    "price": 223.3
+  },
+  "113051": {
+    "ml_id": "MLB4473831539",
+    "status": "active",
+    "price": 254.01
+  },
+  "434410": {
+    "ml_id": "MLB4473948061",
+    "status": "active",
+    "price": 160.56
+  },
+  "414202": {
+    "ml_id": "MLB4473896405",
+    "status": "active",
+    "price": 168.01
+  },
+  "113380": {
+    "ml_id": "MLB4473999929",
+    "status": "active",
+    "price": 2839.95
+  },
+  "SMV3000CAI-BR": {
+    "ml_id": "MLB4473999931",
+    "status": "active",
+    "price": 17231.99
+  },
+  "SRVPM3KIL-BR": {
+    "ml_id": "MLB4473973867",
+    "status": "active",
+    "price": 12857.18
+  },
+  "SMV3000CA-BR": {
+    "ml_id": "MLB4473986979",
+    "status": "active",
+    "price": 17576.66
+  },
+  "SRT5KXLI": {
+    "ml_id": "MLB4474102977",
+    "status": "active",
+    "price": 42394.46
+  },
+  "SRV1KI-BR": {
+    "ml_id": "MLB4474102979",
+    "status": "active",
+    "price": 8237.71
+  },
+  "SRV2KI-BR": {
+    "ml_id": "MLB4473921927",
+    "status": "active",
+    "price": 10830.83
+  },
+  "BVX1200-BR": {
+    "ml_id": "MLB4474089997",
+    "status": "active",
+    "price": 2574.34
+  },
+  "BX1500BI-BR": {
+    "ml_id": "MLB4474038283",
+    "status": "active",
+    "price": 2588.6
+  },
+  "E3SUPS30K3IB": {
+    "ml_id": "MLB4474089999",
+    "status": "active",
+    "price": 113513.93
+  },
+  "SRV10KI": {
+    "ml_id": "MLB4473948079",
+    "status": "active",
+    "price": 42402.5
+  },
+  "SRV6KI": {
+    "ml_id": "MLB4474102989",
+    "status": "active",
+    "price": 33120.21
+  },
+  "E3MUPS100KH": {
+    "ml_id": "MLB6252313650",
+    "status": "active",
+    "price": 180679.18
+  },
+  "SRT10KXLI": {
+    "ml_id": "MLB4473857249",
+    "status": "active",
+    "price": 78204.24
+  },
+  "SRT5KXLT": {
+    "ml_id": "MLB4473896419",
+    "status": "active",
+    "price": 43895.14
+  },
+  "SRVPM1KRIL-BR": {
+    "ml_id": "MLB4473999953",
+    "status": "active",
+    "price": 5699.77
+  },
+  "SRVPM6KRIL": {
+    "ml_id": "MLB4473986987",
+    "status": "active",
+    "price": 21860.7
+  },
+  "610045": {
+    "ml_id": "MLB4473973889",
+    "status": "active",
+    "price": 200.01
+  },
+  "785016": {
+    "ml_id": "MLB4473999963",
+    "status": "active",
+    "price": 166.91
+  },
+  "672588": {
+    "ml_id": "MLB4474116067",
+    "status": "active",
+    "price": 508.45
+  },
+  "283230": {
+    "ml_id": "MLB4474076951",
+    "status": "active",
+    "price": 322.26
+  },
+  "283235": {
+    "ml_id": "MLB4473831563",
+    "status": "active",
+    "price": 258.21
+  },
+  "11025": {
+    "ml_id": "MLB4474129001",
+    "status": "active",
+    "price": 264.98
+  },
+  "672570": {
+    "ml_id": "MLB4473883405",
+    "status": "active",
+    "price": 180.16
+  },
+  "XB5DT1S": {
+    "ml_id": "MLB4474038321",
+    "status": "active",
+    "price": 388.17
+  },
+  "LR-800": {
+    "ml_id": "MLB4473987025",
+    "status": "active",
+    "price": 438.32
+  },
+  "LR-800R": {
+    "ml_id": "MLB4474076973",
+    "status": "active",
+    "price": 667.59
+  },
+  "113622": {
+    "ml_id": "MLB4474129013",
+    "status": "active",
+    "price": 380.92
+  },
+  "113621": {
+    "ml_id": "MLB4473896461",
+    "status": "active",
+    "price": 233.01
+  },
+  "113623": {
+    "ml_id": "MLB4473896469",
+    "status": "active",
+    "price": 310.65
+  },
+  "112945": {
+    "ml_id": "MLB4474038339",
+    "status": "active",
+    "price": 259.3
+  },
+  "112451": {
+    "ml_id": "MLB4474090039",
+    "status": "active",
+    "price": 247.4
+  },
+  "113509": {
+    "ml_id": "MLB4473831591",
+    "status": "active",
+    "price": 198.67
+  },
+  "10815": {
+    "ml_id": "MLB4473857299",
+    "status": "active",
+    "price": 710.13
+  },
+  "112779": {
+    "ml_id": "MLB4473883425",
+    "status": "active",
+    "price": 161.28
+  },
+  "680280": {
+    "ml_id": "MLB4473883429",
+    "status": "active",
+    "price": 157.22
+  },
+  "680330": {
+    "ml_id": "MLB4473870517",
+    "status": "active",
+    "price": 182.66
+  },
+  "680660": {
+    "ml_id": "MLB4473896477",
+    "status": "active",
+    "price": 224.23
+  },
+  "680430": {
+    "ml_id": "MLB4474103043",
+    "status": "active",
+    "price": 175.43
+  },
+  "680435": {
+    "ml_id": "MLB4474076985",
+    "status": "active",
+    "price": 175.43
+  },
+  "680480": {
+    "ml_id": "MLB4473935177",
+    "status": "active",
+    "price": 167.99
+  },
+  "10718": {
+    "ml_id": "MLB4474012753",
+    "status": "active",
+    "price": 161.72
+  },
+  "680490": {
+    "ml_id": "MLB4474116111",
+    "status": "active",
+    "price": 164.35
+  },
+  "680495": {
+    "ml_id": "MLB4473883443",
+    "status": "active",
+    "price": 170.15
+  },
+  "11535": {
+    "ml_id": "MLB4473948159",
+    "status": "active",
+    "price": 156.59
+  },
+  "680645": {
+    "ml_id": "MLB4474000027",
+    "status": "active",
+    "price": 165.61
+  },
+  "680650": {
+    "ml_id": "MLB4473883447",
+    "status": "active",
+    "price": 177.18
+  },
+  "680806": {
+    "ml_id": "MLB4474090053",
+    "status": "active",
+    "price": 171.05
+  },
+  "680870": {
+    "ml_id": "MLB4473948167",
+    "status": "active",
+    "price": 206.12
+  },
+  "680800": {
+    "ml_id": "MLB4473973957",
+    "status": "active",
+    "price": 183.24
+  },
+  "680975": {
+    "ml_id": "MLB4474025425",
+    "status": "active",
+    "price": 281.3
+  },
+  "680905": {
+    "ml_id": "MLB4473908949",
+    "status": "active",
+    "price": 222.72
+  },
+  "681035": {
+    "ml_id": "MLB6251804472",
+    "status": "active",
+    "price": 305.93
+  },
+  "681050": {
+    "ml_id": "MLB4474038367",
+    "status": "active",
+    "price": 295.89
+  },
+  "11129": {
+    "ml_id": "MLB4474012771",
+    "status": "active",
+    "price": 263.33
+  },
+  "681210": {
+    "ml_id": "MLB4473908955",
+    "status": "active",
+    "price": 270.74
+  },
+  "681495": {
+    "ml_id": "MLB4473896513",
+    "status": "active",
+    "price": 190.85
+  },
+  "681500": {
+    "ml_id": "MLB4473831629",
+    "status": "active",
+    "price": 190.83
+  },
+  "681633": {
+    "ml_id": "MLB4474129061",
+    "status": "active",
+    "price": 248.0
+  },
+  "681610": {
+    "ml_id": "MLB4474077015",
+    "status": "active",
+    "price": 163.38
+  },
+  "113121": {
+    "ml_id": "MLB4473883471",
+    "status": "active",
+    "price": 207.52
+  },
+  "113122": {
+    "ml_id": "MLB4473844563",
+    "status": "active",
+    "price": 207.52
+  },
+  "681735": {
+    "ml_id": "MLB4473831641",
+    "status": "active",
+    "price": 244.68
+  },
+  "113113": {
+    "ml_id": "MLB4473844575",
+    "status": "active",
+    "price": 214.06
+  },
+  "11527": {
+    "ml_id": "MLB4473908981",
+    "status": "active",
+    "price": 328.44
+  },
+  "114035": {
+    "ml_id": "MLB4474116151",
+    "status": "active",
+    "price": 220.93
+  },
+  "114034": {
+    "ml_id": "MLB4474025471",
+    "status": "active",
+    "price": 220.93
+  },
+  "113792": {
+    "ml_id": "MLB4473831667",
+    "status": "active",
+    "price": 293.15
+  },
+  "113793": {
+    "ml_id": "MLB4474000073",
+    "status": "active",
+    "price": 293.15
+  },
+  "113794": {
+    "ml_id": "MLB4473935231",
+    "status": "active",
+    "price": 293.15
+  },
+  "113795": {
+    "ml_id": "MLB4473987123",
+    "status": "active",
+    "price": 293.15
+  },
+  "681220": {
+    "ml_id": "MLB4473831679",
+    "status": "active",
+    "price": 263.83
+  },
+  "681233": {
+    "ml_id": "MLB6251804512",
+    "status": "active",
+    "price": 288.91
+  },
+  "681250": {
+    "ml_id": "MLB4474129087",
+    "status": "active",
+    "price": 311.68
+  },
+  "681300": {
+    "ml_id": "MLB4473974001",
+    "status": "active",
+    "price": 249.56
+  },
+  "681395": {
+    "ml_id": "MLB4474116169",
+    "status": "active",
+    "price": 180.16
+  },
+  "681400": {
+    "ml_id": "MLB4473883527",
+    "status": "active",
+    "price": 186.49
+  },
+  "RPM41BD": {
+    "ml_id": "MLB6251804526",
+    "status": "active",
+    "price": 157.27
+  },
+  "12064": {
+    "ml_id": "MLB4474077079",
+    "status": "active",
+    "price": 292.35
+  },
+  "11424": {
+    "ml_id": "MLB4474077085",
+    "status": "active",
+    "price": 261.43
+  },
+  "681730": {
+    "ml_id": "MLB4473974009",
+    "status": "active",
+    "price": 553.1
+  },
+  "681553": {
+    "ml_id": "MLB4473909017",
+    "status": "active",
+    "price": 282.1
+  },
+  "113629": {
+    "ml_id": "MLB4474129101",
+    "status": "active",
+    "price": 254.23
+  },
+  "113627": {
+    "ml_id": "MLB4474051389",
+    "status": "active",
+    "price": 342.78
+  },
+  "113628": {
+    "ml_id": "MLB4473922055",
+    "status": "active",
+    "price": 342.78
+  },
+  "113626": {
+    "ml_id": "MLB4473883549",
+    "status": "active",
+    "price": 347.62
+  },
+  "113624": {
+    "ml_id": "MLB4474000103",
+    "status": "active",
+    "price": 168.39
+  },
+  "113625": {
+    "ml_id": "MLB4474064339",
+    "status": "active",
+    "price": 375.23
+  },
+  "770435": {
+    "ml_id": "MLB4474025519",
+    "status": "active",
+    "price": 318.21
+  },
+  "770372": {
+    "ml_id": "MLB4474025529",
+    "status": "active",
+    "price": 180.98
+  },
+  "770373": {
+    "ml_id": "MLB4473844637",
+    "status": "active",
+    "price": 180.96
+  },
+  "770368": {
+    "ml_id": "MLB4473922099",
+    "status": "active",
+    "price": 190.96
+  },
+  "11857": {
+    "ml_id": "MLB4474077133",
+    "status": "active",
+    "price": 152.68
+  },
+  "541470": {
+    "ml_id": "MLB4474103159",
+    "status": "active",
+    "price": 231.01
+  },
+  "113286": {
+    "ml_id": "MLB4474129163",
+    "status": "active",
+    "price": 915.11
+  },
+  "436130": {
+    "ml_id": "MLB6252313820",
+    "status": "active",
+    "price": 217.7
+  },
+  "436110": {
+    "ml_id": "MLB4474012893",
+    "status": "active",
+    "price": 239.91
+  },
+  "436100": {
+    "ml_id": "MLB4473922111",
+    "status": "active",
+    "price": 280.99
+  },
+  "436103": {
+    "ml_id": "MLB4473870649",
+    "status": "active",
+    "price": 302.07
+  },
+  "435103": {
+    "ml_id": "MLB4473857469",
+    "status": "active",
+    "price": 583.32
+  },
+  "782720": {
+    "ml_id": "MLB4473987195",
+    "status": "active",
+    "price": 182.4
+  },
+  "10679": {
+    "ml_id": "MLB4473922113",
+    "status": "active",
+    "price": 155.39
+  },
+  "432030": {
+    "ml_id": "MLB4473948293",
+    "status": "active",
+    "price": 169.11
+  },
+  "113630": {
+    "ml_id": "MLB4473896631",
+    "status": "active",
+    "price": 473.74
+  },
+  "113660": {
+    "ml_id": "MLB4473831735",
+    "status": "active",
+    "price": 374.71
+  },
+  "113631": {
+    "ml_id": "MLB4474051453",
+    "status": "active",
+    "price": 597.56
+  },
+  "113911": {
+    "ml_id": "MLB4473857483",
+    "status": "active",
+    "price": 278.74
+  },
+  "282426": {
+    "ml_id": "MLB4473896637",
+    "status": "active",
+    "price": 253.46
+  },
+  "ACRD301S": {
+    "ml_id": "MLB4473974071",
+    "status": "active",
+    "price": 220243.45
+  },
+  "3904": {
+    "ml_id": "MLB4473974075",
+    "status": "active",
+    "price": 915.73
+  },
+  "3915": {
+    "ml_id": "MLB4473974079",
+    "status": "active",
+    "price": 1119.38
   }
 }
